@@ -92,7 +92,7 @@
       }
     }
   },
-  "information":{
+  "information": {
     "spotlightItems": [
       {
         "title": "Gemeenten",
@@ -171,7 +171,7 @@
       ]
     }
   },
-  "general":{
+  "general": {
     "spotlightItems": [
       {
         "title": "Gemeenten",
@@ -250,7 +250,7 @@
       ]
     }
   },
-  "motive":{
+  "motive": {
     "spotlightItems": [
       {
         "title": "Gemeenten",
@@ -329,7 +329,7 @@
       ]
     }
   },
-  "vision":{
+  "vision": {
     "spotlightItems": [
       {
         "title": "Gemeenten",
@@ -614,6 +614,58 @@
             "url": "#docs"
           }
         ]
+      }
+    }
+  },
+  "status": {
+    "registries": {
+      "municipality": {
+        "title": "Gemeenten",
+        "projections": true,
+        "feed":true,
+        "cache": true,
+        "import": true,
+        "syndication": false
+      },
+      "postal": {
+        "title": "Postinfo",
+        "projections": true,
+        "feed":true,
+        "cache": true,
+        "import": false,
+        "syndication": true
+      },
+      "streetname": {
+        "title": "Straatnamen",
+        "projections": true,
+        "feed":true,
+        "cache": true,
+        "import": true,
+        "syndication": true
+      },
+      "address": {
+        "title": "Adressen",
+        "projections": true,
+        "feed":true,
+        "cache": true,
+        "import": true,
+        "syndication": true
+      },
+      "building": {
+        "title": "Gebouwen &amp; gebouweenheden",
+        "projections": true,
+        "feed":true,
+        "cache": false,
+        "import": true,
+        "syndication": true
+      },
+      "parcel": {
+        "title": "Percelen",
+        "projections": true,
+        "feed":true,
+        "cache": true,
+        "import": true,
+        "syndication": true
       }
     }
   }
