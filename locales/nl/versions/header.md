@@ -1,6 +1,6 @@
-# Basisregisters Vlaanderen
+# Versies
 <div class="vl-typography">
     <p class="vl-introduction"> 
-    Bent u op zoek naar authentieke gegevensbronnen? Dan bent u bij <strong>Digitaal Vlaanderen</strong> aan het juiste adres. 
+    Wat draait er <strong>momenteel</strong> allemaal? Bekijk hier het live overzicht!
     </p>
 </div>

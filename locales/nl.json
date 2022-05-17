@@ -1,4 +1,5 @@
 {
+  "timestamp":"2022-05-17T15:38:32",
   "locale": "nl",
   "backButtons": {
     "home": {
@@ -40,14 +41,14 @@
         "subtitle": "Waarom zijn ze er? Wat doen ze? Ontdek er hier alles over.",
         "text": "Verkennen",
         "url": "/informatie",
-        "background": "url('img/vlaamse-overheid.jpg')"
+        "background": "url('/assets/locales/images/vlaamse-overheid.jpg')"
       },
       {
         "title": "Documentatie",
         "subtitle": "Hoe gebruik ik ze in mijn systemen? Leer het hier.",
         "text": "Bekijken",
         "url": "//docs.basisregisters.vlaanderen.be",
-        "background": "#eee url('img/vlaams-parlement.jpg')"
+        "background": "#eee url('/assets/locales/images/vlaamse-regering.jpg')"
       }
     ],
     "spotlightItems": [
@@ -55,6 +56,16 @@
         "title": "Implementatiemodel",
         "subtitle": "De specificatie voor gegevensuitwisseling",
         "url": "/implementatiemodel"
+      },
+      {
+        "title": "Release Notes",
+        "subtitle": "Documentatie bij huidige en vorige releases",
+        "url": "/release-notes"
+      },
+      {
+        "title": "Versies",
+        "subtitle": "Een overzicht van de huidige versies",
+        "url": "/versies"
       }
     ]
   },
@@ -69,24 +80,45 @@
         "url": "/implementatiemodel/gebouwenregister"
       }
     ],
-    "addressregistry": {
-      "sidebar": {
-        "title": "Op deze pagina",
-        "urls": [
-          {
-            "title": "Algemeen",
-            "url": "/algemeen"
-          }
-        ]
-      }
+    "sidebar": {
+      "title": "Op deze pagina",
+      "urls": []
     },
-    "buildingregistry": {
+    "registries": {
       "sidebar": {
         "title": "Op deze pagina",
         "urls": [
           {
-            "title": "Algemeen",
-            "url": "/algemeen"
+            "title": "Inleiding",
+            "url": "#introduction"
+          },
+          {
+            "title": "Samenvatting",
+            "url": "#summary"
+          },
+          {
+            "title": "Status van dit document",
+            "url": "#status"
+          },
+          {
+            "title": "Licentie",
+            "url": "#license"
+          },
+          {
+            "title": "Comformiteit",
+            "url": "#comformence"
+          },
+          {
+            "title": "Overzicht",
+            "url": "#overview"
+          },
+          {
+            "title": "JSON-LD Context",
+            "url": "#jsonld"
+          },
+          {
+            "title": "SHACL-LD template",
+            "url": "#shacl"
           }
         ]
       }
@@ -667,6 +699,109 @@
         "import": true,
         "syndication": true
       }
+    }
+  },
+  "releaseNotes": {
+    "sidebar": {
+      "title": "Op deze pagina",
+      "urls": []
+    }
+  },
+  "versions": {
+    "addressRegistry": {
+      "title" : "Adressen",
+      "description": "de Vlaamse adressen.",
+      "enable": true
+    },
+    "addressRegistryBackOffice": {
+      "title" : "Address Edit API",
+      "description": "de Vlaamse adressen.",
+      "enable": false
+    },
+    "addressRegistryV2": {
+      "title" : "Adressen V2",
+      "description": "de Vlaamse adressen.",
+      "enable": true
+    },
+    "buildingRegistry": {
+      "title" : "Gebouwen",
+      "description": "de Vlaamse gebouwen en gebouweenheden.",
+      "enable": true
+    },
+    "buildingRegistryV2": {
+      "title" : "Gebouwen V2",
+      "description": "de Vlaamse gebouwen en gebouweenheden.",
+      "enable": true
+    },
+    "municipalityRegistry": {
+      "title" : "Gemeenten",
+      "description": "De Belgische gemeenten.",
+      "enable": true
+    },
+    "municipalityRegistryV2": {
+      "title" : "Gemeenten V2",
+      "description": "De Belgische gemeenten.",
+      "enable": true
+    },
+    "organisationRegistry": {
+      "title" : "Organisaties",
+      "description": "de Vlaamse organisaties en organen",
+      "enable": true
+    },
+    "parcelRegistry": {
+      "title" : "Percelen",
+      "description": "De Vlaamse percelen.",
+      "enable": true
+    },
+    "parcelRegistryV2": {
+      "title" : "Percelen V2",
+      "description": "De Vlaamse percelen.",
+      "enable": true
+    },
+    "postalRegistry": {
+      "title" : "Postinfo",
+      "description": "De Belgische postcodes",
+      "enable": true
+    },
+    "postalRegistryV2": {
+      "title" : "Postinfo V2",
+      "description": "De Belgische postcodes",
+      "enable": true
+    },
+    "publicApi": {
+      "title" : "API",
+      "description": "de Basisregisters Vlaanderen API",
+      "enable": true
+    },
+    "publicServiceRegistry": {
+      "title" : "Dienstverleningen",
+      "description": "de Vlaamse dienstverlening.",
+      "enable": true
+    },
+    "publicSite": {
+      "title" : "Website",
+      "description": "de Basisregisters Vlaanden webiste.",
+      "enable": true
+    },
+    "roadRegistry": {
+      "title" : "Wegen",
+      "description": "de Vlaamse wegen.",
+      "enable": true
+    },
+    "streetNameRegistry": {
+      "title" : "Straatnamen",
+      "description": "de Vlaamse straatnamen.",
+      "enable": true
+    },
+    "streetNameRegistryBackOffice": {
+      "title" : "Straatnamen EDIT API",
+      "description": " ",
+      "enable": false
+    },
+    "streetNameRegistryV2": {
+      "title" : "Straatnamen",
+      "description": "de Vlaamse straatnamen.",
+      "enable": true
     }
   }
 }
