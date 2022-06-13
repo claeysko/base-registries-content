@@ -32,14 +32,37 @@
       "tagline": "verbeelding werkt"
     },
     "title": "Dit is een officiële website van de Vlaamse overheid",
-    "subtitle": "Uitgegeven door <a href=\"https:\/\/www.vlaanderen.be\/nl\/contact\/adressengids\/diensten-van-de-vlaamse-overheid\/administratieve-diensten-van-de-vlaamse-overheid\/beleidsdomein-kanselarij-en-bestuur\/agentschap-informatie-vlaanderen\" target=\"_self\">Digitaal Vlaanderen<\/a>, {version}"
+    "subtitle": "Uitgegeven door <a href=\"https:\/\/www.vlaanderen.be\/nl\/contact\/adressengids\/diensten-van-de-vlaamse-overheid\/administratieve-diensten-van-de-vlaamse-overheid\/beleidsdomein-kanselarij-en-bestuur\/agentschap-informatie-vlaanderen\" target=\"_self\">Digitaal Vlaanderen<\/a>",
+    "urls": [
+      {
+        "title":"Over Vlaanderen.be",
+        "url": "https://www.vlaanderen.be/over-vlaanderenbe"
+      },
+      {
+        "title":"Disclaimer",
+        "url": "https://www.vlaanderen.be/over-vlaanderenbe/disclaimer"
+      },
+      {
+        "title":"Cookieverklaring",
+        "url": "https://www.vlaanderen.be/over-vlaanderenbe/cookieverklaring-vlaanderenbe"
+      },
+      {
+        "title":"Toegankelijkheid",
+        "url": "https://www.vlaanderen.be/over-vlaanderenbe/toegankelijkheidsverklaring-vlaanderenbe"
+      },
+      {
+        "title":"Cookievoorkeuren",
+        "url": "https://www.vlaanderen.be/over-vlaanderenbe#cookies"
+      }
+    ]
   },
   "home": {
-    "navigationItems": [
+    "title": "Home",
+    "Prefix": "Basisregisters Vlaanderen",
+    "spotlightItems": [
       {
         "title": "Informatie",
         "subtitle": "Waarom zijn ze er? Wat doen ze? Ontdek er hier alles over.",
-        "text": "Verkennen",
         "url": "/informatie",
         "background": "url('/assets/locales/images/vlaamse-overheid.jpg')"
       },
@@ -49,9 +72,7 @@
         "text": "Bekijken",
         "url": "//docs.basisregisters.vlaanderen.be",
         "background": "#eee url('/assets/locales/images/vlaamse-regering.jpg')"
-      }
-    ],
-    "spotlightItems": [
+      },
       {
         "title": "Implementatiemodel",
         "subtitle": "De specificatie voor gegevensuitwisseling",
@@ -70,6 +91,8 @@
     ]
   },
   "implementationmodel": {
+    "title": "Home",
+    "Prefix": "Basisregisters Vlaanderen",
     "doormatItems": [
       {
         "title": "Adressenregister",
@@ -125,9 +148,8 @@
     }
   },
   "information": {
-    "redirect": {
-      "url": "/"
-    },
+    "title": "Informatie",
+    "Prefix": "Basisregisters Vlaanderen",
     "spotlightItems": [
       {
         "title": "Gemeenten",
@@ -207,6 +229,11 @@
     }
   },
   "general": {
+    "title": "Algemeen",
+    "Prefix": "Basisregisters Vlaanderen",
+    "redirect": {
+      "url": "/"
+    },
     "spotlightItems": [
       {
         "title": "Gemeenten",
@@ -286,6 +313,11 @@
     }
   },
   "motive": {
+    "title": "Motive",
+    "Prefix": "Basisregisters Vlaanderen",
+    "redirect": {
+      "url": "/"
+    },
     "spotlightItems": [
       {
         "title": "Gemeenten",
@@ -365,6 +397,11 @@
     }
   },
   "vision": {
+    "title": "Visie",
+    "Prefix": "Basisregisters Vlaanderen",
+    "redirect": {
+      "url": "/"
+    },
     "spotlightItems": [
       {
         "title": "Gemeenten",
@@ -445,6 +482,11 @@
   },
   "registries": {
     "address": {
+      "title": "Adres",
+      "Prefix": "Basisregisters Vlaanderen",
+      "redirect": {
+        "url": "/"
+      },
       "sidebar": {
         "title": "Op deze pagina",
         "urls": [
@@ -468,6 +510,11 @@
       }
     },
     "building": {
+      "title": "Gebouwen",
+      "Prefix": "Basisregisters Vlaanderen",
+      "redirect": {
+        "url": "/"
+      },
       "sidebar": {
         "title": "Op deze pagina",
         "urls": [
@@ -491,6 +538,11 @@
       }
     },
     "municipality": {
+      "title": "Gemeenten",
+      "Prefix": "Basisregisters Vlaanderen",
+      "redirect": {
+        "url": "/"
+      },
       "sidebar": {
         "title": "Op deze pagina",
         "urls": [
@@ -514,6 +566,11 @@
       }
     },
     "organisation": {
+      "title": "Organisatie",
+      "Prefix": "Basisregisters Vlaanderen",
+      "redirect": {
+        "url": "/"
+      },
       "sidebar": {
         "title": "Op deze pagina",
         "urls": [
@@ -537,6 +594,11 @@
       }
     },
     "parcel": {
+      "title": "Perceel",
+      "Prefix": "Basisregisters Vlaanderen",
+      "redirect": {
+        "url": "/"
+      },
       "sidebar": {
         "title": "Op deze pagina",
         "urls": [
@@ -560,6 +622,11 @@
       }
     },
     "postal": {
+      "title": "Postcode",
+      "Prefix": "Basisregisters Vlaanderen",
+      "redirect": {
+        "url": "/"
+      },
       "sidebar": {
         "title": "Op deze pagina",
         "urls": [
@@ -583,6 +650,11 @@
       }
     },
     "publicservice": {
+      "title": "Public Service",
+      "Prefix": "Basisregisters Vlaanderen",
+      "redirect": {
+        "url": "/"
+      },
       "sidebar": {
         "title": "Op deze pagina",
         "urls": [
@@ -606,6 +678,11 @@
       }
     },
     "road": {
+      "title": "Wegen",
+      "Prefix": "Basisregisters Vlaanderen",
+      "redirect": {
+        "url": "/"
+      },
       "sidebar": {
         "title": "Op deze pagina",
         "urls": [
@@ -629,6 +706,11 @@
       }
     },
     "streetname": {
+      "title": "Straatnamen",
+      "Prefix": "Basisregisters Vlaanderen",
+      "redirect": {
+        "url": "/"
+      },
       "sidebar": {
         "title": "Op deze pagina",
         "urls": [
@@ -653,6 +735,8 @@
     }
   },
   "status": {
+    "title": "Status",
+    "Prefix": "Basisregisters Vlaanderen",
     "registries": {
       "municipality": {
         "title": "Gemeenten",
@@ -705,12 +789,16 @@
     }
   },
   "releaseNotes": {
+    "title": "Release Notes",
+    "Prefix": "Basisregisters Vlaanderen",
     "sidebar": {
       "title": "Op deze pagina",
       "urls": []
     }
   },
   "versions": {
+    "title": "Versies",
+    "Prefix": "Basisregisters Vlaanderen",
     "addressRegistry": {
       "title" : "Adressen",
       "description": "de Vlaamse adressen.",
