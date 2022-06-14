@@ -32,7 +32,7 @@
       "tagline": "verbeelding werkt"
     },
     "title": "Dit is een officiële website van de Vlaamse overheid",
-    "subtitle": "Uitgegeven door <a href=\"https:\/\/www.vlaanderen.be\/nl\/contact\/adressengids\/diensten-van-de-vlaamse-overheid\/administratieve-diensten-van-de-vlaamse-overheid\/beleidsdomein-kanselarij-en-bestuur\/agentschap-informatie-vlaanderen\" target=\"_self\">Digitaal Vlaanderen<\/a>",
+    "subtitle": "Uitgegeven door <a href=\"\/\/www.vlaanderen.be\/digitaal-vlaanderen\" target=\"_blank\">Digitaal Vlaanderen<\/a>",
     "urls": [
       {
         "title":"Over Vlaanderen.be",
@@ -52,7 +52,7 @@
       },
       {
         "title":"Cookievoorkeuren",
-        "url": "https://www.vlaanderen.be/over-vlaanderenbe#cookies"
+        "url": "https://www.vlaanderen.be/#cookies"
       }
     ]
   },
