@@ -91,6 +91,7 @@
   "implementationmodel": {
     "title": "Home",
     "Prefix": "Basisregisters Vlaanderen",
+    "version": "2022-05-31",
     "doormatItems": [
       {
         "title": "Adressenregister",
