@@ -1,5 +1,5 @@
 {
-  "timestamp":"2022-05-17T15:38:32",
+  "timestamp": "2022-05-17T15:38:32",
   "locale": "nl",
   "backButtons": {
     "home": {
@@ -35,23 +35,23 @@
     "subtitle": "Uitgegeven door <a href=\"\/\/www.vlaanderen.be\/digitaal-vlaanderen\" target=\"_blank\">Digitaal Vlaanderen<\/a>",
     "urls": [
       {
-        "title":"Over Vlaanderen.be",
+        "title": "Over Vlaanderen.be",
         "url": "https://www.vlaanderen.be/over-vlaanderenbe"
       },
       {
-        "title":"Disclaimer",
+        "title": "Disclaimer",
         "url": "https://www.vlaanderen.be/over-vlaanderenbe/disclaimer"
       },
       {
-        "title":"Cookieverklaring",
+        "title": "Cookieverklaring",
         "url": "https://www.vlaanderen.be/over-vlaanderenbe/cookieverklaring-vlaanderenbe"
       },
       {
-        "title":"Toegankelijkheid",
+        "title": "Toegankelijkheid",
         "url": "https://www.vlaanderen.be/over-vlaanderenbe/toegankelijkheidsverklaring-vlaanderenbe"
       },
       {
-        "title":"Cookievoorkeuren",
+        "title": "Cookievoorkeuren",
         "url": "https://www.vlaanderen.be/#cookies"
       }
     ]
@@ -89,9 +89,8 @@
     ]
   },
   "implementationmodel": {
-    "title": "Home",
+    "title": "Implementatiemodel",
     "Prefix": "Basisregisters Vlaanderen",
-    "version": "2022-05-31",
     "doormatItems": [
       {
         "title": "Adressenregister",
@@ -105,45 +104,90 @@
     "sidebar": {
       "title": "Op deze pagina",
       "urls": []
-    },
-    "registries": {
-      "sidebar": {
-        "title": "Op deze pagina",
-        "urls": [
-          {
-            "title": "Inleiding",
-            "url": "#introduction"
-          },
-          {
-            "title": "Samenvatting",
-            "url": "#summary"
-          },
-          {
-            "title": "Status van dit document",
-            "url": "#status"
-          },
-          {
-            "title": "Licentie",
-            "url": "#license"
-          },
-          {
-            "title": "Comformiteit",
-            "url": "#comformence"
-          },
-          {
-            "title": "Overzicht",
-            "url": "#overview"
-          },
-          {
-            "title": "JSON-LD Context",
-            "url": "#jsonld"
-          },
-          {
-            "title": "SHACL-LD template",
-            "url": "#shacl"
-          }
-        ]
-      }
+    }
+  },
+  "implementationmodelAddressRegistry": {
+    "title": "Adresregister",
+    "Prefix": "Basisregisters Vlaanderen",
+    "version": "2022-05-31",
+    "sidebar": {
+      "title": "Op deze pagina",
+      "urls": [
+        {
+          "title": "Inleiding",
+          "url": "#introduction"
+        },
+        {
+          "title": "Samenvatting",
+          "url": "#summary"
+        },
+        {
+          "title": "Status van dit document",
+          "url": "#status"
+        },
+        {
+          "title": "Licentie",
+          "url": "#license"
+        },
+        {
+          "title": "Comformiteit",
+          "url": "#comformence"
+        },
+        {
+          "title": "Overzicht",
+          "url": "#overview"
+        },
+        {
+          "title": "JSON-LD Context",
+          "url": "#jsonld"
+        },
+        {
+          "title": "SHACL-LD template",
+          "url": "#shacl"
+        }
+      ]
+    }
+  },
+  "implementationmodelBuildingRegistry": {
+    "title": "gebouwenregister",
+    "Prefix": "Basisregisters Vlaanderen",
+    "version": "2022-05-31",
+    "sidebar": {
+      "title": "Op deze pagina",
+      "urls": [
+        {
+          "title": "Inleiding",
+          "url": "#introduction"
+        },
+        {
+          "title": "Samenvatting",
+          "url": "#summary"
+        },
+        {
+          "title": "Status van dit document",
+          "url": "#status"
+        },
+        {
+          "title": "Licentie",
+          "url": "#license"
+        },
+        {
+          "title": "Comformiteit",
+          "url": "#comformence"
+        },
+        {
+          "title": "Overzicht",
+          "url": "#overview"
+        },
+        {
+          "title": "JSON-LD Context",
+          "url": "#jsonld"
+        },
+        {
+          "title": "SHACL-LD template",
+          "url": "#shacl"
+        }
+      ]
     }
   },
   "information": {
@@ -740,7 +784,7 @@
       "municipality": {
         "title": "Gemeenten",
         "projections": true,
-        "feed":true,
+        "feed": true,
         "cache": true,
         "import": true,
         "syndication": false
@@ -748,7 +792,7 @@
       "postal": {
         "title": "Postinfo",
         "projections": true,
-        "feed":true,
+        "feed": true,
         "cache": true,
         "import": false,
         "syndication": true
@@ -756,7 +800,7 @@
       "streetname": {
         "title": "Straatnamen",
         "projections": true,
-        "feed":true,
+        "feed": true,
         "cache": true,
         "import": true,
         "syndication": true
@@ -764,7 +808,7 @@
       "address": {
         "title": "Adressen",
         "projections": true,
-        "feed":true,
+        "feed": true,
         "cache": true,
         "import": true,
         "syndication": true
@@ -772,7 +816,7 @@
       "building": {
         "title": "Gebouwen &amp; gebouweenheden",
         "projections": true,
-        "feed":true,
+        "feed": true,
         "cache": false,
         "import": true,
         "syndication": true
@@ -780,7 +824,7 @@
       "parcel": {
         "title": "Percelen",
         "projections": true,
-        "feed":true,
+        "feed": true,
         "cache": true,
         "import": true,
         "syndication": true
@@ -799,97 +843,97 @@
     "title": "Versies",
     "Prefix": "Basisregisters Vlaanderen",
     "addressRegistry": {
-      "title" : "Adressen",
+      "title": "Adressen",
       "description": "de Vlaamse adressen.",
       "enable": true
     },
     "addressRegistryBackOffice": {
-      "title" : "Address Edit API",
+      "title": "Address Edit API",
       "description": "de Vlaamse adressen.",
       "enable": false
     },
     "addressRegistryV2": {
-      "title" : "Adressen V2",
+      "title": "Adressen V2",
       "description": "de Vlaamse adressen.",
       "enable": true
     },
     "buildingRegistry": {
-      "title" : "Gebouwen",
+      "title": "Gebouwen",
       "description": "de Vlaamse gebouwen en gebouweenheden.",
       "enable": true
     },
     "buildingRegistryV2": {
-      "title" : "Gebouwen V2",
+      "title": "Gebouwen V2",
       "description": "de Vlaamse gebouwen en gebouweenheden.",
       "enable": true
     },
     "municipalityRegistry": {
-      "title" : "Gemeenten",
+      "title": "Gemeenten",
       "description": "De Belgische gemeenten.",
       "enable": true
     },
     "municipalityRegistryV2": {
-      "title" : "Gemeenten V2",
+      "title": "Gemeenten V2",
       "description": "De Belgische gemeenten.",
       "enable": true
     },
     "organisationRegistry": {
-      "title" : "Organisaties",
+      "title": "Organisaties",
       "description": "de Vlaamse organisaties en organen",
       "enable": true
     },
     "parcelRegistry": {
-      "title" : "Percelen",
+      "title": "Percelen",
       "description": "De Vlaamse percelen.",
       "enable": true
     },
     "parcelRegistryV2": {
-      "title" : "Percelen V2",
+      "title": "Percelen V2",
       "description": "De Vlaamse percelen.",
       "enable": true
     },
     "postalRegistry": {
-      "title" : "Postinfo",
+      "title": "Postinfo",
       "description": "De Belgische postcodes",
       "enable": true
     },
     "postalRegistryV2": {
-      "title" : "Postinfo V2",
+      "title": "Postinfo V2",
       "description": "De Belgische postcodes",
       "enable": true
     },
     "publicApi": {
-      "title" : "API",
+      "title": "API",
       "description": "de Basisregisters Vlaanderen API",
       "enable": true
     },
     "publicServiceRegistry": {
-      "title" : "Dienstverleningen",
+      "title": "Dienstverleningen",
       "description": "de Vlaamse dienstverlening.",
       "enable": true
     },
     "publicSite": {
-      "title" : "Website",
+      "title": "Website",
       "description": "de Basisregisters Vlaanden webiste.",
       "enable": true
     },
     "roadRegistry": {
-      "title" : "Wegen",
+      "title": "Wegen",
       "description": "de Vlaamse wegen.",
       "enable": true
     },
     "streetNameRegistry": {
-      "title" : "Straatnamen",
+      "title": "Straatnamen",
       "description": "de Vlaamse straatnamen.",
       "enable": true
     },
     "streetNameRegistryBackOffice": {
-      "title" : "Straatnamen EDIT API",
+      "title": "Straatnamen EDIT API",
       "description": " ",
       "enable": false
     },
     "streetNameRegistryV2": {
-      "title" : "Straatnamen",
+      "title": "Straatnamen",
       "description": "de Vlaamse straatnamen.",
       "enable": true
     }
