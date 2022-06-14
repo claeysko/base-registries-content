@@ -69,9 +69,7 @@
       {
         "title": "Documentatie",
         "subtitle": "Hoe gebruik ik ze in mijn systemen? Leer het hier.",
-        "text": "Bekijken",
-        "url": "//docs.basisregisters.vlaanderen.be",
-        "background": "#eee url('/assets/locales/images/vlaamse-regering.jpg')"
+        "url": "//docs.basisregisters.vlaanderen.be"
       },
       {
         "title": "Implementatiemodel",
