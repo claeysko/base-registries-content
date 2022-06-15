@@ -193,6 +193,9 @@
   "information": {
     "title": "Informatie",
     "Prefix": "Basisregisters Vlaanderen",
+    "redirect": {
+      "url": "/"
+    },
     "spotlightItems": [
       {
         "title": "Gemeenten",
