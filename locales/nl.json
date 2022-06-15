@@ -815,7 +815,7 @@
         "syndication": true
       },
       "building": {
-        "title": "Gebouwen &amp; gebouweenheden",
+        "title": "Gebouwen & gebouweenheden",
         "projections": true,
         "feed": true,
         "cache": false,
