@@ -62,7 +62,7 @@
     "spotlightItems": [
       {
         "title": "Documentatie",
-        "subtitle": "Hoe gebruik ik de API's in mijn systemen? Leer het hier.",
+        "subtitle": "Hoe gebruik ik de API's? Leer het hier.",
         "url": {
           "dev": "https://docs.basisregisters.dev-vlaanderen.be/docs/api-documentation.html#tag/api-documentation.html",
           "stg": "https://docs.basisregisters.staging-vlaanderen.be/docs/api-documentation.html#tag/api-documentation.html",
