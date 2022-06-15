@@ -61,12 +61,6 @@
     "Prefix": "Basisregisters Vlaanderen",
     "spotlightItems": [
       {
-        "title": "Informatie",
-        "subtitle": "Waarom zijn ze er? Wat doen ze? Ontdek er hier alles over.",
-        "url": "/informatie",
-        "background": "url('/assets/locales/images/vlaamse-overheid.jpg')"
-      },
-      {
         "title": "Documentatie",
         "subtitle": "Hoe gebruik ik ze in mijn systemen? Leer het hier.",
         "url": {
