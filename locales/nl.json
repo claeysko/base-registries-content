@@ -57,8 +57,8 @@
     ]
   },
   "home": {
-    "title": "Basisregisters Vlaanderen",
-    "Prefix": " ",
+    "title": "Home",
+    "Prefix": "Basisregisters Vlaanderen",
     "spotlightItems": [
       {
         "title": "Documentatie",
