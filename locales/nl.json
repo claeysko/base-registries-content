@@ -910,7 +910,7 @@
     },
     "publicApi": {
       "title": "Publieke API",
-      "description": "De Basisregisters Vlaanderen API.",
+      "description": "De basisregisters Vlaanderen API.",
       "enable": true
     },
     "streetNameRegistry": {
@@ -930,7 +930,7 @@
     },
      "publicSite": {
       "title": "Website",
-      "description": "De Basisregisters Vlaanderen webiste.",
+      "description": "De basisregisters Vlaanderen website.",
       "enable": true
     },
     "roadRegistry": {
