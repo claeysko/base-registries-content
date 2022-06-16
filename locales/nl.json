@@ -844,98 +844,98 @@
     "title": "Versies",
     "Prefix": "Basisregisters Vlaanderen",
     "addressRegistry": {
-      "title": "Adressen",
-      "description": "de Vlaamse adressen.",
+      "title": "Adressen v1",
+      "description": "De Vlaamse adressen",
       "enable": true
     },
     "addressRegistryBackOffice": {
       "title": "Address Edit API",
-      "description": "de Vlaamse adressen.",
+      "description": "De edit API van de Vlaamse adressen",
       "enable": false
     },
     "addressRegistryV2": {
-      "title": "Adressen V2",
-      "description": "de Vlaamse adressen.",
+      "title": "Adressen v2",
+      "description": "De Vlaamse adressen",
       "enable": true
     },
     "buildingRegistry": {
-      "title": "Gebouwen",
-      "description": "de Vlaamse gebouwen en gebouweenheden.",
+      "title": "Gebouwen v1",
+      "description": "De Vlaamse gebouwen en gebouweenheden",
       "enable": true
     },
     "buildingRegistryV2": {
-      "title": "Gebouwen V2",
-      "description": "de Vlaamse gebouwen en gebouweenheden.",
+      "title": "Gebouwen v2",
+      "description": "De Vlaamse gebouwen en gebouweenheden",
       "enable": true
     },
     "municipalityRegistry": {
-      "title": "Gemeenten",
-      "description": "De Belgische gemeenten.",
+      "title": "Gemeenten v1",
+      "description": "De Belgische gemeenten",
       "enable": true
     },
     "municipalityRegistryV2": {
-      "title": "Gemeenten V2",
-      "description": "De Belgische gemeenten.",
+      "title": "Gemeenten v2",
+      "description": "De Belgische gemeenten",
       "enable": true
     },
     "organisationRegistry": {
       "title": "Organisaties",
-      "description": "de Vlaamse organisaties en organen",
+      "description": "De Vlaamse organisaties en organen",
       "enable": true
     },
     "parcelRegistry": {
-      "title": "Percelen",
-      "description": "De Vlaamse percelen.",
+      "title": "Percelen v1",
+      "description": "De Vlaamse percelen",
       "enable": true
     },
     "parcelRegistryV2": {
-      "title": "Percelen V2",
-      "description": "De Vlaamse percelen.",
+      "title": "Percelen v2",
+      "description": "De Vlaamse percelen",
       "enable": true
     },
     "postalRegistry": {
-      "title": "Postinfo",
+      "title": "Postinfo v1",
       "description": "De Belgische postcodes",
       "enable": true
     },
     "postalRegistryV2": {
-      "title": "Postinfo V2",
+      "title": "Postinfo v2",
       "description": "De Belgische postcodes",
       "enable": true
     },
     "publicApi": {
       "title": "API",
-      "description": "de Basisregisters Vlaanderen API",
+      "description": "De Basisregisters Vlaanderen API",
       "enable": true
     },
     "publicServiceRegistry": {
       "title": "Dienstverleningen",
-      "description": "de Vlaamse dienstverlening.",
+      "description": "De Vlaamse dienstverlening.",
       "enable": true
     },
     "publicSite": {
       "title": "Website",
-      "description": "de Basisregisters Vlaanden webiste.",
+      "description": "De Basisregisters Vlaanderen webiste",
       "enable": true
     },
     "roadRegistry": {
       "title": "Wegen",
-      "description": "de Vlaamse wegen.",
+      "description": "De Vlaamse wegen",
       "enable": true
     },
     "streetNameRegistry": {
-      "title": "Straatnamen",
-      "description": "de Vlaamse straatnamen.",
+      "title": "Straatnamen v1",
+      "description": "De Vlaamse straatnamen",
       "enable": true
     },
     "streetNameRegistryBackOffice": {
       "title": "Straatnamen EDIT API",
-      "description": " ",
+      "description": "De edit API van de Vlaamse straatnamen",
       "enable": false
     },
     "streetNameRegistryV2": {
-      "title": "Straatnamen",
-      "description": "de Vlaamse straatnamen.",
+      "title": "Straatnamen v2",
+      "description": "De Vlaamse straatnamen",
       "enable": true
     }
   }
