@@ -849,7 +849,7 @@
       "enable": true
     },
     "addressRegistryBackOffice": {
-      "title": "Address Edit API",
+      "title": "Adressen edit API",
       "description": "De edit API van de Vlaamse adressen op v2.",
       "enable": false
     },
@@ -909,7 +909,7 @@
       "enable": true
     },
     "publicApi": {
-      "title": "public API",
+      "title": "Publieke API",
       "description": "De Basisregisters Vlaanderen API.",
       "enable": true
     },
@@ -919,7 +919,7 @@
       "enable": true
     },
     "streetNameRegistryBackOffice": {
-      "title": "Straatnamen EDIT API",
+      "title": "Straatnamen edit API",
       "description": "De edit API van de Vlaamse straatnamen op v2.",
       "enable": false
     },
@@ -928,7 +928,7 @@
       "description": "De Vlaamse straatnamen op v2.",
       "enable": true
     },
-        "publicSite": {
+     "publicSite": {
       "title": "Website",
       "description": "De Basisregisters Vlaanderen webiste.",
       "enable": true
