@@ -935,7 +935,7 @@
     },
     "roadRegistry": {
       "title": "Wegen",
-      "description": "De Vlaamse wegen",
+      "description": "De Vlaamse wegen.",
       "enable": true
     }
   }
