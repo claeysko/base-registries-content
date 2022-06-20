@@ -1,6 +1,8 @@
 ## Basisregisters Vlaanderen
 
-Een administratief perceel (Adp) is een grafische voorstelling van de vermoedelijke ligging van het kadastraal perceel, waarbij de perceelsgrenzen werden geïnterpreteerd rekening houdend met de terreinsituatie.
+Basisregisters Vlaanderen is de authentieke gegevensbron rond adressen en gebouwen. Deze registers stellen u in staat om alles te weten te komen rond:
+- de Vlaamse adressen;
+- de Vlaamse gebouwen en gebouweenheden.
 
 ### Nuttige informatie
 
