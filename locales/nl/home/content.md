@@ -8,3 +8,9 @@ Deze registers stellen u in staat om alles te weten te komen rond:
 ### Nuttige informatie
 
 - https://www.vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/gebouwen-en-adressenregister
+  
+    
+      
+        
+          
+            
