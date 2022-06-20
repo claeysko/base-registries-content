@@ -1,6 +1,6 @@
 ## Basisregisters Vlaanderen
 
-Basisregisters Vlaanderen is de authentieke gegevensbron rond adressen en gebouwen.\br
+Basisregisters Vlaanderen is de authentieke gegevensbron rond adressen en gebouwen.  
 Deze registers stellen u in staat om alles te weten te komen rond:
 - de Vlaamse adressen;
 - de Vlaamse gebouwen en gebouweenheden.
