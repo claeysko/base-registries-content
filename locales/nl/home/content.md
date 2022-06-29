@@ -3,7 +3,7 @@
 Digitaal Vlaanderen investeert in een geïntegreerd stelsel van kwalitatieve basisregisters die hergebruik van data stimuleren en dubbele registratie vermijden. Deze registers vormen een stelsel van onderling verbonden authentieke gegevensbronnen. Ze vormen het fundament voor een vlotte gegevensuitwisseling- en integratie binnen en buiten de overheid.
 
 Tot het stelsel van Basisregisters behoren het Gebouwen- en adressenregister, het Wegenregister en het Organisatieregister.
-- Het Gebouwen- en Adressenregister behoort tot het stelsel van de Basisregisters. Het verzamelt alle basisinformatie over gebouwen en adressen op het Vlaamse grondgebied in één register. Dit register wordt hét basisregister voor gebouw- en adresinformatie in Vlaanderen en vormt de centrale koppelstandaard in het netwerk van gebouw- en adresgerelateerde gegevensbronnen.
+- Het Gebouwen- en adressenregister verrzamelt alle basisinformatie over gebouwen en adressen op het Vlaamse grondgebied in één register. Dit register wordt hét basisregister voor gebouw- en adresinformatie in Vlaanderen en vormt de centrale koppelstandaard in het netwerk van gebouw- en adresgerelateerde gegevensbronnen.
 
 ### Nuttige informatie
 
