@@ -107,7 +107,7 @@
   "implementationmodelAddressRegistry": {
     "title": "Adressenregister",
     "Prefix": "Basisregisters Vlaanderen",
-    "version": "2022-06-29",
+    "version": "2022-06-30",
     "sidebar": {
       "title": "Op deze pagina",
       "urls": [
@@ -149,7 +149,7 @@
   "implementationmodelBuildingRegistry": {
     "title": "gebouwenregister",
     "Prefix": "Basisregisters Vlaanderen",
-    "version": "2022-06-29",
+    "version": "2022-06-30",
     "sidebar": {
       "title": "Op deze pagina",
       "urls": [
