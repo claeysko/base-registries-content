@@ -7,7 +7,6 @@ Het gebouwen- en adressenregister behoort tot het stelsel van de basisregisters.
 ### Nuttige informatie
 
 - Productpagina gebouwen- en adressenregister: https://www.vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/gebouwen-en-adressenregister
-- Productpagina wegenregister
     
       
         
