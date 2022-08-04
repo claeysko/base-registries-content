@@ -97,6 +97,10 @@
       {
         "title": "Gebouwenregister",
         "url": "/implementatiemodel/gebouwenregister"
+      },
+      {
+        "title": "Wegenregister",
+        "url": "/implementatiemodel/wegenregister"
       }
     ],
     "sidebar": {
