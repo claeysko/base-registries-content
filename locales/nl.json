@@ -833,6 +833,14 @@
         "cache": true,
         "import": true,
         "syndication": true
+      },
+      "road": {
+        "title": "Wegen",
+        "projections": true,
+        "feed": false,
+        "cache": false,
+        "import": false,
+        "syndication": false
       }
     }
   },
