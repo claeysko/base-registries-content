@@ -840,7 +840,7 @@
         "feed": false,
         "cache": false,
         "import": false,
-        "syndication": false
+        "syndication": true
       }
     }
   },
