@@ -6,6 +6,10 @@
       "text": "Overzicht",
       "url": "/"
     },
+    "documentation": {
+      "text": "Documentatie",
+      "url": "/documentatie"
+    },
     "implementationmodel": {
       "text": "Implementatiemodel",
       "url": "/implementatiemodel"
@@ -61,13 +65,18 @@
     "Prefix": "Basisregisters Vlaanderen",
     "spotlightItems": [
       {
-        "title": "Documentatie",
+        "title": "API Documentatie",
         "subtitle": "Hoe gebruik ik de API's? Leer het hier.",
         "url": {
           "dev": "https://docs.basisregisters.dev-vlaanderen.be/docs/api-documentation.html#tag/api-documentation.html",
           "stg": "https://docs.basisregisters.staging-vlaanderen.be/docs/api-documentation.html#tag/api-documentation.html",
           "prd": "https://docs.basisregisters.vlaanderen.be/docs/api-documentation.html#tag/api-documentation.html"
         }
+      },
+      {
+        "title": "Documentatie",
+        "subtitle": "",
+        "url": "/documentatie"
       },
       {
         "title": "Implementatiemodel",
@@ -85,6 +94,21 @@
         "url": "/versies"
       }
     ]
+  },
+  "documentation": {
+    "title": "Documentatie",
+    "Prefix": "Basisregisters Vlaanderen",
+    "doormatItems": [
+      {
+        "title": "Edit endpoints GRAR",
+        "url": "/documentatie/editendpointsgrar"
+      }
+    ]
+  },
+  "editendpointsgrar": {
+    "title": "Edit endpoints GRAR",
+    "Prefix": "Basisregisters Vlaanderen",
+    "version": "2022-06-30"
   },
   "implementationmodel": {
     "title": "Implementatiemodel",
