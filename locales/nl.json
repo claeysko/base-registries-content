@@ -78,11 +78,6 @@
         }
       },
       {
-        "title": "Werking basisregisters",
-        "subtitle": "Hoe werken de API's functioneel? Leer het hier",
-        "url": "/documentatie"
-      },
-      {
         "title": "Implementatiemodel",
         "subtitle": "De specificatie voor gegevensuitwisseling",
         "url": "/implementatiemodel"
@@ -99,7 +94,7 @@
       }
     ]
   },
-   "documentation": {
+  "documentation": {
     "title": "Werking basisregisters",
     "Prefix": "Basisregisters Vlaanderen",
     "doormatItems": [
@@ -109,7 +104,7 @@
       }
     ]
   },
-    "editendpointsgrar": {
+  "editendpointsgrar": {
     "title": "Gebruik van de edit API's van het gebouwen- en adressenregister",
     "Prefix": "Basisregisters Vlaanderen"
   },
@@ -939,7 +934,7 @@
       "description": "De Vlaamse adressen op v2.",
       "enable": true
     },
-     "publicServiceRegistry": {
+    "publicServiceRegistry": {
       "title": "Dienstverleningen",
       "description": "De Vlaamse dienstverlening.",
       "enable": true
@@ -1004,7 +999,7 @@
       "description": "De edit API van de Vlaamse straatnamen op v2.",
       "enable": false
     },
-     "buildingRegistryBackOffice": {
+    "buildingRegistryBackOffice": {
       "title": "Gebouwen edit API",
       "description": "De edit API van de Vlaamse gebouwen op v2.",
       "enable": false
@@ -1014,7 +1009,7 @@
       "description": "De Vlaamse straatnamen op v2.",
       "enable": true
     },
-     "publicSite": {
+    "publicSite": {
       "title": "Website",
       "description": "De basisregisters Vlaanderen website.",
       "enable": true
@@ -1024,7 +1019,7 @@
       "description": "De Vlaamse wegen.",
       "enable": true
     },
-      "ticketingService": {
+    "ticketingService": {
       "title": "Ticketing",
       "description": "Ticketingsysteem van gebouwen- en adressenregister",
       "enable": false
