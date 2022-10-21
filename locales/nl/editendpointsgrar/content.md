@@ -1,81 +1,52 @@
 Decentraal beheer
+
 De edit endpoints maken decentraal beheer mogelijk in het gebouwen- en adressenregister. Deze endpoints worden door de dienstenleveranciers geïmplementeerd in hun software. Zo kunnen vb. straatnamen, adressen, gebouwen en gebouweenheden toegevoegd, verwijderd of aangepast worden. Hieronder kan u per register een lijst vinden van welke beheeracties er allemaal mogelijk zijn.
 
 Straatnamen
 
-Stel een straatnaam voor.
-
-Keur een straatnaam goed.
-
-Keur een straatnaam af.
-
-Hef een straatnaam op.
-
-Corrigeer de straatnaam van een straatnaam.
-
-Corrigeer de goedkeuring van een straatnaam.
-
-Corrigeer de afkeuring van een straatnaam.
-
-Corrigeer de opheffing van een straatnaam.
+* Stel een straatnaam voor.
+* Keur een straatnaam goed.
+* Keur een straatnaam af.
+* Hef een straatnaam op.
+* Corrigeer de straatnaam van een straatnaam.
+* Corrigeer de goedkeuring van een straatnaam.
+* Corrigeer de afkeuring van een straatnaam.
+* Corrigeer de opheffing van een straatnaam.
 
 Adressen
 
-Stel een adres voor.
-
-Keur een adres goed.
-
-Keur een adres af.
-
-Hef een adres op.
-
-Regulariseer een adres.
-
-Deregulariseer een adres.
-
-Corrigeer de adrespositie van een adres.
-
-Corrigeer de postcode van een adres.
-
-Corrigeer het huisnummer van een adres.
-
-Corrigeer het busnummer van een adres.
-
-Corrigeer de goedkeuring van een adres.
-
-Corrigeer de afkeuring van een adres.
-
-Corrigeer de opheffing van een adres.
-
-Wijzig de postcode van een adres.
+* Stel een adres voor.
+* Keur een adres goed.
+* Keur een adres af.
+* Hef een adres op.
+* Regulariseer een adres.
+* Deregulariseer een adres.
+* Corrigeer de adrespositie van een adres.
+* Corrigeer de postcode van een adres.
+* Corrigeer het huisnummer van een adres.
+* Corrigeer het busnummer van een adres.
+* Corrigeer de goedkeuring van een adres.
+* Corrigeer de afkeuring van een adres.
+* Corrigeer de opheffing van een adres.
+* Wijzig de postcode van een adres.
 
 Gebouwen
 
-Plan een gebouw in.
-
-Plaats een gebouw in aanbouw.
-
-Realiseer een gebouw.
-
-Realiseer een gebouw niet.
-
-Corrigeer de inAanbouw plaatsing van een gebouw.
-
-Corrigeer de realisering van een gebouw.
-
-Corrigeer de nietRealisering van een gebouw.
+* Plan een gebouw in.
+* Plaats een gebouw in aanbouw.
+* Realiseer een gebouw.
+* Realiseer een gebouw niet.
+* Corrigeer de inAanbouw plaatsing van een gebouw.
+* Corrigeer de realisering van een gebouw.
+* Corrigeer de nietRealisering van een gebouw.
 
 Gebouweenheid
 
-Plan een gebouweenheid in.
-
-Realiseer een gebouweenheid
-
-Realiseer een gebouweenheid niet.
-
-Corrigeer de realisering van een gebouweenheid.
-
-Corrigeer de niet realisering van een gebouweenheid.
+* Plan een gebouweenheid in.
+* Realiseer een gebouweenheid
+* Realiseer een gebouweenheid niet.
+* Corrigeer de realisering van een gebouweenheid.
+* Corrigeer de niet realisering van een gebouweenheid.
 
 Betekenis van de edit events en velden in de feed
 Een overzicht van alle mogelijke edit events en de betekenis van de attributen onder het blokje <event> vindt u op deze pagina: https://api.basisregisters.staging-vlaanderen.be/v1/info/events?tags=edit.
@@ -89,16 +60,11 @@ De regex die van toepassing is op het busnummer is ^[a-zA-Z0-9]{1,10}$. Bovenop 
 
 Welke combinaties zijn mogelijk bij adrespositie?
 Wanneer de positieGeometrieMethode aangeduidDoorBeheerder wordt meegegeven dan moet de positieSpecificatie 1 van de volgende zaken zijn:
-
-Lot
-
-Perceel
-
-Ingang
-
-Standplaats
-
-Ligplaats
+* Lot
+* Perceel
+* Ingang
+* Standplaats
+* Ligplaats
 
 In dit geval is het ook verplicht om een geldige positie mee te geven bij het adres.
 
