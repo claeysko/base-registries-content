@@ -1,48 +1,52 @@
 **Decentraal beheer**
 
-De edit endpoints maken decentraal beheer mogelijk in het gebouwen- en adressenregister. Deze endpoints worden door de dienstenleveranciers geïmplementeerd in hun software. Zo kunnen vb. straatnamen, adressen, gebouwen en gebouweenheden toegevoegd, verwijderd of aangepast worden. Hieronder kan u per register een lijst vinden van welke beheeracties er allemaal mogelijk zijn.
+De edit endpoints maken decentraal beheer mogelijk in het gebouwen- en adressenregister. Deze endpoints worden door de dienstenleveranciers geïmplementeerd in hun software. Zo kunnen vb. straatnamen, adressen, gebouwen en gebouweenheden toegevoegd, verwijderd of aangepast worden. Hieronder kan u per register een lijst vinden van welke beheeracties er allemaal mogelijk zijn en wie welke beheeractie mag uitvoeren. 
+
+Er zijn 2 soorten rollen mogelijk:
+* Decentrale bijwerker:  Staan in voor het beheer van adressen, gebouwen en enkele correcties. vb. lokale besturen. 
+* Interne bijwerker: Staan in voor de correcties van adressen, gebouwen. vb. GRB of operatoren van Digitaal Vlaanderen. 
 
 Straatnamen
-* Stel een straatnaam voor.
-* Keur een straatnaam goed.
-* Keur een straatnaam af.
-* Hef een straatnaam op.
-* Corrigeer de straatnaam van een straatnaam.
-* Corrigeer de goedkeuring van een straatnaam.
-* Corrigeer de afkeuring van een straatnaam.
-* Corrigeer de opheffing van een straatnaam.
+* Stel een straatnaam voor. (Decentrale bijwerker)
+* Keur een straatnaam goed. (Decentrale bijwerker)
+* Keur een straatnaam af. (Decentrale bijwerker)
+* Hef een straatnaam op. (Decentrale bijwerker)
+* Corrigeer de straatnaam van een straatnaam. (Decentrale bijwerker)
+* Corrigeer de goedkeuring van een straatnaam. (Interne bijwerker)
+* Corrigeer de afkeuring van een straatnaam. (Interne bijwerker)
+* Corrigeer de opheffing van een straatnaam. (Interne bijwerker)
 
 Adressen
-* Stel een adres voor.
-* Keur een adres goed.
-* Keur een adres af.
-* Hef een adres op.
-* Regulariseer een adres.
-* Deregulariseer een adres.
-* Corrigeer de adrespositie van een adres.
-* Corrigeer de postcode van een adres.
-* Corrigeer het huisnummer van een adres.
-* Corrigeer het busnummer van een adres.
-* Corrigeer de goedkeuring van een adres.
-* Corrigeer de afkeuring van een adres.
-* Corrigeer de opheffing van een adres.
-* Wijzig de postcode van een adres.
+* Stel een adres voor. (Decentrale bijwerker)
+* Keur een adres goed. (Decentrale bijwerker)
+* Keur een adres af. (Decentrale bijwerker)
+* Hef een adres op. (Decentrale bijwerker)
+* Regulariseer een adres. (Decentrale bijwerker)
+* Deregulariseer een adres. (Decentrale bijwerker)
+* Corrigeer de adrespositie van een adres. (Decentrale bijwerker)
+* Corrigeer de postcode van een adres. (Decentrale bijwerker)
+* Corrigeer het huisnummer van een adres. (Decentrale bijwerker)
+* Corrigeer het busnummer van een adres. (Decentrale bijwerker)
+* Corrigeer de goedkeuring van een adres. (Decentrale bijwerker)
+* Corrigeer de afkeuring van een adres. (Decentrale bijwerker)
+* Corrigeer de opheffing van een adres. (Decentrale bijwerker)
+* Wijzig de postcode van een adres. (Interne bijwerker)
 
 Gebouwen
-* Plan een gebouw in.
-* Plaats een gebouw in aanbouw.
-* Realiseer een gebouw.
-* Realiseer een gebouw niet.
-* Corrigeer de inAanbouw plaatsing van een gebouw.
-* Corrigeer de realisering van een gebouw.
-* Corrigeer de nietRealisering van een gebouw.
+* Plan een gebouw in. (Decentrale bijwerker)
+* Plaats een gebouw in aanbouw. (Decentrale bijwerker)
+* Realiseer een gebouw. (Decentrale bijwerker)
+* Realiseer een gebouw niet. (Decentrale bijwerker)
+* Corrigeer de inAanbouw plaatsing van een gebouw. (Decentrale bijwerker)
+* Corrigeer de realisering van een gebouw. (Decentrale bijwerker)
+* Corrigeer de nietRealisering van een gebouw. (Decentrale bijwerker)
 
 Gebouweenheid
-* Plan een gebouweenheid in.
-* Realiseer een gebouweenheid
-* Realiseer een gebouweenheid niet.
-* Corrigeer de realisering van een gebouweenheid.
-* Corrigeer de niet realisering van een gebouweenheid.
+* Plan een gebouweenheid in. (Decentrale bijwerker)
+* Realiseer een gebouweenheid (Decentrale bijwerker)
+* Realiseer een gebouweenheid niet. (Decentrale bijwerker)
+* Corrigeer de realisering van een gebouweenheid. (Decentrale bijwerker)
+* Corrigeer de niet realisering van een gebouweenheid. (Decentrale bijwerker)
 
 **Betekenis van de edit events en velden in de feed**
 
