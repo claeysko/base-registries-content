@@ -88,3 +88,17 @@ Er wordt een onderscheid gemaakt tussen correcties en wijzigingen. In het eerste
 vb. Het wijzigen of corrigeren van de postcode van een adres.
 
 Hiervoor zijn 2 aparte API’s gemaakt. De API ‘Corrigeer de postcode van een adres’ mag door elke decentrale beheerder uitgevoerd worden. Dit wordt uitgevoerd als de verkeerde postinfoID van een gemeente aan het adres is gekoppeld. Deze correctie kan alleen maar naar postinfoId’s worden gezet gekoppeld aan deze gemeente. De API ‘Wijzig de postcode van een adres’ is voor interne bijwerkers en wordt bijvooorbeeld op vraag van Bpost uitgevoerd. Bpost wilt dat postbodes een zo optimaal mogelijke route afleggen om deze reden kan het zijn dat adressen van bepaalde gemeenten een andere postinfoId krijgen dan deze die in de gemeente liggen. Deze API laat dit toe, vandaar dat dit niet door iedereen mogelijk is om uit te voeren. 
+
+**Flow statussen**  
+ 
+Straatnaam/adres
+  
+![image](https://user-images.githubusercontent.com/49196256/197179892-fd1f247d-ecbb-4b7e-a50b-6dc8ffcac8c4.png)
+  
+Gebouwen
+  
+![image](https://user-images.githubusercontent.com/49196256/197179935-69c2b201-4c0b-4e58-b01d-a3da77939fbc.png)
+
+Gebouweenheden
+  
+![image](https://user-images.githubusercontent.com/49196256/197179965-0ba75a23-0ee1-42b7-86ad-3e04ab34f890.png)
