@@ -1,1 +1,1 @@
-# Edit endpoints GRAR
+# Gebruik van de edit API's
