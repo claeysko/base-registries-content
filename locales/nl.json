@@ -105,6 +105,10 @@
       }
     ]
   },
+     "editendpointsgrar": {
+    "title": "Gebruik van de edit API's",
+    "Prefix": "Documentatie",
+  },
   "implementationmodel": {
     "title": "Implementatiemodel",
     "Prefix": "Basisregisters Vlaanderen",
