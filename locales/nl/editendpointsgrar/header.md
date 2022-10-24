@@ -1,1 +1,1 @@
-# Gebruik van de edit API's
+# Gebruik van de edit API's van het gebouwen- en adressenregister
