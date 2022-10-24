@@ -100,15 +100,14 @@
     "Prefix": "Basisregisters Vlaanderen",
     "doormatItems": [
       {
-        "title": "Gebruik van de edit API's",
+        "title": "Gebruik van de edit API's van het gebouwen- en adressenregister",
         "url": "/documentatie/editendpointsgrar"
       }
     ]
   },
     "editendpointsgrar": {
     "title": "Gebruik van de edit API's ",
-    "Prefix": "Basisregisters Vlaanderen",
-    "version": "2022-06-30"
+    "Prefix": "Basisregisters Vlaanderen"
   },
   "implementationmodel": {
     "title": "Implementatiemodel",
