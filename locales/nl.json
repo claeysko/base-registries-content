@@ -105,6 +105,11 @@
       }
     ]
   },
+    "editendpointsgrar": {
+    "title": "Gebruik van de edit API's ",
+    "Prefix": "Basisregisters Vlaanderen",
+    "version": "2022-06-30"
+  },
   "implementationmodel": {
     "title": "Implementatiemodel",
     "Prefix": "Basisregisters Vlaanderen",
