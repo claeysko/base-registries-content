@@ -981,7 +981,7 @@
       "ticketingService": {
       "title": "Ticketing",
       "description": "Ticketingsysteem van gebouwen- en adressenregister",
-      "enable": true
+      "enable": false
     }
   }
 }
