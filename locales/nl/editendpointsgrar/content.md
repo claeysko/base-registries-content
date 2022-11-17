@@ -21,6 +21,7 @@ Adressen
 * Keur een adres goed. (Decentrale bijwerker)
 * Keur een adres af. (Decentrale bijwerker)
 * Hef een adres op. (Decentrale bijwerker)
+* Verwijder een adres. (Interne bijwerker)
 * Regulariseer een adres. (Decentrale bijwerker)
 * Deregulariseer een adres. (Decentrale bijwerker)
 * Corrigeer de adrespositie van een adres. (Decentrale bijwerker)
@@ -40,13 +41,20 @@ Gebouwen
 * Corrigeer de inAanbouw plaatsing van een gebouw. (Decentrale bijwerker)
 * Corrigeer de realisering van een gebouw. (Decentrale bijwerker)
 * Corrigeer de nietRealisering van een gebouw. (Decentrale bijwerker)
+* Wijzig de geometrie van een geschetst gebouw. (Decentrale bijkwerker)
 
 Gebouweenheid
 * Plan een gebouweenheid in. (Decentrale bijwerker)
 * Realiseer een gebouweenheid (Decentrale bijwerker)
 * Realiseer een gebouweenheid niet. (Decentrale bijwerker)
+* Hef een gebouweenheid op. (Decentrale bijwerker)
+* Verwijder een gebouweenheid. (Interne bijwerker)
+* Regulariseer een gebouweenheid. (Decentrale bijwerker)
+* Deregulariseer een gebouweenheid. (Decentrale bijwerker)
 * Corrigeer de realisering van een gebouweenheid. (Decentrale bijwerker)
 * Corrigeer de niet realisering van een gebouweenheid. (Decentrale bijwerker)
+* Corrigeer de opheffing van een gebouweenheid. (Decentrale bijwerker)
+* Corrigeer de positie van een gebouweenheid. (Decentrale bijwerker)
 
 **Betekenis van de edit events en velden in de feed**
 
