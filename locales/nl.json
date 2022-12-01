@@ -14,6 +14,10 @@
       "text": "Implementatiemodel",
       "url": "/implementatiemodel"
     },
+    "documentation": {
+      "text": "Documentatie",
+      "url": "/documentatie"
+    },
     "informatie": {
       "text": "Informatie",
       "url": "/informatie"
@@ -66,7 +70,7 @@
     "spotlightItems": [
       {
         "title": "API Documentatie",
-        "subtitle": "Hoe gebruik ik de API's? Leer het hier.",
+        "subtitle": "Hoe werken de API's technisch? Leer het hier.",
         "url": {
           "dev": "https://docs.basisregisters.dev-vlaanderen.be/docs/api-documentation.html#tag/api-documentation.html",
           "stg": "https://docs.basisregisters.staging-vlaanderen.be/docs/api-documentation.html#tag/api-documentation.html",
@@ -74,8 +78,8 @@
         }
       },
       {
-        "title": "Documentatie",
-        "subtitle": "",
+        "title": "Werking basisregisters",
+        "subtitle": "Hoe werken de API's functioneel? Leer het hier",
         "url": "/documentatie"
       },
       {
@@ -95,20 +99,19 @@
       }
     ]
   },
-  "documentation": {
-    "title": "Documentatie",
+   "documentation": {
+    "title": "Werking basisregisters",
     "Prefix": "Basisregisters Vlaanderen",
     "doormatItems": [
       {
-        "title": "Edit endpoints GRAR",
+        "title": "Gebruik van de edit API's van het gebouwen- en adressenregister",
         "url": "/documentatie/editendpointsgrar"
       }
     ]
   },
-  "editendpointsgrar": {
-    "title": "Edit endpoints GRAR",
-    "Prefix": "Basisregisters Vlaanderen",
-    "version": "2022-06-30"
+    "editendpointsgrar": {
+    "title": "Gebruik van de edit API's van het gebouwen- en adressenregister",
+    "Prefix": "Basisregisters Vlaanderen"
   },
   "implementationmodel": {
     "title": "Implementatiemodel",
@@ -130,6 +133,48 @@
     "sidebar": {
       "title": "Op deze pagina",
       "urls": []
+    }
+  },
+  "implementationmodelRoadRegistry": {
+    "title": "Wegenregister",
+    "Prefix": "Basisregisters Vlaanderen",
+    "version": "2022-08-30",
+    "sidebar": {
+      "title": "Op deze pagina",
+      "urls": [
+        {
+          "title": "Inleiding",
+          "url": "#introduction"
+        },
+        {
+          "title": "Samenvatting",
+          "url": "#summary"
+        },
+        {
+          "title": "Status van dit document",
+          "url": "#status"
+        },
+        {
+          "title": "Licentie",
+          "url": "#license"
+        },
+        {
+          "title": "Comformiteit",
+          "url": "#comformence"
+        },
+        {
+          "title": "Overzicht",
+          "url": "#overview"
+        },
+        {
+          "title": "JSON-LD Context",
+          "url": "#jsonld"
+        },
+        {
+          "title": "SHACL-LD template",
+          "url": "#shacl"
+        }
+      ]
     }
   },
   "implementationmodelAddressRegistry": {
@@ -978,6 +1023,11 @@
       "title": "Wegen",
       "description": "De Vlaamse wegen.",
       "enable": true
+    },
+      "ticketingService": {
+      "title": "Ticketing",
+      "description": "Ticketingsysteem van gebouwen- en adressenregister",
+      "enable": false
     }
   }
 }
