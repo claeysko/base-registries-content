@@ -912,6 +912,14 @@
       "urls": []
     }
   },
+  "errorDetail": {
+    "title": "Foutmeldingen",
+    "Prefix": "Basisregisters Vlaanderen",
+    "sidebar": {
+      "title": "Op deze pagina",
+      "urls": []
+    }
+  },
   "versions": {
     "title": "Versies",
     "Prefix": "Basisregisters Vlaanderen",
