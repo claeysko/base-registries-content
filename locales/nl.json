@@ -915,6 +915,9 @@
   "errorDetail": {
     "title": "Foutmeldingen",
     "Prefix": "Basisregisters Vlaanderen",
+    "redirect": {
+      "url": "/"
+    },
     "sidebar": {
       "title": "Op deze pagina",
       "urls": []
@@ -1028,5 +1031,5 @@
       "description": "Ticketingsysteem van gebouwen- en adressenregister",
       "enable": false
     }
-  }
+  }  
 }

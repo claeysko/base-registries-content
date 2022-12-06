@@ -1,0 +1,16 @@
+{
+    "knownErrors": [
+        {
+            "id": "401",
+            "title": "401 Unauthorized"
+        },
+        {
+            "id": "403",
+            "title": "403 Forbidden"
+        },
+        {
+            "id": "validatie-13-address-gehistoreerd",
+            "title": "Gehistoreerd busnummer validatie"
+        }
+    ]
+}
