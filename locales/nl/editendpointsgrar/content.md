@@ -70,18 +70,19 @@ De regex die van toepassing is op het busnummer is ^[a-zA-Z0-9]{1,10}$. Bovenop 
 
 **Welke combinaties zijn mogelijk bij adrespositie?**
 
-Wanneer de positieGeometrieMethode aangeduidDoorBeheerder wordt meegegeven dan moet de positieSpecificatie 1 van de volgende zaken zijn:
+In de edit endpoints ‘Stel een adres voor’ en ‘Corrigeer de adrespositie van een adres’ zijn de parameters positieGeometrieMethode, positieSpecificatie en positie verplicht. 
+
+De parameter positieGeometrieMethode kan de waarde aangeduidDoorBeheerder of afgeleidVanObjrect bevatten. Wanneer positieGeometrieMethode aangeduidDoorBeheerder wordt gekozen dan zijn volgende waarden mogelijk bij de parameter positieSpecificatie:
 * Lot
 * Perceel
 * Ingang
 * Standplaats
 * Ligplaats
+* Gebouweenheid
 
-In dit geval is het ook verplicht om een geldige positie mee te geven bij het adres.
-
-Wanneer de positieGeometrieMethode afgeleidVanObject wordt meegegeven dan moet de positieSpecificatie gemeente zijn of kan deze leeg worden gelaten. Wanneer positieSpecificatie leeg wordt geladen, wordt er achterliggend voor positieSpecificatie gemeente gekozen. Een positie kan worden meegegeven, maar deze gaat altijd overschreden worden met de centroïde van de gemeente waarbinnen het adres ligt.
-
-Bij de edit api ‘Stel een adres voor’ is het mogelijk om geen positieGeometrieMethode mee te geven. In dit geval gaat er automatisch gekozen worden voor positieGeometrieMethode afgeleidVanObject.
+Wanneer positieGeometrieMethode afgeleidVanObject wordt gekozen dan zijn volgende waarden mogelijk bij de parameter positieSpecificatie:
+* Perceel
+* Gebouweenheid
 
 **Functie van een gebouweenheid: nietGekend of gemeenschappelijkDeel**
 
