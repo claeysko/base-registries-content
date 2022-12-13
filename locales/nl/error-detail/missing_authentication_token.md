@@ -1,4 +1,4 @@
-## Error 403: Forbidden
+## Error 403: Missing Authentication Token
 
 ### Er heeft zich een fout voorgedaan!
 

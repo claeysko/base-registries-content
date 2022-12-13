@@ -1,7 +1,0 @@
-{
-    "type": "urn:be.vlaanderen.basisregisters.api:val-13-busnummer",
-    "title": "400 Bad Request: Validatie 13",
-    "detail": "Bij gehistoreerde gebouwen mogen er geen busnummer verwijderd worden!",
-    "status": "400",
-    "instance": "https://api.basisregisters.vlaanderen.be/v1/foutmeldingen/validatie-13-address-gehistoreerd"
-  }
