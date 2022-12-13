@@ -93,10 +93,7 @@
   "documentation": {
     "title": "Werking basisregisters",
     "Prefix": "Basisregisters Vlaanderen",
-    "doormatItems": [
-      {
-
-    ]
+    "doormatItems": []
   },
   "editendpointsgrar": {
     "title": "Gebruik van de edit API's van het gebouwen- en adressenregister",
