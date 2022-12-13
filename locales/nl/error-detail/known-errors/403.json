@@ -3,5 +3,5 @@
     "title": "Er heeft zich een fout voorgedaan!",
     "detail": "U beschikt niet over de correcte rechten.",
     "status": "403",
-    "instance": "https://api.basisregisters.vlaanderen.be/v1/foutmeldingen/missing_authentication_token"
-}
+    "instance": "https://api.basisregisters.vlaanderen.be/v1/foutmeldingen/403"
+  }
