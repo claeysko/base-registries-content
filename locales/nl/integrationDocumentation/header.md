@@ -1,1 +1,1 @@
-# Integratie documentatie basisregisters
+# Integratiedocumentatie basisregisters
