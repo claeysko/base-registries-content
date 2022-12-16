@@ -23,7 +23,7 @@
       "url": "/informatie"
     },
     "integrationDocumentation": {
-      "text": "Integratie Documentatie",
+      "text": "Integratiedocumentatie",
       "url": "/integratie-documentatie"
     }
   },
@@ -445,18 +445,18 @@
     }
   },
   "integrationDocumentation": {
-    "title": "Integratie Handleiding",
+    "title": "Integratiedocumentatie",
     "Prefix": "Basisregisters Vlaanderen",
     "doormatItems": [
       {
-        "title": "GRAR",
-        "text": "Gebouwen & Addressen Register",
+        "title": "Integratiedocumentatie van het gebouwen- en adressenregister",
+        "text": "Een overzicht van de verschillende integratiemogelijkheden met het gebouwen- en adressenregister",
         "url": "/integratie-documentatie/grar",
         "hide": false
       },
       {
-        "title": "WR",
-        "text": "Wegen register",
+        "title": "Integratiedocumentatie van het wegenregister",
+        "text": "Een overzicht van de verschillende integratiemogelijkheden met het gebouwen- en adressenregister",
         "url": "/integratie-documentatie/wr",
         "hide": true
       }
@@ -467,7 +467,7 @@
     }
   },
   "integrationDocumentationGrar": {
-    "title": "Integratie Handleiding GRAR",
+    "title": "Integratiedocumentatie van het gebouwen- en adressenregister",
     "Prefix": "Basisregisters Vlaanderen",
     "sidebar": {
       "title": "Op deze pagina",
@@ -512,7 +512,7 @@
     }
   },
   "integrationDocumentationWr": {
-    "title": "Integratie Handleiding WR",
+    "title": "Integratiedocumentatie van het wegenregister",
     "Prefix": "Basisregisters Vlaanderen",
     "sidebar": {
       "title": "Op deze pagina",
