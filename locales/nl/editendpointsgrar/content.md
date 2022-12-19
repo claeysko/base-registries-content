@@ -56,6 +56,10 @@ Gebouweenheid
 * Corrigeer de opheffing van een gebouweenheid. (Decentrale bijwerker)
 * Corrigeer de positie van een gebouweenheid. (Decentrale bijwerker)
 
+Percelen
+* Koppel een adres aan een perceel (Decentrale bijwerker)
+* Ontkoppel een adres van een perceel (Decentrale bijwerker)
+
 **Betekenis van de edit events en velden in de feed**
 
 Een overzicht van alle mogelijke edit events en de betekenis van de attributen onder het blokje <event> vindt u op deze pagina: https://api.basisregisters.staging-vlaanderen.be/v1/info/events?tags=edit.
