@@ -55,10 +55,12 @@ Gebouweenheid
 * Corrigeer de niet realisering van een gebouweenheid. (Decentrale bijwerker)
 * Corrigeer de opheffing van een gebouweenheid. (Decentrale bijwerker)
 * Corrigeer de positie van een gebouweenheid. (Decentrale bijwerker)
+* Koppel een adres aan een gebouweenheid. (Decentrale bijwerker)
+* Ontkoppel een adres van een gebouweenheid. (Decentrale bijwerker)
 
 Percelen
-* Koppel een adres aan een perceel (Decentrale bijwerker)
-* Ontkoppel een adres van een perceel (Decentrale bijwerker)
+* Koppel een adres aan een perceel. (Decentrale bijwerker)
+* Ontkoppel een adres van een perceel. (Decentrale bijwerker)
 
 **Betekenis van de edit events en velden in de feed**
 
