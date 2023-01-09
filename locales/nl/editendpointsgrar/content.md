@@ -121,3 +121,7 @@ Gebouwen
 Gebouweenheden
   
 ![image](https://user-images.githubusercontent.com/49196256/197179965-0ba75a23-0ee1-42b7-86ad-3e04ab34f890.png)
+ 
+ Percelen
+ ![image](https://user-images.githubusercontent.com/49196256/211315191-f58977a6-66e2-4cc8-86f9-8139da3b4299.png)
+
