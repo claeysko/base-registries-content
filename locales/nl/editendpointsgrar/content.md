@@ -42,6 +42,7 @@ Gebouwen
 * Corrigeer de realisering van een gebouw. (Decentrale bijwerker)
 * Corrigeer de nietRealisering van een gebouw. (Decentrale bijwerker)
 * Wijzig de geometrie van een geschetst gebouw. (Decentrale bijkwerker)
+* Verwijder een geschetst gebouw. (Interne bijwerker)
 
 Gebouweenheid
 * Plan een gebouweenheid in. (Decentrale bijwerker)
