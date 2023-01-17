@@ -31,6 +31,8 @@ Adressen
 * Corrigeer de goedkeuring van een adres. (Decentrale bijwerker)
 * Corrigeer de afkeuring van een adres. (Decentrale bijwerker)
 * Corrigeer de opheffing van een adres. (Decentrale bijwerker)
+* Corrigeer de regularisatie van een adres. (Decentrale bijwerker)
+* Corrigeer de deregularisatie van een adres. (Decentrale bijwerker)
 * Wijzig de postcode van een adres. (Interne bijwerker)
 
 Gebouwen
@@ -38,11 +40,11 @@ Gebouwen
 * Plaats een gebouw in aanbouw. (Decentrale bijwerker)
 * Realiseer een gebouw. (Decentrale bijwerker)
 * Realiseer een gebouw niet. (Decentrale bijwerker)
+* Verwijder een geschetst gebouw. (Interne bijwerker)
 * Corrigeer de inAanbouw plaatsing van een gebouw. (Decentrale bijwerker)
 * Corrigeer de realisering van een gebouw. (Decentrale bijwerker)
 * Corrigeer de nietRealisering van een gebouw. (Decentrale bijwerker)
 * Wijzig de geometrie van een geschetst gebouw. (Decentrale bijkwerker)
-* Verwijder een geschetst gebouw. (Interne bijwerker)
 
 Gebouweenheid
 * Plan een gebouweenheid in. (Decentrale bijwerker)
@@ -56,6 +58,8 @@ Gebouweenheid
 * Corrigeer de niet realisering van een gebouweenheid. (Decentrale bijwerker)
 * Corrigeer de opheffing van een gebouweenheid. (Decentrale bijwerker)
 * Corrigeer de positie van een gebouweenheid. (Decentrale bijwerker)
+* Corrigeer de regularisatie van een gebouweenheid. (Decentrale bijwerker)
+* Corrigeer de deregularisatie van een gebouweenheid. (Decentrale bijwerker)
 * Koppel een adres aan een gebouweenheid. (Decentrale bijwerker)
 * Ontkoppel een adres van een gebouweenheid. (Decentrale bijwerker)
 
