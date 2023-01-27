@@ -49,7 +49,7 @@ Gebouwen
 Gebouweenheid
 * Plan een gebouweenheid in. (Decentrale bijwerker, Omgeving)
 * Realiseer een gebouweenheid (Decentrale bijwerker, Omgeving)
-* Realiseer een gebouweenheid niet. (Decentrale bijwerker)
+* Realiseer een gebouweenheid niet. (Decentrale bijwerker, Omgeving)
 * Hef een gebouweenheid op. (Decentrale bijwerker, Omgeving)
 * Verwijder een gebouweenheid. (Interne bijwerker)
 * Regulariseer een gebouweenheid. (Decentrale bijwerker, Omgeving)
