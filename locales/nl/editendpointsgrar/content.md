@@ -40,7 +40,7 @@ Gebouwen
 * Plaats een gebouw in aanbouw. (Decentrale bijwerker, Omgeving)
 * Realiseer een gebouw. (Decentrale bijwerker, Omgeving)
 * Realiseer een gebouw niet. (Decentrale bijwerker, Omgeving)
-* Verwijder een geschetst gebouw. (Interne bijwerker, Omgeving)
+* Verwijder een geschetst gebouw. (Interne bijwerker)
 * Corrigeer de inAanbouw plaatsing van een gebouw. (Decentrale bijwerker)
 * Corrigeer de realisering van een gebouw. (Decentrale bijwerker)
 * Corrigeer de nietRealisering van een gebouw. (Decentrale bijwerker)
