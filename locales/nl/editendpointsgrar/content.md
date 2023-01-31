@@ -1,10 +1,13 @@
 **Decentraal beheer**
 
-De edit endpoints maken decentraal beheer mogelijk in het gebouwen- en adressenregister. Deze endpoints worden door de dienstenleveranciers geïmplementeerd in hun software. Zo kunnen vb. straatnamen, adressen, gebouwen en gebouweenheden toegevoegd, verwijderd of aangepast worden. Hieronder kan u per register een lijst vinden van welke beheeracties er allemaal mogelijk zijn en wie welke beheeractie mag uitvoeren. 
+De edit endpoints maken decentraal beheer mogelijk in het gebouwen- en adressenregister. Deze endpoints worden door de dienstenleveranciers geïmplementeerd in hun software. Zo kunnen vb. straatnamen, adressen, gebouwen, gebouweenheden en percelen toegevoegd, verwijderd of aangepast worden. 
 
-Er zijn 2 soorten rollen mogelijk:
-* Decentrale bijwerker:  Staan in voor het beheer van adressen, gebouwen en enkele correcties. vb. lokale besturen. 
-* Interne bijwerker: Staan in voor de correcties van adressen, gebouwen. vb. GRB of operatoren van Digitaal Vlaanderen. 
+Niet alle edit endpoints mogen door iedereen uitgevoerd worden, daarom werden er een aantal rollen opgesteld. Elke rol heeft zijn eigen specifieke eigenschappen.  
+
+* Decentrale bijwerker: De decentrale bijwerker staat in voor het beheer van adressen, ingeschetste gebouwen en enkele correcties. vb. lokale besturen. 
+* Interne bijwerker: De interne bijwerker staat in voor de verwijdering en correcties van straatnamen, adressen, ingeschetste gebouwen en gebouweenheden. De interne bijwerker kan ook uitvoeren wat een decentrale bijwerker kan. vb. operatoren van Digitaal Vlaanderen.
+
+Hieronder kan per register een lijst gevonden worden van welke beheeracties er allemaal mogelijk zijn en welke rol welke beheeractie mag uitvoeren.
 
 Straatnamen
 * Stel een straatnaam voor. (Decentrale bijwerker)
@@ -131,3 +134,4 @@ Gebouweenheden
  
  ![image](https://user-images.githubusercontent.com/49196256/211315191-f58977a6-66e2-4cc8-86f9-8139da3b4299.png)
 
+Heeft u het recht om deze edit endpoints te implementeren, maar nog geen toegang? Vul dan [dit formulier](https://vlaamseoverheid.atlassian.net/servicedesk/customer/portal/14/group/147) in en dit wordt samen met u verder bekeken.
