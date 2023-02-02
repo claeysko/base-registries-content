@@ -133,5 +133,3 @@ Gebouweenheden
  Percelen
  
  ![image](https://user-images.githubusercontent.com/49196256/211315191-f58977a6-66e2-4cc8-86f9-8139da3b4299.png)
-
-Heeft u het recht om deze edit endpoints te implementeren, maar nog geen toegang? Vul dan [dit formulier](https://vlaamseoverheid.atlassian.net/servicedesk/customer/portal/14/group/147) in en dit wordt samen met u verder bekeken.
