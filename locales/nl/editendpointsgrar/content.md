@@ -15,6 +15,7 @@ Straatnamen
 * Keur een straatnaam af. (Decentrale bijwerker)
 * Hef een straatnaam op. (Decentrale bijwerker)
 * Corrigeer de straatnaam van een straatnaam. (Decentrale bijwerker)
+* Corrigeer de homoniemtoevoeging van een straatnaam. (Interne bijwerker)
 * Corrigeer de goedkeuring van een straatnaam. (Interne bijwerker)
 * Corrigeer de afkeuring van een straatnaam. (Interne bijwerker)
 * Corrigeer de opheffing van een straatnaam. (Interne bijwerker)
