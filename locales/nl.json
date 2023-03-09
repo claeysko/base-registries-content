@@ -11,7 +11,7 @@
       "url": "/documentatie"
     },
     "apikey": {
-      "text": "Apikey",
+      "text": "API key",
       "url": "/apikey"
     },
     "implementationmodel": {
@@ -96,7 +96,7 @@
       },
       {
         "title": "API key",
-        "subtitle": "Wat is een API key? Leer het hier.",
+        "subtitle": "Hoe te gebruiken & aan te vragen? Leer het hier.",
         "url": "/apikey",
         "hide": false
       },
