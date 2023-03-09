@@ -94,6 +94,12 @@
         "url": "/implementatiemodel",
         "hide": false
       },
+       {
+        "title": "API keys",
+        "subtitle": "Hoe API key gebruiken & aanvragen? Leer het hier.",
+        "url": "/apikey",
+        "hide": false
+      },
       {
         "title": "Release Notes",
         "subtitle": "Documentatie bij huidige en vorige releases.",
@@ -119,7 +125,7 @@
       },
       {
         "title": "Flow statussen gebouwen- en adressenregister",
-        "url": "/documentatie/statusflowgrar"
+        "url": "/documentatie/statusflowgrar",
         "hide": false
       }
     ]
