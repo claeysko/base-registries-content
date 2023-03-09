@@ -85,7 +85,8 @@
       {
         "title": "Werking basisregisters",
         "subtitle": "Hoe werken de API's functioneel? Leer het hier",
-        "url": "/documentatie"
+        "url": "/documentatie",
+        "hide": false
       },
       {
         "title": "Implementatiemodel",
