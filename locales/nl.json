@@ -95,12 +95,6 @@
         "hide": false
       },
       {
-        "title": "API key",
-        "subtitle": "Hoe te gebruiken & aan te vragen? Leer het hier.",
-        "url": "/apikey",
-        "hide": false
-      },
-      {
         "title": "Release Notes",
         "subtitle": "Documentatie bij huidige en vorige releases.",
         "url": "/release-notes",
