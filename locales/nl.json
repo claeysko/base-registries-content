@@ -102,11 +102,27 @@
       {
         "title": "Gebruik van de edit API's van het gebouwen- en adressenregister",
         "url": "/documentatie/editendpointsgrar"
+      },
+      {
+        "title": "Status flow API's van het gebouwen- en adressenregister",
+        "url": "/documentatie/statusflowgrar"
+      },
+      {
+        "title": "Apikey",
+        "url": "/documentatie/apikey"
       }
     ]
   },
   "editendpointsgrar": {
     "title": "Gebruik van de edit API's van het gebouwen- en adressenregister",
+    "Prefix": "Basisregisters Vlaanderen"
+  },
+  "statusflowgrar": {
+    "title": "Status flow API's van het gebouwen- en adressenregister",
+    "Prefix": "Basisregisters Vlaanderen"
+  },
+  "Apikey": {
+    "title": "Apikey",
     "Prefix": "Basisregisters Vlaanderen"
   },
   "implementationmodel": {
