@@ -94,6 +94,7 @@
         "url": "/implementatiemodel",
         "hide": false
       },
+      {
         "title": "API key",
         "subtitle": "Wat is een API key? Leer het hier.",
         "url": "/apikey",
