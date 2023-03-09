@@ -10,6 +10,10 @@
       "text": "Documentatie",
       "url": "/documentatie"
     },
+    "apikey": {
+      "text": "Apikey",
+      "url": "/apikey"
+    },
     "implementationmodel": {
       "text": "Implementatiemodel",
       "url": "/implementatiemodel"
@@ -109,10 +113,6 @@
       {
         "title": "Status flow API's van het gebouwen- en adressenregister",
         "url": "/documentatie/statusflowgrar"
-      },
-      {
-        "title": "Apikey",
-        "url": "/documentatie/apikey"
       }
     ]
   },
@@ -124,7 +124,7 @@
     "title": "Status flow API's van het gebouwen- en adressenregister",
     "Prefix": "Basisregisters Vlaanderen"
   },
-  "Apikey": {
+  "apikey": {
     "title": "Apikey",
     "Prefix": "Basisregisters Vlaanderen"
   },
