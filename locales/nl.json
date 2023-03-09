@@ -83,6 +83,11 @@
         "hide": false
       },
       {
+        "title": "Werking basisregisters",
+        "subtitle": "Hoe werken de API's functioneel? Leer het hier",
+        "url": "/documentatie"
+      },
+      {
         "title": "Implementatiemodel",
         "subtitle": "De specificatie voor gegevensuitwisseling",
         "url": "/implementatiemodel",
