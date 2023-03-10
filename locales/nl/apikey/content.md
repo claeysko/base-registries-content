@@ -4,7 +4,7 @@ De read endpoints zijn anoniem raadpleegbaar. Er is echter een beperking aanwezi
 
 Voor de feed endpoints is het verplicht om een API key mee te geven. Als u dit niet doet, krijgt u een errormelding 401 als response terug.
 
-Om dus optimaal gebruik te maken van de endpoints vraagt u best een API key aan. Dit kan door uw gegevens in volgende link achter te laten: [Vraag hier uw API key aan.] [1]
+Om dus optimaal gebruik te maken van de endpoints vraagt u best een API key aan. Dit kan door uw gegevens in volgende link achter te laten: [Vraag hier uw API key aan.][1]
 
 U kan deze API key op 2 manieren meegeven:
 * Via de header x-api-key.
