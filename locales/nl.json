@@ -75,17 +75,22 @@
       },
       {
         "title": "Implementatiemodel",
-        "subtitle": "De specificatie voor gegevensuitwisseling",
+        "subtitle": "De specificatie voor gegevensuitwisseling.",
         "url": "/implementatiemodel"
       },
+       {
+        "title": "API keys",
+        "subtitle": "Hoe API key gebruiken & aanvragen? Leer het hier.",
+        "url": "/apikey"
+      },     
       {
         "title": "Release Notes",
-        "subtitle": "Documentatie bij huidige en vorige releases",
+        "subtitle": "Documentatie bij huidige en vorige releases.",
         "url": "/release-notes"
       },
       {
         "title": "Versies",
-        "subtitle": "Een overzicht van de huidige versies",
+        "subtitle": "Een overzicht van de huidige versies.",
         "url": "/versies"
       }
     ]
@@ -105,7 +110,7 @@
     "Prefix": "Basisregisters Vlaanderen"
   },
   "Apikey": {
-    "title": "Apikey",
+    "title": "API key",
     "Prefix": "Basisregisters Vlaanderen"
   },
   "implementationmodel": {
