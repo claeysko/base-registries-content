@@ -79,27 +79,27 @@
       },
       {
         "title": "Werking basisregisters",
-        "subtitle": "Hoe werken de API's functioneel? Leer het hier",
+        "subtitle": "Hoe werken de API's functioneel? Leer het hier.",
         "url": "/documentatie"
       },
       {
-        "title": "Apikey",
-        "subtitle": "Aanvraag Apikey? Leer het hier",
+        "title": "API keys",
+        "subtitle": "Hoe API key gebruiken & aanvraagen? Leer het hier.",
         "url": "/apikey"
       },       
       {
         "title": "Implementatiemodel",
-        "subtitle": "De specificatie voor gegevensuitwisseling",
+        "subtitle": "De specificatie voor gegevensuitwisseling.",
         "url": "/implementatiemodel"
       },
       {
         "title": "Release Notes",
-        "subtitle": "Documentatie bij huidige en vorige releases",
+        "subtitle": "Documentatie bij huidige en vorige releases.",
         "url": "/release-notes"
       },
       {
         "title": "Versies",
-        "subtitle": "Een overzicht van de huidige versies",
+        "subtitle": "Een overzicht van de huidige versies.",
         "url": "/versies"
       }
     ]
@@ -113,7 +113,7 @@
         "url": "/documentatie/editendpointsgrar"
       },
       {
-        "title": "Status flow API's van het gebouwen- en adressenregister",
+        "title": "Flow statussen gebouwen- en adressenregister",
         "url": "/documentatie/statusflowgrar"
       }
     ]
@@ -123,11 +123,11 @@
     "Prefix": "Basisregisters Vlaanderen"
   },
   "statusflowgrar": {
-    "title": "Status flow API's van het gebouwen- en adressenregister",
+    "title": "Flow statussen gebouwen- en adressenregister",
     "Prefix": "Basisregisters Vlaanderen"
   },
   "apikey": {
-    "title": "Apikey",
+    "title": "API key",
     "Prefix": "Basisregisters Vlaanderen"
   },
   "implementationmodel": {
