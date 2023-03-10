@@ -82,16 +82,16 @@
         "subtitle": "Hoe werken de API's functioneel? Leer het hier.",
         "url": "/documentatie"
       },
+        {
+        "title": "Implementatiemodel",
+        "subtitle": "De specificatie voor gegevensuitwisseling.",
+        "url": "/implementatiemodel"
+      },
       {
         "title": "API keys",
         "subtitle": "Hoe API key gebruiken & aanvraagen? Leer het hier.",
         "url": "/apikey"
       },       
-      {
-        "title": "Implementatiemodel",
-        "subtitle": "De specificatie voor gegevensuitwisseling.",
-        "url": "/implementatiemodel"
-      },
       {
         "title": "Release Notes",
         "subtitle": "Documentatie bij huidige en vorige releases.",
