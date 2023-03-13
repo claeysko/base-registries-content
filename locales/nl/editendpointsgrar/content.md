@@ -125,7 +125,7 @@ Adressen
 
 Gebouwen
  
-![image](https://user-images.githubusercontent.com/49196256/224639158-72fca70d-07c9-4ca2-a8aa-748d76ca7957.png)
+![image](https://user-images.githubusercontent.com/49196256/224642440-2fbda61d-b8b3-4384-8527-4e2e005ef3b3.png)
 
 Gebouweenheden
   
