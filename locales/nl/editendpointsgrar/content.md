@@ -124,8 +124,8 @@ Adressen
 ![image](https://user-images.githubusercontent.com/49196256/197489432-41f09dff-4dda-4ca3-86ab-348245b64169.png)
 
 Gebouwen
-  
-![image](https://user-images.githubusercontent.com/49196256/197179935-69c2b201-4c0b-4e58-b01d-a3da77939fbc.png)
+ 
+![image](https://user-images.githubusercontent.com/49196256/224639158-72fca70d-07c9-4ca2-a8aa-748d76ca7957.png)
 
 Gebouweenheden
   
