@@ -8,7 +8,7 @@ Adressen
 
 Gebouwen
   
-![image](https://user-images.githubusercontent.com/49196256/197179935-69c2b201-4c0b-4e58-b01d-a3da77939fbc.png)
+![image](https://user-images.githubusercontent.com/49196256/224642440-2fbda61d-b8b3-4384-8527-4e2e005ef3b3.png)
 
 Gebouweenheden
   
