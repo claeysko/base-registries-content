@@ -10,6 +10,10 @@
       "text": "Documentatie",
       "url": "/documentatie"
     },
+    "validations": {
+      "text": "Validaties",
+      "url": "/documentatie/editendpointsgrar/validaties"
+    },
     "apikey": {
       "text": "Apikey",
       "url": "/apikey"
@@ -120,6 +124,10 @@
   },
   "editendpointsgrar": {
     "title": "Gebruik van de edit API's van het gebouwen- en adressenregister",
+    "Prefix": "Basisregisters Vlaanderen"
+  },
+  "validations": {
+    "title": "Validaties",
     "Prefix": "Basisregisters Vlaanderen"
   },
   "statusflowgrar": {
