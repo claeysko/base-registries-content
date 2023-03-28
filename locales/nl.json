@@ -10,7 +10,7 @@
       "text": "Documentatie",
       "url": "/documentatie"
     },
-    "validations": {
+    "editvalidations": {
       "text": "Validaties",
       "url": "/documentatie/editendpointsgrar/validaties"
     },
@@ -126,7 +126,7 @@
     "title": "Gebruik van de edit API's van het gebouwen- en adressenregister",
     "Prefix": "Basisregisters Vlaanderen"
   },
-  "validations": {
+  "editvalidations": {
     "title": "Validaties",
     "Prefix": "Basisregisters Vlaanderen"
   },
