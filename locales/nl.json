@@ -124,10 +124,6 @@
   },
   "editendpointsgrar": {
     "title": "Gebruik van de edit API's van het gebouwen- en adressenregister",
-    "Prefix": "Basisregisters Vlaanderen"
-  },
-  "editvalidations": {
-    "title": "Validaties edit API's",
     "Prefix": "Basisregisters Vlaanderen",
     "doormatItems": [
       {
@@ -135,6 +131,10 @@
         "url": "/documentatie/editendpointsgrar/validations"
       }
     ]
+  },
+  "editvalidations": {
+    "title": "Validaties edit API's",
+    "Prefix": "Basisregisters Vlaanderen"
   },
   "statusflowgrar": {
     "title": "Flow statussen gebouwen- en adressenregister",
