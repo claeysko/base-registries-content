@@ -10,9 +10,9 @@
       "text": "Documentatie",
       "url": "/documentatie"
     },
-    "editvalidations": {
-      "text": "Validaties edit API's",
-      "url": "/documentatie/editendpointsgrar/validaties"
+    "editendpointsgrar": {
+      "text": "Gebruik van de edit API's van het gebouwen- en adressenregister",
+      "url": "/documentatie/editendpointsgrar"
     },
     "apikey": {
       "text": "Apikey",
