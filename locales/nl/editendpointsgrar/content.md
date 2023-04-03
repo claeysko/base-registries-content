@@ -117,3 +117,8 @@ Hiervoor zijn 2 aparte API’s gemaakt. De API ‘Corrigeer de postcode van een 
 **Flow statussen**  
  
 Zie https://basisregisters.staging-vlaanderen.be/documentatie/statusflowgrar
+ 
+ **Flow status ticketing service** 
+ 
+ ![image](https://user-images.githubusercontent.com/49196256/229503216-612d1f51-d13a-4cd6-8c1e-25b0498f5400.png)
+
