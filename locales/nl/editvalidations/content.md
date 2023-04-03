@@ -8,6 +8,6 @@
 
 **Percelen**
 
-![image](https://user-images.githubusercontent.com/49196256/229531329-1d690861-8548-489a-8c12-799e090ac3ea.png)
+![image](https://user-images.githubusercontent.com/49196256/229532114-a0a709d3-7fc3-416c-9bfc-ffad9094975b.png)
 
-![image](https://user-images.githubusercontent.com/49196256/229531423-013c34a4-13a6-4759-b96c-2a9b5b638e87.png)
+![image](https://user-images.githubusercontent.com/49196256/229532160-2714a231-5f21-43f5-806f-0a8248f1acf8.png)
