@@ -1,4 +1,13 @@
-![image](https://user-images.githubusercontent.com/49196256/229529821-e3ca6019-c0cf-4f3b-a6a3-76109ca235d4.png)
+**Straatnamen**
 
+**Adressen**
 
-![image](https://user-images.githubusercontent.com/49196256/229529758-94fd7b02-ef06-4134-9e6c-8d29db52f099.png)
+**Gebouwen**
+
+**Gebouweenheden**
+
+**Percelen**
+
+![image](https://user-images.githubusercontent.com/49196256/229531329-1d690861-8548-489a-8c12-799e090ac3ea.png)
+
+![image](https://user-images.githubusercontent.com/49196256/229531423-013c34a4-13a6-4759-b96c-2a9b5b638e87.png)
