@@ -11,7 +11,7 @@
       "url": "/documentatie"
     },
     "editvalidations": {
-      "text": "Validaties",
+      "text": "Validaties edit API's",
       "url": "/documentatie/editendpointsgrar/validaties"
     },
     "apikey": {
@@ -127,7 +127,7 @@
     "Prefix": "Basisregisters Vlaanderen"
   },
   "editvalidations": {
-    "title": "Validaties",
+    "title": "Validaties edit API's",
     "Prefix": "Basisregisters Vlaanderen"
   },
   "statusflowgrar": {
