@@ -128,7 +128,13 @@
   },
   "editvalidations": {
     "title": "Validaties edit API's",
-    "Prefix": "Basisregisters Vlaanderen"
+    "Prefix": "Basisregisters Vlaanderen",
+    "doormatItems": [
+      {
+        "title": "Validaties edit API's",
+        "url": "/documentatie/editendpointsgrar/validations"
+      }
+    ]
   },
   "statusflowgrar": {
     "title": "Flow statussen gebouwen- en adressenregister",
