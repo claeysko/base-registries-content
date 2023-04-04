@@ -1,5 +1,26 @@
 **Straatnamen**
 
+![image](https://user-images.githubusercontent.com/49196256/229767467-330d9490-9f66-477f-b7b4-f3c0b098c858.png)
+
+![image](https://user-images.githubusercontent.com/49196256/229767518-9bd7d0a1-d3b8-47a4-8a40-5398ea9d54ce.png)
+
+![image](https://user-images.githubusercontent.com/49196256/229767568-70866020-c56e-4dc9-90c7-2768d9cb7ae4.png)
+
+![image](https://user-images.githubusercontent.com/49196256/229767623-1a457d0f-09b6-4a69-aa27-45fea308ad80.png)
+
+![image](https://user-images.githubusercontent.com/49196256/229767658-2e4fd820-b2be-4ba4-9a5f-210f0f85ed7b.png)
+
+![image](https://user-images.githubusercontent.com/49196256/229767685-93e3f360-8020-4408-8220-dea62ad6e638.png)
+
+![image](https://user-images.githubusercontent.com/49196256/229767724-010bbb44-0789-4819-8e2b-ab93a728005c.png)
+
+![image](https://user-images.githubusercontent.com/49196256/229767761-962a8a12-9432-4b95-8d41-4970b36d3241.png)
+
+![image](https://user-images.githubusercontent.com/49196256/229767870-18526648-5d15-4a43-9af9-0a058c616473.png)
+
+![image](https://user-images.githubusercontent.com/49196256/229767921-022c1536-6510-4dbf-b194-6a8510f60e98.png)
+
+
 **Adressen**
 
 **Gebouwen**
@@ -20,7 +41,7 @@
 
 ![image](https://user-images.githubusercontent.com/49196256/229736820-811ae927-1cc1-4c43-9840-0e6f8b5b458c.png)
 
-![image](https://user-images.githubusercontent.com/49196256/229737027-7525fbbd-ddb5-463b-a0e0-236969a20597.png)
+![image](https://user-images.githubusercontent.com/49196256/229767223-684beaca-5d8f-4c90-be75-3af8b09bf0e5.png)
 
 
 **Gebouweenheden**
