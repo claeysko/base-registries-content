@@ -4,10 +4,14 @@
 
 **Gebouwen**
 
+![image](https://user-images.githubusercontent.com/49196256/229729126-0e4caee5-21ef-48a9-99c2-78f85477549c.png)
+
+
 **Gebouweenheden**
 
 **Percelen**
 
-![image](https://user-images.githubusercontent.com/49196256/229532114-a0a709d3-7fc3-416c-9bfc-ffad9094975b.png)
+![image](https://user-images.githubusercontent.com/49196256/229729048-ff2bbab3-6d15-493d-85c2-cfc15af3dce9.png)
 
-![image](https://user-images.githubusercontent.com/49196256/229532160-2714a231-5f21-43f5-806f-0a8248f1acf8.png)
+![image](https://user-images.githubusercontent.com/49196256/229729076-d9546995-557e-45ff-a519-e67cd8bcb97b.png)
+
