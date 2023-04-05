@@ -87,6 +87,15 @@
 
 ![image](https://user-images.githubusercontent.com/49196256/230038111-82c50857-62dd-4e20-a83e-67b403235e14.png)
 
+![image](https://user-images.githubusercontent.com/49196256/230092242-3fa3e9f5-4779-40be-a586-7f46b555a1a6.png)
+
+![image](https://user-images.githubusercontent.com/49196256/230092271-d6870725-cf76-44ae-a58e-f408bff82607.png)
+
+![image](https://user-images.githubusercontent.com/49196256/230092313-1ad00f23-e828-4978-8e95-e2bad97c8f2e.png)
+
+![image](https://user-images.githubusercontent.com/49196256/230092377-4ac7575f-c72a-4d32-852f-949e66677e27.png)
+
+
 
 **Percelen**
 
