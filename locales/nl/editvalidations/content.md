@@ -81,6 +81,8 @@
 
 **Gebouweenheden**
 
+![image](https://user-images.githubusercontent.com/49196256/230095814-f3f83299-8f15-41f2-9aa3-c8150cbd8333.png)
+
 ![image](https://user-images.githubusercontent.com/49196256/230037941-6026d6ec-a351-47f3-8df5-2babdd82f1f8.png)
 
 ![image](https://user-images.githubusercontent.com/49196256/230038076-60689839-917e-4fe6-872f-c86345e26788.png)
@@ -103,6 +105,11 @@
 
 ![image](https://user-images.githubusercontent.com/49196256/230093718-a3e3ff5f-f640-45f1-80ef-b119c5907d3b.png)
 
+![image](https://user-images.githubusercontent.com/49196256/230095076-117b84a8-dd71-4aea-abb4-c14467ea31e8.png)
+
+![image](https://user-images.githubusercontent.com/49196256/230095113-12788173-2353-4c37-9ffa-13a92fa1bdf1.png)
+
+![image](https://user-images.githubusercontent.com/49196256/230095151-7841dc88-d9d5-47bc-9587-5354a89f1eca.png)
 
 
 
