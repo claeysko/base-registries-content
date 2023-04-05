@@ -81,6 +81,13 @@
 
 **Gebouweenheden**
 
+![image](https://user-images.githubusercontent.com/49196256/230037941-6026d6ec-a351-47f3-8df5-2babdd82f1f8.png)
+
+![image](https://user-images.githubusercontent.com/49196256/230038076-60689839-917e-4fe6-872f-c86345e26788.png)
+
+![image](https://user-images.githubusercontent.com/49196256/230038111-82c50857-62dd-4e20-a83e-67b403235e14.png)
+
+
 **Percelen**
 
 ![image](https://user-images.githubusercontent.com/49196256/230010591-fa2edaf5-f5b5-4e26-b0ac-c3b9df062d4f.png)
