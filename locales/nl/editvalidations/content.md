@@ -27,21 +27,21 @@
 
 ![image](https://user-images.githubusercontent.com/49196256/229729126-0e4caee5-21ef-48a9-99c2-78f85477549c.png)
 
-![image](https://user-images.githubusercontent.com/49196256/229736228-499ddaab-760e-41c4-b4ba-319e2da223cc.png)
+![image](https://user-images.githubusercontent.com/49196256/230010994-7929fbea-3d57-44cc-b7a2-1836871c06c7.png)
 
-![image](https://user-images.githubusercontent.com/49196256/229736289-f0bbe6b9-069d-42fb-8a12-708475bb742d.png)
+![image](https://user-images.githubusercontent.com/49196256/230011054-e6eec692-f187-4cb2-a669-6219c95ecbf7.png)
 
-![image](https://user-images.githubusercontent.com/49196256/229736350-288f0e5d-42ce-4e3c-9f4a-7599730c18c0.png)
+![image](https://user-images.githubusercontent.com/49196256/230011105-964604fb-a3d0-4418-994a-53ae14611d70.png)
 
-![image](https://user-images.githubusercontent.com/49196256/229736732-8e8e1661-6b16-4b26-8e1e-135747c6b2a7.png)
+![image](https://user-images.githubusercontent.com/49196256/230011876-8fb21edb-b02b-4aa2-8311-cb8658edf870.png)
 
-![image](https://user-images.githubusercontent.com/49196256/229736499-02782760-378e-4c0a-8aea-9c1c091b41cf.png)
+![image](https://user-images.githubusercontent.com/49196256/230011666-9094cc09-84b3-4812-b7c7-e7c0ec4af738.png)
 
-![image](https://user-images.githubusercontent.com/49196256/229736612-cc2067d7-0e3a-4cb9-ac48-7833bb221dae.png)
+![image](https://user-images.githubusercontent.com/49196256/230011724-fd69bf1e-7bbf-41e2-b002-d70900f0cbca.png)
 
 ![image](https://user-images.githubusercontent.com/49196256/229993072-d66ba472-21fe-409a-91e9-0966a4fc30a2.png)
 
-![image](https://user-images.githubusercontent.com/49196256/229767223-684beaca-5d8f-4c90-be75-3af8b09bf0e5.png)
+![image](https://user-images.githubusercontent.com/49196256/230011953-211a64cd-edb6-42cf-acb4-d15bb62caa4f.png)
 
 
 **Gebouweenheden**
