@@ -1,6 +1,6 @@
 Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 
-**Straatnamen**
+## Straatnamen
 
 ![image](https://user-images.githubusercontent.com/49196256/230013500-fd5b276a-e295-4a24-8ff4-4fc8e1e00370.png)
 
@@ -23,7 +23,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 ![image](https://user-images.githubusercontent.com/49196256/230034403-f5f0faf2-f167-4ada-ab64-d019bcf0a947.png)
 
 
-**Adressen**
+## Adressen
 
 ![image](https://user-images.githubusercontent.com/49196256/230035405-5cc4461a-5d55-46fc-aa1c-3c03715b64c8.png)
 
@@ -60,7 +60,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 ![image](https://user-images.githubusercontent.com/49196256/230034840-caacaeb6-83b4-4bf3-a499-183f37da02e9.png)
 
 
-**Gebouwen**
+## Gebouwen
 
 ![image](https://user-images.githubusercontent.com/49196256/229729126-0e4caee5-21ef-48a9-99c2-78f85477549c.png)
 
@@ -81,7 +81,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 ![image](https://user-images.githubusercontent.com/49196256/230011953-211a64cd-edb6-42cf-acb4-d15bb62caa4f.png)
 
 
-**Gebouweenheden**
+## Gebouweenheden
 
 ![image](https://user-images.githubusercontent.com/49196256/230095814-f3f83299-8f15-41f2-9aa3-c8150cbd8333.png)
 
@@ -115,7 +115,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 
 
 
-**Percelen**
+## Percelen
 
 ![image](https://user-images.githubusercontent.com/49196256/230010591-fa2edaf5-f5b5-4e26-b0ac-c3b9df062d4f.png)
 
