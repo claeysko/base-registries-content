@@ -1,3 +1,5 @@
+Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
+
 **Straatnamen**
 
 ![image](https://user-images.githubusercontent.com/49196256/230013500-fd5b276a-e295-4a24-8ff4-4fc8e1e00370.png)
