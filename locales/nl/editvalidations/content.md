@@ -48,7 +48,7 @@
 
 **Percelen**
 
-![image](https://user-images.githubusercontent.com/49196256/230001670-4564f0cc-5e1d-46ec-b3b2-120f5603fc06.png)
+![image](https://user-images.githubusercontent.com/49196256/230010591-fa2edaf5-f5b5-4e26-b0ac-c3b9df062d4f.png)
 
 ![image](https://user-images.githubusercontent.com/49196256/230001694-e6f0f686-4e0f-4f31-95b5-7d11fec3c9f0.png)
 
