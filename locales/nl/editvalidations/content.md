@@ -36,6 +36,19 @@
 
 ![image](https://user-images.githubusercontent.com/49196256/230021831-abdf6aa9-2716-47b2-943d-6163b5c7d3d7.png)
 
+![image](https://user-images.githubusercontent.com/49196256/230023592-e4f5936a-6de8-4948-a806-dcdbfc72dbb5.png)
+
+![image](https://user-images.githubusercontent.com/49196256/230023688-b3aa4e31-3763-4fec-b0fd-5c0cf30a9b89.png)
+
+![image](https://user-images.githubusercontent.com/49196256/230024850-b30397f7-6fff-4c22-887a-abc9a81bade6.png)
+
+![image](https://user-images.githubusercontent.com/49196256/230024886-754e8a12-4e0b-4cff-bd88-ffaf54c1cdf3.png)
+
+![image](https://user-images.githubusercontent.com/49196256/230024911-8812c8ac-2a66-46cd-addb-7c88828b25db.png)
+
+
+
+
 
 **Gebouwen**
 
