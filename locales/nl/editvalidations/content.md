@@ -18,10 +18,7 @@
 
 ![image](https://user-images.githubusercontent.com/49196256/230013267-e7baf9dc-e728-4ea5-98b2-003e54886f0e.png)
 
-![image](https://user-images.githubusercontent.com/49196256/230031892-0d8da626-b156-4b79-98f2-0769963b22c8.png)
-
-![image](https://user-images.githubusercontent.com/49196256/230031962-933834af-6bdf-4d37-a312-8f8ed04c27e7.png)
-
+![image](https://user-images.githubusercontent.com/49196256/230034403-f5f0faf2-f167-4ada-ab64-d019bcf0a947.png)
 
 
 
@@ -57,10 +54,7 @@
 
 ![image](https://user-images.githubusercontent.com/49196256/230033308-d14eca70-ae00-468d-bdc2-d399cfc0291b.png)
 
-![image](https://user-images.githubusercontent.com/49196256/230033328-7214d7bb-a1ff-476c-8345-e89cf2a3c622.png)
-
-
-
+![image](https://user-images.githubusercontent.com/49196256/230034840-caacaeb6-83b4-4bf3-a499-183f37da02e9.png)
 
 
 **Gebouwen**
