@@ -83,6 +83,10 @@ Als er een nieuw voorgesteld adres wordt ingevoerd dan moet het huisnummer en ev
 De regex die van toepassing is op het huisnummer is ^[1-9] ([0-9]{0,8}([A-H]|[K-N]|[P]|[R-T]|[V-Z]){0,1}|[0-9]{0,9})$. Dit wilt zeggen dat huisnummers 45, 2C of 7563M zullen aanvaard worden, maar huisnummers 045, 2I, 5BIS of 4a niet aanvaard zullen worden.
 
 De regex die van toepassing is op het busnummer is ^[a-zA-Z0-9]{1,10}$. Bovenop deze regex wordt het woord bus, Bus of BUS ook niet aanvaard. Dit wilt zeggen dat busnummers 1, 001 of 5C aanvaard zullen worden, maar busnummers 0, Bus 1 of 1-A niet aanvaard zullen worden.
+ 
+## Unieke straatnaam, homoniemtoevoeging, huisnummer of busnummer, hoe uniek is dit?
+ 
+Als er een straatnaam, homoniemtoevoeging, huisnummer of busnummer wordt ingevoerd dan wordt er achterliggend gekeken of deze al bestaan in een bepaalde gemeente of straatnaam. Dit wordt gedaan zodat er geen 2 dezelfde straatnamen, homoniemtoevoegingen, huisnummers of busnummers met status 'voorgesteld' of 'inGebruik' aanwezig zijn binnen deze gemeente of straatnaam. Ook werd ervoor gezorgd dat deze vergelijking niet hoofdlettergevoelig is. Het is namelijk niet mogelijk om een straatnaam met hoofdletters mee te geven en wat later diezelfde straatnaam zonder hoofdletters. vb. 'Straatnaam' en 'straatnaam' zal niet mogelijk zijn.
 
 ## Welke combinaties zijn mogelijk bij adrespositie?
 
