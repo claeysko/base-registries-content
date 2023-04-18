@@ -77,6 +77,11 @@
           "prd": "https://docs.basisregisters.vlaanderen.be/docs/api-documentation.html#tag/api-documentation.html"
         }
       },
+       {
+        "title": "Werking basisregisters",
+        "subtitle": "Hoe werken de API's functioneel? Leer het hier.",
+        "url": "/documentatie"
+      },
       {
         "title": "Implementatiemodel",
         "subtitle": "De specificatie voor gegevensuitwisseling.",
