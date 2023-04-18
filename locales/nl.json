@@ -108,6 +108,10 @@
     "title": "Werking basisregisters",
     "Prefix": "Basisregisters Vlaanderen",
     "doormatItems": [
+      {
+        "title": "Flow statussen gebouwen- en adressenregister",
+        "url": "/documentatie/statusflowgrar"
+      }
     ]
   },
   "editendpointsgrar": {
