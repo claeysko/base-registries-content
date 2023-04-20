@@ -1036,6 +1036,16 @@
       "description": "De basisregisters Vlaanderen website.",
       "enable": true
     },
+      "parcelRegistryBackOffice": {
+      "title": "Percelen edit API",
+      "description": "De edit API van de Vlaamse percelen op v2.",
+      "enable": false
+    },
+    "buildingRegistryBackOffice": {
+      "title": "Gebouwen edit API",
+      "description": "De edit API van de Vlaamse gebouwen op v2.",
+      "enable": false
+    },
     "roadRegistry": {
       "title": "Wegen",
       "description": "De Vlaamse wegen.",
