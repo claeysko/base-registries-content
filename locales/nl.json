@@ -1041,9 +1041,9 @@
       "description": "De edit API van de Vlaamse percelen op v2.",
       "enable": false
     },
-    "buildingRegistryBackOffice": {
-      "title": "Gebouwen edit API",
-      "description": "De edit API van de Vlaamse gebouwen op v2.",
+      "buildingRegistryGrb": {
+      "title": "Gebouwen GRB edit API",
+      "description": "De edit API van GRB voor de Vlaamse gebouwen op v2.",
       "enable": false
     },
     "roadRegistry": {
