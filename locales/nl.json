@@ -1163,7 +1163,7 @@
       "description": "De edit API van de Vlaamse straatnamen op v2.",
       "enable": false
     },
-      "buildingRegistryGRB": {
+      "buildingRegistryGrb": {
       "title": "Gebouwen GRB edit API",
       "description": "De edit API van GRB voor de Vlaamse gebouwen op v2.",
       "enable": false
