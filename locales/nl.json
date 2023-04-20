@@ -971,6 +971,16 @@
       "description": "De Vlaamse gebouwen en gebouweenheden op v2.",
       "enable": true
     },
+      "buildingRegistryBackOffice": {
+      "title": "Gebouwen edit API",
+      "description": "De edit API van de Vlaamse gebouwen op v2.",
+      "enable": false
+    },
+      "buildingRegistryGrb": {
+      "title": "Gebouwen GRB edit API",
+      "description": "De edit API van GRB voor de Vlaamse gebouwen op v2.",
+      "enable": false
+    },
     "municipalityRegistry": {
       "title": "Gemeenten v1",
       "description": "De Belgische gemeenten op v1.",
@@ -995,6 +1005,11 @@
       "title": "Percelen v2",
       "description": "De Vlaamse percelen op v2.",
       "enable": true
+    },
+      "parcelRegistryBackOffice": {
+      "title": "Percelen edit API",
+      "description": "De edit API van de Vlaamse percelen op v2.",
+      "enable": false
     },
     "postalRegistry": {
       "title": "Postinfo v1",
@@ -1021,40 +1036,25 @@
       "description": "De edit API van de Vlaamse straatnamen op v2.",
       "enable": false
     },
-    "buildingRegistryBackOffice": {
-      "title": "Gebouwen edit API",
-      "description": "De edit API van de Vlaamse gebouwen op v2.",
-      "enable": false
-    },
     "streetNameRegistryV2": {
       "title": "Straatnamen v2",
       "description": "De Vlaamse straatnamen op v2.",
       "enable": true
+    },
+      "ticketingService": {
+      "title": "Ticketing",
+      "description": "Ticketingsysteem van gebouwen- en adressenregister",
+      "enable": false
     },
     "publicSite": {
       "title": "Website",
       "description": "De basisregisters Vlaanderen website.",
       "enable": true
     },
-      "parcelRegistryBackOffice": {
-      "title": "Percelen edit API",
-      "description": "De edit API van de Vlaamse percelen op v2.",
-      "enable": false
-    },
-      "buildingRegistryGrb": {
-      "title": "Gebouwen GRB edit API",
-      "description": "De edit API van GRB voor de Vlaamse gebouwen op v2.",
-      "enable": false
-    },
     "roadRegistry": {
       "title": "Wegen",
       "description": "De Vlaamse wegen.",
       "enable": true
-    },
-    "ticketingService": {
-      "title": "Ticketing",
-      "description": "Ticketingsysteem van gebouwen- en adressenregister",
-      "enable": false
     }
   }
 }
