@@ -1051,6 +1051,16 @@
       "description": "De Vlaamse straatnamen op v2.",
       "enable": true
     },
+      "parcelRegistryBackOffice": {
+      "title": "Percelen edit API",
+      "description": "De edit API van de Vlaamse percelen op v2.",
+      "enable": false
+    },
+    "buildingRegistryBackOffice": {
+      "title": "Gebouwen edit API",
+      "description": "De edit API van de Vlaamse gebouwen op v2.",
+      "enable": false
+    },
     "publicSite": {
       "title": "Website",
       "description": "De basisregisters Vlaanderen website.",
