@@ -1,4 +1,4 @@
-><font size="4">**Belangrijke update:** het CRAB wordt vanaf 1 november 2023 niet meer bijgewerkt vanwege de migratie naar het Gebouwen- en Adressenregister. Bekijk alle informatie op [Gebouwen- en Adressenregister][6] en schrijf je in voor infosessies [Gebouwen- en Adressenregister | Vlaanderen.be][5]. Contacteer ons via digitaal.vlaanderen@vlaanderen.be voor hulp of vragen.</font>
+><font size="3">**Belangrijke update:** het CRAB wordt vanaf 1 november 2023 niet meer bijgewerkt vanwege de migratie naar het Gebouwen- en Adressenregister. Bekijk alle informatie op [Gebouwen- en Adressenregister][6] en schrijf je in voor infosessies [Gebouwen- en Adressenregister | Vlaanderen.be][5]. Contacteer ons via digitaal.vlaanderen@vlaanderen.be voor hulp of vragen.</font>
 
 
 ## Basisregisters Vlaanderen
