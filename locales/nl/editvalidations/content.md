@@ -33,7 +33,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 
 ![image](https://user-images.githubusercontent.com/49196256/230019187-49da849f-5149-4d72-8239-b2686b3c4955.png)
 
-![image](https://user-images.githubusercontent.com/49196256/234557349-3e1b365d-d662-4a64-a043-8278e1cf9918.png)
+![image](https://user-images.githubusercontent.com/49196256/234558775-c075fb2e-8c24-4469-b441-a958e8445193.png)
 
 ![image](https://user-images.githubusercontent.com/49196256/230021742-e8e162ed-7aed-4eea-bc18-54f4b824bda8.png)
 
