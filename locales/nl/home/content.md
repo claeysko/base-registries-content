@@ -25,10 +25,10 @@ Het **Wegenregister** is het middenschalig referentiebestand van de wegen in Vla
 [6]:https://vlaamseoverheid.atlassian.net/wiki/spaces/AGB/pages/6094099791/Gebouwen-+en+Adressenregister
 
 
----
+```
 Belangrijke update: het CRAB wordt vanaf 1 november 2023 niet meer bijgewerkt vanwege de migratie naar het 
 Gebouwen- en Adressenregister. Bekijk alle informatie op [Gebouwen- en Adressenregister][6] en schrijf je in voor infosessies 
 [Gebouwen- en Adressenregister | Vlaanderen.be][5]. 
 Contacteer ons via digitaal.vlaanderen@vlaanderen.be voor hulp of vragen.
----
+```
 
