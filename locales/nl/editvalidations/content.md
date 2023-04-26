@@ -123,18 +123,18 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
-|Het veld adresId niet meegegeven of &nbsp; met waarde leeg of null meegegeven   |Error 400  |JsonInvalid  |Json is not valid.  |
+|Het veld adresId niet meegegeven of met waarde leeg of null meegegeven   |Error 400  |JsonInvalid  |Json is not valid.  |
 |Ongeldige waarde bij adresId / verwijderd adresId meegegeven |Error 400 |PerceelAdresOngeldig  |Ongeldig adresId.  |
 |AdresId met status afgekeurd/gehistoreerd meegegeven|Error 400||Het adres is afgekeurd of gehistoreerd.|
 |Onbestaand perceelId meegegeven  |Error 404 |/  |/  |
-|Status perceelId gehistoreerd|Ticketing error|PerceelGehistoreerd|Deze actie is enkel toegestaan op &nbsp; percelen met status 'gerealiseerd'.|
+|Status perceelId gehistoreerd|Ticketing error|PerceelGehistoreerd|Deze actie is enkel toegestaan op percelen met status 'gerealiseerd'.|
 |Verwijderd perceelId meegegeven |Ticketing error |VerwijderdPerceel  |Verwijderd perceel.  |
 
 #### Ontkoppel een adres van een perceel
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
-|Het veld adresId niet meegegeven of &nbsp; met waarde leeg of null meegegeven|Error 400|JsonInvalid|Json is not valid.|
+|Het veld adresId niet meegegeven of met waarde leeg of null meegegeven|Error 400|JsonInvalid|Json is not valid.|
 |Ongeldige waarde bij adresId / verwijderd adresId meegegeven |Error 400|PerceelAdresOngeldig|Ongeldig adresId.|
 |Onbestaand perceelId meegegeven  |Error 404|/  |/  |
 |Verwijderd perceelId meegegeven |Ticketing error|VerwijderdPerceel|Verwijderd perceel.|
