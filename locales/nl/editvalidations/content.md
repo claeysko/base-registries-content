@@ -22,7 +22,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |:---:|:---:|:---:|:---:|
 |Ongeldig straatnaamId meegegeven   |Error 400  |/ |De waarde 'straatnaamId' is ongeldig.  |
 |Onbestaand straatnaamId meegegeven  |Error 404 |/  |/  |
-|Status straatnaamId gehistoreerd/afgekeurd|Ticketing error|StraatnaamGehistoreerdOfAfgekeurd| Deze actie is enkel toegestaan op straatnamen met status 'voorgesteld'. |
+|Status straatnaamId gehistoreerd/afgekeurd|Ticketing error|StraatnaamGehistoreerdOfAfgekeurd| Deze actie is enkel toegestaan op straatnamen met status 'voorgesteld' . |
 |Verwijderd straatnaamId meegegeven |Ticketing error |VerwijderdeStraatnaam  |Verwijderde straatnaam.  |
 
  #### Keur een straatnaam af 
@@ -43,6 +43,36 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Status straatnaamId voorgesteld/afgekeurd|Ticketing error|StraatnaamVoorgesteldOfAfgekeurd| Deze actie is enkel toegestaan op straatnamen met status 'inGebruik'. |
 |Verwijderd straatnaamId meegegeven |Ticketing error |VerwijderdeStraatnaam  |Verwijderde straatnaam.  |
   
+#### Corrigeer de goedkeuring van een straatnaam 
+
+|Validatie|Soort error|ErrorCode|ErrorMessage|
+|:---:|:---:|:---:|:---:|
+|Ongeldig straatnaamId meegegeven   |Error 400  |/ |De waarde 'straatnaamId' is ongeldig.  |
+|Onbestaand straatnaamId meegegeven  |Error 404 |/  |/  |
+|Status straatnaamId gehistoreerd/inGebruik|Ticketing error|StraatnaamInGebruikOfGehistoreerd| Deze actie is enkel toegestaan op straatnamen met status 'inGebruik'. |
+|Verwijderd straatnaamId meegegeven |Ticketing error |VerwijderdeStraatnaam  |Verwijderde straatnaam.  |
+  
+#### Corrigeer de afkeuring van een straatnaam 
+
+|Validatie|Soort error|ErrorCode|ErrorMessage|
+|:---:|:---:|:---:|:---:|
+|Ongeldig straatnaamId meegegeven   |Error 400  |/ |De waarde 'straatnaamId' is ongeldig.  |
+|Onbestaand straatnaamId meegegeven  |Error 404 |/  |/  |
+|Status straatnaamId gehistoreerd/inGebruik|Ticketing error|StraatnaamInGebruikOfGehistoreerd| Deze actie is enkel toegestaan op straatnamen met status 'afgekeurd'. |
+|Straatnaam bestaat in gemeente met status voorgesteld/inGebruik |Ticketing error |StraatnaamBestaatReedsInGemeente  |Straatnaam 'straatnaam' bestaat reeds in de gemeente. |
+|Verwijderd straatnaamId meegegeven |Ticketing error |VerwijderdeStraatnaam  |Verwijderde straatnaam.  |
+  
+#### Corrigeer de opheffing van een straatnaam 
+
+|Validatie|Soort error|ErrorCode|ErrorMessage|
+|:---:|:---:|:---:|:---:|
+|Ongeldig straatnaamId meegegeven   |Error 400  |/ |De waarde 'straatnaamId' is ongeldig.  |
+|Onbestaand straatnaamId meegegeven  |Error 404 |/  |/  |
+|Status straatnaamId voorgesteld/afgekeurd|Ticketing error|StraatnaamVoorgesteldOfAfgekeurd| Deze actie is enkel toegestaan op straatnamen met status 'gehistoreerd'. |
+|Straatnaam bestaat in gemeente met status voorgesteld/inGebruik |Ticketing error |StraatnaamBestaatReedsInGemeente  |Straatnaam 'straatnaam' bestaat reeds in de gemeente. |
+|Straatnaam in gemeente met status gehistoreerd |Ticketing error |StraatnaamGemeenteInGebruik  |Deze actie is enkel toegestaan binnen gemeenten met       status 'inGebruik'. |
+|Verwijderd straatnaamId meegegeven |Ticketing error |VerwijderdeStraatnaam  |Verwijderde straatnaam.  |
+  
  #### Verwijder een straatnaam
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
@@ -50,18 +80,32 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Ongeldig straatnaamId meegegeven   |Error 400  |/ |De waarde 'straatnaamId' is ongeldig.  |
 |Onbestaand straatnaamId meegegeven  |Error 404 |/  |/  |
   
+#### Corrigeer de straatnaam van een straatnaam 
 
-![image](https://user-images.githubusercontent.com/49196256/230012924-4971d048-49c0-40db-b286-405cbcd16ce5.png)
+|Validatie|Soort error|ErrorCode|ErrorMessage|
+|:---:|:---:|:---:|:---:|
+|Ongeldig straatnaamId meegegeven   |Error 400  |/ |De waarde 'straatnaamId' is ongeldig.  |
+|Het veld straatnamen niet meegegeven/onbestaande taal meegegeven   |Error 400  |JsonInvalid |Json is not valid |
+|Meegegeven straatnaam > 60 tekens |Error 400  |StraatnaamMaxlengteValidatie |De waarde 'straatnaamId' is ongeldig.  |
+|Straatnaam leeg of null meegegeven   |Error 400  |StraatnaamNietLeegValidatie |De waarde 'straatnaamId' is ongeldig.  |
+|Onbestaand straatnaamId meegegeven  |Error 404 |/  |/  |
+|Status straatnaamId gehistoreerd/afgekeurd|Ticketing error|StraatnaamGehistoreerdOfAfgekeurd| Deze actie is enkel toegestaan op straatnamen met status 'voorgesteld' of 'inGebruik'. |
+|Straatnaam bestaat in gemeente met status voorgesteld/inGebruik |Ticketing error |StraatnaamBestaatReedsInGemeente  |Straatnaam 'straatnaam' bestaat reeds in de gemeente. |
+|De meegegeven taal is geen officiële of faciliteitentaal van de gemeente|Ticketing error |StraatnaamTaalNietInOfficieleOfFaciliteitenTaal|'Straatnamen' kunnen enkel voorkomen in de officiële of faciliteitentaal van de gemeente.|
+|Verwijderd straatnaamId meegegeven |Ticketing error |VerwijderdeStraatnaam  |Verwijderde straatnaam.  |
+  
+ #### Corrigeer de homoniemtoevoeging van een straatnaam 
 
-![image](https://user-images.githubusercontent.com/49196256/230012943-704e20d1-d939-4d38-b9ef-b711c9f2d2ee.png)
-
-![image](https://user-images.githubusercontent.com/49196256/230012976-ee52c93f-265e-4f92-aebd-a6b329aa6918.png)
-
-![image](https://user-images.githubusercontent.com/49196256/229767761-962a8a12-9432-4b95-8d41-4970b36d3241.png)
-
-![image](https://user-images.githubusercontent.com/49196256/230013267-e7baf9dc-e728-4ea5-98b2-003e54886f0e.png)
-
-![image](https://user-images.githubusercontent.com/49196256/230034403-f5f0faf2-f167-4ada-ab64-d019bcf0a947.png)
+|Validatie|Soort error|ErrorCode|ErrorMessage|
+|:---:|:---:|:---:|:---:|
+|Ongeldig straatnaamId meegegeven   |Error 400  |/ |De waarde 'straatnaamId' is ongeldig.  |
+|Het veld homoniemtoevoegingen niet meegegeven/onbestaande taal meegegeven   |Error 400  |JsonInvalid |Json is not valid |
+|Meegegeven homoniemToevoeging > 20 tekens  |Error 400  |StraatnaamHomoniemToevoegingMaxlengteValidatie |Maximum lengte van een homoniemToevoeging in 'taal' is 20 tekens. U heeft momenteel <aantalTekens> tekens.  |
+|Onbestaand straatnaamId meegegeven  |Error 404 |/  |/  |
+|Status straatnaamId gehistoreerd/afgekeurd|Ticketing error|StraatnaamGehistoreerdOfAfgekeurd| Deze actie is enkel toegestaan op straatnamen met status 'voorgesteld' of 'inGebruik'. |
+|Homoniemtoevoeging bestaat reeds in deze gemeente voor dezelfde straatnaam |Ticketing error |StraatnaamHomoniemToevoegingBestaatReedsInGemeente  |Binnen deze gemeente bestaat er reeds een straatnaam met status 'voorgesteld' of 'inGebruik' met dezelfde straatnaam en homoniemToevoeging.   |
+|Geen homoniemtoevoeging voor bepaalde taal aanwezig |Ticketing error |StraatnaamHomoniemToevoeging  |Er kan geen homoniemToevoeging worden toegevoegd    voor taalcode 'taal'. |
+|Verwijderd straatnaamId meegegeven |Ticketing error |VerwijderdeStraatnaam  |Verwijderde straatnaam.  |
 
 
 ## Adressen
@@ -223,7 +267,6 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 ![image](https://user-images.githubusercontent.com/49196256/230095151-7841dc88-d9d5-47bc-9587-5354a89f1eca.png)
 
 
-
 ## Percelen
 
 #### Koppel een adres van een perceel
@@ -245,5 +288,3 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Ongeldige waarde bij adresId / verwijderd adresId meegegeven |Error 400|PerceelAdresOngeldig|Ongeldig adresId.|
 |Onbestaand perceelId meegegeven  |Error 404|/  |/  |
 |Verwijderd perceelId meegegeven |Ticketing error|VerwijderdPerceel|Verwijderd perceel.|
-
-
