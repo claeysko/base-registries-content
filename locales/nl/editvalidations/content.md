@@ -64,13 +64,41 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 
 ## Gebouwen
 
-![image](https://user-images.githubusercontent.com/49196256/229729126-0e4caee5-21ef-48a9-99c2-78f85477549c.png)
+#### Plan een gebouw in 
 
-![image](https://user-images.githubusercontent.com/49196256/230010994-7929fbea-3d57-44cc-b7a2-1836871c06c7.png)
+|Validatie|Soort error|ErrorCode|ErrorMessage|
+|:---:|:---:|:---:|:---:|
+|Parameter geometriePolygoon ontbreekt   |Error 400  |JsonInvalid  |Json is not valid.  |
+|GeometriePolygoon leeg/niet correct meegegeven |Error 400 |GebouwPolygoonValidatie  |Ongeldig formaat geometriePolygoon. |
 
-![image](https://user-images.githubusercontent.com/49196256/230011054-e6eec692-f187-4cb2-a669-6219c95ecbf7.png)
+#### Plaats een gebouw in aanbouw
 
-![image](https://user-images.githubusercontent.com/49196256/230011105-964604fb-a3d0-4418-994a-53ae14611d70.png)
+|Validatie|Soort error|ErrorCode|ErrorMessage|
+|:---:|:---:|:---:|:---:|
+|Ongeldig gebouwId meegegeven   |Error 400  |/ |De waarde '<meegegeven gebouwId>' is ongeldig.  |
+|Onbestaand gebouwId meegegeven  |Error 404 |/  |/  |
+|Status gebouwId gerealiseerd/gehistoreerd/nietGerealiseerd|Ticketing error|GebouwGehistoreerdGerealiseerdOfNietGerealiseerd| Deze actie is enkel toegestaan op gebouwen met status 'gepland'. |
+|Verwijderd gebouwId meegegeven |Ticketing error |VerwijderdGebouw  |Verwijderd gebouw.  |
+
+#### Realiseer een gebouw
+
+|Validatie|Soort error|ErrorCode|ErrorMessage|
+|:---:|:---:|:---:|:---:|
+|Ongeldig gebouwId meegegeven   |Error 400  |/ |De waarde '<meegegeven gebouwId>' is ongeldig.  |
+|Onbestaand gebouwId meegegeven  |Error 404 |/  |/  |
+|Status gebouwId gepland/gehistoreerd/nietGerealiseerd|Ticketing error|GebouwGehistoreerdGeplandOfNietGerealiseerd
+| Deze actie is enkel toegestaan op gebouwen met status 'inAanbouw'. |
+|Verwijderd gebouwId meegegeven |Ticketing error |VerwijderdGebouw  |Verwijderd gebouw.  |
+  
+ #### Realiseer een gebouw niet
+
+|Validatie|Soort error|ErrorCode|ErrorMessage|
+|:---:|:---:|:---:|:---:|
+|Ongeldig gebouwId meegegeven   |Error 400  |/ |De waarde '<meegegeven gebouwId>' is ongeldig.  |
+|Onbestaand gebouwId meegegeven  |Error 404 |/  |/  |
+|Status gebouwId gerealiseerd/gehistoreerd|Ticketing error|GebouwGehistoreerdOfGerealiseerd| Deze actie is enkel toegestaan op gebouwen met status 'gepland' of ‘inAanbouw’.  |
+|Verwijderd gebouwId meegegeven |Ticketing error |VerwijderdGebouw  |Verwijderd gebouw.  |
+
 
 ![image](https://user-images.githubusercontent.com/49196256/230011876-8fb21edb-b02b-4aa2-8311-cb8658edf870.png)
 
