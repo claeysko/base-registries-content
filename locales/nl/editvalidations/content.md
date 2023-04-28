@@ -235,14 +235,43 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 
 
 ## Gebouweenheden
+  
+#### Realiseer een gebouweenheid
+
+|Validatie|Soort error|ErrorCode|ErrorMessage|
+|:---:|:---:|:---:|:---:|
+|Ongeldig gebouweenheidId meegegeven   |Error 400  |/ |De waarde 'gebouweenheidId' is ongeldig.  |
+|Onbestaand gebouweenheidId meegegeven  |Error 404 |/  |/  |
+|Gebouweenheid met functie gemeenschappelijkDeel meegegeven |Ticketing error |GebouweenheidGemeenschappelijkDeel  |Deze actie is niet toegestaan op gebouweenheden me functie gemeenschappelijkDeel.  |
+|Gebouweenheid ligt in gebouw met status gepland/inAanbouw/gehistoreerd/nietGerealiseerd |Ticketing error |GebouwStatusNietInGerealiseerd  |Deze actie is enkel toegestaan binnen een gerealiseerd gebouw.  |
+|Status gebouweenheidId gehistoreerd/nietGerealiseerd|Ticketing error|GebouweenheidGehistoreerdOfNietGerealiseerd
+| Deze actie is enkel toegestaan op gebouweenheden met status 'gepland'. |
+|Verwijderd gebouweenheidId meegegeven |Ticketing error |VerwijderdeGebouweenheid  |Verwijderde gebouweenheid.  |
+  
+#### Realiseer een gebouweenheid niet
+
+|Validatie|Soort error|ErrorCode|ErrorMessage|
+|:---:|:---:|:---:|:---:|
+|Ongeldig gebouweenheidId meegegeven   |Error 400  |/ |De waarde 'gebouweenheidId' is ongeldig.  |
+|Onbestaand gebouweenheidId meegegeven  |Error 404 |/  |/  |
+|Gebouweenheid met functie gemeenschappelijkDeel meegegeven |Ticketing error |GebouweenheidGemeenschappelijkDeel  |Deze actie is niet toegestaan op gebouweenheden me functie gemeenschappelijkDeel.  |
+|Status gebouweenheidId gehistoreerd/gerealiseerd|Ticketing error|GebouweenheidGehistoreerdOfGerealiseerd
+| Deze actie is enkel toegestaan op gebouweenheden met status 'gepland'. |
+|Verwijderd gebouweenheidId meegegeven |Ticketing error |VerwijderdeGebouweenheid  |Verwijderde gebouweenheid.  |
+  
+#### Hef een gebouweenheid op
+
+|Validatie|Soort error|ErrorCode|ErrorMessage|
+|:---:|:---:|:---:|:---:|
+|Ongeldig gebouweenheidId meegegeven   |Error 400  |/ |De waarde 'gebouweenheidId' is ongeldig.  |
+|Onbestaand gebouweenheidId meegegeven  |Error 404 |/  |/  |
+|Gebouweenheid met functie gemeenschappelijkDeel meegegeven |Ticketing error |GebouweenheidGemeenschappelijkDeel  |Deze actie is niet toegestaan op gebouweenheden me functie gemeenschappelijkDeel.  |
+|Gebouweenheid ligt in gebouw met status gehistoreerd/nietGerealiseerd |Ticketing error |GebouwStatusNietInGeplandInAanbouwOfGerealiseerd| Deze actie is enkel toegestaan binnen een gepland,                inAanbouw of gerealiseerd gebouw.  |
+|Status gebouweenheidId gepland/nietGerealiseerd|Ticketing error|GebouweenheidGeplandOfNietGerealiseerd
+| Deze actie is enkel toegestaan op gebouweenheden met status 'gerealiseerd'. |
+|Verwijderd gebouweenheidId meegegeven |Ticketing error |VerwijderdeGebouweenheid  |Verwijderde gebouweenheid.  |
 
 ![image](https://user-images.githubusercontent.com/49196256/230095814-f3f83299-8f15-41f2-9aa3-c8150cbd8333.png)
-
-![image](https://user-images.githubusercontent.com/49196256/230037941-6026d6ec-a351-47f3-8df5-2babdd82f1f8.png)
-
-![image](https://user-images.githubusercontent.com/49196256/230038076-60689839-917e-4fe6-872f-c86345e26788.png)
-
-![image](https://user-images.githubusercontent.com/49196256/230038111-82c50857-62dd-4e20-a83e-67b403235e14.png)
 
 ![image](https://user-images.githubusercontent.com/49196256/230092242-3fa3e9f5-4779-40be-a586-7f46b555a1a6.png)
 
