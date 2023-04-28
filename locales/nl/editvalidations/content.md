@@ -90,7 +90,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 | Deze actie is enkel toegestaan op gebouwen met status 'inAanbouw'. |
 |Verwijderd gebouwId meegegeven |Ticketing error |VerwijderdGebouw  |Verwijderd gebouw.  |
   
- #### Realiseer een gebouw niet
+#### Realiseer een gebouw niet
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
@@ -98,17 +98,55 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Onbestaand gebouwId meegegeven  |Error 404 |/  |/  |
 |Status gebouwId gerealiseerd/gehistoreerd|Ticketing error|GebouwGehistoreerdOfGerealiseerd| Deze actie is enkel toegestaan op gebouwen met status 'gepland' of ‘inAanbouw’.  |
 |Verwijderd gebouwId meegegeven |Ticketing error |VerwijderdGebouw  |Verwijderd gebouw.  |
+  
+ #### Verwijder een geschetst gebouw
 
+|Validatie|Soort error|ErrorCode|ErrorMessage|
+|:---:|:---:|:---:|:---:|
+|Ongeldig gebouwId meegegeven   |Error 400  |/ |De waarde '<meegegeven gebouwId>' is ongeldig.  |
+|Onbestaand gebouwId meegegeven  |Error 404 |/  |/  |
+|GeometrieMethode = ingemetenGRB|Ticketing error|GebouwGeometrieMethodeIngemetenGRB| Deze actie is enkel toegestaan op gebouwen met geometrieMethode 'ingeschetst'.|
+  
+#### Corrigeer de realisering van een gebouw
 
-![image](https://user-images.githubusercontent.com/49196256/230011876-8fb21edb-b02b-4aa2-8311-cb8658edf870.png)
+|Validatie|Soort error|ErrorCode|ErrorMessage|
+|:---:|:---:|:---:|:---:|
+|Ongeldig gebouwId meegegeven   |Error 400  |/ |De waarde '<meegegeven gebouwId>' is ongeldig.  |
+|Onbestaand gebouwId meegegeven  |Error 404 |/  |/  |
+|Status gebouwId gepland/gehistoreerd/nietGerealiseerd|Ticketing error|GebouwGeplandGehistoreerdOfNietGerealiseerd | Deze actie is enkel toegestaan op gebouwen met status 'gerealiseerd'.  |
+|GeometrieMethode = ingemetenGRB|Ticketing error|GebouwGeometrieMethodeIngemetenGRB| Deze actie is enkel toegestaan op gebouwen met geometrieMethode 'ingeschetst'.|
+|Gebouw heeft gekoppelde gehistoreerde gebouweenheden|Ticketing error|GebouwBevatGehistoreerdeGebouweenheden| Deze actie is niet toegestaan wanneer er            gehistoreerde gebouweenheden aanwezig zijn.|
+|Verwijderd gebouwId meegegeven |Ticketing error |VerwijderdGebouw  |Verwijderd gebouw.  |
+ 
+#### Corrigeer de niet realisering van een gebouw
 
-![image](https://user-images.githubusercontent.com/49196256/230011666-9094cc09-84b3-4812-b7c7-e7c0ec4af738.png)
+|Validatie|Soort error|ErrorCode|ErrorMessage|
+|:---:|:---:|:---:|:---:|
+|Ongeldig gebouwId meegegeven   |Error 400  |/ |De waarde '<meegegeven gebouwId>' is ongeldig.  |
+|Onbestaand gebouwId meegegeven  |Error 404 |/  |/  |
+|Status gebouwId inAanbouw/gehistoreerd/gerealiseerd|Ticketing error|GebouwInAanbouwGerealiseerdOfGehistoreerd | Deze actie is enkel toegestaan op geschetste    gebouwen met status 'nietGerealiseerd’. |
+|GeometrieMethode = ingemetenGRB|Ticketing error|GebouwGeometrieMethodeIngemetenGRB| Deze actie is enkel toegestaan op gebouwen met geometrieMethode 'ingeschetst'.|
+|Verwijderd gebouwId meegegeven |Ticketing error |VerwijderdGebouw  |Verwijderd gebouw.  |
 
-![image](https://user-images.githubusercontent.com/49196256/230011724-fd69bf1e-7bbf-41e2-b002-d70900f0cbca.png)
+#### Corrigeer de in aanbouw plaatsing van een gebouw
 
-![image](https://user-images.githubusercontent.com/49196256/230099077-56020086-a80d-4175-98b3-59088bba0e4e.png)
+|Validatie|Soort error|ErrorCode|ErrorMessage|
+|:---:|:---:|:---:|:---:|
+|Ongeldig gebouwId meegegeven   |Error 400  |/ |De waarde '<meegegeven gebouwId>' is ongeldig.  |
+|Onbestaand gebouwId meegegeven  |Error 404 |/  |/  |
+|Status gebouwId gerealiseerd/gehistoreerd/nietGerealiseerd|Ticketing error|GebouwGerealiseerdGehistoreerdOfNietGerealiseerd | Deze actie is enkel toegestaan op geschetste    gebouwen met status 'inAanbouw’. |
+|Verwijderd gebouwId meegegeven |Ticketing error |VerwijderdGebouw  |Verwijderd gebouw.  |
+  
+#### Corrigeer de geometrie van een geschetst gebouw
 
-![image](https://user-images.githubusercontent.com/49196256/230011953-211a64cd-edb6-42cf-acb4-d15bb62caa4f.png)
+|Validatie|Soort error|ErrorCode|ErrorMessage|
+|:---:|:---:|:---:|:---:|
+|Ongeldig gebouwId meegegeven   |Error 400  |/ |De waarde '<meegegeven gebouwId>' is ongeldig.  |
+|Onbestaand gebouwId meegegeven  |Error 404 |/  |/  |
+|Status gebouwId gehistoreerd/gerealiseerd|Ticketing error|GebouwGehistoreerdOfNietGerealiseerd | Deze actie is enkel toegestaan op gebouwen met status 'gepland', 'inAanbouw' of 'gerealiseerd'. |
+|GeometrieMethode = ingemetenGRB|Ticketing error|GebouwGeometrieMethodeIngemetenGRB| Deze actie is enkel toegestaan op gebouwen met geometrieMethode 'ingeschetst'.|
+|Geometrie gekoppelde gebouweenheden ligt niet in nieuwe geometrie |Ticketing error|GebouweenheidGeomtrieBuitenGebouwGeometrie| Het gebouw heeft onderliggende gebouweenheden met status 'gepland' of 'gerealiseerd' buiten de nieuw geschetste gebouwgeometrie. |
+|Verwijderd gebouwId meegegeven |Ticketing error |VerwijderdGebouw  |Verwijderd gebouw.  |
 
 
 ## Gebouweenheden
