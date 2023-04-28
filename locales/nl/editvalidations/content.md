@@ -112,12 +112,42 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 
 ![image](https://user-images.githubusercontent.com/49196256/230035405-5cc4461a-5d55-46fc-aa1c-3c03715b64c8.png)
 
-![image](https://user-images.githubusercontent.com/49196256/230019084-52348ad6-32f3-4cce-91eb-1f89186f29b3.png)
+#### Keur een adres goed
 
-![image](https://user-images.githubusercontent.com/49196256/230019118-27b12a19-30ee-451d-a2be-1a1df0a51aa2.png)
+|Validatie|Soort error|ErrorCode|ErrorMessage|
+|:---:|:---:|:---:|:---:|
+|Ongeldig adresId meegegeven   |Error 400  |/ |De waarde 'adresId' is ongeldig.  |
+|Onbestaand adresId meegegeven  |Error 404 |/  |/  |
+|Status adresId afgekeurd/gehistoreerd|Ticketing error|AdresAfgekeurdOfGehistoreerd| Deze actie is enkel toegestaan op adressen met status 'voorgesteld'. |
+|Adres in straatnaam met status afgekeurd/gehistoreerd|Ticketing error|AdresStraatnaamVoorgesteldOfInGebruik| Deze actie is enkel toegestaan binnen straatnamen met  status 'voorgesteld' of 'inGebruik'. |
+|Adres is een busnummer & mag niet voorlopen op status adres dat een huisnummer is|Ticketing error|AdresHuisnummerVoorgesteldGehistoreerdOfAfgekeurd| Deze actie is enkel toegestaan op adressen waarbij het huisnummer de status 'inGebruik' heeft. |
+|Verwijderd adresId meegegeven |Ticketing error |VerwijderdAdres  |Verwijderd adres.  |
 
-![image](https://user-images.githubusercontent.com/49196256/230019187-49da849f-5149-4d72-8239-b2686b3c4955.png)
+#### Keur een adres af
 
+|Validatie|Soort error|ErrorCode|ErrorMessage|
+|:---:|:---:|:---:|:---:|
+|Ongeldig adresId meegegeven   |Error 400  |/ |De waarde 'adresId' is ongeldig.  |
+|Onbestaand adresId meegegeven  |Error 404 |/  |/  |
+|Status adresId inGebruik/gehistoreerd|Ticketing error|AdresGehistoreerdOfInGebruik| Deze actie is enkel toegestaan op adressen met status 'voorgesteld'. |
+|Verwijderd adresId meegegeven |Ticketing error |VerwijderdAdres  |Verwijderd adres.  |
+
+#### Hef een adres op
+
+|Validatie|Soort error|ErrorCode|ErrorMessage|
+|:---:|:---:|:---:|:---:|
+|Ongeldig adresId meegegeven   |Error 400  |/ |De waarde 'adresId' is ongeldig.  |
+|Onbestaand adresId meegegeven  |Error 404 |/  |/  |
+|Status adresId voorgesteld/gehistoreerd|Ticketing error|AdresVoorgesteldOfAfgekeurd| Deze actie is enkel toegestaan op adressen met status 'inGebruik'. |
+|Verwijderd adresId meegegeven |Ticketing error |VerwijderdAdres  |Verwijderd adres.  |
+  
+#### Verwijder een adres
+
+|Validatie|Soort error|ErrorCode|ErrorMessage|
+|:---:|:---:|:---:|:---:|
+|Ongeldig adresId meegegeven   |Error 400  |/ |De waarde 'adresId' is ongeldig.  |
+|Onbestaand adresId meegegeven  |Error 404 |/  |/  |
+  
 ![image](https://user-images.githubusercontent.com/49196256/234558775-c075fb2e-8c24-4469-b441-a958e8445193.png)
 
 ![image](https://user-images.githubusercontent.com/49196256/230021742-e8e162ed-7aed-4eea-bc18-54f4b824bda8.png)
