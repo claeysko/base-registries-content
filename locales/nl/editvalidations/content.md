@@ -153,9 +153,9 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Adres is niet officieelToegekend |Ticketing error |AdresNietOfficeeltoegekend  |Deze actie is enkel toegestaan voor officieel toegekende adressen.  |
 |Verwijderd adresId meegegeven |Ticketing error |VerwijderdAdres  |Verwijderd adres.  |
 
-![image](https://user-images.githubusercontent.com/49196256/230021742-e8e162ed-7aed-4eea-bc18-54f4b824bda8.png)
-
-![image](https://user-images.githubusercontent.com/49196256/230021787-256c8bc5-9420-46e8-be0a-56ea6a55f675.png)
+#### Corrigeer de afkeuring van een adres
+  
+#### Corrigeer de opheffing van een adres
 
 #### Verwijder een adres
 
