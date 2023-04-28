@@ -164,8 +164,6 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Ongeldig adresId meegegeven   |Error 400  |/ |De waarde 'adresId' is ongeldig.  |
 |Onbestaand adresId meegegeven  |Error 404 |/  |/  |
 
-![image](https://user-images.githubusercontent.com/49196256/230023592-e4f5936a-6de8-4948-a806-dcdbfc72dbb5.png)
-
 ![image](https://user-images.githubusercontent.com/49196256/230023688-b3aa4e31-3763-4fec-b0fd-5c0cf30a9b89.png)
 
 ![image](https://user-images.githubusercontent.com/49196256/230024850-b30397f7-6fff-4c22-887a-abc9a81bade6.png)
