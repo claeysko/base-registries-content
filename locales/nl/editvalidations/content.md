@@ -142,7 +142,16 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Verwijderd adresId meegegeven |Ticketing error |VerwijderdAdres  |Verwijderd adres.  |
  
   
-![image](https://user-images.githubusercontent.com/49196256/234558775-c075fb2e-8c24-4469-b441-a958e8445193.png)
+#### Corrigeer de goedkeuring van een adres
+
+|Validatie|Soort error|ErrorCode|ErrorMessage|
+|:---:|:---:|:---:|:---:|
+|Ongeldig adresId meegegeven   |Error 400  |/ |De waarde 'adresId' is ongeldig.  |
+|Onbestaand adresId meegegeven  |Error 404 |/  |/  |
+|Status adresId afgekeurd/gehistoreerd|Ticketing error|AdresAfgekeurdGehistoreerd| Deze actie is enkel toegestaan op adressen met status 'inGebruik'. |
+|Adres in straatnaam met status afgekeurd/gehistoreerd|Ticketing error|AdresStraatnaamVoorgesteldOfInGebruik| Deze actie is enkel toegestaan binnen straatnamen met  status 'voorgesteld' of 'inGebruik'. |
+|Adres is niet officieelToegekend |Ticketing error |AdresNietOfficeeltoegekend  |Deze actie is enkel toegestaan voor officieel toegekende adressen.  |
+|Verwijderd adresId meegegeven |Ticketing error |VerwijderdAdres  |Verwijderd adres.  |
 
 ![image](https://user-images.githubusercontent.com/49196256/230021742-e8e162ed-7aed-4eea-bc18-54f4b824bda8.png)
 
