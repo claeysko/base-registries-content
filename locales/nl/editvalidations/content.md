@@ -291,11 +291,28 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 
 ![image](https://user-images.githubusercontent.com/49196256/230095076-117b84a8-dd71-4aea-abb4-c14467ea31e8.png)
 
-![image](https://user-images.githubusercontent.com/49196256/230095113-12788173-2353-4c37-9ffa-13a92fa1bdf1.png)
+#### Koppel een adres aan een gebouweenheid
 
-![image](https://user-images.githubusercontent.com/49196256/230095151-7841dc88-d9d5-47bc-9587-5354a89f1eca.png)
+|Validatie|Soort error|ErrorCode|ErrorMessage|
+|:---:|:---:|:---:|:---:|
+|Ongeldig gebouweenheidId meegegeven   |Error 400  |/ |De waarde 'gebouweenheidId' is ongeldig.  |
+|Het veld adresId niet meegegeven of met waarde leeg of null meegegeven|Error 400|JsonInvalid|Json is not valid.|
+|Ongeldige waarde bij adresId / verwijderd adresId meegegeven |Error 400|GebouweenheidAdresOngeldig|Ongeldig adresId.|
+|AdresId met status afgekeurd/gehistoreerd meegegeven|Error 400|GebouweenheidAdresAfgekeurdOfGehistoreerd|Het adres is afgekeurd of gehistoreerd.|
+|Onbestaand gebouweenheidId meegegeven  |Error 404|/  |/  |
+|Status gebouweenheidId gehistoreerd/nietGerealiseerd|Ticketing error|GebouweenheidNietGerealiseerdOfGehistoreerd|Deze actie is enkel toegestaan op percelen met status 'gepland' of 'gerealiseerd'.|
+|Verwijderd gebouweenheidId meegegeven |Ticketing error|VerwijderdeGebouweenheid|Verwijderde gebouweenheid.|
+  
+#### Ontkoppel een adres van een gebouweenheid
 
-
+|Validatie|Soort error|ErrorCode|ErrorMessage|
+|:---:|:---:|:---:|:---:|
+|Ongeldig gebouweenheidId meegegeven   |Error 400  |/ |De waarde 'gebouweenheidId' is ongeldig.  |
+|Het veld adresId niet meegegeven of met waarde leeg of null meegegeven|Error 400|JsonInvalid|Json is not valid.|
+|Ongeldige waarde bij adresId / verwijderd adresId meegegeven |Error 400|GebouweenheidAdresOngeldig|Ongeldig adresId.|
+|Onbestaand gebouweenheidId meegegeven  |Error 404|/  |/  |
+|Verwijderd gebouweenheidId meegegeven |Ticketing error|VerwijderdeGebouweenheid|Verwijderde gebouweenheid.|
+  
 ## Percelen
 
 #### Koppel een adres van een perceel
@@ -304,7 +321,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |:---:|:---:|:---:|:---:|
 |Het veld adresId niet meegegeven of met waarde leeg of null meegegeven   |Error 400  |JsonInvalid  |Json is not valid.  |
 |Ongeldige waarde bij adresId / verwijderd adresId meegegeven |Error 400 |PerceelAdresOngeldig  |Ongeldig adresId.  |
-|AdresId met status afgekeurd/gehistoreerd meegegeven|Error 400||Het adres is afgekeurd of gehistoreerd.|
+|AdresId met status afgekeurd/gehistoreerd meegegeven|Error 400|PerceelAdresAfgekeurdOfGehistoreerd |Het adres is afgekeurd of gehistoreerd.|
 |Onbestaand perceelId meegegeven  |Error 404 |/  |/  |
 |Status perceelId gehistoreerd|Ticketing error|PerceelGehistoreerd|Deze actie is enkel toegestaan op percelen met status 'gerealiseerd'.|
 |Verwijderd perceelId meegegeven |Ticketing error |VerwijderdPerceel  |Verwijderd perceel.  |
