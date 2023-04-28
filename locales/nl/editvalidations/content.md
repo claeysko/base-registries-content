@@ -2,13 +2,54 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 
 ## Straatnamen
 
-![image](https://user-images.githubusercontent.com/49196256/230013500-fd5b276a-e295-4a24-8ff4-4fc8e1e00370.png)
+#### Stel een straatnaam voor 
 
-![image](https://user-images.githubusercontent.com/49196256/230012587-a847ac53-1d41-4732-b056-8313de193947.png)
+|Validatie|Soort error|ErrorCode|ErrorMessage|
+|:---:|:---:|:---:|:---:|
+|Straatnaam leeg of null meegegeven|Error 400 |StraatnaamNietLeegValidatie|Straatnaam in '<taal>' kan niet leeg zijn.| 
+|Meegegeven straatnaam > 60 tekens|Error 400 |StraatnaamMaxlengteValidatie|Maximum lengte van een straatnaam in '<taal>' is 60          tekens. U heeft momenteel <aantaltekens> tekens.| 
+|Niet Vlaamse gemeente meegegeven|Error 400 |StraatnaamVlaamsGewestValidatie|De gemeente '<gemeenteId>' is geen Vlaamse gemeente.|
+|Onbestaande gemeente meegegeven|Error 400 |StraatnaamGemeenteNietGekendValidatie|De gemeente '<gemeenteId>' is niet gekend in het gemeenteregister. |
+|Het veld gemeenteId niet meegegeven/het veld straatnamen niet meegegeven/onbestaande taal meegegeven|Error 400 |JsonInvalid| Json is not valid.|
+|Straatnaam bestaat reeds in de gemeente|Ticketing error |StraatnaamBestaatReedsInGemeente|Straatnaam '<straatnaam>' bestaat reeds in de gemeente.|
+|De meegegeven taal is geen officiële of faciliteitentaal van de gemeente|Ticketing error |StraatnaamTaalNietInOfficieleOfFaciliteitenTaal|'Straatnamen' kunnen enkel voorkomen in de officiële of   faciliteitentaal van de gemeente.|
+|Er ontbreekt een officiële- of faciliteitentaal|Ticketing error |StraatnaamOntbreektOfficieleOfFaciliteitenTaal|In 'Straatnamen' ontbreekt een officiële of faciliteitentaal. |
+|Gehistoreerde Vlaamse gemeente meegegeven|Ticketing error |StraatnaamGemeenteVoorgesteldOfInGebruik|Deze actie is enkel toegestaan binnen gemeenten met       status 'voorgesteld' of 'inGebruik'.|
+  
+#### Keur een straatnaam goed 
 
-![image](https://user-images.githubusercontent.com/49196256/230012610-8989a3b7-7f6d-42c8-83b8-5b5910adbe8d.png)
+|Validatie|Soort error|ErrorCode|ErrorMessage|
+|:---:|:---:|:---:|:---:|
+|Ongeldig straatnaamId meegegeven   |Error 400  |/ |De waarde 'straatnaamId' is ongeldig.  |
+|Onbestaand straatnaamId meegegeven  |Error 404 |/  |/  |
+|Status straatnaamId gehistoreerd/afgekeurd|Ticketing error|StraatnaamGehistoreerdOfAfgekeurd| Deze actie is enkel toegestaan op straatnamen met status 'voorgesteld'. |
+|Verwijderd straatnaamId meegegeven |Ticketing error |VerwijderdeStraatnaam  |Verwijderde straatnaam.  |
 
-![image](https://user-images.githubusercontent.com/49196256/230012638-93df0114-0f4b-486d-923e-8c7f433e7f9e.png)
+ #### Keur een straatnaam af 
+
+|Validatie|Soort error|ErrorCode|ErrorMessage|
+|:---:|:---:|:---:|:---:|
+|Ongeldig straatnaamId meegegeven   |Error 400  |/ |De waarde 'straatnaamId' is ongeldig.  |
+|Onbestaand straatnaamId meegegeven  |Error 404 |/  |/  |
+|Status straatnaamId gehistoreerd/inGebruik|Ticketing error|StraatnaamInGebruikOfGehistoreerd| Deze actie is enkel toegestaan op straatnamen met status 'voorgesteld'. |
+|Verwijderd straatnaamId meegegeven |Ticketing error |VerwijderdeStraatnaam  |Verwijderde straatnaam.  |
+  
+#### Hef een straatnaam op 
+
+|Validatie|Soort error|ErrorCode|ErrorMessage|
+|:---:|:---:|:---:|:---:|
+|Ongeldig straatnaamId meegegeven   |Error 400  |/ |De waarde 'straatnaamId' is ongeldig.  |
+|Onbestaand straatnaamId meegegeven  |Error 404 |/  |/  |
+|Status straatnaamId voorgesteld/afgekeurd|Ticketing error|StraatnaamVoorgesteldOfAfgekeurd| Deze actie is enkel toegestaan op straatnamen met status 'inGebruik'. |
+|Verwijderd straatnaamId meegegeven |Ticketing error |VerwijderdeStraatnaam  |Verwijderde straatnaam.  |
+  
+ #### Verwijder een straatnaam
+
+|Validatie|Soort error|ErrorCode|ErrorMessage|
+|:---:|:---:|:---:|:---:|
+|Ongeldig straatnaamId meegegeven   |Error 400  |/ |De waarde 'straatnaamId' is ongeldig.  |
+|Onbestaand straatnaamId meegegeven  |Error 404 |/  |/  |
+  
 
 ![image](https://user-images.githubusercontent.com/49196256/230012924-4971d048-49c0-40db-b286-405cbcd16ce5.png)
 
@@ -75,7 +116,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
-|Ongeldig gebouwId meegegeven   |Error 400  |/ |De waarde '<meegegeven gebouwId>' is ongeldig.  |
+|Ongeldig gebouwId meegegeven   |Error 400  |/ |De waarde 'gebouwId' is ongeldig.  |
 |Onbestaand gebouwId meegegeven  |Error 404 |/  |/  |
 |Status gebouwId gerealiseerd/gehistoreerd/nietGerealiseerd|Ticketing error|GebouwGehistoreerdGerealiseerdOfNietGerealiseerd| Deze actie is enkel toegestaan op gebouwen met status 'gepland'. |
 |Verwijderd gebouwId meegegeven |Ticketing error |VerwijderdGebouw  |Verwijderd gebouw.  |
@@ -84,7 +125,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
-|Ongeldig gebouwId meegegeven   |Error 400  |/ |De waarde '<meegegeven gebouwId>' is ongeldig.  |
+|Ongeldig gebouwId meegegeven   |Error 400  |/ |De waarde 'gebouwId' is ongeldig.  |
 |Onbestaand gebouwId meegegeven  |Error 404 |/  |/  |
 |Status gebouwId gepland/gehistoreerd/nietGerealiseerd|Ticketing error|GebouwGehistoreerdGeplandOfNietGerealiseerd
 | Deze actie is enkel toegestaan op gebouwen met status 'inAanbouw'. |
@@ -94,7 +135,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
-|Ongeldig gebouwId meegegeven   |Error 400  |/ |De waarde '<meegegeven gebouwId>' is ongeldig.  |
+|Ongeldig gebouwId meegegeven   |Error 400  |/ |De waarde 'gebouwId' is ongeldig.  |
 |Onbestaand gebouwId meegegeven  |Error 404 |/  |/  |
 |Status gebouwId gerealiseerd/gehistoreerd|Ticketing error|GebouwGehistoreerdOfGerealiseerd| Deze actie is enkel toegestaan op gebouwen met status 'gepland' of ‘inAanbouw’.  |
 |Verwijderd gebouwId meegegeven |Ticketing error |VerwijderdGebouw  |Verwijderd gebouw.  |
@@ -103,7 +144,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
-|Ongeldig gebouwId meegegeven   |Error 400  |/ |De waarde '<meegegeven gebouwId>' is ongeldig.  |
+|Ongeldig gebouwId meegegeven   |Error 400  |/ |De waarde 'gebouwId' is ongeldig.  |
 |Onbestaand gebouwId meegegeven  |Error 404 |/  |/  |
 |GeometrieMethode = ingemetenGRB|Ticketing error|GebouwGeometrieMethodeIngemetenGRB| Deze actie is enkel toegestaan op gebouwen met geometrieMethode 'ingeschetst'.|
   
@@ -111,7 +152,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
-|Ongeldig gebouwId meegegeven   |Error 400  |/ |De waarde '<meegegeven gebouwId>' is ongeldig.  |
+|Ongeldig gebouwId meegegeven   |Error 400  |/ |De waarde 'gebouwId' is ongeldig.  |
 |Onbestaand gebouwId meegegeven  |Error 404 |/  |/  |
 |Status gebouwId gepland/gehistoreerd/nietGerealiseerd|Ticketing error|GebouwGeplandGehistoreerdOfNietGerealiseerd | Deze actie is enkel toegestaan op gebouwen met status 'gerealiseerd'.  |
 |GeometrieMethode = ingemetenGRB|Ticketing error|GebouwGeometrieMethodeIngemetenGRB| Deze actie is enkel toegestaan op gebouwen met geometrieMethode 'ingeschetst'.|
@@ -122,7 +163,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
-|Ongeldig gebouwId meegegeven   |Error 400  |/ |De waarde '<meegegeven gebouwId>' is ongeldig.  |
+|Ongeldig gebouwId meegegeven   |Error 400  |/ |De waarde 'gebouwId' is ongeldig.  |
 |Onbestaand gebouwId meegegeven  |Error 404 |/  |/  |
 |Status gebouwId inAanbouw/gehistoreerd/gerealiseerd|Ticketing error|GebouwInAanbouwGerealiseerdOfGehistoreerd | Deze actie is enkel toegestaan op geschetste    gebouwen met status 'nietGerealiseerd’. |
 |GeometrieMethode = ingemetenGRB|Ticketing error|GebouwGeometrieMethodeIngemetenGRB| Deze actie is enkel toegestaan op gebouwen met geometrieMethode 'ingeschetst'.|
@@ -132,7 +173,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
-|Ongeldig gebouwId meegegeven   |Error 400  |/ |De waarde '<meegegeven gebouwId>' is ongeldig.  |
+|Ongeldig gebouwId meegegeven   |Error 400  |/ |De waarde 'gebouwId' is ongeldig.  |
 |Onbestaand gebouwId meegegeven  |Error 404 |/  |/  |
 |Status gebouwId gerealiseerd/gehistoreerd/nietGerealiseerd|Ticketing error|GebouwGerealiseerdGehistoreerdOfNietGerealiseerd | Deze actie is enkel toegestaan op geschetste    gebouwen met status 'inAanbouw’. |
 |Verwijderd gebouwId meegegeven |Ticketing error |VerwijderdGebouw  |Verwijderd gebouw.  |
@@ -141,7 +182,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
-|Ongeldig gebouwId meegegeven   |Error 400  |/ |De waarde '<meegegeven gebouwId>' is ongeldig.  |
+|Ongeldig gebouwId meegegeven   |Error 400  |/ |De waarde 'gebouwId' is ongeldig.  |
 |Onbestaand gebouwId meegegeven  |Error 404 |/  |/  |
 |Status gebouwId gehistoreerd/gerealiseerd|Ticketing error|GebouwGehistoreerdOfNietGerealiseerd | Deze actie is enkel toegestaan op gebouwen met status 'gepland', 'inAanbouw' of 'gerealiseerd'. |
 |GeometrieMethode = ingemetenGRB|Ticketing error|GebouwGeometrieMethodeIngemetenGRB| Deze actie is enkel toegestaan op gebouwen met geometrieMethode 'ingeschetst'.|
