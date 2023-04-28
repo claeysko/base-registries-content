@@ -167,6 +167,8 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 ![image](https://user-images.githubusercontent.com/49196256/230023688-b3aa4e31-3763-4fec-b0fd-5c0cf30a9b89.png)
 
 ![image](https://user-images.githubusercontent.com/49196256/230024850-b30397f7-6fff-4c22-887a-abc9a81bade6.png)
+  
+####Heradresseren van adressen binnen éénzelfde straatnaam of naar een andere straatnaam
 
 ![image](https://user-images.githubusercontent.com/49196256/230025148-561c1cea-2239-4422-9445-97a616cf3279.png)
 
