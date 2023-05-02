@@ -100,10 +100,10 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |:---:|:---:|:---:|:---:|
 |Ongeldig straatnaamId meegegeven   |Error 400  |/ |De waarde 'straatnaamId' is ongeldig.  |
 |Het veld homoniemtoevoegingen niet meegegeven/onbestaande taal meegegeven   |Error 400  |JsonInvalid |Json is not valid |
-|Meegegeven homoniemToevoeging > 20 tekens  |Error 400  |StraatnaamHomoniemToevoegingMaxlengteValidatie |Maximum lengte van een homoniemToevoeging in 'taal' is 20 tekens. U heeft momenteel <aantalTekens> tekens.  |
+|Meegegeven homoniemToevoeging > 20 tekens  |Error 400  |StraatnaamHomoniemToevoegingMaxlengteValidatie| Maximum lengte van een homoniemToevoeging in 'taal' is 20 tekens. U heeft momenteel <aantalTekens> tekens.  |
 |Onbestaand straatnaamId meegegeven  |Error 404 |/  |/  |
 |Status straatnaamId gehistoreerd/afgekeurd|Ticketing error|StraatnaamGehistoreerdOfAfgekeurd| Deze actie is enkel toegestaan op straatnamen met status 'voorgesteld' of 'inGebruik'. |
-|Homoniemtoevoeging bestaat reeds in deze gemeente voor dezelfde straatnaam |Ticketing error |StraatnaamHomoniemToevoegingBestaatReedsInGemeente  |Binnen deze gemeente bestaat er reeds een straatnaam met status 'voorgesteld' of 'inGebruik' met dezelfde straatnaam en homoniemToevoeging.   |
+|Homoniemtoevoeging bestaat reeds in deze gemeente voor dezelfde straatnaam |Ticketing error |StraatnaamHomoniemToevoegingBestaatReedsInGemeente  | Binnen deze gemeente bestaat er reeds een straatnaam met status 'voorgesteld' of 'inGebruik' met dezelfde straatnaam en homoniemToevoeging.   |
 |Geen homoniemtoevoeging voor bepaalde taal aanwezig |Ticketing error |StraatnaamHomoniemToevoeging  |Er kan geen homoniemToevoeging worden toegevoegd    voor taalcode 'taal'. |
 |Verwijderd straatnaamId meegegeven |Ticketing error |VerwijderdeStraatnaam  |Verwijderde straatnaam.  |
 
@@ -272,9 +272,32 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Verwijderd adresId meegegeven |Ticketing error |VerwijderdAdres  |Verwijderd adres.  | 
    
 #### Corrigeer het huisnummer van een adres
-  
+
+|Validatie|Soort error|ErrorCode|ErrorMessage|
+|:---:|:---:|:---:|:---:|
+|Ongeldig adresId meegegeven   |Error 400  |/ |De waarde 'adresId' is ongeldig.  |
+|Het veld huisnummer niet of leeg meegegeven |Error 400  |JsonInvalid |Json is not valid. |
+|Huisnummer voldoet niet aan regex huisnummer |Error 400  |AdresOngeldigHuisnummerformaat |Ongeldig huisnummerformaat. |
+|Onbestaand adresId meegegeven  |Error 404 |/  |/  |
+|Status adresId afgekeurd/gehistoreerd|Ticketing error|AdresGehistoreerdOfAfgekeurd| Deze actie is enkel toegestaan op adressen met status 'voorgesteld' of 'inGebruik'. |   
+|Wanneer het huisnummer al bestaat|Ticketing error |AdresBestaandeHuisnummerBusnummerCombinatie  |Deze combinatie huisnummer-busnummer bestaat reeds voor de opgegeven straatnaam.   |  
+|Het adres mag geen busnummer zijn.|Ticketing error |AdresCorrectieHuisnummermetBusnummer  |Te corrigeren huisnummer mag geen busnummer bevatten.   |   
+|Adres in straatnaam met status afgekeurd/gehistoreerd|Ticketing error|AdresStraatnaamVoorgesteldOfInGebruik| Deze actie is enkel toegestaan binnen straatnamen met  status 'voorgesteld' of 'inGebruik'. |
+|Verwijderd adresId meegegeven |Ticketing error |VerwijderdAdres  |Verwijderd adres.  | 
    
 #### Corrigeer het busnummer van een adres
+
+|Validatie|Soort error|ErrorCode|ErrorMessage|
+|:---:|:---:|:---:|:---:|
+|Ongeldig adresId meegegeven   |Error 400  |/ |De waarde 'adresId' is ongeldig.  |
+|Het veld busnummer niet of leeg meegegeven |Error 400  |JsonInvalid |Json is not valid. |
+|Busnummer voldoet niet aan regex busnummer |Error 400  |AdresOngeldigBusnummerformaat |Ongeldig busnummerformaat. |
+|Onbestaand adresId meegegeven  |Error 404 |/  |/  |
+|Status adresId afgekeurd/gehistoreerd|Ticketing error|AdresGehistoreerdOfAfgekeurd| Deze actie is enkel toegestaan op adressen met status 'voorgesteld' of 'inGebruik'. |   
+|Wanneer het busnummer al bestaat|Ticketing error |AdresBestaandeHuisnummerBusnummerCombinatie  |Deze combinatie huisnummer-busnummer bestaat reeds voor de opgegeven straatnaam.   |  
+|Het adres mag geen huisnummer zijn.|Ticketing error |AdresHuisnummerZonderBusnummer  |Het adres heeft geen te corrigeren busnummer.   |   
+|Adres in straatnaam met status afgekeurd/gehistoreerd|Ticketing error|AdresStraatnaamVoorgesteldOfInGebruik| Deze actie is enkel toegestaan binnen straatnamen met  status 'voorgesteld' of 'inGebruik'. |
+|Verwijderd adresId meegegeven |Ticketing error |VerwijderdAdres  |Verwijderd adres.  | 
 
 ## Gebouwen
 
