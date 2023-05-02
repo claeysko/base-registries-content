@@ -6,13 +6,13 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
-|Straatnaam leeg of null meegegeven|Error 400 |StraatnaamNietLeegValidatie|Straatnaam in '<taal>' kan niet leeg zijn.| 
-|Meegegeven straatnaam > 60 tekens|Error 400 |StraatnaamMaxlengteValidatie|Maximum lengte van een straatnaam in '<taal>' is 60          tekens. U heeft momenteel <aantaltekens> tekens.| 
-|Niet Vlaamse gemeente meegegeven|Error 400 |StraatnaamVlaamsGewestValidatie|De gemeente '<gemeenteId>' is geen Vlaamse gemeente.|
-|Onbestaande gemeente meegegeven|Error 400 |StraatnaamGemeenteNietGekendValidatie|De gemeente '<gemeenteId>' is niet gekend in het gemeenteregister. |
+|Straatnaam leeg of null meegegeven|Error 400 |StraatnaamNietLeegValidatie|Straatnaam in 'taal' kan niet leeg zijn.| 
+|Meegegeven straatnaam > 60 tekens|Error 400 |StraatnaamMaxlengteValidatie|Maximum lengte van een straatnaam in 'taal' is 60          tekens. U heeft momenteel <aantaltekens> tekens.| 
+|Niet Vlaamse gemeente meegegeven|Error 400 |StraatnaamVlaamsGewestValidatie|De gemeente 'gemeenteId' is geen Vlaamse gemeente.|
+|Onbestaande gemeente meegegeven|Error 400 |StraatnaamGemeenteNietGekendValidatie|De gemeente 'gemeenteId' is niet gekend in het gemeenteregister. |
 |Het veld gemeenteId niet meegegeven/het veld straatnamen niet meegegeven/onbestaande taal meegegeven|Error 400 |JsonInvalid| Json is not valid.|
-|Straatnaam bestaat reeds in de gemeente|Ticketing error |StraatnaamBestaatReedsInGemeente|Straatnaam '<straatnaam>' bestaat reeds in de gemeente.|
-|De meegegeven taal is geen officiële of faciliteitentaal van de gemeente|Ticketing error  | StraatnaamTaalNietInOfficieleOfFaciliteitenTaal|'Straatnamen' kunnen enkel voorkomen in de officiële of   faciliteitentaal van de gemeente.|
+|Straatnaam bestaat reeds in de gemeente|Ticketing error |StraatnaamBestaatReedsInGemeente|Straatnaam 'straatnaam' bestaat reeds in de gemeente.|
+|De meegegeven taal is geen officiële of faciliteitentaal van de gemeente|Ticketing error  | StraatnaamTaalNietInOfficieleOfFaciliteitenTaal|'Straatnamen' kunnen enkel voorkomen in de officiële of faciliteitentaal van de gemeente.|
 |Er ontbreekt een officiële- of faciliteitentaal|Ticketing error | StraatnaamOntbreektOfficieleOfFaciliteitenTaal|In 'Straatnamen' ontbreekt een officiële of faciliteitentaal. |
 |Gehistoreerde Vlaamse gemeente meegegeven|Ticketing error |StraatnaamGemeenteVoorgesteldOfInGebruik|Deze actie is enkel toegestaan binnen gemeenten met       status 'voorgesteld' of 'inGebruik'.|
   
@@ -123,7 +123,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Het veld positie leeg meegegeven   |Error 400  |AdresPositieVerplicht |De positie is verplicht.   |
 |Ongeldig waarde bij positie meegegeven   |Error 400  |AdresPositieformaatValidatie |De positie is geen geldige gml-puntgeometrie.   |
 |Postcode ligt niet in de gemeente van het adres |Ticketing error |AdresPostinfoNietInGemeente  |De ingevoerde postcode wordt niet gebruikt binnen deze gemeente.  | 
-|Wanneer het huisnummer/busnummer al bestaat|Ticketing error |AdresBestaandeHuisnummerBusnummerCombinatie  |   Deze combinatie huisnummer-busnummer bestaat reeds voor de opgegeven straatnaam.   |  
+|Wanneer het huisnummer/busnummer al bestaat|Ticketing error |AdresBestaandeHuisnummerBusnummerCombinatie  | Deze combinatie huisnummer-busnummer bestaat reeds voor de opgegeven straatnaam.   |  
 |Adres met busnummer meegeven, maar geen adres met huisnummer aanwezig |Ticketing error |AdresActiefHuisNummerNietGekendValidatie | Er bestaat geen actief adres zonder busnummer voor straatnaam 'straatnaamId' en huisnummer 'huisnummer'.   | 
 |Meegegeven straatnaam heeft status afgekeurd/gehistoreerd |Ticketing error |AdresStraatnaamGehistoreerdOfAfgekeurd  |De straatnaam is gehistoreerd of afgekeurd.   | 
 |Meegegeven postinfoId is verschillend tov postinfoId van het adres met huisnummer |Ticketing error |AdresPostinfoNietHetzelfdeAlsHuisnummer  | De ingevoerde postcode komt niet overeen met de postcode van het huisnummer.   | 
