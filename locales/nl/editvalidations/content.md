@@ -155,8 +155,32 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 
 #### Corrigeer de afkeuring van een adres
   
+|Validatie|Soort error|ErrorCode|ErrorMessage|
+|:---:|:---:|:---:|:---:|
+|Ongeldig adresId meegegeven   |Error 400  |/ |De waarde 'adresId' is ongeldig.  |
+|Onbestaand adresId meegegeven  |Error 404 |/  |/  |
+|Adres is een busnummer & mag niet voorlopen op status adres dat huisnummer is|Ticketing error |AdresHuisnummerAfgekeurdOfGehistoreerd |Deze actie is enkel toegestaan op adressen waarbij het huisnummer de status ‘voorgesteld' of ‘inGebruik’ heeft. |
+|Wanneer het huisnummer of busnummer al bestaat|Ticketing error |AdresBestaandeHuisnummerBusnummerCombinatie |Deze combinatie huisnummer-busnummer bestaat reeds voor de opgegeven straatnaam. |
+|Adres met huisnummer werd gecorrigeerd na opheffing van adres met busnummer|Ticketing error |AdresBusnummerHuisnummerInconsistent | Deze actie is niet toegestaan op een busnummer wegens een inconsistent huisnummer.|
+|Postcode van adres met huisnummer werd gecorrigeerd na opheffing adres met busnummer|Ticketing error |AdresBusnummerPostcodeInconsistent |Deze actie is niet toegestaan op een busnummer wegens een inconsistente postcode. |  
+|Status adresId afgekeurd/gehistoreerd|Ticketing error|AdresGehistoreerdOfAfgekeurd| Deze actie is enkel toegestaan op adressen met status 'voorgesteld' of 'inGebruik'. |
+|Adres in straatnaam met status afgekeurd/gehistoreerd|Ticketing error|AdresStraatnaamVoorgesteldOfInGebruik| Deze actie is enkel toegestaan binnen straatnamen met  status 'voorgesteld' of 'inGebruik'. |
+|Verwijderd adresId meegegeven |Ticketing error |VerwijderdAdres  |Verwijderd adres.  | 
+  
 #### Corrigeer de opheffing van een adres
-
+  
+|Validatie|Soort error|ErrorCode|ErrorMessage|
+|:---:|:---:|:---:|:---:|
+|Ongeldig adresId meegegeven   |Error 400  |/ |De waarde 'adresId' is ongeldig.  |
+|Onbestaand adresId meegegeven  |Error 404 |/  |/  |
+|Adres is een busnummer & mag niet voorlopen op status adres dat huisnummer is|Ticketing error |AdresHuisnummerVoorgesteldAfgekeurdOfGehistoreerd |Deze actie is enkel toegestaan op adressen waarbij het huisnummer de status ‘inGebruik’ heeft. |
+|Wanneer het huisnummer of busnummer al bestaat|Ticketing error |AdresBestaandeHuisnummerBusnummerCombinatie |Deze combinatie huisnummer-busnummer bestaat reeds voor de opgegeven straatnaam. |
+|Adres met huisnummer werd gecorrigeerd na opheffing van adres met busnummer|Ticketing error |AdresBusnummerHuisnummerInconsistent | Deze actie is niet toegestaan op een busnummer wegens een inconsistent huisnummer.|
+|Postcode van adres met huisnummer werd gecorrigeerd na opheffing adres met busnummer|Ticketing error |AdresBusnummerPostcodeInconsistent |Deze actie is niet toegestaan op een busnummer wegens een inconsistente postcode. |  
+|Status adresId afgekeurd/voorgesteld|Ticketing error|AdresVoorgesteldOfAfgekeurd| Deze actie is enkel toegestaan op adressen met status 'gehistoreerd'. |
+|Adres in straatnaam met status afgekeurd/gehistoreerd|Ticketing error|AdresStraatnaamVoorgesteldOfInGebruik| Deze actie is enkel toegestaan binnen straatnamen met  status 'voorgesteld' of 'inGebruik'. |
+|Verwijderd adresId meegegeven |Ticketing error |VerwijderdAdres  |Verwijderd adres.  |   
+  
 #### Verwijder een adres
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
@@ -209,8 +233,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |:---:|:---:|:---:|:---:|
 |Ongeldig gebouwId meegegeven   |Error 400  |/ |De waarde 'gebouwId' is ongeldig.  |
 |Onbestaand gebouwId meegegeven  |Error 404 |/  |/  |
-|Status gebouwId gepland/gehistoreerd/nietGerealiseerd|Ticketing error|GebouwGehistoreerdGeplandOfNietGerealiseerd
-| Deze actie is enkel toegestaan op gebouwen met status 'inAanbouw'. |
+|Status gebouwId gepland/gehistoreerd/nietGerealiseerd|Ticketing error|GebouwGehistoreerdGeplandOfNietGerealiseerd| Deze actie is enkel toegestaan op gebouwen met status 'inAanbouw'. |
 |Verwijderd gebouwId meegegeven |Ticketing error |VerwijderdGebouw  |Verwijderd gebouw.  |
   
 #### Realiseer een gebouw niet
@@ -282,8 +305,8 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |GebouwId leeg of ongeldige waarde meegegeven   |Error 400  |GebouweenheidGebouwIdNietGekendValidatie |De gebouwId 'gebouwId' is niet gekend in het                    gebouwenregister.   |
 |Het veld positie niet/leeg meegegeven  |Error 400  |GebouweenheidGebouwIdNietGekendValidatie |De verplichte parameter 'positie' ontbreekt.  |
 |Het veld positie met ongeldige waarde meegegeven  |Error 400  |GebouweenheidPositieformaatValidatie |De positie is geen geldige gml-puntgeometrie.  |
-|De nieuwe positie ligt buiten de geometrie van het gebouw|Ticketing error |GebouweenheidOngeldigePositieValidatie  |De positie dient binnen de geometrie van het gebouw te liggen.  |
-|Gehistoreerd of nietGerealiseerd gebouwId meegegeven |Ticketing error |GebouweenheidGebouwIdNietGerealiseerdofGehistoreerd  |De gebouwId is niet gerealiseerd of gehistoreerd.  |
+|De nieuwe positie ligt buiten de geometrie van het gebouw|Ticketing error |GebouweenheidOngeldigePositieValidatie | De positie dient binnen de geometrie van het gebouw te liggen.  |
+|Gehistoreerd of nietGerealiseerd gebouwId meegegeven |Ticketing error |GebouweenheidGebouwIdNietGerealiseerdofGehistoreerd | De gebouwId is niet gerealiseerd of gehistoreerd.  |
   
 #### Realiseer een gebouweenheid
 
