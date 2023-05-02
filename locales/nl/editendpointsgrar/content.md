@@ -29,6 +29,7 @@ Hieronder kan per register een lijst gevonden worden van welke beheeracties er a
 * Verwijder een adres. (Interne bijwerker)
 * Regulariseer een adres. (Decentrale bijwerker)
 * Deregulariseer een adres. (Decentrale bijwerker)
+* Heradresseren van adressen binnen éénzelfde straatnaam of naar een andere straatnaam. (Decentrale bijwerker)
 * Corrigeer de adrespositie van een adres. (Decentrale bijwerker)
 * Corrigeer de postcode van een adres. (Decentrale bijwerker)
 * Corrigeer het huisnummer van een adres. (Decentrale bijwerker)
@@ -39,7 +40,6 @@ Hieronder kan per register een lijst gevonden worden van welke beheeracties er a
 * Corrigeer de regularisatie van een adres. (Decentrale bijwerker)
 * Corrigeer de deregularisatie van een adres. (Decentrale bijwerker)
 * Wijzig de postcode van een adres. (Interne bijwerker)
-* Heradresseren van adressen binnen éénzelfde straatnaam of naar een andere straatnaam. (Decentrale bijwerker)
 
 ### Gebouwen
 * Plan een gebouw in. (Decentrale bijwerker)
