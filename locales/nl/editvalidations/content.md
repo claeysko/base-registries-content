@@ -418,8 +418,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Onbestaand gebouweenheidId meegegeven  |Error 404 |/  |/  |
 |De nieuwe positie ligt buiten de geometrie van het gebouw  |Ticketing error  |GebouweenheidOngeldigePositieValidatie |De positie dient binnen de geometrie van het gebouw te liggen.   |  
 |Gebouweenheid met functie gemeenschappelijkDeel meegegeven |Ticketing error |GebouweenheidGemeenschappelijkDeel  |Deze actie is niet toegestaan op gebouweenheden me functie gemeenschappelijkDeel.  |
-|Gebouweenheid ligt in gebouw met status gehistoreerd/nietGerealiseerd |Ticketing error |GebouwStatusNietInGeplandInAanbouwOfGerealiseerd
-  |Deze actie is enkel toegestaan binnen een gepland, inAanbouw of gerealiseerd gebouw.  |
+|Gebouweenheid ligt in gebouw met status gehistoreerd/nietGerealiseerd |Ticketing error |GebouwStatusNietInGeplandInAanbouwOfGerealiseerd|Deze actie is enkel toegestaan binnen een gepland, inAanbouw of gerealiseerd gebouw.  |
 |Status gebouweenheidId gehistoreerd/nietGerealiseerd|Ticketing error|GebouweenheidNietGerealiseerdOfGehistoreerd | Deze actie is enkel toegestaan op gebouweenheden met status 'gepland' of 'gerealiseerd'. |
 |Verwijderd gebouweenheidId meegegeven |Ticketing error |VerwijderdeGebouweenheid  |Verwijderde gebouweenheid.  |
 
