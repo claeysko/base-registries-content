@@ -25,7 +25,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Status straatnaamId gehistoreerd/afgekeurd|Ticketing error|StraatnaamAfgekeurdOfGehistoreerd| Deze actie is enkel toegestaan op straatnamen met status 'voorgesteld' . |
 |Verwijderd straatnaamId meegegeven |Ticketing error |VerwijderdeStraatnaam  |Verwijderde straatnaam.  |
 
- #### Keur een straatnaam af 
+#### Keur een straatnaam af 
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
@@ -73,7 +73,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Straatnaam in gemeente met status gehistoreerd |Ticketing error |StraatnaamGemeenteInGebruik  |Deze actie is enkel toegestaan binnen gemeenten met       status 'inGebruik'. |
 |Verwijderd straatnaamId meegegeven |Ticketing error |VerwijderdeStraatnaam  |Verwijderde straatnaam.  |
   
- #### Verwijder een straatnaam
+#### Verwijder een straatnaam
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
@@ -94,7 +94,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |De meegegeven taal is geen officiële of faciliteitentaal van de gemeente|Ticketing error |StraatnaamTaalNietInOfficieleOfFaciliteitenTaal|'Straatnamen' kunnen enkel voorkomen in de officiële of faciliteitentaal van de gemeente.|
 |Verwijderd straatnaamId meegegeven |Ticketing error |VerwijderdeStraatnaam  |Verwijderde straatnaam.  |
   
- #### Corrigeer de homoniemtoevoeging van een straatnaam 
+#### Corrigeer de homoniemtoevoeging van een straatnaam 
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
@@ -109,8 +109,10 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 
 
 ## Adressen
+  
+#### Stel een adres voor
 
-![image](https://user-images.githubusercontent.com/49196256/230035405-5cc4461a-5d55-46fc-aa1c-3c03715b64c8.png)
+
 
 #### Keur een adres goed
 
@@ -207,7 +209,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Verwijderd adresId meegegeven |Ticketing error |VerwijderdAdres  |Verwijderd adres.  |
 |Adres is een busnummer & mag niet voorlopen op status adres dat huisnummer is|Ticketing error |AdresHuisnummerVoorgesteldGehistoreerdOfAfgekeurd |Deze actie is enkel toegestaan op adressen waarbij het huisnummer de status ‘inGebruik’ heeft. |
 
-####Heradresseren van adressen binnen éénzelfde straatnaam of naar een andere straatnaam
+#### Heradresseren van adressen binnen éénzelfde straatnaam of naar een andere straatnaam
   
 #### Corrigeer de regularisering van een adres
   
@@ -227,17 +229,52 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Onbestaand adresId meegegeven  |Error 404 |/  |/  |
 |Status adresId afgekeurd/gehistoreerd|Ticketing error|AdresGehistoreerdOfAfgekeurd| Deze actie is enkel toegestaan op adressen met status 'voorgesteld' of 'inGebruik'. |
 |Verwijderd adresId meegegeven |Ticketing error |VerwijderdAdres  |Verwijderd adres.  |  
-
-![image](https://user-images.githubusercontent.com/49196256/230029836-da1538c7-fa3a-4209-a7eb-59de7178ecff.png)
-
-![image](https://user-images.githubusercontent.com/49196256/230030336-5b2861b2-685b-4187-87cd-e945a5c858ea.png)
-
-![image](https://user-images.githubusercontent.com/49196256/230033275-24372c0b-08c2-414e-b702-0f915e803312.png)
-
-![image](https://user-images.githubusercontent.com/49196256/230033308-d14eca70-ae00-468d-bdc2-d399cfc0291b.png)
-
-![image](https://user-images.githubusercontent.com/49196256/230034840-caacaeb6-83b4-4bf3-a499-183f37da02e9.png)
-
+  
+#### Corrigeer de adrespositie van een adres
+ 
+|Validatie|Soort error|ErrorCode|ErrorMessage|
+|:---:|:---:|:---:|:---:|
+|Ongeldig adresId meegegeven   |Error 400  |/ |De waarde 'adresId' is ongeldig.  |
+|Combinatie positieGeometrieMethode & positieSpecificatie is niet correct  |Error 400  |AdresPositieSpecificatieValidatie |Ongeldige positieSpecificatie. |
+|Het veld positie leeg meegegeven   |Error 400  |AdresPositieVerplicht |De positie is verplicht.   |
+|Ongeldig waarde bij positie meegegeven   |Error 400  |AdresPositieformaatValidatie |De positie is geen geldige gml-puntgeometrie.   |
+|Het veld positie/positieSpecificatie/positieGeometrieMethode niet/leeg/onbestaande waarde meegegeven  |Error 400  |JsonInvalid |Json is not valid. |
+|Onbestaand adresId meegegeven  |Error 404 |/  |/  |
+|Status adresId afgekeurd/gehistoreerd|Ticketing error|AdresGehistoreerdOfAfgekeurd| Deze actie is enkel toegestaan op adressen met status 'voorgesteld' of 'inGebruik'. |
+|Adres in straatnaam met status afgekeurd/gehistoreerd|Ticketing error|AdresStraatnaamVoorgesteldOfInGebruik| Deze actie is enkel toegestaan binnen straatnamen met  status 'voorgesteld' of 'inGebruik'. |
+|Verwijderd adresId meegegeven |Ticketing error |VerwijderdAdres  |Verwijderd adres.  |  
+ 
+#### Corrigeer de postcode van een adres
+  
+|Validatie|Soort error|ErrorCode|ErrorMessage|
+|:---:|:---:|:---:|:---:|
+|Ongeldig adresId meegegeven   |Error 400  |/ |De waarde 'adresId' is ongeldig.  |
+|Het veld postinfoId niet meegegeven |Error 400  |JsonInvalid |Json is not valid. |
+|Onbestaande postinfoId meegegeven |Error 400  |AdresPostinfoNietGekendValidatie |De postinfo 'postinfoId' is niet gekend in het                        postinforegister.  |
+|Onbestaand adresId meegegeven  |Error 404 |/  |/  |
+|Status adresId afgekeurd/gehistoreerd|Ticketing error|AdresGehistoreerdOfAfgekeurd| Deze actie is enkel toegestaan op adressen met status 'voorgesteld' of 'inGebruik'. |
+|Postcode ligt niet in de gemeente van het adres |Ticketing error |AdresPostinfoNietInGemeente  |De ingevoerde postcode wordt niet gebruikt binnen deze gemeente.  |  
+|Het adres is een busnummer|Ticketing error |AdresPostinfoGeenHuisnummer  |Het is niet mogelijk om de postcode van een busnummer te veranderen.   |  
+|Adres in straatnaam met status afgekeurd/gehistoreerd|Ticketing error|AdresStraatnaamVoorgesteldOfInGebruik| Deze actie is enkel toegestaan binnen straatnamen met  status 'voorgesteld' of 'inGebruik'. |
+|Verwijderd adresId meegegeven |Ticketing error |VerwijderdAdres  |Verwijderd adres.  |   
+   
+#### Wijzig de postcode van een adres
+  
+|Validatie|Soort error|ErrorCode|ErrorMessage|
+|:---:|:---:|:---:|:---:|
+|Ongeldig adresId meegegeven   |Error 400  |/ |De waarde 'adresId' is ongeldig.  |
+|Het veld postinfoId niet meegegeven |Error 400  |JsonInvalid |Json is not valid. |
+|Onbestaande postinfoId meegegeven |Error 400  |AdresPostinfoNietGekendValidatie |De postinfo 'postinfoId' is niet gekend in het                        postinforegister.  |
+|Onbestaand adresId meegegeven  |Error 404 |/  |/  |
+|Status adresId afgekeurd/gehistoreerd|Ticketing error|AdresGehistoreerdOfAfgekeurd| Deze actie is enkel toegestaan op adressen met status 'voorgesteld' of 'inGebruik'. |  
+|Het adres is een busnummer|Ticketing error |AdresPostinfoGeenHuisnummer  |Het is niet mogelijk om de postcode van een busnummer te veranderen.   |  
+|Adres in straatnaam met status afgekeurd/gehistoreerd|Ticketing error|AdresStraatnaamVoorgesteldOfInGebruik| Deze actie is enkel toegestaan binnen straatnamen met  status 'voorgesteld' of 'inGebruik'. |
+|Verwijderd adresId meegegeven |Ticketing error |VerwijderdAdres  |Verwijderd adres.  | 
+   
+#### Corrigeer het huisnummer van een adres
+  
+   
+#### Corrigeer het busnummer van een adres
 
 ## Gebouwen
 
