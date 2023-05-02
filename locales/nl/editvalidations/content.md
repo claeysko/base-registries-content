@@ -49,7 +49,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |:---:|:---:|:---:|:---:|
 |Ongeldig straatnaamId meegegeven   |Error 400  |/ |De waarde 'straatnaamId' is ongeldig.  |
 |Onbestaand straatnaamId meegegeven  |Error 404 |/  |/  |
-|Status straatnaamId gehistoreerd/inGebruik|Ticketing error|StraatnaamGehistoreerdOfInGebruik| Deze actie is enkel toegestaan op straatnamen met status 'inGebruik'. |
+|Status straatnaamId gehistoreerd/inGebruik|Ticketing error|StraatnaamGehistoreerdAfgekeurd| Deze actie is enkel toegestaan op straatnamen met status 'inGebruik'. |
 |Verwijderd straatnaamId meegegeven |Ticketing error |VerwijderdeStraatnaam  |Verwijderde straatnaam.  |
   
 #### Corrigeer de afkeuring van een straatnaam 
