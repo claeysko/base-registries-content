@@ -112,12 +112,9 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
   
 #### Stel een adres voor
 
-#### Corrigeer het busnummer van een adres
-
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
-|Het veld postinfoId/straatnaamId/huisnummer/positieGeometrieMethode/positieSpecificatie/positie niet/leeg/onbestaande waarde meegegeven |Error 400| JsonInvalid | 
-  Json is not valid. |
+|Het veld postinfoId/straatnaamId/huisnummer/positieGeometrieMethode/positieSpecificatie/positie niet/leeg/onbestaande waarde meegegeven |Error 400| JsonInvalid |Json is not valid. |
 |Huisnummer voldoet niet aan regex huisnummer |Error 400  |AdresOngeldigHuisnummerformaat |Ongeldig huisnummerformaat. |
 |Busnummer voldoet niet aan regex busnummer |Error 400  |AdresOngeldigBusnummerformaat |Ongeldig busnummerformaat. |
 |Onbestaand postinfoId meegegeven  |Error 400 |AdresPostinfoNietGekendValidatie |   De postinfo 'postinfoId' is niet gekend in het postinforegister. |
