@@ -58,7 +58,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |:---:|:---:|:---:|:---:|
 |Ongeldig straatnaamId meegegeven   |Error 400  |/ |De waarde 'straatnaamId' is ongeldig.  |
 |Onbestaand straatnaamId meegegeven  |Error 404 |/  |/  |
-|Status straatnaamId gehistoreerd/inGebruik|Ticketing error|StraatnaamInGebruikGehistoreerd| Deze actie is enkel toegestaan op straatnamen met status 'afgekeurd'. |
+|Status straatnaamId gehistoreerd/inGebruik|Ticketing error|StraatnaamGehistoreerdOfInGebruik| Deze actie is enkel toegestaan op straatnamen met status 'afgekeurd'. |
 |Straatnaam bestaat in gemeente met status voorgesteld/inGebruik |Ticketing error |StraatnaamBestaatReedsInGemeente  |Straatnaam 'straatnaam' bestaat reeds in de gemeente. |
 |Verwijderd straatnaamId meegegeven |Ticketing error |VerwijderdeStraatnaam  |Verwijderde straatnaam.  |
   
