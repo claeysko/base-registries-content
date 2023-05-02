@@ -292,7 +292,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Ongeldig gebouweenheidId meegegeven   |Error 400  |/ |De waarde 'gebouweenheidId' is ongeldig.  |
 |Onbestaand gebouweenheidId meegegeven  |Error 404 |/  |/  |
 |Gebouweenheid met functie gemeenschappelijkDeel meegegeven |Ticketing error |GebouweenheidGemeenschappelijkDeel  |Deze actie is niet toegestaan op gebouweenheden me functie gemeenschappelijkDeel.  |
-|Gebouweenheid ligt in gebouw met status gepland/inAanbouw/gehistoreerd/nietGerealiseerd |Ticketing error |GebouwStatusNietInGerealiseerd  |Deze actie is enkel toegestaan binnen een gerealiseerd gebouw.  |
+|Gebouweenheid ligt in gebouw met status gepland/inAanbouw/gehistoreerd/nietGerealiseerd |Ticketing error | GebouwStatusNietInGerealiseerd|Deze actie is enkel toegestaan binnen een gerealiseerd gebouw.  |
 |Status gebouweenheidId gehistoreerd/nietGerealiseerd|Ticketing error|GebouweenheidGehistoreerdOfNietGerealiseerd| Deze actie is enkel toegestaan op gebouweenheden met status 'gepland'. |
 |Verwijderd gebouweenheidId meegegeven |Ticketing error |VerwijderdeGebouweenheid  |Verwijderde gebouweenheid.  |
   
