@@ -123,7 +123,7 @@ Hiervoor zijn 2 aparte API’s gemaakt. De API ‘Corrigeer de postcode van een 
  
 Zie https://basisregisters.staging-vlaanderen.be/documentatie/editendpointsgrar/validaties.
  
-**Flow statussen**  
+## Flow statussen  
  
 Zie https://basisregisters.staging-vlaanderen.be/documentatie/statusflowgrar.
  
