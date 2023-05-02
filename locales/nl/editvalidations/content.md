@@ -567,7 +567,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Ongeldige waarde bij adresId / verwijderd adresId meegegeven |Error 400|GebouweenheidAdresOngeldig|Ongeldig adresId.|
 |AdresId met status afgekeurd/gehistoreerd meegegeven|Error 400|GebouweenheidAdresAfgekeurdOfGehistoreerd| Het adres is afgekeurd of gehistoreerd.|
 |Onbestaand gebouweenheidId meegegeven  |Error 404|/  |/  |
-|Status gebouweenheidId gehistoreerd/nietGerealiseerd|Ticketing error|GebouweenheidNietGerealiseerdOfGehistoreerd| Deze actie is enkel toegestaan op percelen met status 'gepland' of 'gerealiseerd'.|
+|Status gebouweenheidId gehistoreerd/nietGerealiseerd|Ticketing error|GebouweenheidNietGerealiseerdOfGehistoreerd| Deze actie is enkel toegestaan op gebouweenheden met status 'gepland' of 'gerealiseerd'.|
 |Verwijderd gebouweenheidId meegegeven |Ticketing error|VerwijderdeGebouweenheid|Verwijderde gebouweenheid.|
   
 #### Ontkoppel een adres van een gebouweenheid
