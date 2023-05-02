@@ -187,16 +187,46 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |:---:|:---:|:---:|:---:|
 |Ongeldig adresId meegegeven   |Error 400  |/ |De waarde 'adresId' is ongeldig.  |
 |Onbestaand adresId meegegeven  |Error 404 |/  |/  |
-
-![image](https://user-images.githubusercontent.com/49196256/230023688-b3aa4e31-3763-4fec-b0fd-5c0cf30a9b89.png)
-
-![image](https://user-images.githubusercontent.com/49196256/230024850-b30397f7-6fff-4c22-887a-abc9a81bade6.png)
   
+#### Regulariseer een adres
+
+|Validatie|Soort error|ErrorCode|ErrorMessage|
+|:---:|:---:|:---:|:---:|
+|Ongeldig adresId meegegeven   |Error 400  |/ |De waarde 'adresId' is ongeldig.  |
+|Onbestaand adresId meegegeven  |Error 404 |/  |/  |
+|Status adresId afgekeurd/gehistoreerd|Ticketing error|AdresGehistoreerdOfAfgekeurd| Deze actie is enkel toegestaan op adressen met status 'voorgesteld' of 'inGebruik'. |
+|Verwijderd adresId meegegeven |Ticketing error |VerwijderdAdres  |Verwijderd adres.  |  
+  
+#### Deregulariseer een adres
+  
+|Validatie|Soort error|ErrorCode|ErrorMessage|
+|:---:|:---:|:---:|:---:|
+|Ongeldig adresId meegegeven   |Error 400  |/ |De waarde 'adresId' is ongeldig.  |
+|Onbestaand adresId meegegeven  |Error 404 |/  |/  |
+|Status adresId afgekeurd/gehistoreerd|Ticketing error|AdresGehistoreerdOfAfgekeurd| Deze actie is enkel toegestaan op adressen met status 'voorgesteld' of 'inGebruik'. |
+|Verwijderd adresId meegegeven |Ticketing error |VerwijderdAdres  |Verwijderd adres.  |
+|Adres is een busnummer & mag niet voorlopen op status adres dat huisnummer is|Ticketing error |AdresHuisnummerVoorgesteldGehistoreerdOfAfgekeurd |Deze actie is enkel toegestaan op adressen waarbij het huisnummer de status ‘inGebruik’ heeft. |
+
 ####Heradresseren van adressen binnen éénzelfde straatnaam of naar een andere straatnaam
+  
+#### Corrigeer de regularisering van een adres
+  
+|Validatie|Soort error|ErrorCode|ErrorMessage|
+|:---:|:---:|:---:|:---:|
+|Ongeldig adresId meegegeven   |Error 400  |/ |De waarde 'adresId' is ongeldig.  |
+|Onbestaand adresId meegegeven  |Error 404 |/  |/  |
+|Status adresId afgekeurd/gehistoreerd|Ticketing error|AdresGehistoreerdOfAfgekeurd| Deze actie is enkel toegestaan op adressen met status 'voorgesteld' of 'inGebruik'. |
+|Verwijderd adresId meegegeven |Ticketing error |VerwijderdAdres  |Verwijderd adres.  |
+|Adres is een busnummer & mag niet voorlopen op status adres dat huisnummer is|Ticketing error |AdresHuisnummerVoorgesteldGehistoreerdOfAfgekeurd |Deze actie is enkel toegestaan op adressen waarbij het huisnummer de status ‘inGebruik’ heeft. |
+  
+#### Corrigeer de deregularisering van een adres
 
-![image](https://user-images.githubusercontent.com/49196256/230025148-561c1cea-2239-4422-9445-97a616cf3279.png)
-
-![image](https://user-images.githubusercontent.com/49196256/230024911-8812c8ac-2a66-46cd-addb-7c88828b25db.png)
+|Validatie|Soort error|ErrorCode|ErrorMessage|
+|:---:|:---:|:---:|:---:|
+|Ongeldig adresId meegegeven   |Error 400  |/ |De waarde 'adresId' is ongeldig.  |
+|Onbestaand adresId meegegeven  |Error 404 |/  |/  |
+|Status adresId afgekeurd/gehistoreerd|Ticketing error|AdresGehistoreerdOfAfgekeurd| Deze actie is enkel toegestaan op adressen met status 'voorgesteld' of 'inGebruik'. |
+|Verwijderd adresId meegegeven |Ticketing error |VerwijderdAdres  |Verwijderd adres.  |  
 
 ![image](https://user-images.githubusercontent.com/49196256/230029836-da1538c7-fa3a-4209-a7eb-59de7178ecff.png)
 
@@ -420,9 +450,8 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |:---:|:---:|:---:|:---:|
 |Ongeldig gebouweenheidId meegegeven   |Error 400  |/ |De waarde 'gebouweenheidId' is ongeldig.  |
 |Onbestaand gebouweenheidId meegegeven  |Error 404 |/  |/  |
-|Gebouweenheid met functie gemeenschappelijkDeel meegegeven |Ticketing error |GebouweenheidGemeenschappelijkDeel  |Deze actie is niet toegestaan op gebouweenheden me functie gemeenschappelijkDeel.  |
-|Gebouweenheid ligt in gebouw met status gehistoreerd/nietGerealiseerd |Ticketing error |
-  GebouwStatusNietInGeplandInAanbouwOfGerealiseerd  |Deze actie is enkel toegestaan binnen een gepland, inAanbouw of gerealiseerd gebouw.  |
+|Gebouweenheid met functie gemeenschappelijkDeel meegegeven |Ticketing error |GebouweenheidGemeenschappelijkDeel | Deze actie is niet toegestaan op gebouweenheden me functie gemeenschappelijkDeel.  |
+|Gebouweenheid ligt in gebouw met status gehistoreerd/nietGerealiseerd |Ticketing error | GebouwStatusNietInGeplandInAanbouwOfGerealiseerd | Deze actie is enkel toegestaan binnen een gepland, inAanbouw of gerealiseerd gebouw.  |
 |Status gebouweenheidId gehistoreerd/nietGerealiseerd|Ticketing error|GebouweenheidNietGerealiseerdOfGehistoreerd | Deze actie is enkel toegestaan op gebouweenheden met status 'gepland' of 'gerealiseerd'. |
 |Verwijderd gebouweenheidId meegegeven |Ticketing error |VerwijderdeGebouweenheid  |Verwijderde gebouweenheid.  |
 
