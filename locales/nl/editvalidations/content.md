@@ -179,8 +179,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |:---:|:---:|:---:|:---:|
 |Ongeldig adresId meegegeven   |Error 400  |/ |De waarde 'adresId' is ongeldig.  |
 |Onbestaand adresId meegegeven  |Error 404 |/  |/  |
-|Adres is een busnummer & mag niet voorlopen op status adres dat huisnummer is|Ticketing error |AdresHuisnummerAfgekeurdOfGehistoreerd |
-  Deze actie is enkel toegestaan op adressen waarbij het huisnummer de status ‘voorgesteld' of ‘inGebruik’ heeft. |
+|Adres is een busnummer & mag niet voorlopen op status adres dat huisnummer is|Ticketing error |AdresHuisnummerAfgekeurdOfGehistoreerd | Deze actie is enkel toegestaan op adressen waarbij het huisnummer de status ‘voorgesteld' of ‘inGebruik’ heeft. |
 |Wanneer het huisnummer of busnummer al bestaat|Ticketing error |AdresBestaandeHuisnummerBusnummerCombinatie | Deze combinatie huisnummer-busnummer bestaat reeds voor de opgegeven straatnaam. |
 |Adres met huisnummer werd gecorrigeerd na opheffing van adres met busnummer|Ticketing error |AdresBusnummerHuisnummerInconsistent | Deze actie is niet toegestaan op een busnummer wegens een inconsistent huisnummer.|
 |Postcode van adres met huisnummer werd gecorrigeerd na opheffing adres met busnummer|Ticketing error |AdresBusnummerPostcodeInconsistent | Deze actie is niet toegestaan op een busnummer wegens een inconsistente postcode. |  
@@ -215,8 +214,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |:---:|:---:|:---:|:---:|
 |Ongeldig adresId meegegeven   |Error 400  |/ |De waarde 'adresId' is ongeldig.  |
 |Onbestaand adresId meegegeven  |Error 404 |/  |/  |
-|Status adresId afgekeurd/gehistoreerd|Ticketing error|AdresGehistoreerdOfAfgekeurd| 
-  Deze actie is enkel toegestaan op adressen met status 'voorgesteld' of 'inGebruik'. |
+|Status adresId afgekeurd/gehistoreerd|Ticketing error|AdresGehistoreerdOfAfgekeurd| Deze actie is enkel toegestaan op adressen met status 'voorgesteld' of 'inGebruik'. |
 |Verwijderd adresId meegegeven |Ticketing error |VerwijderdAdres  |Verwijderd adres.  |  
   
 #### Deregulariseer een adres
@@ -264,8 +262,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |:---:|:---:|:---:|:---:|
 |Ongeldig adresId meegegeven   |Error 400  |/ |De waarde 'adresId' is ongeldig.  |
 |Onbestaand adresId meegegeven  |Error 404 |/  |/  |
-|Status adresId afgekeurd/gehistoreerd|Ticketing error|AdresGehistoreerdOfAfgekeurd| 
-  Deze actie is enkel toegestaan op adressen met status 'voorgesteld' of 'inGebruik'. |
+|Status adresId afgekeurd/gehistoreerd|Ticketing error|AdresGehistoreerdOfAfgekeurd| Deze actie is enkel toegestaan op adressen met status 'voorgesteld' of 'inGebruik'. |
 |Verwijderd adresId meegegeven |Ticketing error |VerwijderdAdres  |Verwijderd adres.  |  
   
 #### Corrigeer de adrespositie van een adres
@@ -288,8 +285,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |:---:|:---:|:---:|:---:|
 |Ongeldig adresId meegegeven   |Error 400  |/ |De waarde 'adresId' is ongeldig.  |
 |Het veld postinfoId niet meegegeven |Error 400  |JsonInvalid |Json is not valid. |
-|Onbestaande postinfoId meegegeven |Error 400  |AdresPostinfoNietGekendValidatie |
-  De postinfo 'postinfoId' is niet gekend in het postinforegister.  |
+|Onbestaande postinfoId meegegeven |Error 400  |AdresPostinfoNietGekendValidatie | De postinfo 'postinfoId' is niet gekend in het postinforegister.  |
 |Onbestaand adresId meegegeven  |Error 404 |/  |/  |
 |Status adresId afgekeurd/gehistoreerd|Ticketing error|AdresGehistoreerdOfAfgekeurd| Deze actie is enkel toegestaan op adressen met status 'voorgesteld' of 'inGebruik'. |
 |Postcode ligt niet in de gemeente van het adres |Ticketing error |AdresPostinfoNietInGemeente  |De ingevoerde postcode wordt niet gebruikt binnen deze gemeente.  |  
@@ -303,8 +299,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |:---:|:---:|:---:|:---:|
 |Ongeldig adresId meegegeven   |Error 400  |/ |De waarde 'adresId' is ongeldig.  |
 |Het veld postinfoId niet meegegeven |Error 400  |JsonInvalid |Json is not valid. |
-|Onbestaande postinfoId meegegeven |Error 400  |AdresPostinfoNietGekendValidatie |
-  De postinfo 'postinfoId' is niet gekend in het postinforegister.  |
+|Onbestaande postinfoId meegegeven |Error 400  |AdresPostinfoNietGekendValidatie | De postinfo 'postinfoId' is niet gekend in het postinforegister.  |
 |Onbestaand adresId meegegeven  |Error 404 |/  |/  |
 |Status adresId afgekeurd/gehistoreerd|Ticketing error|AdresGehistoreerdOfAfgekeurd| Deze actie is enkel toegestaan op adressen met status 'voorgesteld' of 'inGebruik'. |  
 |Het adres is een busnummer|Ticketing error |AdresPostinfoGeenHuisnummer  |Het is niet mogelijk om de postcode van een busnummer te veranderen.   |  
@@ -432,8 +427,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
 |Het veld gebouwId/afwijkingVastgesteld/functie/positieGeometrieMethode niet meegegeven / Ongeldige waarde of leeg bij positieGeometrieMethode/afwijkingVastgesteld/functie meegegeven  |Error 400  |JsonInvalid |Json is not valid.  |
-|GebouwId leeg of ongeldige waarde meegegeven   |Error 400  |GebouweenheidGebouwIdNietGekendValidatie |
-  De gebouwId 'gebouwId' is niet gekend in het gebouwenregister.   |
+|GebouwId leeg of ongeldige waarde meegegeven |Error 400 |GebouweenheidGebouwIdNietGekendValidatie | De gebouwId 'gebouwId' is niet gekend in het gebouwenregister.   |
 |Het veld positie niet/leeg meegegeven  |Error 400  |GebouweenheidGebouwIdNietGekendValidatie |De verplichte parameter 'positie' ontbreekt.  |
 |Het veld positie met ongeldige waarde meegegeven  |Error 400  |GebouweenheidPositieformaatValidatie |De positie is geen geldige gml-puntgeometrie.  |
 |De nieuwe positie ligt buiten de geometrie van het gebouw|Ticketing error |GebouweenheidOngeldigePositieValidatie | De positie dient binnen de geometrie van het gebouw te liggen.  |
@@ -471,6 +465,36 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Status gebouweenheidId gepland/nietGerealiseerd|Ticketing error|GebouweenheidGeplandOfNietGerealiseerd| Deze actie is enkel toegestaan op gebouweenheden met status 'gerealiseerd'. |
 |Verwijderd gebouweenheidId meegegeven |Ticketing error |VerwijderdeGebouweenheid  |Verwijderde gebouweenheid.  |
   
+#### Verwijder een gebouweenheid
+
+|Validatie|Soort error|ErrorCode|ErrorMessage|
+|:---:|:---:|:---:|:---:|
+|Ongeldig gebouweenheidId meegegeven   |Error 400  |/ |De waarde 'gebouweenheidId' is ongeldig.  |
+|Onbestaand gebouweenheidId meegegeven  |Error 404 |/  |/  |
+|Gebouweenheid met functie gemeenschappelijkDeel meegegeven |Ticketing error |GebouweenheidGemeenschappelijkDeel  | Deze actie is niet toegestaan op gebouweenheden me functie gemeenschappelijkDeel.  |
+
+#### Regulariseer een gebouweenheid
+  
+|Validatie|Soort error|ErrorCode|ErrorMessage|
+|:---:|:---:|:---:|:---:|
+|Ongeldig gebouweenheidId meegegeven   |Error 400  |/ |De waarde 'gebouweenheidId' is ongeldig.  |
+|Onbestaand gebouweenheidId meegegeven  |Error 404 |/  |/  |
+|Gebouweenheid met functie gemeenschappelijkDeel meegegeven |Ticketing error |GebouweenheidGemeenschappelijkDeel  | Deze actie is niet toegestaan op gebouweenheden me functie gemeenschappelijkDeel.  |
+|Gebouweenheid ligt in gebouw met status gehistoreerd/nietGerealiseerd |Ticketing error |GebouwStatusNietInGeplandInAanbouwOfGerealiseerd | Deze actie is enkel toegestaan binnen een gepland, inAanbouw of gerealiseerd gebouw.  |
+|Status gebouweenheidId gehistoreerd/nietGerealiseerd|Ticketing error|GebouweenheidNietGerealiseerdOfGehistoreerd | Deze actie is enkel toegestaan op gebouweenheden met status 'gepland' of 'gerealiseerd'. |
+|Verwijderd gebouweenheidId meegegeven |Ticketing error |VerwijderdeGebouweenheid  |Verwijderde gebouweenheid.  |
+  
+#### Deregulariseer een gebouweenheid
+  
+|Validatie|Soort error|ErrorCode|ErrorMessage|
+|:---:|:---:|:---:|:---:|
+|Ongeldig gebouweenheidId meegegeven   |Error 400  |/ |De waarde 'gebouweenheidId' is ongeldig.  |
+|Onbestaand gebouweenheidId meegegeven  |Error 404 |/  |/  |
+|Gebouweenheid met functie gemeenschappelijkDeel meegegeven |Ticketing error |GebouweenheidGemeenschappelijkDeel  | Deze actie is niet toegestaan op gebouweenheden me functie gemeenschappelijkDeel.  |
+|Gebouweenheid ligt in gebouw met status gehistoreerd/nietGerealiseerd |Ticketing error  | GebouwStatusNietInGeplandInAanbouwOfGerealiseerd|Deze actie is enkel toegestaan binnen een gepland, inAanbouw of gerealiseerd gebouw.|
+|Status gebouweenheidId gehistoreerd/nietGerealiseerd|Ticketing error|GebouweenheidNietGerealiseerdOfGehistoreerd | Deze actie is enkel toegestaan op gebouweenheden met status 'gepland' of 'gerealiseerd'. |
+|Verwijderd gebouweenheidId meegegeven |Ticketing error |VerwijderdeGebouweenheid  |Verwijderde gebouweenheid.  |
+  
 #### Corrigeer de realisering van een gebouweenheid
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
@@ -501,39 +525,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Gebouweenheid met functie gemeenschappelijkDeel meegegeven |Ticketing error |GebouweenheidGemeenschappelijkDeel  | Deze actie is niet toegestaan op gebouweenheden me functie gemeenschappelijkDeel.  |
 |Gebouweenheid ligt in gebouw met status gepland/inAanbouw/gehistoreerd/nietGerealiseerd |Ticketing error |GebouwStatusNietInGerealiseerd  | Deze actie is enkel toegestaan binnen een gerealiseerd gebouw.  |
 |Status gebouweenheidId gepland/nietGerealiseerd|Ticketing error|GebouweenheidNietGerealiseerdOfGepland| Deze actie is enkel toegestaan op gebouweenheden met status 'gehistoreerd'. |
-|Verwijderd gebouweenheidId meegegeven |Ticketing error |VerwijderdeGebouweenheid  |Verwijderde gebouweenheid.  |
-
-#### Verwijder een gebouweenheid
-
-|Validatie|Soort error|ErrorCode|ErrorMessage|
-|:---:|:---:|:---:|:---:|
-|Ongeldig gebouweenheidId meegegeven   |Error 400  |/ |De waarde 'gebouweenheidId' is ongeldig.  |
-|Onbestaand gebouweenheidId meegegeven  |Error 404 |/  |/  |
-|Gebouweenheid met functie gemeenschappelijkDeel meegegeven |Ticketing error |GebouweenheidGemeenschappelijkDeel  |
-  Deze actie is niet toegestaan op gebouweenheden me functie gemeenschappelijkDeel.  |
-  
-  
-#### Regulariseer een gebouweenheid
-  
-|Validatie|Soort error|ErrorCode|ErrorMessage|
-|:---:|:---:|:---:|:---:|
-|Ongeldig gebouweenheidId meegegeven   |Error 400  |/ |De waarde 'gebouweenheidId' is ongeldig.  |
-|Onbestaand gebouweenheidId meegegeven  |Error 404 |/  |/  |
-|Gebouweenheid met functie gemeenschappelijkDeel meegegeven |Ticketing error |GebouweenheidGemeenschappelijkDeel  | Deze actie is niet toegestaan op gebouweenheden me functie gemeenschappelijkDeel.  |
-|Gebouweenheid ligt in gebouw met status gehistoreerd/nietGerealiseerd |Ticketing error |GebouwStatusNietInGeplandInAanbouwOfGerealiseerd | Deze actie is enkel toegestaan binnen een gepland, inAanbouw of gerealiseerd gebouw.  |
-|Status gebouweenheidId gehistoreerd/nietGerealiseerd|Ticketing error|GebouweenheidNietGerealiseerdOfGehistoreerd | Deze actie is enkel toegestaan op gebouweenheden met status 'gepland' of 'gerealiseerd'. |
-|Verwijderd gebouweenheidId meegegeven |Ticketing error |VerwijderdeGebouweenheid  |Verwijderde gebouweenheid.  |
-  
-#### Deregulariseer een gebouweenheid
-  
-|Validatie|Soort error|ErrorCode|ErrorMessage|
-|:---:|:---:|:---:|:---:|
-|Ongeldig gebouweenheidId meegegeven   |Error 400  |/ |De waarde 'gebouweenheidId' is ongeldig.  |
-|Onbestaand gebouweenheidId meegegeven  |Error 404 |/  |/  |
-|Gebouweenheid met functie gemeenschappelijkDeel meegegeven |Ticketing error |GebouweenheidGemeenschappelijkDeel  | Deze actie is niet toegestaan op gebouweenheden me functie gemeenschappelijkDeel.  |
-|Gebouweenheid ligt in gebouw met status gehistoreerd/nietGerealiseerd |Ticketing error  | GebouwStatusNietInGeplandInAanbouwOfGerealiseerd|Deze actie is enkel toegestaan binnen een gepland, inAanbouw of gerealiseerd gebouw.|
-|Status gebouweenheidId gehistoreerd/nietGerealiseerd|Ticketing error|GebouweenheidNietGerealiseerdOfGehistoreerd | Deze actie is enkel toegestaan op gebouweenheden met status 'gepland' of 'gerealiseerd'. |
-|Verwijderd gebouweenheidId meegegeven |Ticketing error |VerwijderdeGebouweenheid  |Verwijderde gebouweenheid.  |
+|Verwijderd gebouweenheidId meegegeven |Ticketing error |VerwijderdeGebouweenheid  |Verwijderde gebouweenheid.  |  
   
 #### Corrigeer de regularisering van een gebouweenheid
 
