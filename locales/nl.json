@@ -82,6 +82,11 @@
         "subtitle": "Hoe werken de API's functioneel? Leer het hier.",
         "url": "/documentatie"
       },
+        "title": "Producten basisregisters",
+        "subtitle": "Welke producten hebben we? Lees het hier.",
+        "url": "/producten",
+        "hide": false
+      }, 
       {
         "title": "Implementatiemodel",
         "subtitle": "De specificatie voor gegevensuitwisseling.",
