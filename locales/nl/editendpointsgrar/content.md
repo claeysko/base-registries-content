@@ -136,22 +136,18 @@ Zie https://basisregisters.staging-vlaanderen.be/documentatie/statusflowgrar.
  
  ### Veld ‘metadata’
  
-- Wanneer er een actie wordt uitgevoerd op een bestaand objectId dan bestaat de inhoud van het veld metadata in het ticket uit de volgende velden :
+- Wanneer er een actie wordt uitgevoerd dan bestaat de inhoud van het veld metadata in het ticket uit de volgende velden :
   - action
   -	objectId
   -	registry
   -	aggregateId
-
-- Wanneer er een nieuw objectId wordt aangemaakt dan bestaat de inhoud van het veld metadata in het ticket uit de volgende velden:
-  -	action
-  -	registry
-  -	aggregateId
-  - Uitzondering: De edit API ‘Plan een gebouw in’ heeft het veld ‘aggregateId’ niet.
+  - Uitzondering: De edit API ‘Stel een straatnaam voor’, 'Stel een adres voor' en 'Plan een gebouweenheid in' hebben het veld ‘objectId’ niet.
 
 - Betekenis velden:
-  -	Action: De naam van de uitgevoerde actie.
-  -	Registry: In welk register deze actie zich bevindt.
-  -	AggregateId:  In het domein gedreven ontwerp (DDD) betekent een "aggregaat" een groep van objecten die bij elkaar horen en samenwerken om een bepaalde taak uit te voeren. Dit aggregaat is een soort "pakketje" van objecten die samenwerken en als één geheel worden beheerd.
+  -	action: De naam van de uitgevoerde actie.
+  - objectId: Het objectId van het meegegeven of nieuwe object.
+  -	registry: In welk register deze actie zich bevindt.
+  -	aggregateId:  In het domein gedreven ontwerp (DDD) betekent een "aggregaat" een groep van objecten die bij elkaar horen en samenwerken om een bepaalde taak uit te voeren. Dit aggregaat is een soort "pakketje" van objecten die samenwerken en als één geheel worden beheerd.
 Het idee hierachter is dat het aggregaat zorgt voor consistentie en dat alle veranderingen die binnen het aggregaat plaatsvinden als één geheel worden opgeslagen of teruggedraaid. Dit zorgt voor een duidelijke grens voor de buitenwereld, waarbij alle communicatie met de objecten binnen het aggregaat plaatsvindt via één centraal punt.
 Deze structuur helpt bij het organiseren van complexe bedrijfsprocessen en zorgt ervoor dat verschillende objecten binnen het systeem beter kunnen worden beheerd. Dit zorgt voor meer flexibiliteit en onderhoudbaarheid van de software, wat uiteindelijk kan leiden tot betere prestaties en efficiëntie.
 
