@@ -92,6 +92,7 @@
         "url": "/documentatie",
         "hide": false
       },
+      {
         "title": "Producten basisregisters",
         "subtitle": "Welke producten hebben we? Lees het hier.",
         "url": "/producten",
