@@ -1,3 +1,14 @@
+><font size="5">**Belangrijke update:** Het CRAB wordt vanaf 1 november 2023 niet meer bijgewerkt vanwege de migratie naar het Gebouwen- en Adressenregister. Bekijk alle informatie op [Gebouwen- en Adressenregister][6] en schrijf je in voor infosessies [Gebouwen- en Adressenregister | Vlaanderen.be][5]. Contacteer ons via digitaal.vlaanderen@vlaanderen.be voor hulp of vragen.</font>
+ <vl-alert
+            icon="warning"
+            title="Opgelet!"
+            mod-error
+            role="alertdialog">
+            <p>
+                **Belangrijke update:** Het CRAB wordt vanaf 1 november 2023 niet meer bijgewerkt vanwege de migratie naar het Gebouwen- en Adressenregister. Bekijk alle informatie op [Gebouwen- en Adressenregister][6] en schrijf je in voor infosessies [Gebouwen- en Adressenregister | Vlaanderen.be][5]. Contacteer ons via digitaal.vlaanderen@vlaanderen.be voor hulp of vragen.
+            </p>
+        </vl-alert>
+
 ## Basisregisters Vlaanderen
 
 Digitaal Vlaanderen investeert in een geïntegreerd stelsel van kwalitatieve basisregisters die hergebruik van data stimuleren en dubbele registratie vermijden. Deze registers vormen een stelsel van onderling verbonden authentieke gegevensbronnen. Ze vormen het fundament voor een vlotte gegevensuitwisseling- en integratie binnen en buiten de overheid.
@@ -8,5 +19,25 @@ Het **Wegenregister** is het middenschalig referentiebestand van de wegen in Vla
 
 ### Nuttige informatie
 
-- Productpagina Gebouwen- en Adressenregister: https://www.vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/gebouwen-en-adressenregister
-- Productpagina Wegenregister: https://www.vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/wegenregister
+* [Productpagina Gebouwen- en Adressenregister][1]
+* [Productpagina Wegenregister][2]
+
+### Statuspagina
+    
+* [Statuspagina Gebouwen- en Adressenregister][3]
+* [Statuspagina Wegenregister][4]
+
+
+[1]:https://www.vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/gebouwen-en-adressenregister
+[2]:https://www.vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/wegenregister
+[3]:https://www.vlaanderen.be/digitaal-vlaanderen/status/status-overzicht?product=Gebouwen-%20en%20Adressenregister
+[4]:https://www.vlaanderen.be/digitaal-vlaanderen/status/status-overzicht?product=Wegenregister
+[5]:https://www.vlaanderen.be/digitaal-vlaanderen/agenda/evenementen/gebouwen-en-adressenregister
+[6]:https://vlaamseoverheid.atlassian.net/wiki/spaces/AGB/pages/6094099791/Gebouwen-+en+Adressenregister
+    
+      
+        
+          
+            
+  
+  
