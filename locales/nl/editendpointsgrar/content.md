@@ -141,7 +141,7 @@ Zie https://basisregisters.staging-vlaanderen.be/documentatie/statusflowgrar.
   -	objectId
   -	registry
   -	aggregateId
-  - Uitzondering: De edit API ‘Stel een straatnaam voor’, 'Stel een adres voor' en 'Plan een gebouweenheid in' hebben het veld ‘objectId’ niet.
+  - Uitzondering: De edit API ‘Stel een straatnaam voor’, 'Stel een adres voor', 'Heradresseren van adressen binnen éénzelfde straatnaam of naar een andere straatnaam' en 'Plan een gebouweenheid in' hebben het veld ‘objectId’ niet.
 
 - Betekenis velden:
   -	action: De naam van de uitgevoerde actie.
