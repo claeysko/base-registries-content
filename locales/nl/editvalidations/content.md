@@ -7,7 +7,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
 |Straatnaam leeg of null meegegeven|Error 400 |StraatnaamNietLeegValidatie|Straatnaam in 'taal' kan niet leeg zijn.| 
-|Meegegeven straatnaam > 60 tekens|Error 400 |StraatnaamMaxlengteValidatie|Maximum lengte van een straatnaam in 'taal' is 60          tekens. U heeft momenteel <aantaltekens> tekens.| 
+|Meegegeven straatnaam > 60 tekens|Error 400 |StraatnaamMaxlengteValidatie|Maximum lengte van een straatnaam in 'taal' is 60 tekens. U heeft momenteel <aantaltekens> tekens.| 
 |Niet Vlaamse gemeente meegegeven|Error 400 |StraatnaamVlaamsGewestValidatie|De gemeente 'gemeenteId' is geen Vlaamse gemeente.|
 |Onbestaande gemeente meegegeven|Error 400 |StraatnaamGemeenteNietGekendValidatie|De gemeente 'gemeenteId' is niet gekend in het gemeenteregister. |
 |Het veld gemeenteId niet meegegeven/het veld straatnamen niet meegegeven/onbestaande taal meegegeven|Error 400 |JsonInvalid| Json is not valid.|
@@ -15,6 +15,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |De meegegeven taal is geen officiële of faciliteitentaal van de gemeente|Ticketing error  | StraatnaamTaalNietInOfficieleOfFaciliteitenTaal|'Straatnamen' kunnen enkel voorkomen in de officiële of faciliteitentaal van de gemeente.|
 |Er ontbreekt een officiële- of faciliteitentaal|Ticketing error | StraatnaamOntbreektOfficieleOfFaciliteitenTaal|In 'Straatnamen' ontbreekt een officiële of faciliteitentaal. |
 |Gehistoreerde Vlaamse gemeente meegegeven|Ticketing error |StraatnaamGemeenteVoorgesteldOfInGebruik|Deze actie is enkel toegestaan binnen gemeenten met       status 'voorgesteld' of 'inGebruik'.|
+  
 #### Keur een straatnaam goed
 |<div width="50%">Validatie</div>|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
