@@ -1,10 +1,5 @@
 ____
-## Waarom dit handboek? {#waarom-dit-handboek}
-
-
-Dit handboek dient om alle verschillende integratiemethodes te beschrijven.
-
-## Overzicht {#overzicht}
+## Technische integratie met het gebouwen- en adressenregister
 
 1. [LDES](#ldes)
 2. [Kafka](#kafka)
