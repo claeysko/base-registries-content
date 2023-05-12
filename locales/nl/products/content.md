@@ -46,9 +46,9 @@ Voor de read endpoints zijn er zowel v1 als v2 endpoints beschikbaar. De v2 read
 
 ##### Wat is het verschil tussen de v1 en de v2 endpoints?
 *  Het content-type van v2 is ‘application/ld+json’. Van v1 is dit default ‘application+json’, maar ‘application/xml’ is ook mogelijk.
-* Er zijn 2 velden bijgekomen, namelijk @context en @type.
-  * Het @context veld bevat de linked-data context van het endpoint. Dit is een URI naar de JSON-LD file.
-  * Het @type veld bevat het linked-data type van het endpoint.
+* Er zijn 2 velden bijgekomen, namelijk `@context` en `@type`.
+  * Het `@context` veld bevat de linked-data context van het endpoint. Dit is een URI naar de JSON-LD file.
+  * Het `@type` veld bevat het linked-data type van het endpoint.
 * De geometrievelden bij ‘Vraag een adres op (v2)’, ‘Vraag een gebouw op (v2)’ en ‘Vraag een gebouweenheid op (v2)’ zijn gewijzigd. De coördinaten van het object staan vanaf nu in het gml-formaat en alle velden die met geometrie te maken hebben zijn samengevoegd onder 1 veld.
 
 ##### Wat betekent 'conform aan het OSLO-model'?
@@ -63,17 +63,17 @@ In de browser moet een accept header meegegeven worden bij de request. In Chrome
 #### Beoogde toepassing
 De endpoints onder Feeds laten u toe om alle wijzigingen per objecttype of ‘resource’ op te vragen. Deze maken gebruik van Atom als standaard.
 
-Aan de hand van een feed kan u de wijzigingen op drie manieren opvragen: als gebeurtenissen(‘business events’), als de daaruit resulterende objectversies, of een combinatie van beide. Dit doet u door aan de embed parameter respectievelijk event, object of object,event mee te geven.
+Aan de hand van een feed kan u de wijzigingen op drie manieren opvragen: als gebeurtenissen(‘business events’), als de daaruit resulterende objectversies, of een combinatie van beide. Dit doet u door aan de `embed` parameter respectievelijk `event`, `object` of `object,event` mee te geven.
 
-U gebruikt de from parameter om een startpunt te kiezen vanaf waar u de wijzigingen wilt binnenhalen, in combinatie met de limit parameter voor het aantal wijzigingen.
+U gebruikt de `from` parameter om een startpunt te kiezen vanaf waar u de wijzigingen wilt binnenhalen, in combinatie met de `limit` parameter voor het aantal wijzigingen.
 
 Deze functionaliteit stelt u in staat een pull-based mechanisme te bouwen om op de hoogte te blijven van voor u relevante wijzigingen. Zo kan u uw lokale databank bijwerken met de laatst beschikbare informatie uit het centrale register, of kan u bijvoorbeeld de gebeurtenissen als trigger gebruiken om uw bedrijfsprocessen te activeren (bv. IF[‘AddressWasRetired’ AND ‘dossier gekoppeld aan adres’] THEN ‘check of dossier mag afgesloten worden’).
 
 #### Aan de slag
 In pseudo-code zou u als volgt wijzigingen binnenhalen:
-* Roep het feed endpoint aan van het objecttype dat u wenst, zonder 'from' parameter.
-* Lees het '<link>' veld met 'rel="next"' uit om de volgende pagina met wijzigingen te weten te komen.
-* Lees de gevraagde gegevens uit en sla het '<id>' veld van de laatste '<entry>' op de pagina op zodat u weet tot hoever u de wijzigingen reeds verwerkt hebt.
+* Roep het feed endpoint aan van het objecttype dat u wenst, zonder `from` parameter.
+* Lees het `<link>` veld met `rel="next"` uit om de volgende pagina met wijzigingen te weten te komen.
+* Lees de gevraagde gegevens uit en sla het '<id>' veld van de laatste `<entry>` op de pagina op zodat u weet tot hoever u de wijzigingen reeds verwerkt hebt.
 * Roep nu de volgende pagina met wijzigingen aan.
 * Herhaal dit tot u alle gegevens hebt verwerkt en er geen volgende pagina meer is.
         
@@ -81,17 +81,17 @@ Wanneer uw proces zou stopgezet of onderbroken worden, kan u eenvoudig terug opp
 * Roep opnieuw het feed endpoint aan, maar dit keer met de from parameter 1 groter dan het laatste <id> veld dat u hebt uitgelezen.
 * Voer bovenstaande stappen uit om alle gegevens te verwerken.
 
-In het veld '<content>' kan u het event en/of de objectversiedetails terugvinden per wijziging ('<entry>').
+In het veld `<content>` kan u het event en/of de objectversiedetails terugvinden per wijziging (`<entry>`).
 
 #### Betekenis van de events en velden in de feed
-Een overzicht van alle mogelijke business events en de betekenis van de attributen onder het blokje <event> vindt u op deze pagina: https://api.basisregisters.dev-vlaanderen.be/v2/info/events?tags=sync.
+Een overzicht van alle mogelijke business events en de betekenis van de attributen onder het blokje `<event>` vindt u op deze pagina: https://api.basisregisters.dev-vlaanderen.be/v2/info/events?tags=sync.
 
 #### Kanttekening
-Merk op dat de granulariteit vrij hoog is door het doorvertalen van de volledige CRAB-historiek(legacysysteem) naar het Gebouwen- en Adressenregister(GR-AR). Om dezelfde reden zult u zien dat de meeste objecten gradueel opgebouwd worden(toevoegen status, geometrie enz.) tot wanneer ze ‘complete’ zijn.
+Merk op dat de granulariteit vrij hoog is door het doorvertalen van de volledige CRAB-historiek(legacysysteem) naar het Gebouwen- en Adressenregister(GR-AR). Om dezelfde reden zult u zien dat de meeste objecten gradueel opgebouwd worden(toevoegen status, geometrie enz.) tot wanneer ze `complete` zijn.
 
 Het ‘compleet worden van een object’ (wat betekent dat het object nu over alle attributen beschikt volgens het GR-AR-informatiemodel) wordt aangegeven met een apart event.
 
-De persistente identificator van een object (van de vorm https://data.vlaanderen.be/id/<objecttype>/<persistentelokaleid>) waarmee u naar het object kunt verwijzen in uw toepassingen, wordt beschikbaar vanaf het event <objecttype>PersistentLocalIdentifierWasAssigned.
+De persistente identificator van een object (van de vorm `https://data.vlaanderen.be/id/<objecttype>/<persistentelokaleid>`) waarmee u naar het object kunt verwijzen in uw toepassingen, wordt beschikbaar vanaf het event `<objecttype>PersistentLocalIdentifierWasAssigned`.
 
 Wanneer deze identificator nog niet beschikbaar is kunt u gebruik maken van de technische sleutel (GUID die ook in het antwoord aanwezig is) om alle events op één object aan elkaar te relateren. Deze GUID kan enkel gebruikt worden binnen de feed. Voor communicatie met derde partijen dient de persistente identificator gebruikt te worden.
 
@@ -108,15 +108,15 @@ Om de Feeds te gebruiken is het verplicht om een API key mee te geven. Als u dit
 
 #### Provenance
 In het veld Provenance staat de metadata van een event. Het bestaat uit 3 onderdelen:
-* Timestamp/Tijdstip: In dit veld staat het tijdstip waarop het event is uitgevoerd.
-*Organisation/Organisatie: In dit veld staat de organisatie die de agent vertegenwoordigt bij het uitvoeren van een specifieke activiteit en waarvan hij/zij de vereiste autoriteit/verantwoordelijkheid heeft gekregen om dit te doen. De mogelijke waarden bij onderdeel Event zijn: Unknown, Municipality, NationalRegister, Akred, TeleAtlas, Vlm, Agiv, Aiv, DigitaalVlaanderen, Ngi, DePost, NavTeq, Vkbo of Other. De mogelijke waarden bij onderdeel Object zijn: Onbekend, Gemeente, Federale Overheidsdienst Binnenlandse Zaken (Rijksregister), Federale Overheidsdienst Financiën (Algemene Administratie van de Patrimoniumdocumentatie), TeleAtlas, Vlaamse Landmaatschappij, Agentschap voor Geografische Informatie Vlaanderen, Agentschap Informatie Vlaanderen, Digitaal Vlaanderen, Nationaal Geografisch Instituut, bpost, NavTeq, Coördinatiecel Vlaams e-government of Andere.
-* Reason/Reden: In dit veld staat de aanleiding of motivatie voor de activiteit op de entiteit.
+* `Timestamp/Tijdstip`: In dit veld staat het tijdstip waarop het event is uitgevoerd.
+* `Organisation/Organisatie`: In dit veld staat de organisatie die de agent vertegenwoordigt bij het uitvoeren van een specifieke activiteit en waarvan hij/zij de vereiste autoriteit/verantwoordelijkheid heeft gekregen om dit te doen. De mogelijke waarden bij onderdeel `Event` zijn: Unknown, Municipality, NationalRegister, Akred, TeleAtlas, Vlm, Agiv, Aiv, DigitaalVlaanderen, Ngi, DePost, NavTeq, Vkbo of Other. De mogelijke waarden bij onderdeel `Object` zijn: Onbekend, Gemeente, Federale Overheidsdienst Binnenlandse Zaken (Rijksregister), Federale Overheidsdienst Financiën (Algemene Administratie van de Patrimoniumdocumentatie), TeleAtlas, Vlaamse Landmaatschappij, Agentschap voor Geografische Informatie Vlaanderen, Agentschap Informatie Vlaanderen, Digitaal Vlaanderen, Nationaal Geografisch Instituut, bpost, NavTeq, Coördinatiecel Vlaams e-government of Andere.
+* `Reason/Reden`: In dit veld staat de aanleiding of motivatie voor de activiteit op de entiteit.
 
 #### Timestamps 
 De feed bevat een aantal velden waarin een timestamp staat. Hieronder staat de betekenis van de verschillende timestamps.
-* <Feed> <Updated> : Tijdstip waarop de data feed het laatst gewijzigd werd.
-* <Entry> <Updated> : Tijdstip waarop het event zich voordeed.
-*<Entry> <Published> : Tijdstip waarop de eerste versie van het object aangeboden werd.
+* `<Feed> <Updated>` : Tijdstip waarop de data feed het laatst gewijzigd werd.
+* `<Entry> <Updated>` : Tijdstip waarop het event zich voordeed.
+* `<Entry> <Published>` : Tijdstip waarop de eerste versie van het object aangeboden werd.
 
 ### Downloadbestand
 
