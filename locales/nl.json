@@ -77,27 +77,17 @@
     "Prefix": "Basisregisters Vlaanderen",
     "spotlightItems": [
       {
-        "title": "API Documentatie",
-        "subtitle": "Hoe werken de API's technisch? Leer het hier.",
-        "url": {
-          "dev": "https://docs.basisregisters.dev-vlaanderen.be/docs/api-documentation.html#tag/api-documentation.html",
-          "stg": "https://docs.basisregisters.staging-vlaanderen.be/docs/api-documentation.html#tag/api-documentation.html",
-          "prd": "https://docs.basisregisters.vlaanderen.be/docs/api-documentation.html#tag/api-documentation.html"
-        },
+        "title": "Producten basisregisters",
+        "subtitle": "Welke producten hebben we? Lees het hier.",
+        "url": "/producten",
         "hide": false
-      },
+      },     
       {
         "title": "Werking basisregisters",
         "subtitle": "Hoe werken de API's functioneel? Leer het hier.",
         "url": "/documentatie",
         "hide": false
-      },
-      {
-        "title": "Producten basisregisters",
-        "subtitle": "Welke producten hebben we? Lees het hier.",
-        "url": "/producten",
-        "hide": false
-      },      
+      }, 
       {
         "title": "Implementatiemodel",
         "subtitle": "De specificatie voor gegevensuitwisseling.",
