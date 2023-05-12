@@ -17,7 +17,7 @@ Deze informatie kan op verschillende manieren geraadpleegd worden:
 * Via de read endpoints
 * Via de feed endpoints
 * Via het downloadbestand
-* Via de WMS & WFS
+* Via de WMS, WFS & OGC API features
 
 ### Downloadbestand
 
@@ -53,14 +53,17 @@ Om meer te weten te komen over hoe het downloadbestand te gebruiken, kan deze ha
 Om aan de slag te gaan met de feed endpoints van het gebouwen- en adressenregister kan er ook vertrokken worden vanaf het downloadbestand. Zo moeten de feed endpoints niet volledig van het eerste eventid tot het laatste eventid uitgelezen worden. In het downloadbestand zijn er namelijk bestanden met in hun naamgeving ‘_metadata.dbf’. In deze bestanden staat het ‘Latest_event_id’. Dit id wordt in de overeenkomstige feed endpoint meegegeven bij de parameter ‘from’ & dat is het startpunt vanaf waar de feed endpoints kan worden ingelezen op basis van het downloadbestand.  
 * vb. In het bestand Adres_metadata.dbf staat er dat het Latest_event_id = 100 dan wordt er in de feed endpoint adressen het volgende meegegeven: `https://api.basisregisters.vlaanderen.be/v1/feeds/adressen?embed=object,event&from=100`.
 
+#### Bestanden crabHuisnummer & crabSubadres
+In het downloadbestand zijn er ook 2 bestanden te vinden die de mapping maken tussen CRAB & het gebouwen- en adressenregister, namelijk crabHuisnummer.dbf & crabSubadres.dbf. De adres objectid's die in het gebouwen- en adressenregister gebruikt worden zijn andere objectId's dan in het CRAB. Omdat er moet worden overgeschakeld van CRAB naar het gebouwen- en adressenregister, werden deze bestanden voorzien zodat er vlot kan overgeschakeld worden. De laatste versie van deze CRAB objectId's zal nog worden bijwerkt tot en met 1 november 2023. Deze bestanden zullen nog bijgehouden worden na 1 november 2022, maar zullen geen updates meer kennen. Vanaf 1 maart 2024 worden deze bestanden uit het downloadbestand gehaald. 
 
-### WMS & WFS
+### WMS, WFS & OGC API features
 
 Het gebouwen- en adressenregister wordt ook als WMS & WFS ontsloten:
 * De WMS maakt het mogelijk om adressen, gebouwen & gebouweenheden van het gebouwen- en adressenregister te visualiseren op een kaart. Per status is er een laag voorzien. Meer informatie over wat een WMS is, kan [hier][5] gevonden worden. 
 * De WFS maakt het mogelijk om geografische bevragingen te doen op adressen, gebouwen en gebouweenheden van het gebouwen- en adressenregister. Meer informatie over wat een WFS is, kan [hier][6] gevonden worden.
+* De standaard [OGC API Features][9], ontwikkeld door het Open Geospatial Consortium (OGC), specificeert de vereisten en aanbevelingen voor API’s met betrekking tot ruimtelijke gegevens. Het laat toe de adressen, gebouwen en gebouweenheden geometrisch te bevragen. 
 
-Alle URL's van de WMS'en en WFS'en van het gebouwen- en adressenregister kunnen gevonden worden in de catalogus van datavindplaats. 
+Alle URL's van de WMS'en, WFS'en en OGC API features van het gebouwen- en adressenregister kunnen gevonden worden in de catalogus van datavindplaats. 
 
 #### WMS
 * [WMS gebouwenregister][1]
@@ -70,9 +73,16 @@ Alle URL's van de WMS'en en WFS'en van het gebouwen- en adressenregister kunnen 
 * [WFS gebouwenregister][3]
 * [WFS adressenregister][4]
 
+#### OGC API features
+* [OGC API features gebouwenregister][7]
+* [OGC API features adressenregister][8]
+
 [1]:https://www.vlaanderen.be/datavindplaats/catalogus/wms-gebouwenregister
 [2]:https://www.vlaanderen.be/datavindplaats/catalogus/wms-adressenregister
 [3]:https://www.vlaanderen.be/datavindplaats/catalogus/wfs-gebouwenregister
 [4]:https://www.vlaanderen.be/datavindplaats/catalogus/wfs-adressenregister
 [5]:https://vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/geografische-webdiensten/ons-gis-aanbod/raadpleegdiensten
 [6]:https://www.vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/geografische-webdiensten/ons-gis-aanbod/overdrachtdiensten
+[7]:https://www.vlaanderen.be/datavindplaats/catalogus/ogc-api-features-gebouwenregister
+[8]:https://www.vlaanderen.be/datavindplaats/catalogus/ogc-api-features-adressenregister
+[9]:https://ogcapi.ogc.org/features/
