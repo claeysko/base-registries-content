@@ -33,7 +33,7 @@ Het downloadbestand is een momentopname van alle data die het gebouwen- en adres
 #### Inhoud downloadbestand
 
 | Bestandnaam |  Formaat .dbf | Formaat .prj | Formaat .shp | Formaat .shx |
-|:---:|:---:|:---:|:---:|:---:|
+|:-:|:-:|:-:|:-:|:-:|
 | Adres | x | x | x | x |
 | Adres_metadata | x | \ | \ | \ |
 | AdresGebouweenheidKoppelingen | x | \ | \ | \ |
