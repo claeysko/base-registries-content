@@ -1,7 +1,7 @@
 
 ## Gebouwen- en Adressenregister
 
-Dit register verzamelt alle basisinformatie over gebouwen en adressen op het Vlaamse grondgebied in één register. Dit register is hét basisregister voor gebouw- en adresinformatie in Vlaanderen en vormt de centrale koppelstandaard in het netwerk van gebouw- en adresgerelateerde gegevensbronnen. 
+Dit register verzamelt alle basisinformatie over gebouwen en adressen op het Vlaamse grondgebied in één register. Het is hét basisregister voor gebouw- en adresinformatie in Vlaanderen en vormt de centrale koppelstandaard in het netwerk van gebouw- en adresgerelateerde gegevensbronnen. 
 
 Het bestaat uit verschillende registers:
 * Gemeenteregister
@@ -13,7 +13,7 @@ Het bestaat uit verschillende registers:
 
 Voor straatnamen, adressen, gebouwen & gebouweneheden is het gebouwen- en adressenregister de authentieke bron. 
 
-Deze informatie kan op verschillende manieren geraadpleegd worden:
+Er zijn verschillende maniern Deze informatie kan op verschillende manieren geraadpleegd worden:
 - Via de read endpoints
 - Via de feed endpoints
 - Downloadbestand
@@ -21,12 +21,12 @@ Deze informatie kan op verschillende manieren geraadpleegd worden:
 
 ### Downloadbestand
 
-Het downloadbestand gebouwen- en adressenregister kan dagelijks gedownload worden via deze link: https://api.basisregisters.vlaanderen.be/v2/extract. Wanneer de generatie die dag niet gelukt is dan zal er een downloadbestand gedownload worden van de laatste datum waarop de generatie gelukt is.
+Het downloadbestand is een momentopname van alle data die het gebouwen- en adressenregister bevat op die moment. Dit bestand kan dagelijks gedownload worden via deze link: https://api.basisregisters.vlaanderen.be/v2/extract. Wanneer de generatie die dag niet gelukt is dan zal er een downloadbestand gedownload worden van de laatste datum waarop de generatie gelukt is. Het is een zip file met daarin een aantal bestanden van verschillende formaten. De formaten die hierin kunnen teruggevonden worden zijn: .dbf, .shp, .prj & .shx. 
 
-Dit is een zip file met daarin een aantal bestanden van verschillende formaten. De formaten die hierin kunnen teruggevonden worden zijn: .dbf, .shp, .prj & . shx.
+#### Inhoud downloadbestand
 
 | Bestandnaam |  Formaat .dbf | Formaat .prj | Formaat .shp | Formaat .shx |
-|:----------:|:-----:|:-----:|:-----:|:-----:|
+|:---:|:---:|:---:|:---:|:---:|
 | Adres | x | x | x | x |
 | Adres_metadata | x | \ | \ | \ |
 | AdresGebouweenheidKoppelingen | x | \ | \ | \ |
@@ -45,7 +45,14 @@ Dit is een zip file met daarin een aantal bestanden van verschillende formaten. 
 | Postinfo_metadata | x | \ | \ | \ |
 | Straatnaam | x | \ | \ | \ |
 | Straatnaam_metadata | x | \ | \ | \ |
-* [Handleiding opsplitsen donwloadbestand gebouwen- en adressenregister](https://github.com/Informatievlaanderen/base-registries-content/files/11381530/CookBook_opsplitsen_downloadbestand_gebouwen-_en_adressenregister.docx)
+
+#### Handleiding
+Om meer te weten te komen over hoe het downloadbestand te gebruiken, kan deze handleiding gedownload worden: [Handleiding opsplitsen donwloadbestand gebouwen- en adressenregister](https://github.com/Informatievlaanderen/base-registries-content/files/11381530/CookBook_opsplitsen_downloadbestand_gebouwen-_en_adressenregister.docx).
+
+#### Feed endpoints
+Om aan de slag te gaan met de feed endpoints van het gebouwen- en adressenregister kan er ook vertrokken worden vanaf het downloadbestand. Zo moeten de feed endpoints niet volledig van het eerste eventid tot het laatste eventid uitgelezen worden. In het downloadbestand zijn er namelijk bestanden met in hun naamgeving ‘_metadata.dbf’. In deze bestanden staat het ‘Latest_event_id’. Dit id wordt in de overeenkomstige feed endpoint meegegeven bij de parameter ‘from’ & dat is het startpunt vanaf waar de feed endpoints kan worden ingelezen op basis van het downloadbestand.  
+* vb. In het bestand Adres_metadata.dbf staat er dat het Latest_event_id = 100 dan wordt er in de feed endpoint adressen het volgende meegegeven: https://api.basisregisters.vlaanderen.be/v1/feeds/adressen?embed=object,event&from=100.
+
 
 ### WMS & WFS
 
