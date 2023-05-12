@@ -20,7 +20,43 @@ Deze informatie kan op verschillende manieren geraadpleegd worden:
 
 ### Read endpoints
 
-x
+De read endpoints van het gebouwen- en adressenregister kan 
+lijsten opvragen of details van data
+
+Welkom bij de REST API van Basisregisters Vlaanderen!
+
+REST is een webserviceprotocol dat zich leent tot snelle ontwikkeling door het gebruik van HTTP- en JSON-technologie.
+URL rest: https://en.wikipedia.org/wiki/Representational_state_transfer
+
+URL documentatiepagina (omgevingsvariabel maken?):  
+"url": {
+          "dev": "https://docs.basisregisters.dev-vlaanderen.be/docs/api-documentation.html#tag/api-documentation.html",
+          "stg": "https://docs.basisregisters.staging-vlaanderen.be/docs/api-documentation.html#tag/api-documentation.html",
+          "prd": "https://docs.basisregisters.vlaanderen.be/docs/api-documentation.html#tag/api-documentation.html"
+          
+#### Toegang
+De read endpoints zijn anoniem raadpleegbaar echter is er een beperking aanwezig op het aantal verzoeken dat u tegelijkertijd kan versturen naar deze endpoints. Wanneer u een API key meegeeft dan zal u meer requests kunnen versturen.
+
+Om dus optimaal gebruik te maken van de endpoints vraagt u best een API key aan. Dit kan door uw gegevens in volgende link achter te laten: [Vraag hier uw API key aan][10]. U kan deze API key op 2 manieren meegeven:
+* Via de header x-api-key.
+* In de URL. Bijvoorbeeld: https://api.basisregisters.dev-vlaanderen.be/v2/adressen?apikey={apikey} waarbij {apikey} vervangen wordt door de unieke code van uw API key.
+
+#### V1 vs v2
+Voor de read endpoints zijn er zowel v1 als v2 endpoints beschikbaar. De v2 read endpoints zijn een vernieuwde versie van de v1 read endpoints en zijn conform aan het OSLO-model. Om duidelijk aan te geven of het een v1 of een v2 endpoint is, hebben we achteraan de titels gewerkt met (v1) voor versie 1 en (v2) voor versie 2.
+
+##### Wat is het verschil tussen de v1 en de v2 endpoints?
+*  Het content-type van v2 is ‘application/ld+json’. Van v1 is dit default ‘application+json’, maar ‘application/xml’ is ook mogelijk.
+* Er zijn 2 velden bijgekomen, namelijk @context en @type.
+  * Het @context veld bevat de linked-data context van het endpoint. Dit is een URI naar de JSON-LD file.
+  * Het @type veld bevat het linked-data type van het endpoint.
+* De geometrievelden bij ‘Vraag een adres op (v2)’, ‘Vraag een gebouw op (v2)’ en ‘Vraag een gebouweenheid op (v2)’ zijn gewijzigd. De coördinaten van het object staan vanaf nu in het gml-formaat en alle velden die met geometrie te maken hebben zijn samengevoegd onder 1 veld.
+
+##### Wat betekent 'conform aan het OSLO-model'?
+Door informatie conform aan het OSLO-model te ontsluiten, kan deze vlot gecombineerd worden met datasets op het wereldwijde web. Contextuele informatie wordt aan de response van de endpoints gekoppeld waardoor ze geschikt zijn om te gebruiken in Linked Data toepassingen.
+Meer informatie over OSLO kan u hier vinden: https://overheid.vlaanderen.be/producten-diensten/oslo.
+
+##### Hoe v2 endpoints visueel in browser tonen?
+In de browser moet een accept header meegegeven worden bij de request. In Chrome is dit door middel van een extensie. Een voorbeeld hiervan is ‘NoRefer’. In het witte scherm dat verschijnt na het klikken op het extensie icoon moet het volgende meegegeven worden: 'accept: application/ld+json'. Daarna wordt de pagina best opnieuw geladen.
 
 ### Feed endpoints
 
@@ -93,3 +129,4 @@ Alle URL's van de WMS'en, WFS'en en OGC API features van het gebouwen- en adress
 [7]:https://www.vlaanderen.be/datavindplaats/catalogus/ogc-api-features-gebouwenregister
 [8]:https://www.vlaanderen.be/datavindplaats/catalogus/ogc-api-features-adressenregister
 [9]:https://ogcapi.ogc.org/features/
+[10]:https://dynamicforms.crmiv.vlaanderen.be/DynamicForms/Page/Show/CfDJ8M4Eu9v84l9JmW3p7WGylS-u2ToCLC5KvqQZmZ4G99X5TBULO4n0LCDpm7870eDUOk90hogqVcE7BCVQf2u_4WlsZ7B8friBrkyuAqmXYpIX_BzvQVVo8eUZyNd-njc33Y-Z-B87y03Y2Jgukp2AN5U93jT1Xv2l0afgvenLD9k0fasSMJkt4uNzKmlr_gILGrOy%2FJSqnRom_MLu0h7sALJ8uNvPywCMsZ1zy5Lal4h63?path=APIKey-aanvraag
