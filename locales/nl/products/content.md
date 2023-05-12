@@ -51,24 +51,28 @@ Om meer te weten te komen over hoe het downloadbestand te gebruiken, kan deze ha
 
 #### Feed endpoints
 Om aan de slag te gaan met de feed endpoints van het gebouwen- en adressenregister kan er ook vertrokken worden vanaf het downloadbestand. Zo moeten de feed endpoints niet volledig van het eerste eventid tot het laatste eventid uitgelezen worden. In het downloadbestand zijn er namelijk bestanden met in hun naamgeving ‘_metadata.dbf’. In deze bestanden staat het ‘Latest_event_id’. Dit id wordt in de overeenkomstige feed endpoint meegegeven bij de parameter ‘from’ & dat is het startpunt vanaf waar de feed endpoints kan worden ingelezen op basis van het downloadbestand.  
-* vb. In het bestand Adres_metadata.dbf staat er dat het Latest_event_id = 100 dan wordt er in de feed endpoint adressen het volgende meegegeven: https://api.basisregisters.vlaanderen.be/v1/feeds/adressen?embed=object,event&from=100.
+* vb. In het bestand Adres_metadata.dbf staat er dat het Latest_event_id = 100 dan wordt er in de feed endpoint adressen het volgende meegegeven: `https://api.basisregisters.vlaanderen.be/v1/feeds/adressen?embed=object,event&from=100`.
 
 
 ### WMS & WFS
 
+Het gebouwen- en adressenregister wordt ook als WMS & WFS ontsloten:
+* De WMS maakt het mogelijk om adressen, gebouwen & gebouweenheden van het gebouwen- en adressenregister te visualiseren op een kaart. Per status is er een laag voorzien. Meer informatie over wat een WMS is, kan [hier][5] gevonden worden. 
+* De WFS maakt het mogelijk om geografische bevragingen te doen op adressen, gebouwen en gebouweenheden van het gebouwen- en adressenregister. Meer informatie over wat een WFS is, kan [hier][6] gevonden worden.
+
+Alle URL's van de WMS'en en WFS'en van het gebouwen- en adressenregister kunnen gevonden worden in de catalogus van datavindplaats. 
+
 #### WMS
-* WMS gebouwenregister
-  * [Datavindplaats][1]
-* WMS adressenregister
-  * [Datavindplaats][2]
+* [WMS gebouwenregister][1]
+* [WMS adressenregister][2]
 
 #### WFS
-* WFS gebouwenregister
-  * [Datavindplaats][3]
-* WFS adressenregister
-  * [Datavindplaats][4]
+* [WFS gebouwenregister][3]
+* [WFS adressenregister][4]
 
 [1]:https://www.vlaanderen.be/datavindplaats/catalogus/wms-gebouwenregister
 [2]:https://www.vlaanderen.be/datavindplaats/catalogus/wms-adressenregister
 [3]:https://www.vlaanderen.be/datavindplaats/catalogus/wfs-gebouwenregister
 [4]:https://www.vlaanderen.be/datavindplaats/catalogus/wfs-adressenregister
+[5]:https://vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/geografische-webdiensten/ons-gis-aanbod/raadpleegdiensten
+[6]:https://www.vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/geografische-webdiensten/ons-gis-aanbod/overdrachtdiensten
