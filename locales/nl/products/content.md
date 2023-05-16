@@ -18,7 +18,7 @@ Deze informatie kan op verschillende manieren geraadpleegd worden:
 * Via het downloadbestand
 * Via de WMS, WFS & OGC API features
 
-### Read endpoints
+### Read endpoints {#readendpointsgrar}
 
 De read endpoints van het gebouwen- en adressenregister kan 
 lijsten opvragen of details van data
@@ -58,7 +58,7 @@ Meer informatie over OSLO kan u hier vinden: https://overheid.vlaanderen.be/prod
 ##### Hoe v2 endpoints visueel in browser tonen?
 In de browser moet een accept header meegegeven worden bij de request. In Chrome is dit door middel van een extensie. Een voorbeeld hiervan is ‘NoRefer’. In het witte scherm dat verschijnt na het klikken op het extensie icoon moet het volgende meegegeven worden: 'accept: application/ld+json'. Daarna wordt de pagina best opnieuw geladen.
 
-### Feed endpoints
+### Feed endpoints {#feedendpointsgrar}
 
 #### Beoogde toepassing
 De endpoints onder Feeds laten u toe om alle wijzigingen per objecttype of ‘resource’ op te vragen. Deze maken gebruik van Atom als standaard.
@@ -118,7 +118,7 @@ De feed bevat een aantal velden waarin een timestamp staat. Hieronder staat de b
 * `<Entry> <Updated>` : Tijdstip waarop het event zich voordeed.
 * `<Entry> <Published>` : Tijdstip waarop de eerste versie van het object aangeboden werd.
 
-### Downloadbestand
+### Downloadbestand {#downloadbestandgrar}
 
 Het downloadbestand is een momentopname van alle data die het gebouwen- en adressenregister bevat op die moment. Dit bestand kan dagelijks gedownload worden via deze link: https://api.basisregisters.vlaanderen.be/v2/extract. Wanneer de generatie die dag niet gelukt is dan zal er een downloadbestand gedownload worden van de laatste datum waarop de generatie gelukt is. Het downloadbestand is een zip file met daarin een aantal bestanden van verschillende formaten. De formaten die hierin kunnen teruggevonden worden zijn: .dbf, .shp, .prj & .shx. 
 
@@ -155,7 +155,7 @@ Om aan de slag te gaan met de feed endpoints van het gebouwen- en adressenregist
 #### Bestanden crabHuisnummer & crabSubadres
 In het downloadbestand zijn er ook 2 bestanden te vinden die de mapping maken tussen CRAB & het gebouwen- en adressenregister, namelijk crabHuisnummer.dbf & crabSubadres.dbf. De adres objectid's die in het gebouwen- en adressenregister gebruikt worden zijn andere objectId's dan in het CRAB. Omdat er moet worden overgeschakeld van CRAB naar het gebouwen- en adressenregister, werden deze bestanden voorzien zodat er vlot kan overgeschakeld worden. De laatste versie van deze CRAB objectId's zal nog worden bijwerkt tot en met 1 november 2023. Deze bestanden zullen nog bijgehouden worden na 1 november 2022, maar zullen geen updates meer kennen. Vanaf 1 maart 2024 worden deze bestanden uit het downloadbestand gehaald. 
 
-### WMS, WFS & OGC API features
+### WMS, WFS & OGC API features ({#wmswfsogcgrar}
 
 Het gebouwen- en adressenregister wordt ook als WMS & WFS ontsloten:
 * De WMS maakt het mogelijk om adressen, gebouwen & gebouweenheden van het gebouwen- en adressenregister te visualiseren op een kaart. Per status is er een laag voorzien. Meer informatie over wat een WMS is, kan [hier][5] gevonden worden. 
