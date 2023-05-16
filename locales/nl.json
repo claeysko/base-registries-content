@@ -512,30 +512,6 @@
       "title": "Op deze pagina",
       "urls": [
         {
-          "title": "Waarom dit handboek?",
-          "url": "#waarom-dit-handboek"
-        },
-        {
-          "title": "Overzicht",
-          "url": "#overzicht"
-        },
-        {
-          "title": "Api",
-          "url": "#api"
-        },
-        {
-          "title": "Syndication",
-          "url": "#syndication"
-        },
-        {
-          "title": "WMS/WFS",
-          "url": "#wms-wfs"
-        },
-        {
-          "title": "Testbestand",
-          "url": "#testbestand"
-        },
-        {
           "title": "LDES",
           "url": "#ldes"
         },
@@ -556,6 +532,31 @@
     "sidebar": {
       "title": "Op deze pagina",
       "urls": []
+    }
+  },
+    "products": {
+    "title": "Producten basisregisters",
+    "Prefix": "Basisregisters Vlaanderen",
+    "sidebar": {
+      "title": "Op deze pagina",
+      "urls": [
+        {
+          "title": "Read endpoints gebouwen- en adressenregister",
+          "url": "#readendpointsgrar"
+        },
+        {
+          "title": "Feed endpoints gebouwen- en adressenregister",
+          "url": "#feedendpointsgrar"
+        },
+        {
+          "title": "Downloadbestand gebouwen- en adressenregister",
+          "url": "#downloadbestandgrar"
+        },
+        {
+          "title": "WMS, WFS & OGC API features gebouwen- en adressenregister",
+          "url": "#wmswfsogcgrar"
+        }
+      ]
     }
   },
   "motive": {
