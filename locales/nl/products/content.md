@@ -18,7 +18,7 @@ Deze informatie kan op verschillende manieren geraadpleegd worden:
 * Via het downloadbestand
 * Via de WMS, WFS & OGC API features
 
-### Read endpoints {#readendpointsgrar}
+## Read endpoints {#readendpointsgrar}
 
 De read endpoints van het gebouwen- en adressenregister kan 
 lijsten opvragen of details van data
