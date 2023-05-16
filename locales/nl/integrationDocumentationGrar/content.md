@@ -7,5 +7,5 @@ ____
 ## Kafka {#kafka}
 De gegevens van de **basisregisters** worden **gepubliceerd op Kafka topics**. In uitzonderlijke gevallen kan je rechtstreeks integreren met onze Kafka topics. Stuur hiervoor een bericht naar **digitaal.vlaanderen@vlaanderen.be**
 
-## Database tables {#database-tabellen}
-In **uitzonderlijke gevallen** kunnen we onze gegevens publiceren naar een aantal database tables. Stuur hiervoor een bericht naar **digitaal.vlaanderen@vlaanderen.be**
+## Database tabellen {#database-tabellen}
+In **uitzonderlijke gevallen** kunnen we onze gegevens publiceren naar een aantal database tabellen. Stuur hiervoor een bericht naar **digitaal.vlaanderen@vlaanderen.be**
