@@ -1,6 +1,4 @@
 ____
-## Technische integratie met het gebouwen- en adressenregister
-
 ## LDES {#ldes}
 **Linked Data Event Streams (LDES)** is een manier om gerelateerde gegevens met elkaar te verbinden. Meer informatie vind je op https://semiceu.github.io/LinkedDataEventStreams/
 
