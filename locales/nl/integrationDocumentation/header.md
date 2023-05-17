@@ -1,1 +1,1 @@
-# Technische integratiedocumentatie basisregisters
+# Technische integraties met de basisregisters
