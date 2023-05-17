@@ -2,7 +2,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 
 ## 1 Straatnamen
 
-#### 1.1 Stel een straatnaam voor 
+### 1.1 Stel een straatnaam voor 
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
