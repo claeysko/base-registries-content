@@ -24,7 +24,7 @@ De read endpoints van het gebouwen- en adressenregister zijn REST API's en laten
 
 #### Documentatie
 
-Elk read endpoint is ook uitvoerig gedocumenteerd. Deze documentatie kan [hier](https://docs.basisregisters.dev-vlaanderen.be/docs/api-documentation.html#tag/api-documentation.html) geraadpleegd worden.
+Elk read endpoint is ook gedocumenteerd. Deze documentatie kan [hier](https://docs.basisregisters.dev-vlaanderen.be/docs/api-documentation.html#tag/api-documentation.html) geraadpleegd worden.
           
 #### Toegang
 De read endpoints zijn anoniem raadpleegbaar echter is er een beperking aanwezig op het aantal verzoeken dat u tegelijkertijd kan versturen naar deze endpoints. Wanneer u een API key meegeeft dan zal u meer requests kunnen versturen.
