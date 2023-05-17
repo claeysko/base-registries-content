@@ -20,7 +20,7 @@ Deze informatie kan op verschillende manieren geraadpleegd worden:
 
 ### Read endpoints {#readendpointsgrar}
 
-De read endpoints van het gebouwen- en adressenregister zijn REST API's en laten toe om op een snelle manier data te gaan tonen/opzoeken of te implementeren in toepassingen. De data die wordt aangeroepen in deze API's kunnen niet worden gewijzigd. Het is mogelijk om details van data op te vragen, maar ook lijsten van data op basis van parameters. Welke parameters er meegegeven kunnen worden is per read endpoint verschillend.
+De read endpoints van het gebouwen- en adressenregister zijn REST API's en laten toe om op een snelle manier informatie van objecttypes te tonen/op te zoeken of te implementeren in toepassingen. De objecttypes die wordt aangeroepen in deze API's kunnen niet worden gewijzigd. Het is mogelijk om details van de objecttypes op te vragen, maar ook lijsten van de objecttypes op basis van parameters. Welke parameters er meegegeven kunnen worden is per read endpoint verschillend.
 
 #### Documentatie
 
@@ -52,8 +52,14 @@ In de browser moet een accept header meegegeven worden bij de request. In Chrome
 
 ### Feed endpoints {#feedendpointsgrar}
 
+De feed endpoints van het gebouwen- en adressenregister laten toe om alle wijzigingen per objecttype of ‘resource’ op te vragen. Deze maken gebruik van Atom als standaard. 
+
+#### Documentatie
+
+Elk feed endpoint is ook gedocumenteerd. Deze documentatie kan [hier](https://docs.basisregisters.dev-vlaanderen.be/docs/api-documentation.html#tag/Feeds) geraadpleegd worden.
+Een overzicht van alle mogelijke business events en de betekenis van de attributen onder het blokje `<event>` kan [hier](https://api.basisregisters.dev-vlaanderen.be/v2/info/events?tags=sync) gevonden worden.
+
 #### Beoogde toepassing
-De endpoints onder Feeds laten u toe om alle wijzigingen per objecttype of ‘resource’ op te vragen. Deze maken gebruik van Atom als standaard.
 
 Aan de hand van een feed kan u de wijzigingen op drie manieren opvragen: als gebeurtenissen(‘business events’), als de daaruit resulterende objectversies, of een combinatie van beide. Dit doet u door aan de `embed` parameter respectievelijk `event`, `object` of `object,event` mee te geven.
 
@@ -74,9 +80,6 @@ Wanneer uw proces zou stopgezet of onderbroken worden, kan u eenvoudig terug opp
 * Voer bovenstaande stappen uit om alle gegevens te verwerken.
 
 In het veld `<content>` kan u het event en/of de objectversiedetails terugvinden per wijziging (`<entry>`).
-
-#### Betekenis van de events en velden in de feed
-Een overzicht van alle mogelijke business events en de betekenis van de attributen onder het blokje `<event>` vindt u op deze pagina: https://api.basisregisters.dev-vlaanderen.be/v2/info/events?tags=sync.
 
 #### Kanttekening
 Merk op dat de granulariteit vrij hoog is door het doorvertalen van de volledige CRAB-historiek(legacysysteem) naar het Gebouwen- en Adressenregister(GR-AR). Om dezelfde reden zult u zien dat de meeste objecten gradueel opgebouwd worden(toevoegen status, geometrie enz.) tot wanneer ze `complete` zijn.
