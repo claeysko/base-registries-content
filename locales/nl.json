@@ -493,11 +493,21 @@
   },
   "integrationDocumentationGrar": {
     "title": "Technische integraties met het gebouwen- en adressenregister",
-    "Prefix": "Basisregisters Vlaanderen"
+    "Prefix": "Basisregisters Vlaanderen",
+      "sidebar": {
+      "title": "Op deze pagina",
+      "urls": [
+      ]
+    }
   },
   "integrationDocumentationWr": {
     "title": "Technische integraties met het wegenregister",
-    "Prefix": "Basisregisters Vlaanderen"
+    "Prefix": "Basisregisters Vlaanderen",
+       "sidebar": {
+      "title": "Op deze pagina",
+      "urls": [
+      ]
+    }
   },
   "products": {
     "title": "Producten basisregisters",
