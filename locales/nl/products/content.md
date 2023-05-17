@@ -14,9 +14,9 @@ Voor straatnamen, adressen, gebouwen & gebouweneheden is het gebouwen- en adress
 
 Deze informatie kan op verschillende manieren geraadpleegd worden:
 * [Via de read endpoints](#readendpointsgrar)
-* Via de feed endpoints
-* Via het downloadbestand
-* Via de WMS, WFS & OGC API features
+* [Via de feed endpoints](#feedendpointsgrar)
+* [Via het downloadbestand](#downloadbestandgrar)
+* [Via de WMS, WFS & OGC API features](#wmswfsogcgrar)
 
 ### Read endpoints {#readendpointsgrar}
 
