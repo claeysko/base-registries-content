@@ -1,1 +1,1 @@
-# Integratiedocumentatie van het gebouwen- en adressenregister
+# Technische integraties met het gebouwen- en adressenregister
