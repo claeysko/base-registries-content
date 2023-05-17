@@ -13,7 +13,7 @@ Het bestaat uit verschillende registers:
 Voor straatnamen, adressen, gebouwen & gebouweneheden is het gebouwen- en adressenregister de authentieke bron. 
 
 Deze informatie kan op verschillende manieren geraadpleegd worden:
-* Via de read endpoints
+* [Via de read endpoints](#readendpointsgrar)
 * Via de feed endpoints
 * Via het downloadbestand
 * Via de WMS, WFS & OGC API features
