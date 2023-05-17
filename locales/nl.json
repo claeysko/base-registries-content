@@ -78,7 +78,7 @@
     "spotlightItems": [
       {
         "title": "Producten basisregisters",
-        "subtitle": "Welke producten hebben we? Lees het hier.",
+        "subtitle": "Welke producten zijn er? Lees het hier.",
         "url": "/producten",
         "hide": false
       },     
@@ -110,6 +110,12 @@
         "title": "Versies",
         "subtitle": "Een overzicht van de huidige versies.",
         "url": "/versies",
+        "hide": false
+      },
+      {
+        "title": "Technische integraties",
+        "subtitle": "Een overzicht van de technische integraties.",
+        "url": "/integratie-documentatie",
         "hide": false
       }
     ]
@@ -488,14 +494,14 @@
     "Prefix": "Basisregisters Vlaanderen",
     "doormatItems": [
       {
-        "title": "Integratiedocumentatie van het gebouwen- en adressenregister",
-        "text": "Een overzicht van de verschillende integratiemogelijkheden met het gebouwen- en adressenregister",
+        "title": "Technische integraties met het gebouwen- en adressenregister",
+        "text": "Een overzicht van de verschillende technische integratiemogelijkheden met het gebouwen- en adressenregister",
         "url": "/integratie-documentatie/grar",
         "hide": false
       },
       {
-        "title": "Integratiedocumentatie van het wegenregister",
-        "text": "Een overzicht van de verschillende integratiemogelijkheden met het gebouwen- en adressenregister",
+        "title": "Technische integraties met het wegenregister",
+        "text": "Een overzicht van de verschillende technische integratiemogelijkheden met het wegenregister",
         "url": "/integratie-documentatie/wr",
         "hide": true
       }
@@ -506,7 +512,7 @@
     }
   },
   "integrationDocumentationGrar": {
-    "title": "Integratiedocumentatie van het gebouwen- en adressenregister",
+    "title": "Technische integraties met het gebouwen- en adressenregister",
     "Prefix": "Basisregisters Vlaanderen",
     "sidebar": {
       "title": "Op deze pagina",
@@ -527,7 +533,7 @@
     }
   },
   "integrationDocumentationWr": {
-    "title": "Integratiedocumentatie van het wegenregister",
+    "title": "Technische integraties met het wegenregister",
     "Prefix": "Basisregisters Vlaanderen",
     "sidebar": {
       "title": "Op deze pagina",
