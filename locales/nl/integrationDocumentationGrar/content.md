@@ -1,9 +1,7 @@
-____
-## LDES {#ldes}
-**Linked Data Event Streams (LDES)** is een manier om gerelateerde gegevens met elkaar te verbinden. Meer informatie vind je op https://semiceu.github.io/LinkedDataEventStreams/
+Er zijn ook nog een aantal technische implementaties mogelijk met data van het gebouwen- en adressenregister.
 
-## Kafka {#kafka}
-De gegevens van de **basisregisters** worden **gepubliceerd op Kafka topics**. In uitzonderlijke gevallen kan je rechtstreeks integreren met onze Kafka topics. Stuur hiervoor een bericht naar **digitaal.vlaanderen@vlaanderen.be**
+### 1. Kafka {#kafka}
+De gegevens van het gebouwen- en adressenregister worden gepubliceerd op Kafka topics. Er kan in uitzonderlijke gevallen rechtstreeks geïntegreerd worden met deze Kafka topics. Om hierover meer informatie te weten, mail naar digitaal.vlaanderen@vlaanderen.be met als onderwerp 'Integreren met kafka van het gebouwen- en adressenregister'.
 
-## Database tabellen {#database-tabellen}
-In **uitzonderlijke gevallen** kunnen we onze gegevens publiceren naar een aantal database tabellen. Stuur hiervoor een bericht naar **digitaal.vlaanderen@vlaanderen.be**
+### 2. Database tabellen {#databasetabellen}
+De gegevens van het gebouwen- en adressenregiseter kunnnen ook in uitzonderlijke gevallen in database tabellen gepubliceerd worden. Om hierover meer informatie te weten, mail naar digitaal.vlaanderen@vlaanderen.be met als onderwerp 'Integreren met database tabellen van het gebouwen- en adressenregister'. 
