@@ -20,19 +20,11 @@ Deze informatie kan op verschillende manieren geraadpleegd worden:
 
 ### Read endpoints {#readendpointsgrar}
 
-De read endpoints van het gebouwen- en adressenregister kan 
-lijsten opvragen of details van data
+De read endpoints van het gebouwen- en adressenregister zijn REST API's en laten toe om op een snelle manier data te gaan tonen/opzoeken of te implementeren in toepassingen. De data die wordt aangeroepen in deze API's kunnen niet worden gewijzigd. Het is mogelijk om details van data op te vragen, maar ook lijsten van data op basis van parameters. Welke parameters er meegegeven kunnen worden is per read endpoint verschillend.
 
-Welkom bij de REST API van Basisregisters Vlaanderen!
+#### Documentatie
 
-REST is een webserviceprotocol dat zich leent tot snelle ontwikkeling door het gebruik van HTTP- en JSON-technologie.
-URL rest: https://en.wikipedia.org/wiki/Representational_state_transfer
-
-URL documentatiepagina (omgevingsvariabel maken?):  
-"url": {
-          "dev": "https://docs.basisregisters.dev-vlaanderen.be/docs/api-documentation.html#tag/api-documentation.html",
-          "stg": "https://docs.basisregisters.staging-vlaanderen.be/docs/api-documentation.html#tag/api-documentation.html",
-          "prd": "https://docs.basisregisters.vlaanderen.be/docs/api-documentation.html#tag/api-documentation.html"
+Elk read endpoint is ook uitvoerig gedocumenteerd. Deze documentatie kan [hier](https://docs.basisregisters.dev-vlaanderen.be/docs/api-documentation.html#tag/api-documentation.html) geraadpleegd worden.
           
 #### Toegang
 De read endpoints zijn anoniem raadpleegbaar echter is er een beperking aanwezig op het aantal verzoeken dat u tegelijkertijd kan versturen naar deze endpoints. Wanneer u een API key meegeeft dan zal u meer requests kunnen versturen.
