@@ -29,6 +29,10 @@
     "registries": {
       "text": "Basisregisters Vlaanderen",
       "url": "/informatie"
+    },
+     "integrationDocumentation": {
+      "text": "Integratiedocumentatie",
+      "url": "/integratie-documentatie"
     }
   },
   "header": {
