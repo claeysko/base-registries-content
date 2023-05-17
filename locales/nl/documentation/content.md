@@ -1,1 +1,1 @@
-Op deze pagina kan u functionele documentatie vinden over de API's van de basisregisters.
+Op deze pagina kan de functionele documentatie gevonden worden over de API's van de basisregisters.
