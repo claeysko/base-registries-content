@@ -15,7 +15,7 @@
       "url": "/documentatie"
     },
     "apikey": {
-      "text": "Apikey",
+      "text": "API keys",
       "url": "/apikey"
     },
     "implementationmodel": {
@@ -147,7 +147,7 @@
     "Prefix": "Basisregisters Vlaanderen"
   },
   "apikey": {
-    "title": "API key",
+    "title": "API keys",
     "Prefix": "Basisregisters Vlaanderen"
   },
   "implementationmodel": {
@@ -155,15 +155,15 @@
     "Prefix": "Basisregisters Vlaanderen",
     "doormatItems": [
       {
-        "title": "Adressenregister",
+        "title": "Implementatiemodel adressenregister",
         "url": "/implementatiemodel/adressenregister"
       },
       {
-        "title": "Gebouwenregister",
+        "title": "Implementatiemodel gebouwenregister",
         "url": "/implementatiemodel/gebouwenregister"
       },
       {
-        "title": "Wegenregister",
+        "title": "Implementatiemodel wegenregister",
         "url": "/implementatiemodel/wegenregister"
       }
     ],
@@ -298,342 +298,6 @@
       ]
     }
   },
-  "information": {
-    "title": "Informatie",
-    "Prefix": "Basisregisters Vlaanderen",
-    "redirect": {
-      "url": "/"
-    },
-    "spotlightItems": [
-      {
-        "title": "Gemeenten",
-        "subtitle": "Referentie bron",
-        "text": "de Belgische gemeenten",
-        "url": "/registers/gemeenten"
-      },
-      {
-        "title": "Postinfo",
-        "subtitle": "Referentie bron",
-        "text": "de Belgische gemeenten",
-        "url": "/registers/postinfo"
-      },
-      {
-        "title": "Straatnamen",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse straatnamen",
-        "url": "/registers/straatnamen"
-      },
-      {
-        "title": "Adressen",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse adressen",
-        "url": "/registers/adressen"
-      },
-      {
-        "title": "Gebouwen",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse gebouwen en gebouweenheden",
-        "url": "/registers/gebouwen"
-      },
-      {
-        "title": "Percelen",
-        "subtitle": "Referentie bron",
-        "text": "de Vlaamse percelen",
-        "url": "/registers/percelen"
-      },
-      {
-        "title": "Wegen",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse wegen",
-        "url": "/registers/wegen"
-      },
-      {
-        "title": "Organisaties",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse organisaties en organen",
-        "url": "/registers/organisaties"
-      },
-      {
-        "title": "Dienstverleningen",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse dienstverlening",
-        "url": "/registers/dienstverleningen"
-      }
-    ],
-    "sidebar": {
-      "title": "Op deze pagina",
-      "urls": [
-        {
-          "title": "Algemeen",
-          "url": "#algemeen"
-        },
-        {
-          "title": "Aanleiding",
-          "url": "#aanleiding"
-        },
-        {
-          "title": "Visie",
-          "url": "#visie"
-        },
-        {
-          "title": "Aanbod",
-          "url": "/informatie#aanbod"
-        }
-      ]
-    }
-  },
-  "general": {
-    "title": "Algemeen",
-    "Prefix": "Basisregisters Vlaanderen",
-    "redirect": {
-      "url": "/"
-    },
-    "spotlightItems": [
-      {
-        "title": "Gemeenten",
-        "subtitle": "Referentie bron",
-        "text": "de Belgische gemeenten",
-        "url": "/registers/gemeenten"
-      },
-      {
-        "title": "Postinfo",
-        "subtitle": "Referentie bron",
-        "text": "de Belgische gemeenten",
-        "url": "/registers/postinfo"
-      },
-      {
-        "title": "Straatnamen",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse straatnamen",
-        "url": "/registers/straatnamen"
-      },
-      {
-        "title": "Adressen",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse adressen",
-        "url": "/registers/adressen"
-      },
-      {
-        "title": "Gebouwen",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse gebouwen en gebouweenheden",
-        "url": "/registers/gebouwen"
-      },
-      {
-        "title": "Percelen",
-        "subtitle": "Referentie bron",
-        "text": "de Vlaamse percelen",
-        "url": "/registers/percelen"
-      },
-      {
-        "title": "Wegen",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse wegen",
-        "url": "/registers/wegen"
-      },
-      {
-        "title": "Organisaties",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse organisaties en organen",
-        "url": "/registers/organisaties"
-      },
-      {
-        "title": "Dienstverleningen",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse dienstverlening",
-        "url": "/registers/dienstverleningen"
-      }
-    ],
-    "sidebar": {
-      "title": "Op deze pagina",
-      "urls": [
-        {
-          "title": "Algemeen",
-          "url": "/algemeen"
-        },
-        {
-          "title": "Aanleiding",
-          "url": "/aanleiding"
-        },
-        {
-          "title": "Visie",
-          "url": "/visie"
-        },
-        {
-          "title": "Aanbod",
-          "url": "/informatie#aanbod"
-        }
-      ]
-    }
-  },
-  "motive": {
-    "title": "Motive",
-    "Prefix": "Basisregisters Vlaanderen",
-    "redirect": {
-      "url": "/"
-    },
-    "spotlightItems": [
-      {
-        "title": "Gemeenten",
-        "subtitle": "Referentie bron",
-        "text": "de Belgische gemeenten",
-        "url": "/registers/gemeenten"
-      },
-      {
-        "title": "Postinfo",
-        "subtitle": "Referentie bron",
-        "text": "de Belgische gemeenten",
-        "url": "/registers/postinfo"
-      },
-      {
-        "title": "Straatnamen",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse straatnamen",
-        "url": "/registers/straatnamen"
-      },
-      {
-        "title": "Adressen",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse adressen",
-        "url": "/registers/adressen"
-      },
-      {
-        "title": "Gebouwen",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse gebouwen en gebouweenheden",
-        "url": "/registers/gebouwen"
-      },
-      {
-        "title": "Percelen",
-        "subtitle": "Referentie bron",
-        "text": "de Vlaamse percelen",
-        "url": "/registers/percelen"
-      },
-      {
-        "title": "Wegen",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse wegen",
-        "url": "/registers/wegen"
-      },
-      {
-        "title": "Organisaties",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse organisaties en organen",
-        "url": "/registers/organisaties"
-      },
-      {
-        "title": "Dienstverleningen",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse dienstverlening",
-        "url": "/registers/dienstverleningen"
-      }
-    ],
-    "sidebar": {
-      "title": "Op deze pagina",
-      "urls": [
-        {
-          "title": "Algemeen",
-          "url": "/algemeen"
-        },
-        {
-          "title": "Aanleiding",
-          "url": "/aanleiding"
-        },
-        {
-          "title": "Visie",
-          "url": "/visie"
-        },
-        {
-          "title": "Aanbod",
-          "url": "/informatie#aanbod"
-        }
-      ]
-    }
-  },
-  "vision": {
-    "title": "Visie",
-    "Prefix": "Basisregisters Vlaanderen",
-    "redirect": {
-      "url": "/"
-    },
-    "spotlightItems": [
-      {
-        "title": "Gemeenten",
-        "subtitle": "Referentie bron",
-        "text": "de Belgische gemeenten",
-        "url": "/registers/gemeenten"
-      },
-      {
-        "title": "Postinfo",
-        "subtitle": "Referentie bron",
-        "text": "de Belgische gemeenten",
-        "url": "/registers/postinfo"
-      },
-      {
-        "title": "Straatnamen",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse straatnamen",
-        "url": "/registers/straatnamen"
-      },
-      {
-        "title": "Adressen",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse adressen",
-        "url": "/registers/adressen"
-      },
-      {
-        "title": "Gebouwen",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse gebouwen en gebouweenheden",
-        "url": "/registers/gebouwen"
-      },
-      {
-        "title": "Percelen",
-        "subtitle": "Referentie bron",
-        "text": "de Vlaamse percelen",
-        "url": "/registers/percelen"
-      },
-      {
-        "title": "Wegen",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse wegen",
-        "url": "/registers/wegen"
-      },
-      {
-        "title": "Organisaties",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse organisaties en organen",
-        "url": "/registers/organisaties"
-      },
-      {
-        "title": "Dienstverleningen",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse dienstverlening",
-        "url": "/registers/dienstverleningen"
-      }
-    ],
-    "sidebar": {
-      "title": "Op deze pagina",
-      "urls": [
-        {
-          "title": "Algemeen",
-          "url": "/algemeen"
-        },
-        {
-          "title": "Aanleiding",
-          "url": "/aanleiding"
-        },
-        {
-          "title": "Visie",
-          "url": "/visie"
-        },
-        {
-          "title": "Aanbod",
-          "url": "/informatie#aanbod"
-        }
-      ]
-    }
-  },
   "registries": {
     "address": {
       "title": "Adres",
@@ -644,22 +308,6 @@
       "sidebar": {
         "title": "Op deze pagina",
         "urls": [
-          {
-            "title": "Doel",
-            "url": "#goal"
-          },
-          {
-            "title": "Status",
-            "url": "#status"
-          },
-          {
-            "title": "Licentie",
-            "url": "#license"
-          },
-          {
-            "title": "Documentatie",
-            "url": "#docs"
-          }
         ]
       }
     },
@@ -672,22 +320,6 @@
       "sidebar": {
         "title": "Op deze pagina",
         "urls": [
-          {
-            "title": "Doel",
-            "url": "#goal"
-          },
-          {
-            "title": "Status",
-            "url": "#status"
-          },
-          {
-            "title": "Licentie",
-            "url": "#license"
-          },
-          {
-            "title": "Documentatie",
-            "url": "#docs"
-          }
         ]
       }
     },
@@ -700,22 +332,6 @@
       "sidebar": {
         "title": "Op deze pagina",
         "urls": [
-          {
-            "title": "Doel",
-            "url": "#goal"
-          },
-          {
-            "title": "Status",
-            "url": "#status"
-          },
-          {
-            "title": "Licentie",
-            "url": "#license"
-          },
-          {
-            "title": "Documentatie",
-            "url": "#docs"
-          }
         ]
       }
     },
@@ -728,22 +344,6 @@
       "sidebar": {
         "title": "Op deze pagina",
         "urls": [
-          {
-            "title": "Doel",
-            "url": "#goal"
-          },
-          {
-            "title": "Status",
-            "url": "#status"
-          },
-          {
-            "title": "Licentie",
-            "url": "#license"
-          },
-          {
-            "title": "Documentatie",
-            "url": "#docs"
-          }
         ]
       }
     },
@@ -756,22 +356,6 @@
       "sidebar": {
         "title": "Op deze pagina",
         "urls": [
-          {
-            "title": "Doel",
-            "url": "#goal"
-          },
-          {
-            "title": "Status",
-            "url": "#status"
-          },
-          {
-            "title": "Licentie",
-            "url": "#license"
-          },
-          {
-            "title": "Documentatie",
-            "url": "#docs"
-          }
         ]
       }
     },
@@ -784,22 +368,6 @@
       "sidebar": {
         "title": "Op deze pagina",
         "urls": [
-          {
-            "title": "Doel",
-            "url": "#goal"
-          },
-          {
-            "title": "Status",
-            "url": "#status"
-          },
-          {
-            "title": "Licentie",
-            "url": "#license"
-          },
-          {
-            "title": "Documentatie",
-            "url": "#docs"
-          }
         ]
       }
     },
@@ -812,22 +380,6 @@
       "sidebar": {
         "title": "Op deze pagina",
         "urls": [
-          {
-            "title": "Doel",
-            "url": "#goal"
-          },
-          {
-            "title": "Status",
-            "url": "#status"
-          },
-          {
-            "title": "Licentie",
-            "url": "#license"
-          },
-          {
-            "title": "Documentatie",
-            "url": "#docs"
-          }
         ]
       }
     },
@@ -840,22 +392,6 @@
       "sidebar": {
         "title": "Op deze pagina",
         "urls": [
-          {
-            "title": "Doel",
-            "url": "#goal"
-          },
-          {
-            "title": "Status",
-            "url": "#status"
-          },
-          {
-            "title": "Licentie",
-            "url": "#license"
-          },
-          {
-            "title": "Documentatie",
-            "url": "#docs"
-          }
         ]
       }
     },
@@ -868,22 +404,6 @@
       "sidebar": {
         "title": "Op deze pagina",
         "urls": [
-          {
-            "title": "Doel",
-            "url": "#goal"
-          },
-          {
-            "title": "Status",
-            "url": "#status"
-          },
-          {
-            "title": "Licentie",
-            "url": "#license"
-          },
-          {
-            "title": "Documentatie",
-            "url": "#docs"
-          }
         ]
       }
     }
