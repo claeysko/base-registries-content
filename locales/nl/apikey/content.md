@@ -1,4 +1,4 @@
-**Gebouwen- en adressenregister**
+## 1. Gebouwen- en adressenregister
 
 De read endpoints zijn anoniem raadpleegbaar. Er is echter een beperking aanwezig op het aantal verzoeken dat u tegelijkertijd kan versturen naar deze endpoints. Wanneer u een API key meegeeft dan zal u meer requests kunnen versturen.
 
