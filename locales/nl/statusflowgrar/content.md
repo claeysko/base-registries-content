@@ -1,3 +1,5 @@
+Hieronder staat een overzicht per objecttype wat de flow is dat een object kan/moet doorlopen.
+
 ## 1. Straatnamen
   
 ![image](https://user-images.githubusercontent.com/49196256/197489328-2bfea6b1-4f23-4ab2-ab1e-9f7d7c31ffc6.png)
