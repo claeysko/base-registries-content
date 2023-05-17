@@ -17,6 +17,7 @@ Deze informatie kan op verschillende manieren geraadpleegd worden:
 * [Via de feed endpoints](#feedendpointsgrar)
 * [Via het downloadbestand](#downloadbestandgrar)
 * [Via de WMS, WFS & OGC API features](#wmswfsogcgrar)
+* [Overige producten](#andereintegraties)
 
 ### 1. Read endpoints {#readendpointsgrar}
 
@@ -173,6 +174,11 @@ Alle URL's van de WMS'en, WFS'en en OGC API features van het gebouwen- en adress
 #### 4.3 OGC API features
 * [OGC API features gebouwenregister][7]
 * [OGC API features adressenregister][8]
+
+
+### 5. Overige producten {#andereintegraties}
+
+Er zijn nog een aantal andere technische implementaties mogelijk met data van het gebouwen- en adressenregister. Meer informatie kan [hier](/integratie-documentatie/grar) gevonden worden.
 
 [1]:https://www.vlaanderen.be/datavindplaats/catalogus/wms-gebouwenregister
 [2]:https://www.vlaanderen.be/datavindplaats/catalogus/wms-adressenregister
