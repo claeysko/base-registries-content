@@ -484,7 +484,12 @@
         "url": "/integratie-documentatie/wr",
         "hide": true
       }
-    ]
+    ],
+      "sidebar": {
+      "title": "Op deze pagina",
+      "urls": [
+      ]
+    }
   },
   "integrationDocumentationGrar": {
     "title": "Technische integraties met het gebouwen- en adressenregister",
