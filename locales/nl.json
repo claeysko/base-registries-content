@@ -310,89 +310,10 @@
       "url": "/"
     },
     "spotlightItems": [
-      {
-        "title": "Gemeenten",
-        "subtitle": "Referentie bron",
-        "text": "de Belgische gemeenten",
-        "url": "/registers/gemeenten",
-        "hide": false
-      },
-      {
-        "title": "Postinfo",
-        "subtitle": "Referentie bron",
-        "text": "de Belgische gemeenten",
-        "url": "/registers/postinfo",
-        "hide": false
-      },
-      {
-        "title": "Straatnamen",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse straatnamen",
-        "url": "/registers/straatnamen",
-        "hide": false
-      },
-      {
-        "title": "Adressen",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse adressen",
-        "url": "/registers/adressen",
-        "hide": false
-      },
-      {
-        "title": "Gebouwen",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse gebouwen en gebouweenheden",
-        "url": "/registers/gebouwen",
-        "hide": false
-      },
-      {
-        "title": "Percelen",
-        "subtitle": "Referentie bron",
-        "text": "de Vlaamse percelen",
-        "url": "/registers/percelen",
-        "hide": false
-      },
-      {
-        "title": "Wegen",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse wegen",
-        "url": "/registers/wegen",
-        "hide": false
-      },
-      {
-        "title": "Organisaties",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse organisaties en organen",
-        "url": "/registers/organisaties",
-        "hide": false
-      },
-      {
-        "title": "Dienstverleningen",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse dienstverlening",
-        "url": "/registers/dienstverleningen",
-        "hide": false
-      }
     ],
     "sidebar": {
       "title": "Op deze pagina",
       "urls": [
-        {
-          "title": "Algemeen",
-          "url": "#algemeen"
-        },
-        {
-          "title": "Aanleiding",
-          "url": "#aanleiding"
-        },
-        {
-          "title": "Visie",
-          "url": "#visie"
-        },
-        {
-          "title": "Aanbod",
-          "url": "/informatie#aanbod"
-        }
       ]
     }
   },
@@ -403,69 +324,6 @@
       "url": "/"
     },
     "spotlightItems": [
-      {
-        "title": "Gemeenten",
-        "subtitle": "Referentie bron",
-        "text": "de Belgische gemeenten",
-        "url": "/registers/gemeenten",
-        "hide": false
-      },
-      {
-        "title": "Postinfo",
-        "subtitle": "Referentie bron",
-        "text": "de Belgische gemeenten",
-        "url": "/registers/postinfo",
-        "hide": false
-      },
-      {
-        "title": "Straatnamen",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse straatnamen",
-        "url": "/registers/straatnamen",
-        "hide": false
-      },
-      {
-        "title": "Adressen",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse adressen",
-        "url": "/registers/adressen",
-        "hide": false
-      },
-      {
-        "title": "Gebouwen",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse gebouwen en gebouweenheden",
-        "url": "/registers/gebouwen",
-        "hide": false
-      },
-      {
-        "title": "Percelen",
-        "subtitle": "Referentie bron",
-        "text": "de Vlaamse percelen",
-        "url": "/registers/percelen",
-        "hide": false
-      },
-      {
-        "title": "Wegen",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse wegen",
-        "url": "/registers/wegen",
-        "hide": false
-      },
-      {
-        "title": "Organisaties",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse organisaties en organen",
-        "url": "/registers/organisaties",
-        "hide": false
-      },
-      {
-        "title": "Dienstverleningen",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse dienstverlening",
-        "url": "/registers/dienstverleningen",
-        "hide": false
-      }
     ]
   },
   "integrationDocumentation": {
@@ -482,7 +340,7 @@
         "title": "Technische integraties met het wegenregister",
         "text": "Een overzicht van de verschillende technische integratiemogelijkheden met het wegenregister",
         "url": "/integratie-documentatie/wr",
-        "hide": true
+        "hide": false
       }
     ],
       "sidebar": {
@@ -523,22 +381,6 @@
       "sidebar": {
         "title": "Op deze pagina",
         "urls": [
-          {
-            "title": "Doel",
-            "url": "#goal"
-          },
-          {
-            "title": "Status",
-            "url": "#status"
-          },
-          {
-            "title": "Licentie",
-            "url": "#license"
-          },
-          {
-            "title": "Documentatie",
-            "url": "#docs"
-          }
         ]
       }
     },
@@ -551,22 +393,6 @@
       "sidebar": {
         "title": "Op deze pagina",
         "urls": [
-          {
-            "title": "Doel",
-            "url": "#goal"
-          },
-          {
-            "title": "Status",
-            "url": "#status"
-          },
-          {
-            "title": "Licentie",
-            "url": "#license"
-          },
-          {
-            "title": "Documentatie",
-            "url": "#docs"
-          }
         ]
       }
     },
@@ -579,22 +405,6 @@
       "sidebar": {
         "title": "Op deze pagina",
         "urls": [
-          {
-            "title": "Doel",
-            "url": "#goal"
-          },
-          {
-            "title": "Status",
-            "url": "#status"
-          },
-          {
-            "title": "Licentie",
-            "url": "#license"
-          },
-          {
-            "title": "Documentatie",
-            "url": "#docs"
-          }
         ]
       }
     },
@@ -607,22 +417,6 @@
       "sidebar": {
         "title": "Op deze pagina",
         "urls": [
-          {
-            "title": "Doel",
-            "url": "#goal"
-          },
-          {
-            "title": "Status",
-            "url": "#status"
-          },
-          {
-            "title": "Licentie",
-            "url": "#license"
-          },
-          {
-            "title": "Documentatie",
-            "url": "#docs"
-          }
         ]
       }
     },
@@ -635,22 +429,6 @@
       "sidebar": {
         "title": "Op deze pagina",
         "urls": [
-          {
-            "title": "Doel",
-            "url": "#goal"
-          },
-          {
-            "title": "Status",
-            "url": "#status"
-          },
-          {
-            "title": "Licentie",
-            "url": "#license"
-          },
-          {
-            "title": "Documentatie",
-            "url": "#docs"
-          }
         ]
       }
     },
@@ -663,22 +441,6 @@
       "sidebar": {
         "title": "Op deze pagina",
         "urls": [
-          {
-            "title": "Doel",
-            "url": "#goal"
-          },
-          {
-            "title": "Status",
-            "url": "#status"
-          },
-          {
-            "title": "Licentie",
-            "url": "#license"
-          },
-          {
-            "title": "Documentatie",
-            "url": "#docs"
-          }
         ]
       }
     },
@@ -691,22 +453,6 @@
       "sidebar": {
         "title": "Op deze pagina",
         "urls": [
-          {
-            "title": "Doel",
-            "url": "#goal"
-          },
-          {
-            "title": "Status",
-            "url": "#status"
-          },
-          {
-            "title": "Licentie",
-            "url": "#license"
-          },
-          {
-            "title": "Documentatie",
-            "url": "#docs"
-          }
         ]
       }
     },
@@ -719,22 +465,6 @@
       "sidebar": {
         "title": "Op deze pagina",
         "urls": [
-          {
-            "title": "Doel",
-            "url": "#goal"
-          },
-          {
-            "title": "Status",
-            "url": "#status"
-          },
-          {
-            "title": "Licentie",
-            "url": "#license"
-          },
-          {
-            "title": "Documentatie",
-            "url": "#docs"
-          }
         ]
       }
     },
@@ -747,22 +477,6 @@
       "sidebar": {
         "title": "Op deze pagina",
         "urls": [
-          {
-            "title": "Doel",
-            "url": "#goal"
-          },
-          {
-            "title": "Status",
-            "url": "#status"
-          },
-          {
-            "title": "Licentie",
-            "url": "#license"
-          },
-          {
-            "title": "Documentatie",
-            "url": "#docs"
-          }
         ]
       }
     }
