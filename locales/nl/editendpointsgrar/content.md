@@ -1,4 +1,4 @@
-## 1 Decentraal beheer
+## Decentraal beheer
 
 De edit endpoints maken decentraal beheer mogelijk in het gebouwen- en adressenregister. Deze endpoints worden door de dienstenleveranciers geïmplementeerd in hun software. Zo kunnen vb. straatnamen, adressen, gebouwen, gebouweenheden en percelen toegevoegd, verwijderd of aangepast worden. 
 
@@ -9,7 +9,7 @@ Niet alle edit endpoints mogen door iedereen uitgevoerd worden, daarom werden er
 
 Hieronder kan per register een lijst gevonden worden van welke beheeracties er allemaal mogelijk zijn en welke rol welke beheeractie mag uitvoeren.
 
-### 1.1 Straatnamen
+### Straatnamen
 * Stel een straatnaam voor. (Decentrale bijwerker)
 * Keur een straatnaam goed. (Decentrale bijwerker)
 * Keur een straatnaam af. (Decentrale bijwerker)
@@ -21,7 +21,7 @@ Hieronder kan per register een lijst gevonden worden van welke beheeracties er a
 * Corrigeer de afkeuring van een straatnaam. (Interne bijwerker)
 * Corrigeer de opheffing van een straatnaam. (Interne bijwerker)
 
-### 1.2 Adressen
+### Adressen
 * Stel een adres voor. (Decentrale bijwerker)
 * Keur een adres goed. (Decentrale bijwerker)
 * Keur een adres af. (Decentrale bijwerker)
@@ -41,7 +41,7 @@ Hieronder kan per register een lijst gevonden worden van welke beheeracties er a
 * Corrigeer de deregularisatie van een adres. (Decentrale bijwerker)
 * Wijzig de postcode van een adres. (Interne bijwerker)
 
-### 1.3 Gebouwen
+### Gebouwen
 * Plan een gebouw in. (Decentrale bijwerker)
 * Plaats een gebouw in aanbouw. (Decentrale bijwerker)
 * Realiseer een gebouw. (Decentrale bijwerker)
@@ -52,7 +52,7 @@ Hieronder kan per register een lijst gevonden worden van welke beheeracties er a
 * Corrigeer de nietRealisering van een gebouw. (Decentrale bijwerker)
 * Wijzig de geometrie van een geschetst gebouw. (Decentrale bijkwerker)
 
-### 1.4 Gebouweenheid
+### Gebouweenheid
 * Plan een gebouweenheid in. (Decentrale bijwerker)
 * Realiseer een gebouweenheid (Decentrale bijwerker)
 * Realiseer een gebouweenheid niet. (Decentrale bijwerker)
@@ -69,15 +69,15 @@ Hieronder kan per register een lijst gevonden worden van welke beheeracties er a
 * Koppel een adres aan een gebouweenheid. (Decentrale bijwerker)
 * Ontkoppel een adres van een gebouweenheid. (Decentrale bijwerker)
 
-### 1.5 Percelen
+### Percelen
 * Koppel een adres aan een perceel. (Decentrale bijwerker)
 * Ontkoppel een adres van een perceel. (Decentrale bijwerker)
 
-## 2 Betekenis van de edit events en velden in de feed 
+## Betekenis van de edit events en velden in de feed 
 
 Een overzicht van alle mogelijke edit events en de betekenis van de attributen onder het blokje <event> vindt u op deze pagina: https://api.basisregisters.staging-vlaanderen.be/v1/info/events?tags=edit.
 
-## 3 Welke huisnummers & busnummers worden aanvaard voor een nieuw adres?
+## Welke huisnummers & busnummers worden aanvaard voor een nieuw adres?
 
 Als er een nieuw voorgesteld adres wordt ingevoerd dan moet het huisnummer en eventueel het busnummer aan bepaalde voorwaarden voldoen.
 
@@ -85,11 +85,11 @@ De regex die van toepassing is op het huisnummer is ^[1-9] ([0-9]{0,8}([A-H]|[K-
 
 De regex die van toepassing is op het busnummer is ^[a-zA-Z0-9]{1,10}$. Bovenop deze regex wordt het woord bus, Bus of BUS ook niet aanvaard. Dit wilt zeggen dat busnummers 1, 001 of 5C aanvaard zullen worden, maar busnummers 0, Bus 1 of 1-A niet aanvaard zullen worden.
  
-## 4 Unieke straatnaam, homoniemtoevoeging, huisnummer of busnummer, hoe uniek is dit?
+## Unieke straatnaam, homoniemtoevoeging, huisnummer of busnummer, hoe uniek is dit?
  
 Als er een straatnaam, homoniemtoevoeging, huisnummer of busnummer wordt ingevoerd dan wordt er achterliggend gekeken of deze al bestaan in een bepaalde gemeente of straatnaam. Dit wordt gedaan zodat er geen 2 dezelfde straatnamen, homoniemtoevoegingen, huisnummers of busnummers met status 'voorgesteld' of 'inGebruik' aanwezig zijn binnen deze gemeente of straatnaam. Ook werd ervoor gezorgd dat deze vergelijking niet hoofdlettergevoelig is. Het is namelijk niet mogelijk om een straatnaam met hoofdletters mee te geven en wat later diezelfde straatnaam zonder hoofdletters. vb. 'Straatnaam' en 'straatnaam' zal niet mogelijk zijn.
 
-## 5 Welke combinaties zijn mogelijk bij adrespositie?
+## Welke combinaties zijn mogelijk bij adrespositie?
 
 In de edit endpoints ‘Stel een adres voor’ en ‘Corrigeer de adrespositie van een adres’ zijn de parameters positieGeometrieMethode, positieSpecificatie en positie verplicht. 
 
@@ -105,13 +105,13 @@ Wanneer positieGeometrieMethode afgeleidVanObject wordt gekozen dan zijn volgend
 * Perceel
 * Gebouweenheid
 
-## 6 Functie van een gebouweenheid: nietGekend of gemeenschappelijkDeel
+## Functie van een gebouweenheid: nietGekend of gemeenschappelijkDeel
 
 Een gebouweenheid kan 2 functies hebben: nietGekend of gemeenschappelijkDeel. In de toekomst zal deze lijst met mogelijke waarden uitgebreid worden.
 
 Wanneer er een gebouweenheid wordt ingepland, is het enkel mogelijk om een ‘nietGekend’ als functie mee te geven. De functie ‘gemeenschappelijkDeel’ wordt automatisch toegekend van zodra er 2 ‘nietGekend’ ‘gepland/gerealiseerde’ gebouweenheden gekoppeld zijn aan het gebouw.
 
-## 7 Wat is het verschil tussen een correctie en een wijziging?
+## Wat is het verschil tussen een correctie en een wijziging?
 
 Er wordt een onderscheid gemaakt tussen correcties en wijzigingen. In het eerste geval gaat het om een rechtzetting van een fout (vb. ‘Van Eikstraat’ moet zijn ‘Van Eyckstraat’), in het tweede geval gaat het om een verandering in administratieve toestand (vb. gebouw veranderd van status ‘inAanbouw’ naar ‘inGebruik’).
 
@@ -119,22 +119,22 @@ vb. Het wijzigen of corrigeren van de postcode van een adres.
 
 Hiervoor zijn 2 aparte API’s gemaakt. De API ‘Corrigeer de postcode van een adres’ mag door elke decentrale beheerder uitgevoerd worden. Dit wordt uitgevoerd als de verkeerde postinfoID van een gemeente aan het adres is gekoppeld. Deze correctie kan alleen maar naar postinfoId’s worden gezet gekoppeld aan deze gemeente. De API ‘Wijzig de postcode van een adres’ is voor interne bijwerkers en wordt bijvooorbeeld op vraag van Bpost uitgevoerd. Bpost wilt dat postbodes een zo optimaal mogelijke route afleggen om deze reden kan het zijn dat adressen van bepaalde gemeenten een andere postinfoId krijgen dan deze die in de gemeente liggen. Deze API laat dit toe, vandaar dat dit niet door iedereen mogelijk is om uit te voeren. 
 
- ## 8 Validaties edit endpoint
+ ## Validaties edit endpoint
  
 Zie https://basisregisters.staging-vlaanderen.be/documentatie/editendpointsgrar/validaties.
  
-## 9 Flow statussen  
+## Flow statussen  
  
 Zie https://basisregisters.staging-vlaanderen.be/documentatie/statusflowgrar.
  
  
- ## 10 Ticketing service
+ ## Ticketing service
  
- ### 10.1 Flow status ticketing service 
+ ### Flow status ticketing service 
  
  ![image](https://user-images.githubusercontent.com/49196256/229503216-612d1f51-d13a-4cd6-8c1e-25b0498f5400.png)
  
- ### 10.2 Veld ‘metadata’
+ ### Veld ‘metadata’
  
 - Wanneer er een actie wordt uitgevoerd dan bestaat de inhoud van het veld metadata in het ticket uit de volgende velden :
   - action
@@ -151,7 +151,7 @@ Zie https://basisregisters.staging-vlaanderen.be/documentatie/statusflowgrar.
 Het idee hierachter is dat het aggregaat zorgt voor consistentie en dat alle veranderingen die binnen het aggregaat plaatsvinden als één geheel worden opgeslagen of teruggedraaid. Dit zorgt voor een duidelijke grens voor de buitenwereld, waarbij alle communicatie met de objecten binnen het aggregaat plaatsvindt via één centraal punt.
 Deze structuur helpt bij het organiseren van complexe bedrijfsprocessen en zorgt ervoor dat verschillende objecten binnen het systeem beter kunnen worden beheerd. Dit zorgt voor meer flexibiliteit en onderhoudbaarheid van de software, wat uiteindelijk kan leiden tot betere prestaties en efficiëntie.
 
-### 10.3 Veld ‘result’
+### Veld ‘result’
  
 - Wanneer het ticket als status ‘complete’ heeft dan bestaat het veld ‘result’ uit een json met de volgende waarden:
   -	Location: De URL naar het detail van het objectId.
