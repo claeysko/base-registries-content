@@ -1,8 +1,8 @@
 Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 
-## 1 Straatnamen
+## Straatnamen
 
-### 1.1 Stel een straatnaam voor 
+### Stel een straatnaam voor 
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
@@ -16,7 +16,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Er ontbreekt een officiële- of faciliteitentaal|Ticketing error | StraatnaamOntbreektOfficieleOfFaciliteitenTaal|In 'Straatnamen' ontbreekt een officiële of faciliteitentaal. |
 |Gehistoreerde Vlaamse gemeente meegegeven|Ticketing error |StraatnaamGemeenteVoorgesteldOfInGebruik|Deze actie is enkel toegestaan binnen gemeenten met       status 'voorgesteld' of 'inGebruik'.|
   
-### 1.2 Keur een straatnaam goed 
+### Keur een straatnaam goed 
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
@@ -25,7 +25,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Status straatnaamId gehistoreerd/afgekeurd|Ticketing error|StraatnaamAfgekeurdOfGehistoreerd| Deze actie is enkel toegestaan op straatnamen met status 'voorgesteld' . |
 |Verwijderd straatnaamId meegegeven |Ticketing error |VerwijderdeStraatnaam  |Verwijderde straatnaam.  |
 
-### 1.3 Keur een straatnaam af 
+### Keur een straatnaam af 
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
@@ -34,7 +34,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Status straatnaamId gehistoreerd/inGebruik|Ticketing error|StraatnaamInGebruikOfGehistoreerd| Deze actie is enkel toegestaan op straatnamen met status 'voorgesteld'. |
 |Verwijderd straatnaamId meegegeven |Ticketing error |VerwijderdeStraatnaam  |Verwijderde straatnaam.  |
   
-### 1.4 Hef een straatnaam op 
+### Hef een straatnaam op 
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
@@ -43,7 +43,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Status straatnaamId voorgesteld/afgekeurd|Ticketing error|StraatnaamVoorgesteldOfAfgekeurd| Deze actie is enkel toegestaan op straatnamen met status 'inGebruik'. |
 |Verwijderd straatnaamId meegegeven |Ticketing error |VerwijderdeStraatnaam  |Verwijderde straatnaam.  |
   
-### 1.5 Corrigeer de goedkeuring van een straatnaam 
+### Corrigeer de goedkeuring van een straatnaam 
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
@@ -52,7 +52,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Status straatnaamId gehistoreerd/inGebruik|Ticketing error|StraatnaamGehistoreerdAfgekeurd| Deze actie is enkel toegestaan op straatnamen met status 'inGebruik'. |
 |Verwijderd straatnaamId meegegeven |Ticketing error |VerwijderdeStraatnaam  |Verwijderde straatnaam.  |
   
-### 1.6 Corrigeer de afkeuring van een straatnaam 
+### Corrigeer de afkeuring van een straatnaam 
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
@@ -62,7 +62,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Straatnaam bestaat in gemeente met status voorgesteld/inGebruik |Ticketing error |StraatnaamBestaatReedsInGemeente  | Straatnaam 'straatnaam' bestaat reeds in de gemeente. |
 |Verwijderd straatnaamId meegegeven |Ticketing error |VerwijderdeStraatnaam  |Verwijderde straatnaam.  |
   
-### 1.7 Corrigeer de opheffing van een straatnaam 
+### Corrigeer de opheffing van een straatnaam 
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
@@ -73,14 +73,14 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Straatnaam in gemeente met status gehistoreerd |Ticketing error |StraatnaamGemeenteInGebruik  | Deze actie is enkel toegestaan binnen gemeenten met status 'inGebruik'. |
 |Verwijderd straatnaamId meegegeven |Ticketing error |VerwijderdeStraatnaam  |Verwijderde straatnaam.  |
   
-### 1.8 Verwijder een straatnaam
+### Verwijder een straatnaam
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
 |Ongeldig straatnaamId meegegeven   |Error 400  |/ |De waarde 'straatnaamId' is ongeldig.  |
 |Onbestaand straatnaamId meegegeven  |Error 404 |/  |/  |
   
-### 1.9 Corrigeer de straatnaam van een straatnaam 
+### Corrigeer de straatnaam van een straatnaam 
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
@@ -94,7 +94,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |De meegegeven taal is geen officiële of faciliteitentaal van de gemeente|Ticketing error | StraatnaamTaalNietInOfficieleOfFaciliteitenTaal| 'Straatnamen' kunnen enkel voorkomen in de officiële of faciliteitentaal van de gemeente.|
 |Verwijderd straatnaamId meegegeven |Ticketing error |VerwijderdeStraatnaam  |Verwijderde straatnaam.  |
   
-### 1.10 Corrigeer de homoniemtoevoeging van een straatnaam 
+### Corrigeer de homoniemtoevoeging van een straatnaam 
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
@@ -108,9 +108,9 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Verwijderd straatnaamId meegegeven |Ticketing error |VerwijderdeStraatnaam  |Verwijderde straatnaam.  |
 
 
-## 2 Adressen
+## Adressen
   
-### 2.1 Stel een adres voor
+### Stel een adres voor
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
@@ -128,7 +128,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Meegegeven straatnaam heeft status afgekeurd/gehistoreerd |Ticketing error |AdresStraatnaamGehistoreerdOfAfgekeurd  |De straatnaam is gehistoreerd of afgekeurd.   | 
 |Meegegeven postinfoId is verschillend tov postinfoId van het adres met huisnummer |Ticketing error |AdresPostinfoNietHetzelfdeAlsHuisnummer  | De ingevoerde postcode komt niet overeen met de postcode van het huisnummer.   | 
  
-### 2.2 Keur een adres goed
+### Keur een adres goed
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
@@ -139,7 +139,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Adres is een busnummer & mag niet voorlopen op status adres dat een huisnummer is|Ticketing error|AdresHuisnummerVoorgesteldGehistoreerdOfAfgekeurd| Deze actie is enkel toegestaan op adressen waarbij het huisnummer de status 'inGebruik' heeft. |
 |Verwijderd adresId meegegeven |Ticketing error |VerwijderdAdres  |Verwijderd adres.  |
 
-### 2.3 Keur een adres af
+### Keur een adres af
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
@@ -148,7 +148,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Status adresId inGebruik/gehistoreerd|Ticketing error|AdresGehistoreerdOfInGebruik| Deze actie is enkel toegestaan op adressen met status 'voorgesteld'. |
 |Verwijderd adresId meegegeven |Ticketing error |VerwijderdAdres  |Verwijderd adres.  |
 
-### 2.4 Hef een adres op
+### Hef een adres op
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
@@ -157,14 +157,14 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Status adresId voorgesteld/gehistoreerd|Ticketing error|AdresVoorgesteldOfAfgekeurd| Deze actie is enkel toegestaan op adressen met status 'inGebruik'. |
 |Verwijderd adresId meegegeven |Ticketing error |VerwijderdAdres  |Verwijderd adres.  |  
   
-### 2.5 Verwijder een adres
+### Verwijder een adres
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
 |Ongeldig adresId meegegeven   |Error 400  |/ |De waarde 'adresId' is ongeldig.  |
 |Onbestaand adresId meegegeven  |Error 404 |/  |/  |
   
-### 2.6 Regulariseer een adres
+### Regulariseer een adres
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
@@ -173,7 +173,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Status adresId afgekeurd/gehistoreerd|Ticketing error|AdresGehistoreerdOfAfgekeurd| Deze actie is enkel toegestaan op adressen met status 'voorgesteld' of 'inGebruik'. |
 |Verwijderd adresId meegegeven |Ticketing error |VerwijderdAdres  |Verwijderd adres.  |  
   
-### 2.7 Deregulariseer een adres
+### Deregulariseer een adres
   
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
@@ -183,7 +183,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Verwijderd adresId meegegeven |Ticketing error |VerwijderdAdres  |Verwijderd adres.  |
 |Adres is een busnummer & mag niet voorlopen op status adres dat huisnummer is|Ticketing error |AdresHuisnummerVoorgesteldGehistoreerdOfAfgekeurd | Deze actie is enkel toegestaan op adressen waarbij het huisnummer de status ‘inGebruik’ heeft. |
 
-### 2.8 Heradresseren van adressen binnen éénzelfde straatnaam of naar een andere straatnaam
+### Heradresseren van adressen binnen éénzelfde straatnaam of naar een andere straatnaam
  
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
@@ -202,7 +202,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Het adres bij bronAdresId = het adres bij doelHuisnummer |Ticketing error |BronAdresIdHetzelfdeAlsDoelHuisnummer  | Het bronAdresId is hetzelfde als het doelHuisnummer: <adresid>.  |  
 |Het bronAdresId heeft geen postinfoId |Ticketing error |BronAdresIdPostcode  |Deze actie is niet toegestaan op adressen die geen postcode hebben: <adresid>.  |  
 
-### 2.9 Corrigeer de goedkeuring van een adres
+### Corrigeer de goedkeuring van een adres
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
@@ -213,7 +213,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Adres is niet officieelToegekend |Ticketing error |AdresNietOfficeeltoegekend  |Deze actie is enkel toegestaan voor officieel toegekende adressen.  |
 |Verwijderd adresId meegegeven |Ticketing error |VerwijderdAdres  |Verwijderd adres.  |
 
-### 2.10 Corrigeer de afkeuring van een adres
+### Corrigeer de afkeuring van een adres
   
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
@@ -227,7 +227,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Adres in straatnaam met status afgekeurd/gehistoreerd|Ticketing error|AdresStraatnaamVoorgesteldOfInGebruik| Deze actie is enkel toegestaan binnen straatnamen met  status 'voorgesteld' of 'inGebruik'. |
 |Verwijderd adresId meegegeven |Ticketing error |VerwijderdAdres  |Verwijderd adres.  | 
   
-### 2.11 Corrigeer de opheffing van een adres
+### Corrigeer de opheffing van een adres
   
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
@@ -241,7 +241,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Adres in straatnaam met status afgekeurd/gehistoreerd|Ticketing error|AdresStraatnaamVoorgesteldOfInGebruik| Deze actie is enkel toegestaan binnen straatnamen met  status 'voorgesteld' of 'inGebruik'. |
 |Verwijderd adresId meegegeven |Ticketing error |VerwijderdAdres  |Verwijderd adres.  | 
   
-### 2.12 Corrigeer de regularisering van een adres
+### Corrigeer de regularisering van een adres
   
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
@@ -251,7 +251,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Verwijderd adresId meegegeven |Ticketing error |VerwijderdAdres  |Verwijderd adres.  |
 |Adres is een busnummer & mag niet voorlopen op status adres dat huisnummer is|Ticketing error |AdresHuisnummerVoorgesteldGehistoreerdOfAfgekeurd | Deze actie is enkel toegestaan op adressen waarbij het huisnummer de status ‘inGebruik’ heeft. |
   
-### 2.13 Corrigeer de deregularisering van een adres
+### Corrigeer de deregularisering van een adres
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
@@ -260,7 +260,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Status adresId afgekeurd/gehistoreerd|Ticketing error|AdresGehistoreerdOfAfgekeurd| Deze actie is enkel toegestaan op adressen met status 'voorgesteld' of 'inGebruik'. |
 |Verwijderd adresId meegegeven |Ticketing error |VerwijderdAdres  |Verwijderd adres.  |  
   
-### 2.14 Corrigeer de adrespositie van een adres
+### Corrigeer de adrespositie van een adres
  
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
@@ -274,7 +274,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Adres in straatnaam met status afgekeurd/gehistoreerd|Ticketing error|AdresStraatnaamVoorgesteldOfInGebruik| Deze actie is enkel toegestaan binnen straatnamen met  status 'voorgesteld' of 'inGebruik'. |
 |Verwijderd adresId meegegeven |Ticketing error |VerwijderdAdres  |Verwijderd adres.  |  
  
-### 2.15 Corrigeer de postcode van een adres
+### Corrigeer de postcode van een adres
   
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
@@ -288,7 +288,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Adres in straatnaam met status afgekeurd/gehistoreerd|Ticketing error|AdresStraatnaamVoorgesteldOfInGebruik| Deze actie is enkel toegestaan binnen straatnamen met  status 'voorgesteld' of 'inGebruik'. |
 |Verwijderd adresId meegegeven |Ticketing error |VerwijderdAdres  |Verwijderd adres.  |   
    
-### 2.16 Wijzig de postcode van een adres
+### Wijzig de postcode van een adres
   
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
@@ -301,7 +301,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Adres in straatnaam met status afgekeurd/gehistoreerd|Ticketing error|AdresStraatnaamVoorgesteldOfInGebruik| Deze actie is enkel toegestaan binnen straatnamen met  status 'voorgesteld' of 'inGebruik'. |
 |Verwijderd adresId meegegeven |Ticketing error |VerwijderdAdres  |Verwijderd adres.  | 
    
-### 2.17 Corrigeer het huisnummer van een adres
+### Corrigeer het huisnummer van een adres
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
@@ -315,7 +315,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Adres in straatnaam met status afgekeurd/gehistoreerd|Ticketing error|AdresStraatnaamVoorgesteldOfInGebruik| Deze actie is enkel toegestaan binnen straatnamen met  status 'voorgesteld' of 'inGebruik'. |
 |Verwijderd adresId meegegeven |Ticketing error |VerwijderdAdres  |Verwijderd adres.  | 
    
-### 2.18 Corrigeer het busnummer van een adres
+### Corrigeer het busnummer van een adres
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
@@ -329,16 +329,16 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Adres in straatnaam met status afgekeurd/gehistoreerd|Ticketing error|AdresStraatnaamVoorgesteldOfInGebruik| Deze actie is enkel toegestaan binnen straatnamen met  status 'voorgesteld' of 'inGebruik'. |
 |Verwijderd adresId meegegeven |Ticketing error |VerwijderdAdres  |Verwijderd adres.  | 
 
-## 3 Gebouwen
+## Gebouwen
 
-### 3.1 Plan een gebouw in 
+### Plan een gebouw in 
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
 |Parameter geometriePolygoon ontbreekt   |Error 400  |JsonInvalid  |Json is not valid.  |
 |GeometriePolygoon leeg/niet correct meegegeven |Error 400 |GebouwPolygoonValidatie  |Ongeldig formaat geometriePolygoon. |
 
-### 3.2 Plaats een gebouw in aanbouw
+### Plaats een gebouw in aanbouw
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
@@ -347,7 +347,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Status gebouwId gerealiseerd/gehistoreerd/nietGerealiseerd|Ticketing error|GebouwGehistoreerdGerealiseerdOfNietGerealiseerd| Deze actie is enkel toegestaan op gebouwen met status 'gepland'. |
 |Verwijderd gebouwId meegegeven |Ticketing error |VerwijderdGebouw  |Verwijderd gebouw.  |
 
-### 3.3 Realiseer een gebouw
+### Realiseer een gebouw
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
@@ -356,7 +356,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Status gebouwId gepland/gehistoreerd/nietGerealiseerd|Ticketing error|GebouwGehistoreerdGeplandOfNietGerealiseerd|  Deze actie is enkel toegestaan op gebouwen met status 'inAanbouw'. |
 |Verwijderd gebouwId meegegeven |Ticketing error |VerwijderdGebouw  |Verwijderd gebouw.  |
   
-### 3.4 Realiseer een gebouw niet
+### Realiseer een gebouw niet
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
@@ -365,7 +365,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Status gebouwId gerealiseerd/gehistoreerd|Ticketing error|GebouwGehistoreerdOfGerealiseerd| Deze actie is enkel toegestaan op gebouwen met status 'gepland' of ‘inAanbouw’.  |
 |Verwijderd gebouwId meegegeven |Ticketing error |VerwijderdGebouw  |Verwijderd gebouw.  |
   
- ### 3.5 Verwijder een geschetst gebouw
+ ### Verwijder een geschetst gebouw
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
@@ -373,7 +373,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Onbestaand gebouwId meegegeven  |Error 404 |/  |/  |
 |GeometrieMethode = ingemetenGRB|Ticketing error|GebouwGeometrieMethodeIngemetenGRB| Deze actie is enkel toegestaan op gebouwen met geometrieMethode 'ingeschetst'.|
   
-### 3.6 Corrigeer de realisering van een gebouw
+### Corrigeer de realisering van een gebouw
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
@@ -384,7 +384,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Gebouw heeft gekoppelde gehistoreerde gebouweenheden|Ticketing error|GebouwBevatGehistoreerdeGebouweenheden| Deze actie is niet toegestaan wanneer er gehistoreerde gebouweenheden aanwezig zijn.|
 |Verwijderd gebouwId meegegeven |Ticketing error |VerwijderdGebouw  |Verwijderd gebouw.  |
  
-### 3.7 Corrigeer de niet realisering van een gebouw
+### Corrigeer de niet realisering van een gebouw
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
@@ -394,7 +394,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |GeometrieMethode = ingemetenGRB|Ticketing error|GebouwGeometrieMethodeIngemetenGRB| Deze actie is enkel toegestaan op gebouwen met geometrieMethode 'ingeschetst'.|
 |Verwijderd gebouwId meegegeven |Ticketing error |VerwijderdGebouw  |Verwijderd gebouw.  |
 
-### 3.8 Corrigeer de in aanbouw plaatsing van een gebouw
+### Corrigeer de in aanbouw plaatsing van een gebouw
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
@@ -403,7 +403,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Status gebouwId gerealiseerd/gehistoreerd/nietGerealiseerd|Ticketing error|GebouwGerealiseerdGehistoreerdOfNietGerealiseerd | Deze actie is enkel toegestaan op geschetste gebouwen met status 'inAanbouw’. |
 |Verwijderd gebouwId meegegeven |Ticketing error |VerwijderdGebouw  |Verwijderd gebouw.  |
   
-### 3.9 Corrigeer de geometrie van een geschetst gebouw
+### Corrigeer de geometrie van een geschetst gebouw
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
@@ -415,9 +415,9 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Verwijderd gebouwId meegegeven |Ticketing error |VerwijderdGebouw  |Verwijderd gebouw.  |
 
 
-## 4 Gebouweenheden
+## Gebouweenheden
   
-### 4.1 Plan een gebouweenheid in
+### Plan een gebouweenheid in
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
@@ -428,7 +428,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |De nieuwe positie ligt buiten de geometrie van het gebouw|Ticketing error |GebouweenheidOngeldigePositieValidatie | De positie dient binnen de geometrie van het gebouw te liggen.  |
 |Gehistoreerd of nietGerealiseerd gebouwId meegegeven |Ticketing error |GebouweenheidGebouwIdNietGerealiseerdofGehistoreerd | De gebouwId is niet gerealiseerd of gehistoreerd.  |
   
-### 4.2 Realiseer een gebouweenheid
+### Realiseer een gebouweenheid
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
@@ -439,7 +439,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Status gebouweenheidId gehistoreerd/nietGerealiseerd|Ticketing error|GebouweenheidGehistoreerdOfNietGerealiseerd| Deze actie is enkel toegestaan op gebouweenheden met status 'gepland'. |
 |Verwijderd gebouweenheidId meegegeven |Ticketing error |VerwijderdeGebouweenheid  |Verwijderde gebouweenheid.  |
   
-### 4.3 Realiseer een gebouweenheid niet
+### Realiseer een gebouweenheid niet
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
@@ -449,7 +449,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Status gebouweenheidId gehistoreerd/gerealiseerd|Ticketing error|GebouweenheidGehistoreerdOfGerealiseerd|  Deze actie is enkel toegestaan op gebouweenheden met status 'gepland'. |
 |Verwijderd gebouweenheidId meegegeven |Ticketing error |VerwijderdeGebouweenheid  |Verwijderde gebouweenheid.  |
   
-### 4.4 Hef een gebouweenheid op
+### Hef een gebouweenheid op
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
@@ -460,7 +460,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Status gebouweenheidId gepland/nietGerealiseerd|Ticketing error|GebouweenheidGeplandOfNietGerealiseerd| Deze actie is enkel toegestaan op gebouweenheden met status 'gerealiseerd'. |
 |Verwijderd gebouweenheidId meegegeven |Ticketing error |VerwijderdeGebouweenheid  |Verwijderde gebouweenheid.  |
   
-### 4.5 Verwijder een gebouweenheid
+### Verwijder een gebouweenheid
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
@@ -468,7 +468,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Onbestaand gebouweenheidId meegegeven  |Error 404 |/  |/  |
 |Gebouweenheid met functie gemeenschappelijkDeel meegegeven |Ticketing error |GebouweenheidGemeenschappelijkDeel  | Deze actie is niet toegestaan op gebouweenheden me functie gemeenschappelijkDeel.  |
 
-### 4.6 Regulariseer een gebouweenheid
+### Regulariseer een gebouweenheid
   
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
@@ -479,7 +479,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Status gebouweenheidId gehistoreerd/nietGerealiseerd|Ticketing error|GebouweenheidNietGerealiseerdOfGehistoreerd | Deze actie is enkel toegestaan op gebouweenheden met status 'gepland' of 'gerealiseerd'. |
 |Verwijderd gebouweenheidId meegegeven |Ticketing error |VerwijderdeGebouweenheid  |Verwijderde gebouweenheid.  |
   
-### 4.7 Deregulariseer een gebouweenheid
+### Deregulariseer een gebouweenheid
   
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
@@ -490,7 +490,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Status gebouweenheidId gehistoreerd/nietGerealiseerd|Ticketing error|GebouweenheidNietGerealiseerdOfGehistoreerd | Deze actie is enkel toegestaan op gebouweenheden met status 'gepland' of 'gerealiseerd'. |
 |Verwijderd gebouweenheidId meegegeven |Ticketing error |VerwijderdeGebouweenheid  |Verwijderde gebouweenheid.  |
   
-### 4.8 Corrigeer de realisering van een gebouweenheid
+### Corrigeer de realisering van een gebouweenheid
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
@@ -500,7 +500,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Status gebouweenheidId gehistoreerd/nietGerealiseerd|Ticketing error|GebouweenheidGehistoreerdNietGerealiseerd| Deze actie is enkel toegestaan op gebouweenheden met status 'gerealiseerd'. |
 |Verwijderd gebouweenheidId meegegeven |Ticketing error |VerwijderdeGebouweenheid  |Verwijderde gebouweenheid.  |
 
-### 4.9 Corrigeer de niet realisering van een gebouweenheid
+### Corrigeer de niet realisering van een gebouweenheid
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
@@ -511,7 +511,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Status gebouweenheidId gehistoreerd/gerealiseerd|Ticketing error|GebouweenheidGerealiseerdOfGehistoreerd| Deze actie is enkel toegestaan op gebouweenheden met status 'nietGerealiseerd'. |
 |Verwijderd gebouweenheidId meegegeven |Ticketing error |VerwijderdeGebouweenheid  |Verwijderde gebouweenheid.  |
   
-### 4.10 Corrigeer de opheffing van een gebouweenheid
+### Corrigeer de opheffing van een gebouweenheid
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
@@ -522,7 +522,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Status gebouweenheidId gepland/nietGerealiseerd|Ticketing error|GebouweenheidNietGerealiseerdOfGepland| Deze actie is enkel toegestaan op gebouweenheden met status 'gehistoreerd'. |
 |Verwijderd gebouweenheidId meegegeven |Ticketing error |VerwijderdeGebouweenheid  |Verwijderde gebouweenheid.  |  
   
-### 4.11 Corrigeer de regularisering van een gebouweenheid
+### Corrigeer de regularisering van een gebouweenheid
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
@@ -533,7 +533,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Status gebouweenheidId gehistoreerd/nietGerealiseerd|Ticketing error|GebouweenheidNietGerealiseerdOfGehistoreerd | Deze actie is enkel toegestaan op gebouweenheden met status 'gepland' of 'gerealiseerd'. |
 |Verwijderd gebouweenheidId meegegeven |Ticketing error |VerwijderdeGebouweenheid  |Verwijderde gebouweenheid.  |
   
-### 4.12 Corrigeer de deregularisering van een gebouweenheid
+### Corrigeer de deregularisering van een gebouweenheid
   
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
@@ -544,7 +544,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Status gebouweenheidId gehistoreerd/nietGerealiseerd|Ticketing error|GebouweenheidNietGerealiseerdOfGehistoreerd | Deze actie is enkel toegestaan op gebouweenheden met status 'gepland' of 'gerealiseerd'. |
 |Verwijderd gebouweenheidId meegegeven |Ticketing error |VerwijderdeGebouweenheid  |Verwijderde gebouweenheid.  |
 
-### 4.13 Corrigeer de positie van een gebouweenheid
+### Corrigeer de positie van een gebouweenheid
   
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
@@ -558,7 +558,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Status gebouweenheidId gehistoreerd/nietGerealiseerd|Ticketing error|GebouweenheidNietGerealiseerdOfGehistoreerd | Deze actie is enkel toegestaan op gebouweenheden met status 'gepland' of 'gerealiseerd'. |
 |Verwijderd gebouweenheidId meegegeven |Ticketing error |VerwijderdeGebouweenheid  |Verwijderde gebouweenheid.  |
 
-### 4.14 Koppel een adres aan een gebouweenheid
+### Koppel een adres aan een gebouweenheid
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
@@ -570,7 +570,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Status gebouweenheidId gehistoreerd/nietGerealiseerd|Ticketing error|GebouweenheidNietGerealiseerdOfGehistoreerd| Deze actie is enkel toegestaan op gebouweenheden met status 'gepland' of 'gerealiseerd'.|
 |Verwijderd gebouweenheidId meegegeven |Ticketing error|VerwijderdeGebouweenheid|Verwijderde gebouweenheid.|
   
-### 4.15 Ontkoppel een adres van een gebouweenheid
+### Ontkoppel een adres van een gebouweenheid
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
@@ -580,9 +580,9 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Onbestaand gebouweenheidId meegegeven  |Error 404|/  |/  |
 |Verwijderd gebouweenheidId meegegeven |Ticketing error|VerwijderdeGebouweenheid|Verwijderde gebouweenheid.|
   
-## 5 Percelen
+## Percelen
 
-### 5.1 Koppel een adres van een perceel
+### Koppel een adres van een perceel
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
@@ -593,7 +593,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Status perceelId gehistoreerd|Ticketing error|PerceelGehistoreerd|Deze actie is enkel toegestaan op percelen met status 'gerealiseerd'.|
 |Verwijderd perceelId meegegeven |Ticketing error |VerwijderdPerceel  |Verwijderd perceel.  |
 
-### 5.2 Ontkoppel een adres van een perceel
+### Ontkoppel een adres van een perceel
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
