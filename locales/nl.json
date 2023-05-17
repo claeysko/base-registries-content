@@ -298,6 +298,47 @@
       ]
     }
   },
+  "integrationDocumentation": {
+    "title": "Integratiedocumentatie",
+    "Prefix": "Basisregisters Vlaanderen",
+    "doormatItems": [
+      {
+        "title": "Technische integraties met het gebouwen- en adressenregister",
+        "text": "Een overzicht van de verschillende technische integratiemogelijkheden met het gebouwen- en adressenregister",
+        "url": "/integratie-documentatie/grar",
+        "hide": false
+      },
+      {
+        "title": "Technische integraties met het wegenregister",
+        "text": "Een overzicht van de verschillende technische integratiemogelijkheden met het wegenregister",
+        "url": "/integratie-documentatie/wr",
+        "hide": false
+      }
+    ],
+      "sidebar": {
+      "title": "Op deze pagina",
+      "urls": [
+      ]
+    }
+  },
+  "integrationDocumentationGrar": {
+    "title": "Technische integraties met het gebouwen- en adressenregister",
+    "Prefix": "Basisregisters Vlaanderen",
+      "sidebar": {
+      "title": "Op deze pagina",
+      "urls": [
+      ]
+    }
+  },
+  "integrationDocumentationWr": {
+    "title": "Technische integraties met het wegenregister",
+    "Prefix": "Basisregisters Vlaanderen",
+       "sidebar": {
+      "title": "Op deze pagina",
+      "urls": [
+      ]
+    }
+  },
   "registries": {
     "address": {
       "title": "Adres",
