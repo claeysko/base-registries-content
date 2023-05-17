@@ -15,7 +15,7 @@
       "url": "/documentatie/editendpointsgrar/validaties "
     },
     "apikey": {
-      "text": "API key",
+      "text": "API keys",
       "url": "/apikey"
     },
     "implementationmodel": {
@@ -157,17 +157,17 @@
     "Prefix": "Basisregisters Vlaanderen",
     "doormatItems": [
       {
-        "title": "Adressenregister",
+        "title": "Implementatiemodel adressenregister",
         "url": "/implementatiemodel/adressenregister",
         "hide": false
       },
       {
-        "title": "Gebouwenregister",
+        "title": "Implementatiemodel gebouwenregister",
         "url": "/implementatiemodel/gebouwenregister",
         "hide": false
       },
       {
-        "title": "Wegenregister",
+        "title": "Implementatiemodel wegenregister",
         "url": "/implementatiemodel/wegenregister",
         "hide": false
       }
