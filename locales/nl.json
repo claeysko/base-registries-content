@@ -129,11 +129,11 @@
         "hide": false
       },
       {
-        "title": "Woordenlijst",
+        "title": "Verklarende woordenlijst",
         "subtitle": "Een begrippenlijst van de basisregisters",
         "url": "/verklarende-woordenlijst",
         "hide": false
-      },
+      }
     ]
   },
   "documentation": {
