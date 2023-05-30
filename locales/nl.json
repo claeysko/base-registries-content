@@ -87,7 +87,7 @@
         "hide": false
       },     
       {
-        "title": "Werking basisregisters",
+        "title": "Werking basisregisters endpoints",
         "subtitle": "Hoe werken de API's functioneel? Leer het hier.",
         "url": "/documentatie",
         "hide": false
@@ -125,7 +125,7 @@
     ]
   },
   "documentation": {
-    "title": "Werking basisregisters",
+    "title": "Werking basisregisters endpoints",
     "Prefix": "Basisregisters Vlaanderen",
     "doormatItems": [
       {
@@ -136,6 +136,11 @@
       {
         "title": "Flow statussen gebouwen- en adressenregister",
         "url": "/documentatie/statusflowgrar",
+        "hide": false
+      },
+      {
+        "title": "Foutmeldingen endpoints",
+        "url": "/foutmeldingen",
         "hide": false
       }
     ]
