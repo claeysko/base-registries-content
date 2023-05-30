@@ -79,8 +79,8 @@
   "home": {
     "title": "Home",
     "Prefix": "Basisregisters Vlaanderen",
-    "spotlightItems": [
-         {
+      "spotlightItems": [
+      {
         "title": "Producten basisregisters",
         "subtitle": "Welke producten zijn er? Lees het hier.",
         "url": "/producten",
