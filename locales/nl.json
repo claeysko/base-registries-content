@@ -207,6 +207,24 @@
       ]
     }
   },
+    "products": {
+    "title": "Producten basisregisters",
+    "Prefix": "Basisregisters Vlaanderen",
+    "doormatItems": [
+      {
+        "title": "Producten van het gebouwen- en adressenregister",
+        "text": "Een overzicht van de verschillende producten van het gebouwen- en adressenregister",
+        "url": "/producten/grar",
+        "hide": false
+      },
+      {
+        "title": "Producten van het wegenregister",
+        "text": "Een overzicht van de verschillende producten van het wegenregister",
+        "url": "/producten/wr",
+        "hide": false
+      }
+    ]
+  },
   "implementationmodelRoadRegistry": {
     "title": "Wegenregister",
     "Prefix": "Basisregisters Vlaanderen",
