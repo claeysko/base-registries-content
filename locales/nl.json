@@ -221,7 +221,7 @@
         "title": "Producten van het wegenregister",
         "text": "Een overzicht van de verschillende producten van het wegenregister",
         "url": "/producten/wr",
-        "hide": false
+        "hide": true
       }
     ]
   },
