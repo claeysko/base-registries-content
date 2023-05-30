@@ -77,7 +77,7 @@
     "Prefix": "Basisregisters Vlaanderen",
        "spotlightItems": [
       {
-        "title": "Producten basisregisters",
+        "title": "Producten basisregisters endpoints",
         "subtitle": "Welke producten zijn er? Lees het hier.",
         "url": "/producten",
         "hide": false
@@ -123,7 +123,12 @@
   "documentation": {
     "title": "Werking basisregisters",
     "Prefix": "Basisregisters Vlaanderen",
-    "doormatItems": []
+    "doormatItems": [
+      {
+        "title": "Foutmeldingen endpoints",
+        "url": "/foutmeldingen",
+        "hide": false
+      }]
   },
   "editendpointsgrar": {
     "title": "Gebruik van de edit API's van het gebouwen- en adressenregister",
