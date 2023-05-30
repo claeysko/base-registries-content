@@ -117,7 +117,19 @@
         "subtitle": "Een overzicht van de technische integraties.",
         "url": "/integratie-documentatie",
         "hide": false
-      }
+      },
+      {
+        "title": "Veelgestelde vragen",
+        "subtitle": "Een overzicht van de meest voorkomende vragen.",
+        "url": "/veelgestelde-vragen",
+        "hide": false
+      },
+      {
+        "title": "Verklarende woordenlijst",
+        "subtitle": "Een begrippenlijst van de basisregisters",
+        "url": "/verklarende-woordenlijst",
+        "hide": false
+      },
     ]
   },
   "documentation": {
