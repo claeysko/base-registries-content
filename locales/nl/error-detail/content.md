@@ -1,22 +1,25 @@
-____
-## Wat zijn de basisregisters? {#algemeen}
-Ter verbetering van haar beleidsvoering en dienstverlening trekt de Vlaamse overheid volop de kaart van de uitbouw van een geïntegreerd stelsel van authentieke gegevensbronnen.
+De basisregisters endpoints gebruiken Problem Details for HTTP APIs (RFC7807) om foutmeldingen te ontsluiten. Een foutmelding zal resulteren in volgende datastructuur:
 
-[<span class="vl-icon vl-vi vl-vi-arrow-right-fat vl-link__icon vl-link__icon--before"/>Lees verder][1]
+```
+{{
+  "type": "string",
+  "title": "string",
+  "detail": "string",
+  "status": number,
+  "instance": "string"
+}}
+```
 
-## Aanleiding voor de basisregisters {#aanleiding}
-Informatie is zeer omvangrijk, maar ook zeer versnipperd. De basisregisters moeten zorgen voor een efficiëntere doorstroming van informatie naar alle betrokken partijen.
+## Mogelijke foutmeldingen
+Binnen de aangeboden endpoints zijn er een aantal foutmeldingen die kunnen voorkomen. U moet naar het veld ‘Detail’ kijken voor meer informatie.
 
-[<span class="vl-icon vl-vi vl-vi-arrow-right-fat vl-link__icon vl-link__icon--before"/>Lees verder][2]
-
-## Visie op de basisregisters {#visie}
-De basisregisters worden ontwikkeld in samenspraak met de belangrijkste stakeholders. De ontwikkeling van de registers bespreken we in werkgroepen. Daarbij houden we maximaal rekening met de relevante doelgroepen.
-
-[<span class="vl-icon vl-vi vl-vi-arrow-right-fat vl-link__icon vl-link__icon--before"/>Lees verder][3]
-
-## Aanbod van gegevensbronnen {#aanbod}
-Volgende gegevensbronnen maken momenteel deel uit van het stelsel:
-
-[1]:/algemeen
-[2]:/aanleiding
-[3]:/visie
+| Foutmelding | Wanneer | 
+|:-:|:-:|
+| 304 | Wanneer de request niet gewijzigd is tegenover de vorige opvraging. | 
+| 400 | Wanneer uw verzoek foutieve data bevat. Bijvoorbeeld: Wanneer het veld numeriek is, maar er geen numerieke waarde wordt meegegeven of wanneer bij de request parameter een . wordt meegegeven, of wanneer bij endpoint ‘Crabgebouwen’ er geen parameters worden meegegeven. | 
+| 401 | Wanneer er geen API key in de feed wordt meegegeven. | 
+| 403 | Wanneer het formaat in de URL wordt meegegeven of wanneer u een API key meegeeft die niet correct is.| 
+| 404 | Wanneer het objectid niet gevonden kan worden.| 
+| 406 | Wanneer het verkeerde formaat wordt meegegeven in de accept header. | 
+| 410 | Wanneer het objectid verwijderd is. | 
+| 500 | Wanneer de response groter is dan 10MB of wanneer er een interne fout is gebeurd of wanneer de GRB WFS-service niet kan gecontacteerd worden.| 
