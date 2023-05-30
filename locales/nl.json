@@ -180,7 +180,7 @@
         "title": "Technische integraties met het wegenregister",
         "text": "Een overzicht van de verschillende technische integratiemogelijkheden met het wegenregister",
         "url": "/integratie-documentatie/wr",
-        "hide": false
+        "hide": true
       }
     ],
       "sidebar": {
