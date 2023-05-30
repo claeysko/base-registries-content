@@ -75,30 +75,48 @@
   "home": {
     "title": "Home",
     "Prefix": "Basisregisters Vlaanderen",
-    "spotlightItems": [
+       "spotlightItems": [
       {
-        "title": "API Documentatie",
-        "subtitle": "Hoe werken de API's technisch? Leer het hier.",
-        "url": {
-          "dev": "https://docs.basisregisters.dev-vlaanderen.be/docs/api-documentation.html#tag/api-documentation.html",
-          "stg": "https://docs.basisregisters.staging-vlaanderen.be/docs/api-documentation.html#tag/api-documentation.html",
-          "prd": "https://docs.basisregisters.vlaanderen.be/docs/api-documentation.html#tag/api-documentation.html"
-        }
-      },
+        "title": "Producten basisregisters",
+        "subtitle": "Welke producten zijn er? Lees het hier.",
+        "url": "/producten",
+        "hide": false
+      },     
+      {
+        "title": "Werking basisregisters",
+        "subtitle": "Hoe werken de API's functioneel? Leer het hier.",
+        "url": "/documentatie",
+        "hide": false
+      }, 
       {
         "title": "Implementatiemodel",
-        "subtitle": "De specificatie voor gegevensuitwisseling",
-        "url": "/implementatiemodel"
+        "subtitle": "De specificatie voor gegevensuitwisseling.",
+        "url": "/implementatiemodel",
+        "hide": false
+      },
+       {
+        "title": "API keys",
+        "subtitle": "Hoe API key gebruiken & aanvragen? Leer het hier.",
+        "url": "/apikey",
+        "hide": false
       },
       {
         "title": "Release Notes",
-        "subtitle": "Documentatie bij huidige en vorige releases",
-        "url": "/release-notes"
+        "subtitle": "Documentatie bij huidige en vorige releases.",
+        "url": "/release-notes",
+        "hide": false
       },
       {
         "title": "Versies",
-        "subtitle": "Een overzicht van de huidige versies",
-        "url": "/versies"
+        "subtitle": "Een overzicht van de huidige versies.",
+        "url": "/versies",
+        "hide": false
+      },
+      {
+        "title": "Technische integraties",
+        "subtitle": "Een overzicht van de technische integraties.",
+        "url": "/integratie-documentatie",
+        "hide": false
       }
     ]
   },
