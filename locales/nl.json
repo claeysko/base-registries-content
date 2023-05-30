@@ -166,6 +166,47 @@
       "urls": []
     }
   },
+   "integrationDocumentation": {
+    "title": "Integratiedocumentatie",
+    "Prefix": "Basisregisters Vlaanderen",
+    "doormatItems": [
+      {
+        "title": "Technische integraties met het gebouwen- en adressenregister",
+        "text": "Een overzicht van de verschillende technische integratiemogelijkheden met het gebouwen- en adressenregister",
+        "url": "/integratie-documentatie/grar",
+        "hide": false
+      },
+      {
+        "title": "Technische integraties met het wegenregister",
+        "text": "Een overzicht van de verschillende technische integratiemogelijkheden met het wegenregister",
+        "url": "/integratie-documentatie/wr",
+        "hide": false
+      }
+    ],
+      "sidebar": {
+      "title": "Op deze pagina",
+      "urls": [
+      ]
+    }
+  },
+  "integrationDocumentationGrar": {
+    "title": "Technische integraties met het gebouwen- en adressenregister",
+    "Prefix": "Basisregisters Vlaanderen",
+      "sidebar": {
+      "title": "Op deze pagina",
+      "urls": [
+      ]
+    }
+  },
+  "integrationDocumentationWr": {
+    "title": "Technische integraties met het wegenregister",
+    "Prefix": "Basisregisters Vlaanderen",
+       "sidebar": {
+      "title": "Op deze pagina",
+      "urls": [
+      ]
+    }
+  },
   "implementationmodelRoadRegistry": {
     "title": "Wegenregister",
     "Prefix": "Basisregisters Vlaanderen",
@@ -288,342 +329,6 @@
         {
           "title": "SHACL-LD template",
           "url": "#shacl"
-        }
-      ]
-    }
-  },
-  "information": {
-    "title": "Informatie",
-    "Prefix": "Basisregisters Vlaanderen",
-    "redirect": {
-      "url": "/"
-    },
-    "spotlightItems": [
-      {
-        "title": "Gemeenten",
-        "subtitle": "Referentie bron",
-        "text": "de Belgische gemeenten",
-        "url": "/registers/gemeenten"
-      },
-      {
-        "title": "Postinfo",
-        "subtitle": "Referentie bron",
-        "text": "de Belgische gemeenten",
-        "url": "/registers/postinfo"
-      },
-      {
-        "title": "Straatnamen",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse straatnamen",
-        "url": "/registers/straatnamen"
-      },
-      {
-        "title": "Adressen",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse adressen",
-        "url": "/registers/adressen"
-      },
-      {
-        "title": "Gebouwen",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse gebouwen en gebouweenheden",
-        "url": "/registers/gebouwen"
-      },
-      {
-        "title": "Percelen",
-        "subtitle": "Referentie bron",
-        "text": "de Vlaamse percelen",
-        "url": "/registers/percelen"
-      },
-      {
-        "title": "Wegen",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse wegen",
-        "url": "/registers/wegen"
-      },
-      {
-        "title": "Organisaties",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse organisaties en organen",
-        "url": "/registers/organisaties"
-      },
-      {
-        "title": "Dienstverleningen",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse dienstverlening",
-        "url": "/registers/dienstverleningen"
-      }
-    ],
-    "sidebar": {
-      "title": "Op deze pagina",
-      "urls": [
-        {
-          "title": "Algemeen",
-          "url": "#algemeen"
-        },
-        {
-          "title": "Aanleiding",
-          "url": "#aanleiding"
-        },
-        {
-          "title": "Visie",
-          "url": "#visie"
-        },
-        {
-          "title": "Aanbod",
-          "url": "/informatie#aanbod"
-        }
-      ]
-    }
-  },
-  "general": {
-    "title": "Algemeen",
-    "Prefix": "Basisregisters Vlaanderen",
-    "redirect": {
-      "url": "/"
-    },
-    "spotlightItems": [
-      {
-        "title": "Gemeenten",
-        "subtitle": "Referentie bron",
-        "text": "de Belgische gemeenten",
-        "url": "/registers/gemeenten"
-      },
-      {
-        "title": "Postinfo",
-        "subtitle": "Referentie bron",
-        "text": "de Belgische gemeenten",
-        "url": "/registers/postinfo"
-      },
-      {
-        "title": "Straatnamen",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse straatnamen",
-        "url": "/registers/straatnamen"
-      },
-      {
-        "title": "Adressen",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse adressen",
-        "url": "/registers/adressen"
-      },
-      {
-        "title": "Gebouwen",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse gebouwen en gebouweenheden",
-        "url": "/registers/gebouwen"
-      },
-      {
-        "title": "Percelen",
-        "subtitle": "Referentie bron",
-        "text": "de Vlaamse percelen",
-        "url": "/registers/percelen"
-      },
-      {
-        "title": "Wegen",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse wegen",
-        "url": "/registers/wegen"
-      },
-      {
-        "title": "Organisaties",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse organisaties en organen",
-        "url": "/registers/organisaties"
-      },
-      {
-        "title": "Dienstverleningen",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse dienstverlening",
-        "url": "/registers/dienstverleningen"
-      }
-    ],
-    "sidebar": {
-      "title": "Op deze pagina",
-      "urls": [
-        {
-          "title": "Algemeen",
-          "url": "/algemeen"
-        },
-        {
-          "title": "Aanleiding",
-          "url": "/aanleiding"
-        },
-        {
-          "title": "Visie",
-          "url": "/visie"
-        },
-        {
-          "title": "Aanbod",
-          "url": "/informatie#aanbod"
-        }
-      ]
-    }
-  },
-  "motive": {
-    "title": "Motive",
-    "Prefix": "Basisregisters Vlaanderen",
-    "redirect": {
-      "url": "/"
-    },
-    "spotlightItems": [
-      {
-        "title": "Gemeenten",
-        "subtitle": "Referentie bron",
-        "text": "de Belgische gemeenten",
-        "url": "/registers/gemeenten"
-      },
-      {
-        "title": "Postinfo",
-        "subtitle": "Referentie bron",
-        "text": "de Belgische gemeenten",
-        "url": "/registers/postinfo"
-      },
-      {
-        "title": "Straatnamen",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse straatnamen",
-        "url": "/registers/straatnamen"
-      },
-      {
-        "title": "Adressen",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse adressen",
-        "url": "/registers/adressen"
-      },
-      {
-        "title": "Gebouwen",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse gebouwen en gebouweenheden",
-        "url": "/registers/gebouwen"
-      },
-      {
-        "title": "Percelen",
-        "subtitle": "Referentie bron",
-        "text": "de Vlaamse percelen",
-        "url": "/registers/percelen"
-      },
-      {
-        "title": "Wegen",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse wegen",
-        "url": "/registers/wegen"
-      },
-      {
-        "title": "Organisaties",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse organisaties en organen",
-        "url": "/registers/organisaties"
-      },
-      {
-        "title": "Dienstverleningen",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse dienstverlening",
-        "url": "/registers/dienstverleningen"
-      }
-    ],
-    "sidebar": {
-      "title": "Op deze pagina",
-      "urls": [
-        {
-          "title": "Algemeen",
-          "url": "/algemeen"
-        },
-        {
-          "title": "Aanleiding",
-          "url": "/aanleiding"
-        },
-        {
-          "title": "Visie",
-          "url": "/visie"
-        },
-        {
-          "title": "Aanbod",
-          "url": "/informatie#aanbod"
-        }
-      ]
-    }
-  },
-  "vision": {
-    "title": "Visie",
-    "Prefix": "Basisregisters Vlaanderen",
-    "redirect": {
-      "url": "/"
-    },
-    "spotlightItems": [
-      {
-        "title": "Gemeenten",
-        "subtitle": "Referentie bron",
-        "text": "de Belgische gemeenten",
-        "url": "/registers/gemeenten"
-      },
-      {
-        "title": "Postinfo",
-        "subtitle": "Referentie bron",
-        "text": "de Belgische gemeenten",
-        "url": "/registers/postinfo"
-      },
-      {
-        "title": "Straatnamen",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse straatnamen",
-        "url": "/registers/straatnamen"
-      },
-      {
-        "title": "Adressen",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse adressen",
-        "url": "/registers/adressen"
-      },
-      {
-        "title": "Gebouwen",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse gebouwen en gebouweenheden",
-        "url": "/registers/gebouwen"
-      },
-      {
-        "title": "Percelen",
-        "subtitle": "Referentie bron",
-        "text": "de Vlaamse percelen",
-        "url": "/registers/percelen"
-      },
-      {
-        "title": "Wegen",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse wegen",
-        "url": "/registers/wegen"
-      },
-      {
-        "title": "Organisaties",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse organisaties en organen",
-        "url": "/registers/organisaties"
-      },
-      {
-        "title": "Dienstverleningen",
-        "subtitle": "Authentieke bron",
-        "text": "de Vlaamse dienstverlening",
-        "url": "/registers/dienstverleningen"
-      }
-    ],
-    "sidebar": {
-      "title": "Op deze pagina",
-      "urls": [
-        {
-          "title": "Algemeen",
-          "url": "/algemeen"
-        },
-        {
-          "title": "Aanleiding",
-          "url": "/aanleiding"
-        },
-        {
-          "title": "Visie",
-          "url": "/visie"
-        },
-        {
-          "title": "Aanbod",
-          "url": "/informatie#aanbod"
         }
       ]
     }
