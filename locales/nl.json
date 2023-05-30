@@ -307,29 +307,6 @@
       ]
     }
   },
-  "information": {
-    "title": "Informatie",
-    "Prefix": "Basisregisters Vlaanderen",
-    "redirect": {
-      "url": "/"
-    },
-    "spotlightItems": [
-    ],
-    "sidebar": {
-      "title": "Op deze pagina",
-      "urls": [
-      ]
-    }
-  },
-  "general": {
-    "title": "Algemeen",
-    "Prefix": "Basisregisters Vlaanderen",
-    "redirect": {
-      "url": "/"
-    },
-    "spotlightItems": [
-    ]
-  },
   "integrationDocumentation": {
     "title": "Integratiedocumentatie",
     "Prefix": "Basisregisters Vlaanderen",
@@ -373,7 +350,21 @@
   },
   "products": {
     "title": "Producten basisregisters",
-    "Prefix": "Basisregisters Vlaanderen"
+    "Prefix": "Basisregisters Vlaanderen",
+    "doormatItems": [
+      {
+        "title": "Producten van het gebouwen- en adressenregister",
+        "text": "Een overzicht van de verschillende producten van het gebouwen- en adressenregister",
+        "url": "/producten/grar",
+        "hide": false
+      },
+      {
+        "title": "Producten van het wegenregister",
+        "text": "Een overzicht van de verschillende producten van het wegenregister",
+        "url": "/producten/wr",
+        "hide": false
+      }
+    ],
   },
   "registries": {
     "address": {
