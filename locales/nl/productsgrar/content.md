@@ -15,7 +15,7 @@ Deze informatie kan op verschillende manieren geraadpleegd worden:
 * [Via de feed endpoints](#feedendpointsgrar)
 * [Via het downloadbestand](#downloadbestandgrar)
 * [Via de WMS, WFS & OGC API features](#wmswfsogcgrar)
-* [Overige producten](#andereintegraties)
+* [Overige producten](#andereintegratiesgrar)
 
 ## Read endpoints {#readendpointsgrar}
 
@@ -154,7 +154,7 @@ In het downloadbestand zijn er ook 2 bestanden te vinden die de mapping maken tu
 
 ## WMS, WFS & OGC API features {#wmswfsogcgrar}
 
-Het gebouwen- en adressenregister wordt ook als WMS & WFS ontsloten:
+Het gebouwen- en adressenregister wordt ook als WMS, WFS & OGC API features ontsloten:
 * De WMS maakt het mogelijk om adressen, gebouwen & gebouweenheden van het gebouwen- en adressenregister te visualiseren op een kaart. Per status is er een laag voorzien. Meer informatie over wat een WMS is, kan [hier][5] gevonden worden. 
 * De WFS maakt het mogelijk om geografische bevragingen te doen op adressen, gebouwen en gebouweenheden van het gebouwen- en adressenregister. Meer informatie over wat een WFS is, kan [hier][6] gevonden worden.
 * De standaard [OGC API Features][9], ontwikkeld door het Open Geospatial Consortium (OGC), specificeert de vereisten en aanbevelingen voor API’s met betrekking tot ruimtelijke gegevens. Het laat toe de adressen, gebouwen en gebouweenheden geometrisch te bevragen. 
@@ -174,7 +174,7 @@ Alle URL's van de WMS'en, WFS'en en OGC API features van het gebouwen- en adress
 * [OGC API features adressenregister][8]
 
 
-## Overige producten {#andereintegraties}
+## Overige producten {#andereintegratiesgrar}
 
 Er zijn nog een aantal andere technische implementaties mogelijk met data van het gebouwen- en adressenregister. Meer informatie kan [hier](/integratie-documentatie/grar) gevonden worden.
 
