@@ -3,7 +3,6 @@ Dit register verzamelt alle basisinformatie over wegen op het Vlaamse grondgebie
 
 Deze informatie kan op verschillende manieren geraadpleegd worden:
 * [Via de WMS, WFS & OGC API features](#wmswfsogcwr)
-* [Overige producten](#andereintegratieswr)
 
 ## WMS, WFS & OGC API features {#wmswfsogcwr}
 
@@ -22,10 +21,6 @@ Alle URL's van de WMS'en, WFS'en en OGC API features van het wegenregister kunne
 
 ### OGC API features
 * [OGC API features wegenregister][3]
-
-## Overige producten {#andereintegratieswr}
-
-Er zijn nog een aantal andere technische implementaties mogelijk met data van het wegenregister. Meer informatie kan [hier](/integratie-documentatie/wr) gevonden worden.
 
 [1]:https://www.vlaanderen.be/datavindplaats/catalogus/wegenregister-0
 [2]:https://www.vlaanderen.be/datavindplaats/catalogus/wfs-wegenregister
