@@ -1,20 +1,26 @@
-## WMS, WFS & OGC API features {#wmswfsogcgrar}
+Dit register verzamelt alle basisinformatie over wegen op het Vlaamse grondgebied in één register. Het is hét basisregister voor wegeninformatie in Vlaanderen en vormt de centrale koppelstandaard in het netwerk van wegengerelateerde gegevensbronnen. 
 
-Het gebouwen- en adressenregister wordt ook als WMS & WFS ontsloten:
-* De WMS maakt het mogelijk om adressen, gebouwen & gebouweenheden van het gebouwen- en adressenregister te visualiseren op een kaart. Per status is er een laag voorzien. Meer informatie over wat een WMS is, kan [hier][5] gevonden worden. 
-* De WFS maakt het mogelijk om geografische bevragingen te doen op adressen, gebouwen en gebouweenheden van het gebouwen- en adressenregister. Meer informatie over wat een WFS is, kan [hier][6] gevonden worden.
-* De standaard [OGC API Features][9], ontwikkeld door het Open Geospatial Consortium (OGC), specificeert de vereisten en aanbevelingen voor API’s met betrekking tot ruimtelijke gegevens. Het laat toe de adressen, gebouwen en gebouweenheden geometrisch te bevragen. 
 
-Alle URL's van de WMS'en, WFS'en en OGC API features van het gebouwen- en adressenregister kunnen gevonden worden in de catalogus van datavindplaats. 
+Deze informatie kan op verschillende manieren geraadpleegd worden:
+* [Via de read endpoints](#readendpointswr)
+* [Via de feed endpoints](#feedendpointswr)
+* [Via de WMS, WFS & OGC API features](#wmswfsogcwr)
+* [Overige producten](#andereintegratieswr)
+
+## WMS, WFS & OGC API features {#wmswfsogcwr}
+
+Het wegenregister wordt ook als WMS, WFS & OGC API features ontsloten:
+* De WMS maakt het mogelijk om wegen van het wegenregister te visualiseren op een kaart. Per status is er een laag voorzien. Meer informatie over wat een WMS is, kan [hier][5] gevonden worden. 
+* De WFS maakt het mogelijk om geografische bevragingen te doen op wegen van het wegenregister. Meer informatie over wat een WFS is, kan [hier][6] gevonden worden.
+* De standaard [OGC API Features][9], ontwikkeld door het Open Geospatial Consortium (OGC), specificeert de vereisten en aanbevelingen voor API’s met betrekking tot ruimtelijke gegevens. Het laat toe de wegen geometrisch te bevragen. 
+
+Alle URL's van de WMS'en, WFS'en en OGC API features van het wegenregister kunnen gevonden worden in de catalogus van datavindplaats. 
 
 ### WMS
-* [WMS gebouwenregister][1]
-* [WMS adressenregister][2]
+* [WMS wegenregister][1]
 
 ### WFS
-* [WFS gebouwenregister][3]
-* [WFS adressenregister][4]
+* [WFS wegenregister][2]
 
 ### OGC API features
-* [OGC API features gebouwenregister][7]
-* [OGC API features adressenregister][8]
+* [OGC API features wegenregister][3]
