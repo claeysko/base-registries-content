@@ -3,7 +3,7 @@ Als u een vraag heeft die hieronder niet beantwoord wordt, mail naar digitaal.vl
 
 ## Hoe kan in de WMS gebruiken?
 
-De WMS laat toe gebouwen en gebouweenheden (per status) **op kaart te visualiseren** en objecten aan te klikken voor meer informatie. Deze kaartlagen kunnen ingeladen worden in GIS- of andere software. Een lijst van GIS-software vindt u hier(https://en.wikipedia.org/wiki/Comparison_of_geographic_information_systems_software). We kunnen zelf QGIS (open source, gratis) aanbevelen.
+De WMS laat toe gebouwen en gebouweenheden (per status) **op kaart te visualiseren** en objecten aan te klikken voor meer informatie. Deze kaartlagen kunnen ingeladen worden in GIS- of andere software. Een lijst van GIS-software vindt u [hier](https://en.wikipedia.org/wiki/Comparison_of_geographic_information_systems_software). We kunnen zelf QGIS (open source, gratis) aanbevelen.
 
 Het is belangrijk in de GIS-software als coördinatensysteem voor het project ‘EPSG:31370’ (Belgian Lambert 72) te kiezen en ‘PNG’ als beeldformaat vooraleer lagen toe te voegen. De gebouwen en gebouweenheden worden zichtbaar vanaf schaal 1:8000 of hoger.
 
@@ -12,7 +12,7 @@ Via de ‘identify’-functie kunt u de details van een object op de kaart met e
 ## Hoe kan ik de REST-API uitproberen? 
 Een eenvoudige test van de REST-services kan door een URL samen te stellen in de adresbalk van uw browser.
 
-> Documentatie van hoe de URL’s er moeten uitzien en hoe u uw browser moet configureren.([opent in nieuw venster](https://docs.basisregisters.vlaanderen.be/docs/api-documentation.html#tag/api-documentation.html))
+[Documentatie van hoe de URL’s er moeten uitzien en hoe u uw browser moet configureren.](https://docs.basisregisters.vlaanderen.be/docs/api-documentation.html#tag/api-documentation.html)
 
 Het antwoord van de service zal in uw browser getoond worden.
 
@@ -20,7 +20,7 @@ Voor het visualiseren van objecten op kaart maakt u gebruik van de WMS of het te
 
 ## Hoe kan ik het testbestand gebruiken?
 
-Het testbestand kan ingeladen en gevisualiseerd worden met GIS-software. Een lijst van GIS-software vindt u hier(opent in nieuw venster). We kunnen zelf QGIS (open source, gratis) aanbevelen.
+Het testbestand kan ingeladen en gevisualiseerd worden met GIS-software. Een lijst van GIS-software vindt u [hier](https://en.wikipedia.org/wiki/Comparison_of_geographic_information_systems_software). We kunnen zelf QGIS (open source, gratis) aanbevelen.
 
 Het kan handig werken om bepaalde velden uit het testbestand als categorie of label bij de objecten te gebruiken (bv. ‘posspec’ bij Adres of ‘gebouwid’ bij Gebouw):
 
@@ -93,12 +93,11 @@ Bij de doorvertaling naar het Gebouwenregister wordt per huisnummer-gebouwkoppel
 In de toekomst zal de CRAB-beheerder in staat zijn de gebouweenheden direct met het juiste adres in het juiste gebouw te plaatsen.
 
 ## Hoe wordt de status (levensloop) voor de verschillende objecten ingevuld? 
-De beoogde levensloop van de kernobjecten werd eerst uitgetekend i.s.m. de werkgroep-Gebouwenregister. In deze projectfase worden de data in het Gebouwenregister uitsluitend uit het CRAB gehaald (dat op zijn beurt ook gebouwgeometrieën uit het GRB (https://www.vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/basiskaart-vlaanderen-grb) betrekt).
+De beoogde levensloop van de kernobjecten werd eerst uitgetekend i.s.m. de werkgroep-Gebouwenregister. In deze projectfase worden de data in het Gebouwenregister uitsluitend uit het CRAB gehaald (dat op zijn beurt ook gebouwgeometrieën uit het [GRB](https://www.vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/basiskaart-vlaanderen-grb) betrekt).
 
 Daarbij worden de CRAB-statussen als volgt omgezet naar het nieuwe statusverloop (de statussen worden toegelicht in de objectcataloog Gebouwenregister):
 
 ## Gebouw
-
 | Informatie in CRAB | Status | 
 |:-:|:-:|
 | Gebouw met status ‘vergunning aangevraagd’ | gepland | 
@@ -112,7 +111,6 @@ Daarbij worden de CRAB-statussen als volgt omgezet naar het nieuwe statusverloop
 Merk op: de levensloop wordt beschreven vanuit het resultaat, niet vanuit de vergunningsprocedure (deze informatie hoort thuis in het Vergunningenregister) dan wel het gebruik (we spreken ons niet uit over het al dan niet in gebruik zijn van een gebouw: dit is thematische informatie). In het Gebouwenregister worden ook niet-vergunningsplichtige gebouwen opgenomen.
 
 ## Gebouweenheid
-
 | **Informatie in CRAB** | **Status** | 
 |:-:|:-:|
 | Gebouweenheid gebaseerd op huisnummer/subadres met status ‘voorgesteld’ | gepland | 
@@ -124,7 +122,6 @@ Merk op: de levensloop wordt beschreven vanuit het resultaat, niet vanuit de ver
 | Gebouweenheid gebaseerd op huisnummer/subadres waarvan einddatum ingevuld werd toen adres status ‘voorgesteld’ of ‘gereserveerd’ had| niet gerealiseerd | 
 
 ### Adres
-
 | **Informatie in CRAB** | **Status** | **OfficieelToegekend** |
 |:-:|:-:|
 | Huisnummer/subadres met status ‘voorgesteld’ | voorgesteld | ja |
@@ -135,7 +132,6 @@ Merk op: de levensloop wordt beschreven vanuit het resultaat, niet vanuit de ver
 | Huisnummer/subadres waarvoor einddatum ingevuld werd| gehistoreerd | (afhankelijk van adresstatus)| 
 
 ### Straatnaam
-
 | **Informatie in CRAB** | **Status** | 
 |:-:|:-:|
 | Straatnaam met status ‘voorgesteld’ | voorgesteld | 
@@ -145,14 +141,12 @@ Merk op: de levensloop wordt beschreven vanuit het resultaat, niet vanuit de ver
 | Straatnaam waarvoor einddatum ingevuld werd| gehistoreerd | 
 
 ### Gemeente
-
 | **Informatie in CRAB** | **Status** | 
 |:-:|:-:|
 | Actuele gemeente | in gebruik | 
 | Gemeente waarvoor einddatum ingevuld werd | gehistoreerd | 
 
 ### Postinfo en Perceel
-
 | **Informatie in CRAB** | **Status** | 
 |:-:|:-:|
 | Actueel object | gerealiseerd | 
@@ -202,8 +196,7 @@ Voor kadastrale adressen en rijksregisteradressen kan gebruik gemaakt worden van
 
 Voor toelichting bij het gebruik van deze services, raadpleeg de documentatie:
 
-https://basisregisters.vlaanderen.be/Help/(opent in nieuw venster) (productie)
-http://beta.basisregisters.vlaanderen.be/Help(opent in nieuw venster) (bèta)
+[https://basisregisters.vlaanderen.be/Help/](https://basisregisters.vlaanderen.be/Help/) (productie)
 
 ## Waar vind ik de adresposities met herkomst 'brievenbus', 'nutsaansluiting' en 'toegang tot de weg' uit het CRAB terug?
 Door de werkgroep-Gebouwenregister werd besloten dit soort ‘toepassingsgerichte’ adresposities niet langer in het Adressenregister op te nemen. De motivatie daarvoor is tweeledig:
@@ -231,9 +224,7 @@ Vervolgens leest u het <id>-veld uit:
   
 ## Hoe kan ik keuzelijsten voor adresformulieren creëren?
   
-  Bekijk hier(afbeelding) het te volgen stappenplan.
-  
-  https://assets.vlaanderen.be/image/upload/w_600,c_fill/v1678267926/Basisregisters_-_Flow_keuzelijsten_adresformulieren_qtpbks.jpg
+  Bekijk [hier](https://assets.vlaanderen.be/image/upload/w_600,c_fill/v1678267926/Basisregisters_-_Flow_keuzelijsten_adresformulieren_qtpbks.jpg) het te volgen stappenplan.
   
 ## Wat is de betekenis van het veld 'homoniemtoevoeging'?
 - In CRAB dragen sommige straatnamen een suffix, bv. ‘Krijgsbaan_HO, Antwerpen’, waarbij ‘HO’ staat voor het district ‘Hoboken’.
@@ -245,7 +236,7 @@ Vervolgens leest u het <id>-veld uit:
   
 ## Elk object heeft een identificator (attribuut 'id') in de vorm van webadres. Wat is dit?
 
-De **Vlaamse URI-standaard** schrijft voor dat naar Vlaamse ‘resources’ (zoals een object in het Gebouwenregister) kan verwezen worden met een Uniform Resource Identifier (URI) (https://www.vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/gebouwen-en-adressenregister/verklarende-woordenlijst-adressen-en-gebouwenregister) . Deze data-URI is door zijn opbouw uniek binnen het World Wide Web en kan dus als stabiele identificator in eender welk systeem of databank gebruikt worden om ondubbelzinnig naar dat ene object te verwijzen. Daarnaast laten data-URI’s toe de resources als ‘linked data’ aan te bieden (cfr. CRAB-LOD).
+De **Vlaamse URI-standaard** schrijft voor dat naar Vlaamse ‘resources’ (zoals een object in het Gebouwenregister) kan verwezen worden met een [Uniform Resource Identifier](https://www.vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/gebouwen-en-adressenregister/verklarende-woordenlijst-adressen-en-gebouwenregister) (URI). Deze data-URI is door zijn opbouw uniek binnen het World Wide Web en kan dus als stabiele identificator in eender welk systeem of databank gebruikt worden om ondubbelzinnig naar dat ene object te verwijzen. Daarnaast laten data-URI’s toe de resources als ‘linked data’ aan te bieden (cfr. CRAB-LOD).
 
 Op dit moment zijn enkel de data-URI’s voor adressen resolvable, dit wil zeggen, linken enkel deze URI’s door naar een webdocument (voorstelling van het adres op het web).
   
@@ -255,13 +246,13 @@ De begin- en einddatum in het CRAB definiëren een administratieve geldigheidspe
 
 In de praktijk is het voor decentrale beheerders niet altijd even evident om deze administratieve data te kennen. Zo wordt het ‘einde der werken’ (het moment waarop de status van een gebouw in het Gebouwenregister op ‘gerealiseerd’ dient te komen) vandaag maar zelden door de bouwheer aan de gemeente meegedeeld. Bijgevolg kan de begin- en einddatum niet voldoende kwalitatief ingevuld worden.
 
-Daarnaast kan geargumenteerd worden dat deze administratieve informatie al in andere bronnen beschikbaar is (cfr. lokale besluiten als gelinkte open data(opent in nieuw venster) en Vergunningenregister). (https://lokaalbestuur.vlaanderen.be/gelinkt-publiceren-en-melden) 
+Daarnaast kan geargumenteerd worden dat deze administratieve informatie al in andere bronnen beschikbaar is (cfr. [lokale besluiten als gelinkte open data](https://lokaalbestuur.vlaanderen.be/gelinkt-publiceren-en-melden)  en Vergunningenregister).
 
 Door de werkgroep-Gebouwenregister werd daarom beslist **geen administratieve geldigheidsperiode** bij objecten in het Gebouwenregister te voorzien. Wel zullen datum en tijdstip alsook bijkomende herkomstinformatie (beschikbaar vanaf een volgende release) geregistreerd worden op het moment dat objecten worden opgevoerd, aangepast of verwijderd (de zogenaamde ‘recordhistoriek’).
   
 ## Hoe wordt het onderliggend perceel bij een gebouw bepaald?
 
-Via de REST-API kunnen de details van een gebouw(https://docs.basisregisters.staging-vlaanderen.be/docs/api-documentation.html#tag/api-documentation.html) opgevraagd worden. Daarbij wordt het eventuele onderliggende perceel getoond.
+Via de REST-API kunnen de [details van een gebouw](https://docs.basisregisters.staging-vlaanderen.be/docs/api-documentation.html#tag/api-documentation.html) opgevraagd worden. Daarbij wordt het eventuele onderliggende perceel getoond.
 
 Een perceel wordt als onderliggend aan een gebouw beschouwd indien het voldoet aan volgende voorwaarde (formule voor de berekening van de ‘verbeterde topologische relatie’):
 
@@ -307,4 +298,4 @@ Als 3 van deze 4 criteria positief zijn, dan wordt een gebouw meestal gesplitst.
 
 Indien men beschikt over bouwplannen, dan kunnen deze meer inzicht verschaffen over de opdeling.
 
-Een gedetailleerde toelichting hierover vind je hier([PDF bestand opent in nieuw venster](https://assets.vlaanderen.be/image/upload/v1678268047/Basiskaart_-_Procedure_afbakening_gebouw_bjocy0.pdf)).
+Een gedetailleerde toelichting hierover vind je [hier](https://assets.vlaanderen.be/image/upload/v1678268047/Basiskaart_-_Procedure_afbakening_gebouw_bjocy0.pdf)).
