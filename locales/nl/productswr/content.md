@@ -2,8 +2,6 @@ Dit register verzamelt alle basisinformatie over wegen op het Vlaamse grondgebie
 
 
 Deze informatie kan op verschillende manieren geraadpleegd worden:
-* [Via de read endpoints](#readendpointswr)
-* [Via de feed endpoints](#feedendpointswr)
 * [Via de WMS, WFS & OGC API features](#wmswfsogcwr)
 * [Overige producten](#andereintegratieswr)
 
