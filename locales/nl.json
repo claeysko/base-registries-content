@@ -568,7 +568,7 @@
     }
   },
   "error-detail": {
-    "title": "Foutmeldingen",
+    "title": "Foutmeldingen endpoints",
     "Prefix": "Basisregisters Vlaanderen",
     "doormatItems": [
       {
