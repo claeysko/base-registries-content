@@ -573,21 +573,7 @@
     "sidebar": {
       "title": "Op deze pagina",
       "urls": []
-    },
-    "doormatItems": [
-      {
-        "title": "Error 401",
-        "subtitle": "Welke producten zijn er? Lees het hier.",
-        "url": "/foutmeldingen/401",
-        "hide": false
-      },     
-      {
-        "title": "Error 403",
-        "subtitle": "Een begrippenlijst van de basisregisters",
-        "url": "/foutmeldingen/403",
-        "hide": false
-      }
-    ]
+    }
   },
   "versions": {
     "title": "Versies",
