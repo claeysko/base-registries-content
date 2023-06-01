@@ -1,1 +1,1 @@
-# Werking basisregisters
+# Werking basisregisters endpoints
