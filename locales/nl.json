@@ -574,13 +574,13 @@
       {
         "title": "Error 401",
         "subtitle": "Welke producten zijn er? Lees het hier.",
-        "url": "/401",
+        "url": "/foutmeldingen/401",
         "hide": false
       },     
       {
         "title": "Error 403",
         "subtitle": "Een begrippenlijst van de basisregisters",
-        "url": "/403",
+        "url": "/foutmeldingen/403",
         "hide": false
       }
     ]
