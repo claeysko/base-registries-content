@@ -1,5 +1,3 @@
-## Error 403: Invalid Apikey
+## Error 403: Invalid API key
 
-### Er heeft zich een fout voorgedaan!
-
-U beschikt niet over de correcte rechten.
+U heeft een geldige API key, echter hebt u met uw API key geen toegang tot dit endpoint. 
