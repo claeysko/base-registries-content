@@ -7,7 +7,7 @@
       "url": "/"
     },
     "documentation": {
-      "text": "Documentatie",
+      "text": "Werking basisregisters endpoints",
       "url": "/documentatie"
     },
     "editvalidations": {
@@ -569,7 +569,21 @@
     "sidebar": {
       "title": "Op deze pagina",
       "urls": []
-    }
+    },
+    "spotlightItems": [
+      {
+        "title": "Error 401",
+        "subtitle": "Welke producten zijn er? Lees het hier.",
+        "url": "/401",
+        "hide": false
+      },     
+      {
+        "title": "Error 403",
+        "subtitle": "Een begrippenlijst van de basisregisters",
+        "url": "/403",
+        "hide": false
+      }
+    ]
   },
   "versions": {
     "title": "Versies",
