@@ -588,7 +588,7 @@
       },
         {
         "title": "Error 403: Ongeldige API key",
-        "url": "/foutmeldingen/invalid_api_key,
+        "url": "/foutmeldingen/invalid_api_key",
         "hide": false
       },
       {
