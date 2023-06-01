@@ -558,7 +558,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Status gebouweenheidId gehistoreerd/nietGerealiseerd|Ticketing error|GebouweenheidNietGerealiseerdOfGehistoreerd | Deze actie is enkel toegestaan op gebouweenheden met status 'gepland' of 'gerealiseerd'. |
 |Verwijderd gebouweenheidId meegegeven |Ticketing error |VerwijderdeGebouweenheid  |Verwijderde gebouweenheid.  |
 
-### Koppel een adres aan een gebouweenheid
+### Koppel een adres aan een gebouweenheid 
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
