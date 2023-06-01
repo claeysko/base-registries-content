@@ -2,7 +2,7 @@
     "knownErrors": [
         {
             "id": "401",
-            "title": "401 Test"
+            "title": "Error 401"
         },
         {
             "id": "403",
@@ -10,15 +10,15 @@
         },
         {
             "id": "429",
-            "title": "429 Too Many Requests"
+            "title": "Error 429"
         },
         {
             "id": "504",
-            "title": "504 Timeout"
+            "title": "Error 504"
         },
         {
             "id": "invalid_api_key",
-            "title": "Invalid Apikey"
+            "title": "Error 403: Ongeldig API key"
         },
         {
             "id": "throttled",
@@ -30,7 +30,7 @@
         },
         {
             "id": "unauthorized",
-            "title": "Request Unauthorized"
+            "title": "Error 403: Onbevoegd"
         },
         {
             "id":"missing_authentication_token",
