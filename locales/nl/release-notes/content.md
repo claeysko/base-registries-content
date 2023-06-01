@@ -1,1 +1,1 @@
-
+Wenst u zich in te schrijven voor de releasemailing van het gebouwen- en adressenregister? Schrijf u dan [hier](https://analytics-eu.clickdimensions.com/cn/aqwrf/InReleaseGRAR) in. U kan er ook voor kiezen enkel de algemene communicatie van het gebouwen- en adressenregister te ontvangen. Als u dit wilt, schrijf u dan [hier](https://analytics-eu.clickdimensions.com/cn/aqwrf/InMailingsGRAR) in.
