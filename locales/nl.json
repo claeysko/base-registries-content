@@ -566,6 +566,20 @@
   "errorDetail": {
     "title": "Foutmeldingen",
     "Prefix": "Basisregisters Vlaanderen",
+    "doormatItems": [
+      {
+        "title": "Technische integraties met het gebouwen- en adressenregister",
+        "text": "Een overzicht van de verschillende technische integratiemogelijkheden met het gebouwen- en adressenregister",
+        "url": "/integratie-documentatie/grar",
+        "hide": false
+      },
+      {
+        "title": "Technische integraties met het wegenregister",
+        "text": "Een overzicht van de verschillende technische integratiemogelijkheden met het wegenregister",
+        "url": "/integratie-documentatie/wr",
+        "hide": false
+      }
+    ], 
     "sidebar": {
       "title": "Op deze pagina",
       "urls": []
