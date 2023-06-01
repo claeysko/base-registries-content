@@ -2,39 +2,23 @@
     "knownErrors": [
         {
             "id": "401",
-            "title": "401 Unauthorized"
-        },
-        {
-            "id": "403",
-            "title": "403 Forbidden"
+            "title": "Error 401"
         },
         {
             "id": "429",
-            "title": "429 Too Many Requests"
+            "title": "Error 429"
         },
         {
             "id": "504",
-            "title": "504 Timeout"
+            "title": "Error 504"
         },
         {
             "id": "invalid_api_key",
-            "title": "Invalid Apikey"
-        },
-        {
-            "id": "throttled",
-            "title": "Request Throttled"
-        },
-        {
-            "id": "timeout",
-            "title": "Request Timeout"
+            "title": "Error 403: ongeldige API key"
         },
         {
             "id": "unauthorized",
-            "title": "Request Unauthorized"
+            "title": "Error 403: onbevoegd"
         },
-        {
-            "id":"missing_authentication_token",
-            "title":"Missing Authentication Token"
-        }
     ]
 }
