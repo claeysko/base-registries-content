@@ -1,22 +1,22 @@
 Hieronder vindt u een overzicht van de meest voorkomende vragen met hun antwoorden die onze gebruikers hebben over de basisregisters.
-Als u een vraag heeft die hieronder niet beantwoord wordt, mail naar digitaal.vlaanderen@vlaanderen.be.
+Als u een vraag heeft die hieronder niet beantwoord wordt, mail dan naar digitaal.vlaanderen@vlaanderen.be.
 
-## Hoe kan in de WMS gebruiken?
+## Hoe kan ik de WMS gebruiken?
 
-De WMS laat toe gebouwen en gebouweenheden (per status) **op kaart te visualiseren** en objecten aan te klikken voor meer informatie. Deze kaartlagen kunnen ingeladen worden in GIS- of andere software. Een lijst van GIS-software vindt u [hier](https://en.wikipedia.org/wiki/Comparison_of_geographic_information_systems_software). We kunnen zelf QGIS (open source, gratis) aanbevelen.
+De WMS laat toe adressen, gebouwen en gebouweenheden per status en wegsegmenten per soort **op kaart te visualiseren** en objecten aan te klikken voor meer informatie. Deze kaartlagen kunnen ingeladen worden in GIS- of andere software. Een lijst van GIS-software vindt u [hier](https://en.wikipedia.org/wiki/Comparison_of_geographic_information_systems_software). We kunnen zelf QGIS (open source, gratis) aanbevelen.
 
-Het is belangrijk in de GIS-software als coördinatensysteem voor het project ‘EPSG:31370’ (Belgian Lambert 72) te kiezen en ‘PNG’ als beeldformaat vooraleer lagen toe te voegen. De gebouwen en gebouweenheden worden zichtbaar vanaf schaal 1:8000 of hoger.
+Het is belangrijk in de GIS-software als coördinatensysteem voor het project **EPSG:31370** (Belgian Lambert 72) te kiezen en **PNG** als beeldformaat vooraleer lagen toe te voegen. De adressen worden zichtbaar vanaf schaal 1:2000 en hoger, gebouwen en gebouweenheden worden zichtbaar vanaf schaal 1:8000 of hoger en wegen worden zichtbaar afhankelijk van soort weg. De maximumschaal is 1:28000. 
 
 Via de ‘identify’-functie kunt u de details van een object op de kaart met een muisklik opvragen.
 
-## Hoe kan ik de REST-API uitproberen? 
+## Hoe kan ik de endpoints van de basisregisters uitproberen? 
 Een eenvoudige test van de REST-services kan door een URL samen te stellen in de adresbalk van uw browser.
 
 [Documentatie van hoe de URL’s er moeten uitzien en hoe u uw browser moet configureren.](https://docs.basisregisters.vlaanderen.be/docs/api-documentation.html#tag/api-documentation.html)
 
 Het antwoord van de service zal in uw browser getoond worden.
 
-Voor het visualiseren van objecten op kaart maakt u gebruik van de WMS of het testbestand.
+Voor het visualiseren van objecten op kaart maakt u gebruik van de WMS of het downloadbestand.
 
 ## Hoe kan ik het testbestand gebruiken?
 
