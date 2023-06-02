@@ -37,7 +37,11 @@
     "products": {
       "text": "Producten basisregisters",
       "url": "/producten"
-    }
+    },
+   "error": {
+     "text": "Foutmeldingen",
+     "url": "/foutmeldingen"
+   }
   },
   "header": {
     "company": {
