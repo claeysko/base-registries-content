@@ -35,7 +35,7 @@
       "url": "/integratie-documentatie"
     },
      "error-detail": {
-      "text": "Overzicht van de errormeldingen in de endpoints",
+      "text": "Mogelijke foutmeldingen in de endpoints van de basisregisters",
       "url": "/foutmeldingen"
     },
     "products": {
@@ -155,7 +155,7 @@
         "hide": false
       },
       {
-        "title": "Foutmeldingen endpoints",
+        "title": "Mogelijke foutmeldingen in de endpoints van de basisregisters",
         "url": "/foutmeldingen",
         "hide": false
       }
@@ -568,7 +568,7 @@
     }
   },
   "error-detail": {
-    "title": "Foutmeldingen endpoints",
+    "title": "Mogelijke foutmeldingen in de endpoints van de basisregisters",
     "Prefix": "Basisregisters Vlaanderen",
     "doormatItems": [
       {
