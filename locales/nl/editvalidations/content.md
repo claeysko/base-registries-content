@@ -628,7 +628,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
-|Het veld middellijnGeometrie/wegsegmentstatus/morfologischeWegklasse/toegangsbeperking/wegbeheerder/wegverharding/wegbreedte/aantalRijstroken/aantal/richting niet meegegeven |Error 400 |'veld'Verplicht |'veld' is verplicht. |
+|Het veld middellijnGeometrie/ wegsegmentstatus/ morfologischeWegklasse/ toegangsbeperking/ wegbeheerder/ wegverharding/ wegbreedte/ aantalRijstroken/ aantal/ richting niet meegegeven |Error 400 |'veld'Verplicht |'veld' is verplicht. |
 |Ongeldige geometrie |Error 400 |MiddellijnGeometrieNietCorrect |De opgegeven geometrie is geen geldige LineString in gml 3.2. |
 |Ongeldige CRS |Error 400 |MiddellijnGeometrieCRSNietCorrect |De opgegeven geometrie heeft niet het coördinatenstelsel Lambert 72. |
 |Geometrie <2m |Error 400 |MiddellijnGeometrieKorterDanMinimum |De opgegeven geometrie heeft niet de minimale lengte van 2 meter.|
