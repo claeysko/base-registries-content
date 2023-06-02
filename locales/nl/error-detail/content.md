@@ -10,7 +10,7 @@ De basisregisters endpoints gebruiken Problem Details for HTTP APIs (RFC7807) om
 }}
 ```
 
-## Mogelijke foutmeldingen
+## Overzicht foutmeldingen
 Binnen de aangeboden endpoints zijn er een aantal foutmeldingen die kunnen voorkomen. U moet naar het veld ‘Detail’ kijken voor meer informatie.
 
 | Foutmelding | Wanneer | 
