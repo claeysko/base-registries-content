@@ -570,9 +570,66 @@
       "urls": []
     }
   },
-  "errorDetail": {
-    "title": "Foutmeldingen",
+"error-detail": {
+    "title": "Mogelijke foutmeldingen in de endpoints van de basisregisters",
     "Prefix": "Basisregisters Vlaanderen",
+    "doormatItems": [
+      {
+        "title": "Error 304",
+        "url": "/foutmeldingen/304",
+        "hide": false
+      },
+      {
+        "title": "Error 401",
+        "url": "/foutmeldingen/401",
+        "hide": false
+      },
+      {
+        "title": "Error 403: Onbevoegd",
+        "url": "/foutmeldingen/unauthorized",
+        "hide": false
+      },
+        {
+        "title": "Error 403: Ongeldige API key",
+        "url": "/foutmeldingen/invalid_api_key",
+        "hide": false
+      },
+      {
+        "title": "Error 404",
+        "url": "/foutmeldingen/404",
+        "hide": false
+      },
+      {
+        "title": "Error 406",
+        "url": "/foutmeldingen/406",
+        "hide": false
+      },
+      {
+        "title": "Error 410",
+        "url": "/foutmeldingen/410",
+        "hide": false
+      },
+      {
+        "title": "Error 412",
+        "url": "/foutmeldingen/412",
+        "hide": false
+      },
+      {
+        "title": "Error 429",
+        "url": "/foutmeldingen/429",
+        "hide": false
+      },
+       {
+        "title": "Error 500",
+        "url": "/foutmeldingen/500",
+        "hide": false
+      },
+      {
+        "title": "Error 504",
+        "url": "/foutmeldingen/504",
+        "hide": false
+      }
+    ], 
     "sidebar": {
       "title": "Op deze pagina",
       "urls": []
