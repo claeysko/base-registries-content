@@ -631,7 +631,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Ongeldige geometrie |Error 400 |MiddellijnGeometrieNietCorrect |De opgegeven geometrie is geen geldige LineString in gml 3.2. |
 |Ongeldige CRS |Error 400 |MiddellijnGeometrieCRSNietCorrect |De opgegeven geometrie heeft niet het coördinatenstelsel Lambert 72. |
 |Geometrie <2m |Error 400 |MiddellijnGeometrieKorterDanMinimum |De opgegeven geometrie heeft niet de minimale lengte van 2 meter.|
-|Ongeldige wegsegmentstatus |Error 400 |WegsegmentStatusNietCorrect |Wegsegment status is foutief. '<waarde>' is geen geldige waarde. |
+|Ongeldige wegsegmentstatus |Error 400 |WegsegmentStatusNietCorrect |Wegsegment status is foutief. 'waarde' is geen geldige waarde. |
 |Ongeldige morfologische wegklasse |Error 400 |MorfologischeWegklasseNietCorrect |Morfologische wegklasse is foutief. 'waarde' is geen geldige waarde. |
 |Ongeldige toegangsbeperking |Error 400 |ToegangsbeperkingNietCorrect |Toegangsbeperking is foutief. 'waarde' is geen geldige waarde. |
 |Ongeldige wegbeheerder |Error 400 |WegbeheerderNietCorrect |Wegbeheerder is foutief. 'waarde' is geen geldige waarde. |
