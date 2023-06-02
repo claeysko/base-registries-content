@@ -38,6 +38,10 @@
       "text": "Producten basisregisters",
       "url": "/producten"
     },
+     "error-detail": {
+      "text": "Mogelijke foutmeldingen in de endpoints van de basisregisters",
+      "url": "/foutmeldingen"
+    },
    "error": {
      "text": "Foutmeldingen",
      "url": "/foutmeldingen"
