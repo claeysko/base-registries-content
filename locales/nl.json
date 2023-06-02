@@ -41,7 +41,11 @@
    "error": {
      "text": "Foutmeldingen",
      "url": "/foutmeldingen"
-   }
+   },
+   "releaseNotes": {
+    "text": "Release Notes",
+    "url": "/release-notes"
+  }
   },
   "header": {
     "company": {
