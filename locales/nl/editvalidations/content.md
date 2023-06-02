@@ -609,25 +609,26 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
 |Veld linkerstraatnaam niet meegegeven en veld rechterstraatnaam niet meegegeven   |Error 400  |JsonInvalid  |Ongeldig JSON formaat.  |
+|Wegsegment bestaat niet of werd verwijderd|Error 404 |/ |/ |
 |Wegsegment heeft reeds linkerstraatnaam |Ticketing error |LinkerstraatnaamNietOntkoppeld |Het wegsegment heeft reeds een linkerstraatnaam. Gelieve deze eerst te ontkoppelen. |
 |Wegsegment heeft reeds rechterstraatnaam |Ticketing error |RechterstraatnaamNietOntkoppeld |Het wegsegment heeft reeds een rechterstraatnaam. Gelieve deze eerst te ontkoppelen. |
 |Linker- of rechterstraatnaam verwijderd of niet gekend |Ticketing error |StraatnaamNietGekend |De straatnaam is niet gekend in het Straatnamenregister.|
 |Straatnaam afgekeurd of gehistoreerd |Ticketing error |WegsegmentStraatnaamNietVoorgesteldOfInGebruik |Deze actie is enkel toegelaten voor straatnamen met status 'voorgesteld' of 'in gebruik'. |
-|Wegsegment bestaat niet of werd verwijderd|Error 404 |/ |/ |
 
 ### Ontkoppel een straatnaam van een wegsegment
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
 |Veld linkerstraatnaam niet meegegeven en veld rechterstraatnaam niet meegegeven   |Error 400  |JsonInvalid  |Ongeldig JSON formaat.  |
-|Opgegeven linkerstraatnaam is momenteel niet gekoppeld aan wegsegment |Ticketing error |LinkerstraatnaamNietGekoppeld |Het wegsegment is niet gekoppeld aan de linkerstraatnaam. |
-|Opgegeven linkerstraatnaam is momenteel niet gekoppeld aan wegsegment |Ticketing error |LinkerstraatnaamNietGekoppeld |Het wegsegment is niet gekoppeld aan de linkerstraatnaam. |
 |Wegsegment bestaat niet of werd verwijderd|Error 404 |/ |/ |
+|Opgegeven linkerstraatnaam is momenteel niet gekoppeld aan wegsegment |Ticketing error |LinkerstraatnaamNietGekoppeld |Het wegsegment is niet gekoppeld aan de linkerstraatnaam. |
+|Opgegeven linkerstraatnaam is momenteel niet gekoppeld aan wegsegment |Ticketing error |LinkerstraatnaamNietGekoppeld |Het wegsegment is niet gekoppeld aan de linkerstraatnaam. |
 
 ### Schets een wegsegment
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
+|Het veld middellijnGeometrie/wegsegmentstatus/morfologischeWegklasse/toegangsbeperking/wegbeheerder/wegverharding/wegbreedte/aantalRijstroken/aantal/richting niet meegegeven |Error 400 |'veld'Verplicht |'veld' is verplicht. |
 |Ongeldige geometrie |Error 400 |MiddellijnGeometrieNietCorrect |De opgegeven geometrie is geen geldige LineString in gml 3.2. |
 |Ongeldige CRS |Error 400 |MiddellijnGeometrieCRSNietCorrect |De opgegeven geometrie heeft niet het coördinatenstelsel Lambert 72. |
 |Geometrie <2m |Error 400 |MiddellijnGeometrieKorterDanMinimum |De opgegeven geometrie heeft niet de minimale lengte van 2 meter.|
@@ -644,6 +645,7 @@ Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
 
 |Validatie|Soort error|ErrorCode|ErrorMessage|
 |:---:|:---:|:---:|:---:|
+|Het veld middellijnGeometrie niet meegegeven |Error 400 |MiddellijnGeometrieVerplicht |MiddellijnGeometrie is verplicht. |
 |Ongeldige geometrie |Error 400 |MiddellijnGeometrieNietCorrect |De opgegeven geometrie is geen geldige LineString in gml 3.2. |
 |Ongeldige CRS |Error 400 |MiddellijnGeometrieCRSNietCorrect |De opgegeven geometrie heeft niet het coördinatenstelsel Lambert 72. |
 |Geometrie <2m |Error 400 |MiddellijnGeometrieKorterDanMinimum |De opgegeven geometrie heeft niet de minimale lengte van 2 meter.|
