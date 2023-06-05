@@ -1,0 +1,14 @@
+{
+    "validationErrors": {
+        "objectId": [
+            {
+                "reason": "De waarde 'aaaa' is ongeldig."
+            }
+        ]
+    },
+    "type": "urn:be.vlaanderen.basisregisters.api:validation",
+    "title": "Er heeft zich een fout voorgedaan!",
+    "detail": "Validatie mislukt!",
+    "status": 400,
+    "instance": "https://api.basisregisters.vlaanderen.be/v1/foutmeldingen/<uniekecode>"
+}
