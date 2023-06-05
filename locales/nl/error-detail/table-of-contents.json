@@ -5,6 +5,10 @@
             "title": "Error 304"
         },
         {
+            "id": "400",
+            "title": "Error 400"
+        },
+        {
             "id": "401",
             "title": "Error 401"
         },
