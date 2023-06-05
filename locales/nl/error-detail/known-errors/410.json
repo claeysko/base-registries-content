@@ -1,0 +1,7 @@
+{
+    "type": "urn:be.vlaanderen.basisregisters.api:<register>:gone",
+    "title": "Er heeft zich een fout voorgedaan.",
+    "detail": "Verwijderd object.",
+    "status": "410",
+    "instance": "https://api.basisregisters.vlaanderen.be/v1/foutmeldingen/<uniekecode>"
+}
