@@ -10,6 +10,7 @@ De basisregisters endpoints gebruiken Problem Details for HTTP APIs (RFC7807) om
 }
 ```
 
+
 Uitzonderingen op deze structuur zijn error 304, error 400 en error 406.
 
 ## Overzicht foutmeldingen
