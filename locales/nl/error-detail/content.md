@@ -12,8 +12,3 @@ De basisregisters endpoints gebruiken Problem Details for HTTP APIs (RFC7807) om
 
 ## Overzicht foutmeldingen
 Binnen de aangeboden endpoints zijn er een aantal foutmeldingen die kunnen voorkomen. U moet naar het veld ‘Detail’ kijken voor meer informatie.
-
-| Foutmelding | Wanneer | 
-|:-:|:-:|
-| 410 | Wanneer het objectid verwijderd is. | 
-| 500 | Wanneer de response groter is dan 10MB of wanneer er een interne fout is gebeurd of wanneer de GRB WFS-service niet kan gecontacteerd worden.| 
