@@ -1,40 +1,48 @@
 {
     "knownErrors": [
         {
+            "id": "304",
+            "title": "Error 304"
+        },
+        {
             "id": "401",
-            "title": "401 Unauthorized"
-        },
-        {
-            "id": "403",
-            "title": "403 Forbidden"
-        },
-        {
-            "id": "429",
-            "title": "429 Too Many Requests"
-        },
-        {
-            "id": "504",
-            "title": "504 Timeout"
-        },
-        {
-            "id": "invalid_api_key",
-            "title": "Invalid Apikey"
-        },
-        {
-            "id": "throttled",
-            "title": "Request Throttled"
-        },
-        {
-            "id": "timeout",
-            "title": "Request Timeout"
+            "title": "Error 401"
         },
         {
             "id": "unauthorized",
-            "title": "Request Unauthorized"
+            "title": "Error 403: Onbevoegd"
         },
         {
-            "id":"missing_authentication_token",
-            "title":"Missing Authentication Token"
+            "id": "invalid_api_key",
+            "title": "Error 403: Ongeldig API key"
+        },
+        {
+            "id": "404",
+            "title": "Error 404"
+        },
+        {
+            "id": "406",
+            "title": "Error 406"
+        },
+        {
+            "id": "410",
+            "title": "Error 410"
+        },
+        {
+            "id": "412",
+            "title": "Error 412"
+        },
+        {
+            "id": "429",
+            "title": "Error 429"
+        },
+        {
+            "id": "500",
+            "title": "Error 500"
+        },
+        {
+            "id": "504",
+            "title": "Error 504"
         }
     ]
 }
