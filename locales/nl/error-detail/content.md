@@ -15,7 +15,6 @@ Binnen de aangeboden endpoints zijn er een aantal foutmeldingen die kunnen voork
 
 | Foutmelding | Wanneer | 
 |:-:|:-:|
-| 403 | Wanneer het formaat in de URL wordt meegegeven of wanneer u een API key meegeeft die niet correct is.| 
 | 404 | Wanneer het objectid niet gevonden kan worden.| 
 | 406 | Wanneer het verkeerde formaat wordt meegegeven in de accept header. | 
 | 410 | Wanneer het objectid verwijderd is. | 
