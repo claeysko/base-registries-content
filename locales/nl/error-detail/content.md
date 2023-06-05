@@ -1,13 +1,13 @@
 De basisregisters endpoints gebruiken Problem Details for HTTP APIs (RFC7807) om foutmeldingen te ontsluiten. Een foutmelding zal resulteren in volgende datastructuur:
 
 ```
-{{
+{
   "type": "string",
   "title": "string",
   "detail": "string",
-  "status": number,
+  "status": integer,
   "instance": "string"
-}}
+}
 ```
 
 ## Overzicht foutmeldingen
