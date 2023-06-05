@@ -1,2 +1,3 @@
 ## Error 403: Ongeldige API key
-U heeft een geldige API key, echter hebt u met uw API key geen toegang tot dit endpoint. 
+
+Error 403 wordt als response getoond als er een geldige API key is meegegeven, maar de API key geen toegang heeft tot dit endpoint. 
