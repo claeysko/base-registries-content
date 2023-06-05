@@ -3,5 +3,5 @@
     "title": "Er heeft zich een fout voorgedaan.",
     "detail": "Verwijderd object.",
     "status": "410",
-    "instance": "https://api.basisregisters.vlaanderen.be/v1/foutmeldingen/<uniekecode>"
+    "instance": "https://api.basisregisters.vlaanderen.be/v2/foutmeldingen/<uniekecode>"
 }
