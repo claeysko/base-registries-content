@@ -1,5 +1,3 @@
-## Error 401: Unauthorized
+## Error 403: Onbevoegd
 
-### U heeft geen toegang tot deze endpoint
-
-Er is geen en of ongeldige api key
+Error 403 wordt als response getoond als er een geldige API key is meegegeven, maar de API key geen toegang heeft tot dit endpoint. 
