@@ -15,8 +15,6 @@ Binnen de aangeboden endpoints zijn er een aantal foutmeldingen die kunnen voork
 
 | Foutmelding | Wanneer | 
 |:-:|:-:|
-| 304 | Wanneer de request niet gewijzigd is tegenover de vorige opvraging. | 
-| 400 | Wanneer uw verzoek foutieve data bevat. Bijvoorbeeld: Wanneer het veld numeriek is, maar er geen numerieke waarde wordt meegegeven of wanneer bij de request parameter een . wordt meegegeven, of wanneer bij endpoint ‘Crabgebouwen’ er geen parameters worden meegegeven. | 
 | 401 | Wanneer er geen API key in de feed wordt meegegeven. | 
 | 403 | Wanneer het formaat in de URL wordt meegegeven of wanneer u een API key meegeeft die niet correct is.| 
 | 404 | Wanneer het objectid niet gevonden kan worden.| 
