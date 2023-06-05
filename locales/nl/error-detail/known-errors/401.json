@@ -1,7 +1,7 @@
 {
-  "type": "urn:be.vlaanderen.basisregisters.api:unauthorized",
-  "title": "U heeft geen toegang tot deze endpoint",
-  "detail": "Er is geen en of ongeldige api key",
-  "status": "401",
-  "instance": "https://api.basisregisters.vlaanderen.be/v1/foutmeldingen/401"
+    "type": "urn:be.vlaanderen.basisregisters.api:unauthorized",
+    "title": "Er heeft zich een fout voorgedaan.",
+    "detail": "API key verplicht.",
+    "status": "401",
+    "instance": "https://api.basisregisters.vlaanderen.be/v2/foutmeldingen/<uniekecode>"
 }
