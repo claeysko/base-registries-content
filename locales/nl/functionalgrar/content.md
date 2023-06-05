@@ -2,10 +2,9 @@ Wenst u zich in te schrijven voor de releasemailing van het gebouwen- en adresse
 
 ### Huidige release
 - [Release notes 5 april 2023](https://assets.vlaanderen.be/image/upload/v1680596526/Release_notes_5_april_2023_dxijue.pdf)
-- [Release notes WFS WMS OGC API features Adressenregister](https://assets.vlaanderen.be/image/upload/v1671180245/Release_notes_WFS_WMS_OGC_API_features_Adressenregister_gx5w0b.pdf)
-- [Verwijderde/duplicate gebouweenheden](https://assets.vlaanderen.be/raw/upload/v1678267817/verwijderden-duplicate_gebouweenheden_owadtg.zip)
 
 ### Archief 
+- [Release notes WFS WMS OGC API features Adressenregister](https://assets.vlaanderen.be/image/upload/v1671180245/Release_notes_WFS_WMS_OGC_API_features_Adressenregister_gx5w0b.pdf)
 - [Release notes 5 april 2023](https://assets.vlaanderen.be/image/upload/v1680596526/Release_notes_5_april_2023_dxijue.pdf)
 - [Release notes 7 maart 2023](https://assets.vlaanderen.be/image/upload/v1678178285/Release_notes_7_maart_2023_ur0qqj.pdf)
 - [Release notes 23 januari 2023](https://assets.vlaanderen.be/image/upload/v1674220086/Release_notes_23_januari_2023_jskdlz.pdf)
@@ -25,6 +24,7 @@ Wenst u zich in te schrijven voor de releasemailing van het gebouwen- en adresse
 - [Release notes 20 januari 2021](https://assets.vlaanderen.be/image/upload/v1678099926/Release_Notes_Gebouwenregister_-_20_januari_2021_hwnkyd.pdf)
 - [Release notes 3 februari 2021](https://assets.vlaanderen.be/image/upload/v1678099926/Release_Notes_Gebouwenregister_-_20_januari_2021_hwnkyd.pdf)
 - [Release notes 30 november 2020](https://assets.vlaanderen.be/image/upload/v1678096327/Release_Notes_Gebouwenregister_-_30_november_2020_utqoey.pdf)
+- [Verwijderde/duplicate gebouweenheden](https://assets.vlaanderen.be/raw/upload/v1678267817/verwijderden-duplicate_gebouweenheden_owadtg.zip)
 - [Release notes 5 november 2020](https://assets.vlaanderen.be/image/upload/v1678096206/Release_Notes_Gebouwenregister_-_5_november_2020_mzq8cf.pdf)
 - [Release notes 9 oktober 2020](https://assets.vlaanderen.be/image/upload/v1678095847/Release_Notes_Gebouwenregister_-_24_september_2020_obee0g.pdf)
 - [Release notes 24 september 2020](https://assets.vlaanderen.be/image/upload/v1678095847/Release_Notes_Gebouwenregister_-_24_september_2020_obee0g.pdf)
