@@ -1,17 +1,17 @@
 Wenst u zich in te schrijven voor de releasemailing van het gebouwen- en adressenregister? Schrijf u dan [hier](https://analytics-eu.clickdimensions.com/cn/aqwrf/InReleaseGRAR) in. U kan er ook voor kiezen enkel de algemene communicatie van het gebouwen- en adressenregister te ontvangen. Als u dit wilt, schrijf u dan [hier](https://analytics-eu.clickdimensions.com/cn/aqwrf/InMailingsGRAR) in.
 
 ### Huidige release
-- Release notes 5 april 2023(PDF bestand opent in nieuw venster)
+- [Release notes 5 april 2023](https://assets.vlaanderen.be/image/upload/v1680596526/Release_notes_5_april_2023_dxijue.pdf)
 - [Release notes WFS WMS OGC API features Adressenregister](https://assets.vlaanderen.be/image/upload/v1671180245/Release_notes_WFS_WMS_OGC_API_features_Adressenregister_gx5w0b.pdf)
 - [Verwijderde/duplicate gebouweenheden](https://assets.vlaanderen.be/raw/upload/v1678267817/verwijderden-duplicate_gebouweenheden_owadtg.zip)
 
 ### Archief 
-- Release notes 5 april 2023(PDF bestand opent in nieuw venster)
-- Release notes 7 maart 2023(PDF bestand opent in nieuw venster)
-- Release notes 23 januari 2023(PDF bestand opent in nieuw venster)
-- Release notes 14 december 2022.pdf(PDF bestand opent in nieuw venster)
-- Release notes 15 november 2022.pdf(PDF bestand opent in nieuw venster)
-- Release notes 2 november 2022.pdf(PDF bestand opent in nieuw venster)
+- [Release notes 5 april 2023](https://assets.vlaanderen.be/image/upload/v1680596526/Release_notes_5_april_2023_dxijue.pdf)
+- [Release notes 7 maart 2023](https://assets.vlaanderen.be/image/upload/v1678178285/Release_notes_7_maart_2023_ur0qqj.pdf)
+- [Release notes 23 januari 2023](https://assets.vlaanderen.be/image/upload/v1674220086/Release_notes_23_januari_2023_jskdlz.pdf)
+- [Release notes 14 december 2022](https://assets.vlaanderen.be/image/upload/v1670583127/Release_notes_14_december_2022_cd52or.pdf)
+- [Release notes 15 november 2022](https://assets.vlaanderen.be/image/upload/v1668672130/Release_notes_15_november_2022_yuocyz.pdf)
+- [Release notes 2 november 2022](https://assets.vlaanderen.be/image/upload/v1667483650/Release_notes_2_november_2022_ke3dtu.pdf)
 - Release notes 19 april 2022.pdf(PDF bestand opent in nieuw venster)
 - Release notes 22 maart 2022.pdf(PDF bestand opent in nieuw venster)
 - Release notes 21 februari 2022.pdf(PDF bestand opent in nieuw venster)
