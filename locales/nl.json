@@ -581,6 +581,11 @@
         "hide": false
       },
       {
+        "title": "Error 400",
+        "url": "/foutmeldingen/400",
+        "hide": false
+      },
+      {
         "title": "Error 401",
         "url": "/foutmeldingen/401",
         "hide": false
