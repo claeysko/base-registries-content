@@ -15,7 +15,6 @@ Binnen de aangeboden endpoints zijn er een aantal foutmeldingen die kunnen voork
 
 | Foutmelding | Wanneer | 
 |:-:|:-:|
-| 404 | Wanneer het objectid niet gevonden kan worden.| 
 | 406 | Wanneer het verkeerde formaat wordt meegegeven in de accept header. | 
 | 410 | Wanneer het objectid verwijderd is. | 
 | 500 | Wanneer de response groter is dan 10MB of wanneer er een interne fout is gebeurd of wanneer de GRB WFS-service niet kan gecontacteerd worden.| 
