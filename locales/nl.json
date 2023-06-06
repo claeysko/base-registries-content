@@ -10,13 +10,13 @@
       "text": "Documentatie",
       "url": "/documentatie"
     },
-    "editvalidationsgrar": {
-      "text": "Validaties",
-      "url": "/documentatie/editendpointgrar/validaties"
+    "editendpointswr": {
+      "text": "Edit Endpoints WR",
+      "url": "/documentatie/editendpointswr"
     },
-    "editvalidations": {
-      "text": "Validaties",
-      "url": "/documentatie/editendpointgrar/validaties"
+    "editendpointsgrar": {
+      "text": "Edit Endpoints GRAR",
+      "url": "/documentatie/editendpointsgrar"
     },
     "implementationmodel": {
       "text": "Implementatiemodel",
