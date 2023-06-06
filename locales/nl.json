@@ -10,13 +10,13 @@
       "text": "Werking basisregisters endpoints",
       "url": "/documentatie"
     },
-    "editvalidationsgrar": {
-      "text": "Validaties",
-      "url": "/documentatie/editendpointgrar/validaties"
+    "editendpointsgrar": {
+      "text": "Edit Endpoints GRAR",
+      "url": "/documentatie/editendpointsgrar"
     },
-    "editvalidations": {
-      "text": "Validaties",
-      "url": "/documentatie/editendpointsgrar/validaties "
+    "editendpointswr": {
+      "text": "Edit Endpoints WR",
+      "url": "/documentatie/editendpointswr"
     },
     "apikey": {
       "text": "API keys",
