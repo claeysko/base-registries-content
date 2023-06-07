@@ -157,16 +157,16 @@
         "url": "/documentatie/editendpointsgrar"
       },
       {
-        "title": "Gebruik van de edit API's van het wegenregister",
-        "url": "/documentatie/editendpointswr"
-      },
-      {
         "title": "Flow statussen gebouwen- en adressenregister",
         "url": "/documentatie/statusflowgrar"
       },
       {
         "title": "Validaties edit API's van het gebouwen- en adressenregister",
         "url": "/documentatie/editendpointsgrar/validaties"
+      },
+       {
+        "title": "Gebruik van de edit API's van het wegenregister",
+        "url": "/documentatie/editendpointswr"
       },
       {
         "title": "Validaties edit API's van het wegenregister",
