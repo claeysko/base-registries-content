@@ -3,7 +3,7 @@
   "locale": "nl",
   "backButtons": {
     "home": {
-      "text": "Overzicht",
+      "text": "Startpagina basisregisters",
       "url": "/"
     },
     "documentation": {
