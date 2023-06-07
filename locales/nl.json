@@ -42,14 +42,6 @@
       "text": "Producten basisregisters",
       "url": "/producten"
     },
-     "productsgrar": {
-      "text": "Producten van het gebouwen- en adressenregister",
-      "url": "/producten/grar"
-    },
-     "productswr": {
-      "text": "Producten van het wegenregister",
-      "url": "/producten/wr"
-    },
      "error-detail": {
       "text": "Mogelijke foutmeldingen in de endpoints van de basisregisters",
       "url": "/foutmeldingen"
@@ -207,6 +199,14 @@
     "title": "Flow statussen gebouwen- en adressenregister",
     "Prefix": "Basisregisters Vlaanderen"
   },
+  "productsgrar": {
+    "title": "Producten van het gebouwen- en adressenregister",
+    "Prefix": "Basisregisters Vlaanderen"
+    },
+  "productswr": {
+    "title": "Producten van het wegenregister",
+    "Prefix": "Basisregisters Vlaanderen"
+    },
   "apikey": {
     "title": "API keys",
     "Prefix": "Basisregisters Vlaanderen"
