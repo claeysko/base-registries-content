@@ -11,11 +11,11 @@
       "url": "/documentatie"
     },
     "editendpointswr": {
-      "text": "Edit Endpoints WR",
+      "text": "Gebruik van de edit endpoints van het wegenregister",
       "url": "/documentatie/editendpointswr"
     },
     "editendpointsgrar": {
-      "text": "Edit Endpoints GRAR",
+      "text": "Gebruik van de edit endpoints van het gebouwen- en adressenregister",
       "url": "/documentatie/editendpointsgrar"
     },
     "apikey": {
@@ -157,12 +157,20 @@
         "url": "/documentatie/editendpointsgrar"
       },
       {
+        "title": "Gebruik van de edit API's van het wegenregister",
+        "url": "/documentatie/editendpointswr"
+      },
+      {
         "title": "Flow statussen gebouwen- en adressenregister",
         "url": "/documentatie/statusflowgrar"
       },
       {
-        "title": "Validaties edit API's",
+        "title": "Validaties edit API's van het gebouwen- en adressenregister",
         "url": "/documentatie/editendpointsgrar/validaties"
+      },
+      {
+        "title": "Validaties edit API's van het wegenregister",
+        "url": "/documentatie/editendpointswr/validaties"
       },
       {
         "title": "Mogelijke foutmeldingen van de endpoints van de basisregisters",
@@ -176,11 +184,15 @@
     "Prefix": "Basisregisters Vlaanderen"
   },
   "editvalidationsgrar": {
-    "title": "Validaties",
+    "title": "Validaties edit API's van het gebouwen- en adressenregister",
     "Prefix": "Basisregisters Vlaanderen"
   },
-  "editvalidations": {
-    "title": "Validaties edit API's",
+   "editendpointswr": {
+    "title": "Gebruik van de edit API's van het wegenregister",
+    "Prefix": "Basisregisters Vlaanderen"
+  },
+  "editvalidationswr": {
+    "title": "Validaties edit API's van het wegenregister",
     "Prefix": "Basisregisters Vlaanderen"
   },
   "statusflowgrar": {
