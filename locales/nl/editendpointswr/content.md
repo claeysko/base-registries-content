@@ -13,4 +13,4 @@ Hieronder kan per register een lijst gevonden worden van welke beheeracties er a
 
  ## Validaties edit endpoint
  
-Zie https://basisregisters.staging-vlaanderen.be/documentatie/editendpointsgrar/validaties.
+Zie https://basisregisters.staging-vlaanderen.be/documentatie/editendpointswr/validaties.
