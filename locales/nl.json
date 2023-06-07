@@ -42,6 +42,14 @@
       "text": "Producten basisregisters",
       "url": "/producten"
     },
+     "productsgrar": {
+      "text": "Producten van het gebouwen- en adressenregister",
+      "url": "/producten/grar"
+    },
+     "productswr": {
+      "text": "Producten van het wegenregister",
+      "url": "/producten/wr"
+    },
      "error-detail": {
       "text": "Mogelijke foutmeldingen in de endpoints van de basisregisters",
       "url": "/foutmeldingen"
