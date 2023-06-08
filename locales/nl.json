@@ -18,18 +18,6 @@
       "text": "Edit Endpoints WR",
       "url": "/documentatie/editendpointswr"
     },
-     "business-grar": {
-      "text": "Functionele release notes van het gebouwen- en adressenregister",
-      "url": "/release-notes/functioneelgrar"
-    },
-      "business-wr": {
-      "text": "Functionele release notes van het wegenregister",
-      "url": "/release-notes/functioneelwr"
-    },
-     "technisch-grar": {
-      "text": "Technische release notes van het gebouwen- en adressenregister",
-      "url": "/release-notes/technischgrar"
-    },
     "apikey": {
       "text": "API keys",
       "url": "/apikey"
@@ -156,6 +144,18 @@
       }
     ]
   },
+   "business-grar": {
+      "text": "Functionele release notes van het gebouwen- en adressenregister",
+      "url": "/release-notes/functioneelgrar"
+    },
+   "business-wr": {
+     "text": "Functionele release notes van het wegenregister",
+      "url": "/release-notes/functioneelwr"
+    },
+   "technisch-grar": {
+      "text": "Technische release notes van het gebouwen- en adressenregister",
+      "url": "/release-notes/technischgrar"
+    },
   "documentation": {
     "title": "Werking basisregisters endpoints",
     "Prefix": "Basisregisters Vlaanderen",
