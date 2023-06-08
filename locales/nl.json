@@ -38,6 +38,10 @@
       "text": "Mogelijke foutmeldingen in de endpoints van de basisregisters",
       "url": "/foutmeldingen"
     },
+   "releaseNotes": {
+    "text": "Release notes",
+    "url": "/release-notes"
+    },
    "error": {
      "text": "Foutmeldingen",
      "url": "/foutmeldingen"
