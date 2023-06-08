@@ -5,6 +5,7 @@ Wenst u zich in te schrijven voor de releasemailing van het gebouwen- en adresse
 
 ### Archief 
 - [Release notes 5 april 2023](https://assets.vlaanderen.be/image/upload/v1680596526/Release_notes_5_april_2023_dxijue.pdf)
+- [Release notes WFS WMS OGC API features Adressenregister](https://assets.vlaanderen.be/image/upload/v1671180245/Release_notes_WFS_WMS_OGC_API_features_Adressenregister_gx5w0b.pdf)
 - [Release notes 5 april 2023](https://assets.vlaanderen.be/image/upload/v1680596526/Release_notes_5_april_2023_dxijue.pdf)
 - [Release notes 7 maart 2023](https://assets.vlaanderen.be/image/upload/v1678178285/Release_notes_7_maart_2023_ur0qqj.pdf)
 - [Release notes 23 januari 2023](https://assets.vlaanderen.be/image/upload/v1674220086/Release_notes_23_januari_2023_jskdlz.pdf)
