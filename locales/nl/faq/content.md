@@ -10,8 +10,11 @@ U kan op 2 manieren achterhalen wat het adressen objectId is van een CRAB huisnu
 - Via het downloadbestand
   - In het downloadbestand van het gebouwen- en adressenregister zitten er 2 dbf's files met daarin een overzicht van het CRAB huisnummer- en CRAB subadresId met hun overeenkomstige gebouwen- en adressenregister objectId.
     
-## Ik heb een terreinObjectId, hoe weet ik welke gebouwen- en adressenregister objectId dit is?
-xxx
+## Ik heb een terreinObjectId of identificatorTerreinObject, hoe weet ik welke gebouwen- en adressenregister objectId dit is?
+Via het read endpoint van CRAB gebouwen kan u achterhalen wat het gebouwen- en adressenregister objectId is. U geeft in de URL het terreinObjectId of identificatorTerreinObject mee en u krijgt een overzicht 
+
+
+https://docs.basisregisters.vlaanderen.be/docs/api-documentation.html#operation/ListCrabBuildings
 
 ## Hoe kan ik de WMS gebruiken?
 
