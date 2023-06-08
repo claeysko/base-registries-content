@@ -10,13 +10,9 @@ Het is belangrijk in de GIS-software als coördinatensysteem voor het project **
 Via de ‘identify’-functie kunt u de details van een object op de kaart met een muisklik opvragen.
 
 ## Hoe kan ik de endpoints van de basisregisters uitproberen? 
-Een eenvoudige test van de REST-services kan door een URL samen te stellen in de adresbalk van uw browser.
-
-[Documentatie van hoe de URL’s er moeten uitzien en hoe u uw browser moet configureren.](https://docs.basisregisters.vlaanderen.be/docs/api-documentation.html#tag/api-documentation.html)
-
-Het antwoord van de service zal in uw browser getoond worden.
-
-Voor het visualiseren van objecten op kaart maakt u gebruik van de WMS of het downloadbestand.
+Een eenvoudige test van de REST-services kan door een URL samen te stellen in de adresbalk van uw browser. In uw browser krijgt u dan ook het resultaat van de aangeroepen service. 
+- Algemene uitleg over de endpoints kan [hier](https://basisregisters.vlaanderen.be/producten/grar) gevonden worden.
+- Documentatie over de URL's en bijhorende parmameters kan [hier](https://docs.basisregisters.vlaanderen.be/docs/api-documentation.html#tag/api-documentation.html) gevonden worden.
 
 ## Hoe kan ik het testbestand gebruiken?
 
