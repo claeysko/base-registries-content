@@ -35,7 +35,7 @@ Tot slot kan een CRAB-huisnummer of -subadres ook **ongekoppeld** voorkomen. Het
 
 Het attribuut ‘geometrie’ van een gebouweenheid is de positie van de gebouweenheid binnen de gebouwcontour.
 
-Staat de ‘PositieGeometrieMethode’ op ‘AfgeleidVanObject’ dan werd deze positie afgeleid van het gebouw waarbinnen de gebouweenheid ligt en betreft het de centroïde van het gebouw.
+Staat de ‘positieGeometrieMethode’ op ‘afgeleidVanObject’ dan werd deze positie afgeleid van het gebouw waarbinnen de gebouweenheid ligt en betreft het de centroïde van het gebouw.
 
 Staat de ‘PositieGeometrieMethode’ op ‘AangeduidDoorBeheerder’ dan werd de positie manueel geplaatst door een decentraal beheerder (in concreto: aangezien gebouweenheden momenteel automatisch aangemaakt worden o.b.v. CRAB-adressen betekent dit dat van het corresponderende adres in CRAB de meest kwalitatieve, manuele positie gebruikt werd).
 
