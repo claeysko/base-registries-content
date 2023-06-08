@@ -155,6 +155,22 @@
       }
     ]
   },
+   "releaseNotes": {
+    "title": "Release notes van de basisregisters",
+    "Prefix": "Basisregisters Vlaanderen",
+    "doormatItems": [
+      {
+        "title": "Business release notes van het gebouwen- en adressenregister",
+        "url": "/release-notes/functioneelgrar",
+        "hide": false
+      },
+      {
+        "title": "Business release notes van het wegenregister",
+        "url": "/release-notes/functioneelwr",
+        "hide": false
+      }
+    ]
+    },
   "editendpointsgrar": {
     "title": "Gebruik van de edit API's van het gebouwen- en adressenregister",
     "Prefix": "Basisregisters Vlaanderen"
