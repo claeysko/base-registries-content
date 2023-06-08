@@ -11,30 +11,29 @@ Via de ‘identify’-functie kunt u de details van een object op de kaart met e
 
 ## Hoe kan ik de endpoints van de basisregisters uitproberen? 
 Een eenvoudige test van de REST-services kan door een URL samen te stellen in de adresbalk van uw browser. In uw browser krijgt u dan ook het resultaat van de aangeroepen service. 
-- Algemene uitleg over de endpoints kan [hier](https://basisregisters.vlaanderen.be/producten/grar) gevonden worden.
+- Algemene uitleg over de endpoints kan [hier](https://basisregisters.vlaanderen.be/producten/grar#readendpointsgrar) gevonden worden.
 - Documentatie over de URL's en bijhorende parmameters kan [hier](https://docs.basisregisters.vlaanderen.be/docs/api-documentation.html#tag/api-documentation.html) gevonden worden.
 
-## Hoe kan ik het testbestand gebruiken?
+## Hoe kan ik het downloadbestand gebruiken?
 
-Het testbestand kan ingeladen en gevisualiseerd worden met GIS-software. Een lijst van GIS-software vindt u [hier](https://en.wikipedia.org/wiki/Comparison_of_geographic_information_systems_software). We kunnen zelf QGIS (open source, gratis) aanbevelen.
+Het downloadbestand kan ingeladen en gevisualiseerd worden met GIS-software. Een lijst van GIS-software vindt u [hier](https://en.wikipedia.org/wiki/Comparison_of_geographic_information_systems_software). We kunnen zelf QGIS (open source, gratis) aanbevelen.
+Meer informatie over dit downloadbestand kan u [hier](https://basisregisters.vlaanderen.be/producten/grar#downloadbestandgrar) vinden. 
 
-Het kan handig werken om bepaalde velden uit het testbestand als categorie of label bij de objecten te gebruiken (bv. ‘posspec’ bij Adres of ‘gebouwid’ bij Gebouw):
-
-## Zal het testbestand later als dataproduct bestendigd worden? 
-Er zal een dataproduct voorzien worden indien hier voldoende interesse voor bestaat. Laat het ons weten indien een dataproduct voor u essentieel is. Geef ook aan of de vorm van het testbestand OK is dan wel hoe dit verbeterd kan worden.
+## Zal het downloadbestand later als dataproduct bestendigd worden? 
+Het is de bedoeling dat het downloadbestand een dataproduct gaat worden.  
 
 ## Hoe worden gebouweenheden en hun adreskoppeling(en) momenteel aangemaakt? 
-In deze projectfase worden **gebouweenheden** aangemaakt daar waar CRAB-huisnummers aan een gebouw (of meerdere gebouwen) in CRAB gekoppeld zijn. Ook voor de CRAB-subadressen ‘onder’ deze huisnummers wordt een gebouweenheid gecreëerd. Waar van toepassing wordt een gebouweenheid met functie ‘gemeenschappelijk deel’ toegevoegd. De gebouweenheden in het Gebouwenregister worden gekoppeld aan het geïnstantieerde Adressenregister-adres (voorbeelden: zie vraag 7).
+In deze projectfase worden **gebouweenheden** aangemaakt daar waar CRAB-huisnummers aan een gebouw (of meerdere gebouwen) in CRAB gekoppeld zijn. Ook voor de CRAB-subadressen ‘onder’ deze huisnummers wordt een gebouweenheid gecreëerd. Waar van toepassing wordt een gebouweenheid met functie ‘gemeenschappelijk deel’ toegevoegd. De gebouweenheden in het gebouwen- en adressenregister worden gekoppeld aan het geïnstantieerde adres (voorbeelden: zie vraag 'Graag enkele voorbeelden van de aanmaak van gebouweenheden en adressen o.b.h. CRAB?').
 
 **Adreskoppelingen met een perceel** worden aangemaakt voor CRAB-huisnummers en -subadressen die (bijkomend) aan een perceel gekoppeld zijn.
 
-Heeft een CRAB-huisnummer of -subadres geen enkele gebouw- of perceelkoppeling, maar wel een adrespositie met herkomst ‘manuele aanduiding van lig- resp. standplaats’, dan zal het adres (in een volgende release) aan een **lig- resp. standplaats** gekoppeld worden.
+Heeft een CRAB-huisnummer of -subadres geen enkele gebouw- of perceelkoppeling, maar wel een adrespositie met herkomst ‘manuele aanduiding van lig- resp. standplaats’, dan zal het adres (op termijn) aan een **lig- resp. standplaats** gekoppeld worden.
 
-Tot slot kan een CRAB-huisnummer of -subadres ook **ongekoppeld** voorkomen. Het verwijst daarbij bijvoorbeeld naar een ‘lot’ of kreeg een afgeleide, laagkwalitatieve positie (bv. geïnterpoleerd o.b.v. nevenliggende gebouwen, in het centrum van de straat of gemeente). Ook deze adressen worden in het Adressenregister overgenomen met hun positie en worden idealiter alsnog aan een adresseerbaar object gekoppeld.
+Tot slot kan een CRAB-huisnummer of -subadres ook **ongekoppeld** voorkomen. Het verwijst daarbij bijvoorbeeld naar een ‘lot’ of kreeg een afgeleide, laagkwalitatieve positie (bv. geïnterpoleerd o.b.v. nevenliggende gebouwen, in het centrum van de straat of gemeente). Ook deze adressen worden in het gebouwen- en adressenregister overgenomen met hun positie en worden idealiter alsnog aan een adresseerbaar object gekoppeld.
 
 ## Is de puntgeometrie van een gebouweenheid dezelfde als deze van het adres?
 
-Het attribuut ‘GeometriePunt’ van een gebouweenheid is de positie van de gebouweenheid binnen de gebouwcontour.
+Het attribuut ‘geometrie’ van een gebouweenheid is de positie van de gebouweenheid binnen de gebouwcontour.
 
 Staat de ‘PositieGeometrieMethode’ op ‘AfgeleidVanObject’ dan werd deze positie afgeleid van het gebouw waarbinnen de gebouweenheid ligt en betreft het de centroïde van het gebouw.
 
