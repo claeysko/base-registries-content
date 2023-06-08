@@ -144,15 +144,15 @@
       }
     ]
   },
-   "business-grar": {
+   "release-notes/business-grar": {
       "text": "Functionele release notes van het gebouwen- en adressenregister",
       "url": "/release-notes/functioneelgrar"
     },
-   "business-wr": {
+   "release-notes/business-wr": {
      "text": "Functionele release notes van het wegenregister",
       "url": "/release-notes/functioneelwr"
     },
-   "technisch-grar": {
+   "release-notes/technisch-grar": {
       "text": "Technische release notes van het gebouwen- en adressenregister",
       "url": "/release-notes/technischgrar"
     },
