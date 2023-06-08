@@ -1,6 +1,18 @@
 Hieronder vindt u een overzicht van de meest voorkomende vragen met hun antwoorden die onze gebruikers hebben over de basisregisters.
 Als u een vraag heeft die hieronder niet beantwoord wordt, mail dan naar digitaal.vlaanderen@vlaanderen.be.
 
+## Ik heb een CRAB huisnummer- of CRAB subadresId, wat is het gebouwen- en adressenregister objectId?
+
+U kan op 2 manieren achterhalen wat het adressen objectId is van een CRAB huisnummer of een CRAB subadres.
+- Via de read endpoints
+  -   Voor CRAB huisnummers gebruikt u volgende readAPI: https://docs.basisregisters.vlaanderen.be/docs/api-documentation.html#operation/ListCrabHouseNumbers.
+  -   Voor CRAB subadressen gebruikt u volgende readAPI: https://docs.basisregisters.vlaanderen.be/docs/api-documentation.html#operation/ListCrabSubaddresses
+- Via het downloadbestand
+  - In het downloadbestand van het gebouwen- en adressenregister zitten er 2 dbf's files met daarin een overzicht van het CRAB huisnummer- en CRAB subadresId met hun overeenkomstige gebouwen- en adressenregister objectId.
+    
+## Ik heb een terreinObjectId, hoe weet ik welke gebouwen- en adressenregister objectId dit is?
+xxx
+
 ## Hoe kan ik de WMS gebruiken?
 
 De WMS laat toe adressen, gebouwen en gebouweenheden per status en wegsegmenten per soort **op kaart te visualiseren** en objecten aan te klikken voor meer informatie. Deze kaartlagen kunnen ingeladen worden in GIS- of andere software. Een lijst van GIS-software vindt u [hier](https://en.wikipedia.org/wiki/Comparison_of_geographic_information_systems_software). We kunnen zelf QGIS (open source, gratis) aanbevelen.
@@ -35,11 +47,9 @@ Tot slot kan een CRAB-huisnummer of -subadres ook **ongekoppeld** voorkomen. Het
 
 Het attribuut ‘geometrie’ van een gebouweenheid is de positie van de gebouweenheid binnen de gebouwcontour.
 
-Staat de ‘positieGeometrieMethode’ op ‘afgeleidVanObject’ dan werd deze positie afgeleid van het gebouw waarbinnen de gebouweenheid ligt en betreft het de centroïde van het gebouw.
-
-Staat de ‘PositieGeometrieMethode’ op ‘AangeduidDoorBeheerder’ dan werd de positie manueel geplaatst door een decentraal beheerder (in concreto: aangezien gebouweenheden momenteel automatisch aangemaakt worden o.b.v. CRAB-adressen betekent dit dat van het corresponderende adres in CRAB de meest kwalitatieve, manuele positie gebruikt werd).
-
-Echter, ligt de positie van het CRAB-adres buiten de gebouwcontour, dan zal de daarop gebaseerde gebouweenheid automatisch op de centroïde van het gebouw geplaatst worden. Gebouweenheden dienen namelijk steeds binnen een gebouw te liggen.
+- Staat de ‘positieGeometrieMethode’ op ‘afgeleidVanObject’ dan werd deze positie afgeleid van het gebouw waarbinnen de gebouweenheid ligt en betreft het de centroïde van het gebouw.
+- Staat de ‘positieGeometrieMethode’ op ‘aangeduidDoorBeheerder’ dan werd de positie manueel geplaatst door een decentraal beheerder (in concreto: aangezien gebouweenheden momenteel automatisch aangemaakt worden o.b.v. CRAB-adressen betekent dit dat van het corresponderende adres in CRAB de meest kwalitatieve, manuele positie gebruikt werd).
+- Echter, ligt de positie van het CRAB-adres buiten de gebouwcontour, dan zal de daarop gebaseerde gebouweenheid automatisch op de centroïde van het gebouw geplaatst worden. Gebouweenheden dienen namelijk steeds binnen een gebouw te liggen.
 
 Dit betekent dat de gebouweenheid een andere positie kán hebben dan het adres in CRAB waarop het gebaseerd werd.
 
@@ -56,23 +66,13 @@ Hieronder geven we enkele frequent voorkomende situaties in CRAB en de wijze waa
 | Woonblok met meerdere ingangen (Binnen een woonblok werd ervoor gekozen om de flats achter elke ingang met een apart huisnummer aan te duiden (14/16/18). Er zijn dus drie huisnummers met daaronder telkens vier subadressen. De adresbeheerder gaf deze huisnummers in CRAB een manuele positie met aanduiding ‘ingang’.) | Gebouw met 12 gebouweenheden, die elk een adres met huis- en busnummer dragen. De adressen zonder busnummer, zijnde de huisnummers 14/16/18, werden aan de 13de gebouweenheid, het gemeenschappelijk deel, gekoppeld. De adresposities van de huisnummers, die de gebouw­ingangen aanduiden, werden overgenomen bij de adressen.|
 
 ## Heeft ieder gebouw één gebouweenheid? Hoe gebeurt de afbakening? 
-Nee, dit is niet het geval.
-
-Zoals te zien is in het informatiemodel op de productpagina, kan een gebouw nul, één of meerdere gebouweenheden hebben.
-
-Zoals aangegeven in het antwoord bij vraag 1.1 worden gebouweenheden vandaag aangemaakt waar in CRAB een adres aan een gebouw gekoppeld werd. Dit is echter een tijdelijke situatie tot het moment waarop de navelstreng met CRAB doorgeknipt wordt.
-
-Daarna zullen gebouweenheden rechtstreeks aangemaakt worden door decentrale beheerders in het Gebouwenregister. Zij zullen enkel gebouweenheden mogen creëren wanneer aan de criteria voor de afbakening van een gebouweenheid voldaan is. Deze criteria werden opgenomen in een beslisboom.
-
-Ruimten in gebouwen (bv. tuinhuis), die dienstbaar zijn aan een nabijgelegen gebouweenheid (bv. de gebouweenheid in de bijhorende woning), voldoen niet aan criterium 7: ‘functionele zelfstandigheid’. In een tuinhuis zal dus typisch géén gebouweenheid mogen aangemaakt worden (tenzij er bijvoorbeeld, volledig zelfstandig, een winkel zou in uitgebaat worden). Gebouwen zoals deze, zonder gebouweenheden, beschouwen we als bijgebouwen. Gebouwen mét gebouweenheden zijn hoofdgebouwen. Een gebouw kan ook meerdere gebouweenheden hebben. Een typevoorbeeld daarvan zijn woonblokken waarin elke flat potentieel een gebouweenheid vormt.
-
-Het zal uiterst belangrijk zijn dat de beslisboom in de toekomst strikt gerespecteerd wordt bij het beheer van gebouweenheden, dit om te vermijden dat voor eender welke ruimte in een gebouw een gebouweenheid wordt aangemaakt. Zonder beslisboom zou in extremis voor elke kamer in een gebouw een gebouweenheid aangemaakt kunnen worden, met als gevolg dat iedereen over andere gebouweenheden spreekt en informatie-uitwisseling op basis van gebouweenheden niet meer mogelijk is. Deze richting willen we uiteraard niet uitgaan, vandaar het belang van deze beslisboom en het respecteren daarvan door beheerders.
+Nee, dit is niet het geval. Het gebouw kan nul, één of meerdere gebouweenheden hebben. Momenteel worden gebouweenheden vandaag aangemaakt waar in CRAB een adres aan een gebouw gekoppeld werd. Dit is echter een tijdelijke situatie tot het moment waarop de navelstreng met CRAB doorgeknipt wordt. Daarna zullen gebouweenheden rechtstreeks aangemaakt worden door decentrale beheerders in het gebouwen- en adressenregister.
 
 ## Wat is de betekenis van gebouweenheden met functie 'gemeenschappelijk deel'?
 
 In gebouwen waarin minstens twee functioneel zelfstandige gebouweenheden voorkomen (bv. gebouw met winkel op gelijkvloers en wooneenheid op eerste verdieping) worden de ruimten en structuren die door de eenheden in kwestie gedeeld worden voorgesteld door een extra gebouweenheid met functie ‘gemeenschappelijk deel’.
 
-Aldus kan men bij het koppelen van de eigen, thematische informatie (bv. rond energie, eigendom, veiligheid …) aan het Gebouwenregister in bovenstaand voorbeeld de identificator van een
+Aldus kan men bij het koppelen van de eigen, thematische informatie (bv. rond energie, eigendom, veiligheid …) aan het gebouwen- en adressenregister in bovenstaand voorbeeld de identificator van een
 - gebouweenheid met functie ‘wonen’ gebruiken om naar de wooneenheid te verwijzen;
 - gebouweenheid met functie ‘detailhandel’ gebruiken om naar de winkel te verwijzen;
 - gebouweenheid met functie ‘gemeenschappelijk deel’ gebruiken om naar de hal te verwijzen die toegang geeft tot de wooneenheid resp. winkel.
@@ -92,7 +92,7 @@ De beoogde levensloop van de kernobjecten werd eerst uitgetekend i.s.m. de werkg
 
 Daarbij worden de CRAB-statussen als volgt omgezet naar het nieuwe statusverloop (de statussen worden toegelicht in de objectcataloog Gebouwenregister):
 
-## Gebouw
+### Gebouw
 | Informatie in CRAB | Status | 
 |:-:|:-:|
 | Gebouw met status ‘vergunning aangevraagd’ | gepland | 
@@ -105,7 +105,7 @@ Daarbij worden de CRAB-statussen als volgt omgezet naar het nieuwe statusverloop
 
 Merk op: de levensloop wordt beschreven vanuit het resultaat, niet vanuit de vergunningsprocedure (deze informatie hoort thuis in het Vergunningenregister) dan wel het gebruik (we spreken ons niet uit over het al dan niet in gebruik zijn van een gebouw: dit is thematische informatie). In het Gebouwenregister worden ook niet-vergunningsplichtige gebouwen opgenomen.
 
-## Gebouweenheid
+### Gebouweenheid
 | **Informatie in CRAB** | **Status** | 
 |:-:|:-:|
 | Gebouweenheid gebaseerd op huisnummer/subadres met status ‘voorgesteld’ | gepland | 
@@ -170,7 +170,7 @@ Er worden vier adresseerbare objecten onderscheiden:
 Stand- en ligplaatsen zullen later als object (‘resource’) worden toegevoegd. Gebouwen dragen enkel adressen via de daarbinnen gelegen gebouweenheden (fijnmazigere adressering).
 
 ## Hoe kan ik gebouwen terugvinden o.b.h. hun adres?
-**Adressen worden in het Gebouwenregister niet meer rechtstreeks aan het gebouw gekoppeld, maar aan gebouweenheden binnen dat gebouw.**
+**Adressen worden in het gebouwen- en adressenregister niet meer rechtstreeks aan het gebouw gekoppeld, maar aan gebouweenheden binnen dat gebouw.**
 
 De te volgend aanpak - met de services die vandaag beschikbaar zijn- is daarom:
 
