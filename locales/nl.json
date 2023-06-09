@@ -148,12 +148,10 @@
       "title": "Functionele release notes van het gebouwen- en adressenregister"
     },
    "release-notes/business-wr": {
-     "text": "Functionele release notes van het wegenregister",
-      "url": "/release-notes/functioneelwr"
+     "title": "Functionele release notes van het wegenregister"
     },
    "release-notes/technisch-grar": {
-      "text": "Technische release notes van het gebouwen- en adressenregister",
-      "url": "/release-notes/technischgrar"
+      "title": "Technische release notes van het gebouwen- en adressenregister"
     },
   "documentation": {
     "title": "Werking basisregisters endpoints",
