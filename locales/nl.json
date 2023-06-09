@@ -38,7 +38,7 @@
       "text": "Producten basisregisters",
       "url": "/producten"
     },
-    "releaseNotes": {
+    "release-notes": {
     "text": "Release notes",
     "url": "/release-notes"
   },
@@ -144,7 +144,7 @@
       }
     ]
   },
-    "releaseNotes": {
+    "release-notes": {
     "title": "Release notes van de basisregisters",
     "Prefix": "Basisregisters Vlaanderen",
     "doormatItems": [
