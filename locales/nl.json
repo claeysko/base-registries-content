@@ -113,7 +113,7 @@
         "hide": false
       },
       {
-        "title": "Release Notes",
+        "title": "Release notes",
         "subtitle": "Release notes van de huidige en vorige releases.",
         "url": "/release-notes",
         "hide": false
@@ -609,14 +609,6 @@
         "import": false,
         "syndication": true
       }
-    }
-  },
-  "releaseNotes": {
-    "title": "Release Notes",
-    "Prefix": "Basisregisters Vlaanderen",
-    "sidebar": {
-      "title": "Op deze pagina",
-      "urls": []
     }
   },
 "error-detail": {
