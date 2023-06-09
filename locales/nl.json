@@ -145,8 +145,7 @@
     ]
   },
    "release-notes/business-grar": {
-      "text": "Functionele release notes van het gebouwen- en adressenregister",
-      "url": "/release-notes/functioneelgrar"
+      "title": "Functionele release notes van het gebouwen- en adressenregister"
     },
    "release-notes/business-wr": {
      "text": "Functionele release notes van het wegenregister",
