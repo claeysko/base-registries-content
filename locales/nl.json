@@ -144,6 +144,22 @@
       }
     ]
   },
+    "releaseNotes": {
+    "title": "Release notes van de basisregisters",
+    "Prefix": "Basisregisters Vlaanderen",
+    "doormatItems": [
+      {
+        "title": "Business release notes van het gebouwen- en adressenregister",
+        "url": "/release-notes/functioneelgrar",
+        "hide": false
+      },
+      {
+        "title": "Business release notes van het wegenregister",
+        "url": "/release-notes/functioneelwr",
+        "hide": false
+      }
+    ]
+    },
    "release-notes/business-grar": {
       "title": "Functionele release notes van het gebouwen- en adressenregister"
     },
