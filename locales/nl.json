@@ -38,7 +38,7 @@
      "text": "Mogelijke foutmeldingen in de endpoints van de basisregisters",
      "url": "/foutmeldingen"
    },
-   "releaseNotes": {
+   "release-notes": {
     "text": "Release notes",
     "url": "/release-notes"
   }
@@ -150,7 +150,7 @@
         "hide": false
       }]
   },
-    "releaseNotes": {
+    "release-notes": {
     "title": "Release notes van de basisregisters",
     "Prefix": "Basisregisters Vlaanderen",
     "doormatItems": [
