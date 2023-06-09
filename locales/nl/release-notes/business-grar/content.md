@@ -55,3 +55,7 @@ Wenst u zich in te schrijven voor de releasemailing van het gebouwen- en adresse
 - [Release notes 1.0 bèta](https://assets.vlaanderen.be/image/upload/v1677831906/Release_Notes_Gebouwenregister_-_Beta-1-0_tnzusw.pdf)
 - [Release notes 0.2 bèta](https://assets.vlaanderen.be/image/upload/v1677831846/Release_Notes_Gebouwenregister_-_Beta-0-2_u5bvhe.pdf)
 - [Release notes 0.1 bèta](https://assets.vlaanderen.be/image/upload/v1677831725/Release_Notes_Gebouwenregister_-_Beta-0-1_mryuen.pdf)
+
+### Technische release notes
+
+Een overzicht van de technische release notes kan [hier](https://basisregisters.vlaanderen.be/release-notes/technischgrar) gevonden worden.
