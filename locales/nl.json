@@ -150,7 +150,7 @@
         "hide": false
       }]
   },
-    "releaseNotes": {
+    "release-notes": {
     "title": "Release notes van de basisregisters",
     "Prefix": "Basisregisters Vlaanderen",
     "doormatItems": [
