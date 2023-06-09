@@ -681,14 +681,6 @@
       }
     }
   },
-  "releaseNotes": {
-    "title": "Release Notes",
-    "Prefix": "Basisregisters Vlaanderen",
-    "sidebar": {
-      "title": "Op deze pagina",
-      "urls": []
-    }
-  },
 "error-detail": {
     "title": "Mogelijke foutmeldingen in de endpoints van de basisregisters",
     "Prefix": "Basisregisters Vlaanderen",
