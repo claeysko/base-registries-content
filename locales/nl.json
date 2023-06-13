@@ -210,6 +210,14 @@
     "title": "Flow statussen gebouwen- en adressenregister",
     "Prefix": "Basisregisters Vlaanderen"
   },
+      "glossary": {
+    "title": "Verklarende woordenlijst",
+    "Prefix": "Basisregisters Vlaanderen"
+  },
+    "faq": {
+    "title": "Veelgestelde vragen",
+    "Prefix": "Basisregisters Vlaanderen"
+  },
   "apikey": {
     "title": "API key",
     "Prefix": "Basisregisters Vlaanderen"
