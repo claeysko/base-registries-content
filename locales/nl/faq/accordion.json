@@ -1,0 +1,12 @@
+{
+    "accordion":[
+    { 
+      "question": "Vraag 1",
+      "answer": "Antwoord"
+    },
+    { 
+      "question": "Vraag 2",
+      "answer": "Antwoord"
+    }
+  ]
+}

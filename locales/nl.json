@@ -175,18 +175,6 @@
    "release-notes/technisch-grar": {
       "title": "Technische release notes van het gebouwen- en adressenregister"
    },
-   "faq": {
-      "accordion":[
-        { 
-          "question": "Vraag 1",
-          "answer": "Antwoord"
-        },
-        { 
-          "question": "Vraag 2",
-          "answer": "Antwoord"
-        }
-      ]
-    },
   "editendpointsgrar": {
     "title": "Gebruik van de edit API's van het gebouwen- en adressenregister",
     "Prefix": "Basisregisters Vlaanderen"
