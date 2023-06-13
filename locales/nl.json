@@ -744,7 +744,9 @@
         "feed": true,
         "cache": true,
         "import": true,
-        "syndication": false
+        "syndication": false,
+        "producer": true,
+        "consumer": false
       },
       "postal": {
         "title": "Postinfo",
@@ -752,7 +754,9 @@
         "feed": true,
         "cache": true,
         "import": false,
-        "syndication": true
+        "syndication": true,
+        "producer": true,
+        "consumer": false
       },
       "streetname": {
         "title": "Straatnamen",
@@ -760,7 +764,9 @@
         "feed": true,
         "cache": true,
         "import": true,
-        "syndication": true
+        "syndication": true,
+        "producer": true,
+        "consumer": true
       },
       "address": {
         "title": "Adressen",
@@ -768,7 +774,9 @@
         "feed": true,
         "cache": true,
         "import": true,
-        "syndication": true
+        "syndication": true,
+        "producer": true,
+        "consumer": true
       },
       "building": {
         "title": "Gebouwen & gebouweenheden",
@@ -776,7 +784,9 @@
         "feed": true,
         "cache": false,
         "import": true,
-        "syndication": true
+        "syndication": true,
+        "producer": true,
+        "consumer": true
       },
       "parcel": {
         "title": "Percelen",
@@ -784,7 +794,9 @@
         "feed": true,
         "cache": true,
         "import": true,
-        "syndication": true
+        "syndication": true,
+        "producer": true,
+        "consumer": true
       },
       "road": {
         "title": "Wegen",
@@ -792,7 +804,9 @@
         "feed": false,
         "cache": false,
         "import": false,
-        "syndication": true
+        "syndication": true,
+        "producer": false,
+        "consumer": false
       }
     }
   },
