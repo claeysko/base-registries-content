@@ -1,8 +1,6 @@
 ## Hoe kan in de WMS gebruiken?
 
-
 De WMS laat toe gebouwen en gebouweenheden (per status) **op kaart te visualiseren** en objecten aan te klikken voor meer informatie. Deze kaartlagen kunnen ingeladen worden in GIS- of andere software. Een lijst van GIS-software vindt u [hier](https://en.wikipedia.org/wiki/Comparison_of_geographic_information_systems_software). We kunnen zelf QGIS (open source, gratis) aanbevelen.
---
 
 Hieronder vindt u een overzicht van de meest voorkomende vragen met hun antwoorden die onze gebruikers hebben over de basisregisters.
 Als u een vraag heeft die hieronder niet beantwoord wordt, mail naar digitaal.vlaanderen@vlaanderen.be.
