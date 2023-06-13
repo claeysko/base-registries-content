@@ -1,5 +1,3 @@
-<question>Hoe zet men md om in html?</question>
-<answer> **moeilijk**</answer>
 ## Hoe kan in de WMS gebruiken?
 
 
