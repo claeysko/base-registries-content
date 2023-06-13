@@ -216,6 +216,14 @@
     "title": "Validaties edit API's van het wegenregister",
     "Prefix": "Basisregisters Vlaanderen"
   },
+      "glossary": {
+    "title": "Verklarende woordenlijst",
+    "Prefix": "Basisregisters Vlaanderen"
+  },
+    "faq": {
+    "title": "Veelgestelde vragen",
+    "Prefix": "Basisregisters Vlaanderen"
+  },
   "statusflowgrar": {
     "title": "Flow statussen gebouwen- en adressenregister",
     "Prefix": "Basisregisters Vlaanderen"
