@@ -196,11 +196,11 @@
     "title": "Status flow API's van het gebouwen- en adressenregister",
     "Prefix": "Basisregisters Vlaanderen"
   },
-    "verklarende-woordenlijst": {
+    "glossary": {
     "title": "Verklarende woordenlijst",
     "Prefix": "Basisregisters Vlaanderen"
   },
-    "veelgestelde-vragen": {
+    "faq": {
     "title": "Veelgestelde vragen",
     "Prefix": "Basisregisters Vlaanderen"
   },
