@@ -187,6 +187,14 @@
     "title": "Validaties",
     "Prefix": "Basisregisters Vlaanderen"
   },
+      "glossary": {
+    "title": "Verklarende woordenlijst",
+    "Prefix": "Basisregisters Vlaanderen"
+  },
+    "faq": {
+    "title": "Veelgestelde vragen",
+    "Prefix": "Basisregisters Vlaanderen"
+  },
   "implementationmodel": {
     "title": "Implementatiemodel",
     "Prefix": "Basisregisters Vlaanderen",
