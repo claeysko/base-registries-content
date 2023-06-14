@@ -566,7 +566,7 @@
         "projections": true,
         "feed": true,
         "cache": true,
-        "import": true,
+        "import": false,
         "syndication": false,
         "producer": true,
         "consumer": false
@@ -586,7 +586,7 @@
         "projections": true,
         "feed": true,
         "cache": true,
-        "import": true,
+        "import": false,
         "syndication": true,
         "producer": true,
         "consumer": true
@@ -596,7 +596,7 @@
         "projections": true,
         "feed": true,
         "cache": true,
-        "import": true,
+        "import": false,
         "syndication": true,
         "producer": true,
         "consumer": true
@@ -606,7 +606,7 @@
         "projections": true,
         "feed": true,
         "cache": false,
-        "import": true,
+        "import": false,
         "syndication": true,
         "producer": true,
         "consumer": true
@@ -616,7 +616,7 @@
         "projections": true,
         "feed": true,
         "cache": true,
-        "import": true,
+        "import": false,
         "syndication": true,
         "producer": true,
         "consumer": true
