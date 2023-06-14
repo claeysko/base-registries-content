@@ -745,7 +745,7 @@
         "cache": true,
         "import": true,
         "syndication": false,
-        "producer": true,
+        "producer": false,
         "consumer": false
       },
       "postal": {
@@ -755,7 +755,7 @@
         "cache": true,
         "import": false,
         "syndication": true,
-        "producer": true,
+        "producer": false,
         "consumer": false
       },
       "streetname": {
@@ -765,7 +765,7 @@
         "cache": true,
         "import": true,
         "syndication": true,
-        "producer": true,
+        "producer": false,
         "consumer": false
       },
       "address": {
@@ -775,7 +775,7 @@
         "cache": true,
         "import": true,
         "syndication": true,
-        "producer": true,
+        "producer": false,
         "consumer": false
       },
       "building": {
@@ -785,7 +785,7 @@
         "cache": false,
         "import": true,
         "syndication": true,
-        "producer": true,
+        "producer": false,
         "consumer": false
       },
       "parcel": {
@@ -795,7 +795,7 @@
         "cache": true,
         "import": true,
         "syndication": true,
-        "producer": true,
+        "producer": false,
         "consumer": false
       },
       "road": {
