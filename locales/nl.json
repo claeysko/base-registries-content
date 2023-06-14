@@ -766,7 +766,7 @@
         "import": true,
         "syndication": true,
         "producer": true,
-        "consumer": true
+        "consumer": false
       },
       "address": {
         "title": "Adressen",
@@ -776,7 +776,7 @@
         "import": true,
         "syndication": true,
         "producer": true,
-        "consumer": true
+        "consumer": false
       },
       "building": {
         "title": "Gebouwen & gebouweenheden",
@@ -786,7 +786,7 @@
         "import": true,
         "syndication": true,
         "producer": true,
-        "consumer": true
+        "consumer": false
       },
       "parcel": {
         "title": "Percelen",
@@ -796,7 +796,7 @@
         "import": true,
         "syndication": true,
         "producer": true,
-        "consumer": true
+        "consumer": false
       },
       "road": {
         "title": "Wegen",
