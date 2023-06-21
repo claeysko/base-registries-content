@@ -1,7 +1,9 @@
 Hieronder vindt u een overzicht van de meest voorkomende vragen met hun antwoorden die onze gebruikers hebben over de basisregisters.
 Als u een vraag heeft die hieronder niet beantwoord wordt, mail dan naar digitaal.vlaanderen@vlaanderen.be.
 
-## Ik heb een CRAB huisnummer- of CRAB subadresId, wat is het gebouwen- en adressenregister objectId?
+<details>
+
+<summary>Ik heb een CRAB huisnummer- of CRAB subadresId, wat is het gebouwen- en adressenregister objectId?</summary>
 
 U kan op 2 manieren achterhalen wat het adressen objectId is van een CRAB huisnummer of een CRAB subadres.
 - Via de read endpoints
@@ -9,6 +11,8 @@ U kan op 2 manieren achterhalen wat het adressen objectId is van een CRAB huisnu
   -   Voor CRAB subadressen gebruikt u volgende readAPI: https://docs.basisregisters.vlaanderen.be/docs/api-documentation.html#operation/ListCrabSubaddresses.
 - Via het downloadbestand
   - In het downloadbestand van het gebouwen- en adressenregister zitten er 2 dbf's files met daarin een overzicht van het CRAB huisnummer- en CRAB subadresId met hun overeenkomstige gebouwen- en adressenregister objectId.
+
+</details>
     
 ## Ik heb een terreinObjectId of identificatorTerreinObject, hoe weet ik welke gebouwen- en adressenregister objectId dit is?
 Via het read endpoint van CRAB gebouwen kan u achterhalen wat het gebouwen- en adressenregister objectId is. U geeft in de URL het terreinObjectId of identificatorTerreinObject mee en u krijgt een overzicht 
