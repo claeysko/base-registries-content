@@ -13,12 +13,19 @@ U kan op 2 manieren achterhalen wat het adressen objectId is van een CRAB huisnu
   - In het downloadbestand van het gebouwen- en adressenregister zitten er 2 dbf's files met daarin een overzicht van het CRAB huisnummer- en CRAB subadresId met hun overeenkomstige gebouwen- en adressenregister objectId.
 
 </details>
-    
-## Ik heb een terreinObjectId of identificatorTerreinObject, hoe weet ik welke gebouwen- en adressenregister objectId dit is?
+
+<details>
+
+<summary>Ik heb een terreinObjectId of identificatorTerreinObject, hoe weet ik welke gebouwen- en adressenregister objectId dit is?</summary>
+
 Via het read endpoint van CRAB gebouwen kan u achterhalen wat het gebouwen- en adressenregister objectId is. U geeft in de URL het terreinObjectId of identificatorTerreinObject mee en u krijgt een overzicht 
 Zie https://docs.basisregisters.vlaanderen.be/docs/api-documentation.html#operation/ListCrabBuildings.
 
-## Hoe kan ik de WMS gebruiken?
+</details>
+
+<details>
+
+<summary>Hoe kan ik de WMS gebruiken?</summary>
 
 De WMS laat toe adressen, gebouwen en gebouweenheden per status en wegsegmenten per soort **op kaart te visualiseren** en objecten aan te klikken voor meer informatie. Deze kaartlagen kunnen ingeladen worden in GIS- of andere software. Een lijst van GIS-software vindt u [hier](https://en.wikipedia.org/wiki/Comparison_of_geographic_information_systems_software). We kunnen zelf QGIS (open source, gratis) aanbevelen.
 
@@ -26,18 +33,35 @@ Het is belangrijk in de GIS-software als coördinatensysteem voor het project **
 
 Via de ‘identify’-functie kunt u de details van een object op de kaart met een muisklik opvragen.
 
-## Hoe kan ik de endpoints van de basisregisters uitproberen? 
+</details>
+
+<details>
+
+<summary>Hoe kan ik de endpoints van de basisregisters uitproberen? </summary>
+
 Een eenvoudige test van de REST-services kan door een URL samen te stellen in de adresbalk van uw browser. In uw browser krijgt u dan ook het resultaat van de aangeroepen service. 
 - Algemene uitleg over de endpoints kan [hier](https://basisregisters.vlaanderen.be/producten/grar#readendpointsgrar) gevonden worden.
 - Documentatie over de URL's en bijhorende parmameters kan [hier](https://docs.basisregisters.vlaanderen.be/docs/api-documentation.html#tag/api-documentation.html) gevonden worden.
 
-## Hoe kan ik het downloadbestand gebruiken?
+</details>
+
+<details>
+
+<summary>Hoe kan ik het downloadbestand gebruiken?</summary>
 
 Het downloadbestand kan ingeladen en gevisualiseerd worden met GIS-software. Een lijst van GIS-software vindt u [hier](https://en.wikipedia.org/wiki/Comparison_of_geographic_information_systems_software). We kunnen zelf QGIS (open source, gratis) aanbevelen.
 Meer informatie over dit downloadbestand kan u [hier](https://basisregisters.vlaanderen.be/producten/grar#downloadbestandgrar) vinden. 
 
-## Zal het downloadbestand later als dataproduct bestendigd worden? 
+</details>
+
+<details>
+
+<summary>Zal het downloadbestand later als dataproduct bestendigd worden? </summary>
+
 Het is de bedoeling dat het downloadbestand een dataproduct gaat worden.  
+
+</details>
+
 
 ## Hoe worden gebouweenheden en hun adreskoppeling(en) momenteel aangemaakt? 
 In deze projectfase worden **gebouweenheden** aangemaakt daar waar CRAB-huisnummers aan een gebouw (of meerdere gebouwen) in CRAB gekoppeld zijn. Ook voor de CRAB-subadressen ‘onder’ deze huisnummers wordt een gebouweenheid gecreëerd. Waar van toepassing wordt een gebouweenheid met functie ‘gemeenschappelijk deel’ toegevoegd. De gebouweenheden in het gebouwen- en adressenregister worden gekoppeld aan het geïnstantieerde adres (voorbeelden: zie vraag 'Graag enkele voorbeelden van de aanmaak van gebouweenheden en adressen o.b.h. CRAB?').
