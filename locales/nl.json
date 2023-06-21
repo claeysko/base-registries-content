@@ -141,6 +141,12 @@
         "subtitle": "Een begrippenlijst van de basisregisters",
         "url": "/verklarende-woordenlijst",
         "hide": false
+      },
+      {
+        "title": "API documentatie",
+        "subtitle": "Documentatie over de verschillende endpoints",
+        "url": "https://docs.basisregisters.staging-vlaanderen.be/docs/api-documentation.html#tag/api-documentation.html",
+        "hide": false
       }
     ]
   },
