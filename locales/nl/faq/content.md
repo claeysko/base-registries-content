@@ -153,6 +153,7 @@ In de toekomst zal de CRAB-beheerder in staat zijn de gebouweenheden direct met 
 
 </details>
 
+
 <details>
 
 <summary>Hoe wordt de status (levensloop) voor de verschillende objecten ingevuld?  </summary>
@@ -221,6 +222,7 @@ In een latere projectfase zal de status rechtstreeks op het Gebouwenregister kun
 
 </details>
 
+
 <details>
 
 <summary>Wanneer krijgt een gebouweenheid status 'gehistoreerd'?</summary>
@@ -230,6 +232,7 @@ In een latere projectfase zal de status rechtstreeks op het Gebouwenregister kun
 Worden bv. twee appartementen samengevoegd, dan zal de decentrale beheerder de twee corresponderende gebouweenheden op ‘gehistoreerd’ zetten en een nieuwe gebouweenheid met status ‘gerealiseerd’ aanmaken. 
 
 </details>
+
 
 <details>
 
@@ -243,6 +246,7 @@ Een ander gebouw dat in de plaats komt krijgt een andere objectidentificator en 
 
 </details>
 
+
 <details>
 
 <summary>Welke objecten kunnen een adres dragen? </summary>
@@ -254,6 +258,7 @@ Er worden vier adresseerbare objecten onderscheiden:
 - ligplaats
 Stand- en ligplaatsen zullen later als object (‘resource’) worden toegevoegd. Gebouwen dragen enkel adressen via de daarbinnen gelegen gebouweenheden (fijnmazigere adressering).
 </details>
+
 
 <details>
 
@@ -276,6 +281,7 @@ http://beta.basisregisters.vlaanderen.be/api/v1/gebouweenheden?adresobjectid=185
 
 </details>
 
+
 <details>
 
 <summary>Ik heb een CRAB-adres resp. kadastraal/rijksregisteradres. Hoe kan ik dit in verband brengen met een authentiek adres in het adressenregister?</summary>
@@ -290,6 +296,7 @@ Voor toelichting bij het gebruik van deze services, raadpleeg de documentatie:
 
 </details>
 
+
 <details>
 
 <summary>Waar vind ik de adresposities met herkomst 'brievenbus', 'nutsaansluiting' en 'toegang tot de weg' uit het CRAB terug? </summary>
@@ -301,25 +308,11 @@ Waar de toepassingsgerichte positie de enige of meest kwalitatieve positie voor 
 
 </details>
 
-<details>
-
-<summary>Zal het downloadbestand later als dataproduct bestendigd worden? </summary>
-
-Het is de bedoeling dat het downloadbestand een dataproduct gaat worden.  
-
-</details>
 
 <details>
 
-<summary>Zal het downloadbestand later als dataproduct bestendigd worden? </summary>
+<summary>Hoe kan ik adressuggesties (autocomplete) in mijn toepassing implementeren?  </summary>
 
-Het is de bedoeling dat het downloadbestand een dataproduct gaat worden.  
-
-</details>
-
-
-
-## Hoe kan ik adressuggesties (autocomplete) in mijn toepassing implementeren? 
 Maak gebruik van de **geolocation-API** (documentatie: https://loc.geopunt.be/) om suggesties te verkrijgen voor vrije tekstinvoer:
 bv: https://loc.geopunt.be/v4/suggestion?q=Koningin Mar
 
@@ -336,26 +329,47 @@ Indien u de unieke adresidentificator van de gesuggereerde adressen wil kennen, 
 bv: https://basisregisters.vlaanderen.be/api/v1/adressen?gemeentenaam=Nevele&straatnaam=Graaf van Hoornestraat&huisnummer=5
 
 Vervolgens leest u het <id>-veld uit:
-  
-## Hoe kan ik keuzelijsten voor adresformulieren creëren?
-  
+
+</details>
+
+
+<details>
+
+<summary>Hoe kan ik keuzelijsten voor adresformulieren creëren?</summary>
+
   Bekijk [hier](https://assets.vlaanderen.be/image/upload/w_600,c_fill/v1678267926/Basisregisters_-_Flow_keuzelijsten_adresformulieren_qtpbks.jpg) het te volgen stappenplan.
-  
-## Wat is de betekenis van het veld 'homoniemtoevoeging'?
+
+</details>
+
+
+<details>
+
+<summary>Wat is de betekenis van het veld 'homoniemtoevoeging'?</summary>
+
 - In CRAB dragen sommige straatnamen een suffix, bv. ‘Krijgsbaan_HO, Antwerpen’, waarbij ‘HO’ staat voor het district ‘Hoboken’.
 - Aangezien elke straatnaam uniek moet zijn binnen de gemeente, en districten in geen enkel adresmodel (CRAB, Adressenregister, OSLO², BeSt-Add) worden voorzien, heeft men deze suffix nodig om het onderscheid te maken met bv. ‘Krijgsbaan_DE, Antwerpen’ (gelijknamige straatnaam in district Deurne). Ook in andere gemeenten worden zeer sporadisch suffices gebruikt om homoniemen te onderscheiden.
 - Daarom wordt in het Adressenregister naast het veld ‘straatnaam’ ook een ‘homoniemtoevoeging’ voorzien waarin deze suffix kan worden opgenomen, daar waar deze suffix in CRAB integraal deel uitmaakt van het veld ‘straatnaam’:
   -  CRAB: straatnaam=Krijgsbaan_HO
   - Adressenregister: straatnaam=Krijgsbaan, homoniemtoevoeging=HO
 - **Nieuwe homoniemtoevoegingen zijn niet toegestaan.** Bij gemeentelijke fusies bijvoorbeeld moeten de homoniemen opgelost zijn op de datum dat de fusie ingaat.
-  
-## Elk object heeft een identificator (attribuut 'id') in de vorm van webadres. Wat is dit?
+
+</details>
+
+
+<details>
+
+<summary>Elk object heeft een identificator (attribuut 'id') in de vorm van webadres. Wat is dit?</summary>
 
 De **Vlaamse URI-standaard** schrijft voor dat naar Vlaamse ‘resources’ (zoals een object in het Gebouwenregister) kan verwezen worden met een [Uniform Resource Identifier](https://www.vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/gebouwen-en-adressenregister/verklarende-woordenlijst-adressen-en-gebouwenregister) (URI). Deze data-URI is door zijn opbouw uniek binnen het World Wide Web en kan dus als stabiele identificator in eender welk systeem of databank gebruikt worden om ondubbelzinnig naar dat ene object te verwijzen. Daarnaast laten data-URI’s toe de resources als ‘linked data’ aan te bieden (cfr. CRAB-LOD).
 
 Op dit moment zijn enkel de data-URI’s voor adressen resolvable, dit wil zeggen, linken enkel deze URI’s door naar een webdocument (voorstelling van het adres op het web).
-  
-## Waar vind ik de 'begin- en einddatum' uit het CRAB terug?
+
+</details>
+
+
+<details>
+
+<summary>Waar vind ik de 'begin- en einddatum' uit het CRAB terug?</summary>
 
 De begin- en einddatum in het CRAB definiëren een administratieve geldigheidsperiode bij de status van een object (de zogenaamde ‘objecthistoriek’). Zo kan bij de ingebruikname van een officiële straatnaam de datum van het gemeenteraadsbesluit meegegeven worden (begindatum) of bij het slopen van een gebouw de datum waarop de sloop voltooid werd (einddatum).
 
@@ -364,26 +378,46 @@ In de praktijk is het voor decentrale beheerders niet altijd even evident om dez
 Daarnaast kan geargumenteerd worden dat deze administratieve informatie al in andere bronnen beschikbaar is (cfr. [lokale besluiten als gelinkte open data](https://lokaalbestuur.vlaanderen.be/gelinkt-publiceren-en-melden)  en Vergunningenregister).
 
 Door de werkgroep-Gebouwenregister werd daarom beslist **geen administratieve geldigheidsperiode** bij objecten in het Gebouwenregister te voorzien. Wel zullen datum en tijdstip alsook bijkomende herkomstinformatie (beschikbaar vanaf een volgende release) geregistreerd worden op het moment dat objecten worden opgevoerd, aangepast of verwijderd (de zogenaamde ‘recordhistoriek’).
-  
-## Hoe wordt het onderliggend perceel bij een gebouw bepaald?
+
+</details>
+
+
+<details>
+
+<summary>Hoe wordt het onderliggend perceel bij een gebouw bepaald?</summary>
 
 Via de REST-API kunnen de [details van een gebouw](https://docs.basisregisters.staging-vlaanderen.be/docs/api-documentation.html#tag/api-documentation.html) opgevraagd worden. Daarbij wordt het eventuele onderliggende perceel getoond.
 
 Een perceel wordt als onderliggend aan een gebouw beschouwd indien het voldoet aan volgende voorwaarde (formule voor de berekening van de ‘verbeterde topologische relatie’):
 
 oppervlak overlap gebouw - perceel / oppervlak gebouw > 0.8 / # percelen waarmee het gebouw overlapt
-  
-## Waar vind ik het onderscheid en de relatie tussen hoofd- en bijgebouwen?
+
+</details>
+
+
+<details>
+
+<summary>Waar vind ik het onderscheid en de relatie tussen hoofd- en bijgebouwen?</summary>
 
 Een hoofdgebouw is een gebouw mét gebouweenheden, een bijgebouw een gebouw zonder gebouweenheden. Of een gebouw gebouweenheden mag bevatten, zie je in het antwoord op vraag 8. Aangezien een gebouw enkel geadresseerd kan worden via zijn gebouweenheden, kan een bijgebouw dus per definitie geen adressen dragen.
 
 Het informatiemodel (zie productpagina) beschrijft geen relatie tussen hoofd- en bijgebouwen (bijvoorbeeld tussen een woning en het tuinhuis dat daarbij staat). Hoewel dit nuttig zou zijn, is het in de praktijk niet evident om deze relatie te bepalen. Bijgebouwen bij een hoofdgebouw bevinden zich bijvoorbeeld niet noodzakelijk op hetzelfde perceel (denk aan stallen bij een boerderij). Ook kunnen verschillende partijen andere interpretaties hebben van welke bijgebouwen bij een hoofdgebouw horen; deze koppeling kan toepassingsafhankelijk zijn, terwijl het register beoogt zo toepassingsonafhankelijk mogelijk te zijn. Als de relatie al in het Gebouwenregister beheerd zou worden, moeten beheerders gevonden worden die deze relatie actualiseren. Om deze redenen werd besloten de relatie vooralsnog niet in het register op te nemen.
-  
-## Wat is het verschil tussen de gebouwen in het GRB en deze in het Gebouwenregister?
+
+</details>
+
+
+<details>
+
+<summary>Wat is het verschil tussen de gebouwen in het GRB en deze in het Gebouwenregister?</summary>
 
 Zie antwoord bij vraag 26.
-  
-## Op het terrein zie ik één gebouw, in het Gebouwenregister is het gebouw in kwestie echter opgesplitst in meerdere gebouwen. Hoe komt dit?
+
+</details>
+
+
+<details>
+
+<summary>Op het terrein zie ik één gebouw, in het Gebouwenregister is het gebouw in kwestie echter opgesplitst in meerdere gebouwen. Hoe komt dit?</summary>
 
 We ambiëren gebouwen, die op het terrein één geheel vormen, ook als één gebouw met één geometrie in het Gebouwenregister op te nemen. Vandaag is dit nog niet altijd het geval, om deze redenen:
 
@@ -394,15 +428,25 @@ Later zal de navelstreng met CRAB doorgeknipt worden en zal de gebouwgeometrie r
 
 1% van de gebouwen beschikt vandaag nog niet over een correcte geometrie in het Gebouwenregister. De geometrie voor deze gebouwen zal immers samengesteld moeten worden uit meerdere geometrieën die in het GRB beschikbaar zijn. Het GRB zal altijd de situatie op maaiveldhoogte karteren, het Gebouwenregister zal waar nodig de GRB-entiteiten samenvoegen tot een ‘bovenaanzicht’-weergave van het gebouw.
 **Het opnemen van deze samengestelde gebouwgeometrieën is voor een latere fase gepland.**
-  
-## Hoe kan ik adressen aan gebouweenheden of percelen koppelen in het testbestand?
+
+</details>
+
+
+<details>
+
+<summary>Hoe kan ik adressen aan gebouweenheden of percelen koppelen in het testbestand?</summary>
 
 Zowel gebouweenheden als percelen kunnen adressen dragen. In het testbestand zitten gebouweenheden, percelen en adressen in drie afzonderlijke .dbf-bestanden. Om ze aan elkaar te koppelen heeft u ook het bestand ‘Adreskoppelingen.dbf’ nodig. Via software als MS Access, QGIS e.a. kunt u een ‘inner join’ uitvoeren tussen adreskoppelingen-gebouweenheid enerzijds, en adreskoppelingen-adres anderzijds. In onderstaande figuur staat aangegeven tussen welke velden u de koppeling moet leggen (zie zwarte pijlen). Dezelfde werkwijze is ook toepasbaar met ‘Perceel.dbf’ in de plaats van ‘Gebouweenheid.dbf’.
 
 
 Merk op: vanwege de grootte wordt ‘Adreskoppelingen.dbf’ opgesplitst in afzonderlijke bestanden. Deze kunt u best eerst terug samenvoegen vooraleer de ‘join’ met de andere tabellen uit te voeren.
-  
-## Hoe worden gebouwen afgebakend?
+
+</details>
+
+
+<details>
+
+<summary>Hoe worden gebouwen afgebakend?</summary>
 
 Voor afbakening gebouwen worden deze uiterlijke kenmerken in acht genomen:
 - Zijn er meerdere huisnummers toegekend?
@@ -414,3 +458,5 @@ Als 3 van deze 4 criteria positief zijn, dan wordt een gebouw meestal gesplitst.
 Indien men beschikt over bouwplannen, dan kunnen deze meer inzicht verschaffen over de opdeling.
 
 Een gedetailleerde toelichting hierover vind je [hier](https://assets.vlaanderen.be/image/upload/v1678268047/Basiskaart_-_Procedure_afbakening_gebouw_bjocy0.pdf)).
+
+</details>
