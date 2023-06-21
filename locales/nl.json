@@ -134,13 +134,13 @@
       },
       {
         "title": "Verklarende woordenlijst",
-        "subtitle": "Een begrippenlijst van de basisregisters",
+        "subtitle": "Een begrippenlijst van de basisregisters.",
         "url": "/verklarende-woordenlijst",
         "hide": false
       },
       {
         "title": "API documentatie",
-        "subtitle": "Documentatie van de basisregisters endpoints",
+        "subtitle": "Documentatie van de basisregisters endpoints.",
         "url": "https://docs.basisregisters.vlaanderen.be/docs/api-documentation.html#tag/api-documentation.html",
         "hide": false
       }
