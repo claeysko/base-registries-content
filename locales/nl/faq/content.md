@@ -14,6 +14,7 @@ U kan op 2 manieren achterhalen wat het adressen objectId is van een CRAB huisnu
 
 </details>
 
+
 <details>
 
 <summary>Ik heb een terreinObjectId of identificatorTerreinObject, hoe weet ik welke gebouwen- en adressenregister objectId dit is?</summary>
@@ -22,6 +23,7 @@ Via het read endpoint van CRAB gebouwen kan u achterhalen wat het gebouwen- en a
 Zie https://docs.basisregisters.vlaanderen.be/docs/api-documentation.html#operation/ListCrabBuildings.
 
 </details>
+
 
 <details>
 
@@ -35,6 +37,7 @@ Via de ‘identify’-functie kunt u de details van een object op de kaart met e
 
 </details>
 
+
 <details>
 
 <summary>Hoe kan ik de endpoints van de basisregisters uitproberen? </summary>
@@ -45,6 +48,7 @@ Een eenvoudige test van de REST-services kan door een URL samen te stellen in de
 
 </details>
 
+
 <details>
 
 <summary>Hoe kan ik het downloadbestand gebruiken?</summary>
@@ -53,6 +57,7 @@ Het downloadbestand kan ingeladen en gevisualiseerd worden met GIS-software. Een
 Meer informatie over dit downloadbestand kan u [hier](https://basisregisters.vlaanderen.be/producten/grar#downloadbestandgrar) vinden. 
 
 </details>
+
 
 <details>
 
@@ -63,7 +68,10 @@ Het is de bedoeling dat het downloadbestand een dataproduct gaat worden.
 </details>
 
 
-## Hoe worden gebouweenheden en hun adreskoppeling(en) momenteel aangemaakt? 
+<details>
+
+<summary>Hoe worden gebouweenheden en hun adreskoppeling(en) momenteel aangemaakt?  </summary>
+
 In deze projectfase worden **gebouweenheden** aangemaakt daar waar CRAB-huisnummers aan een gebouw (of meerdere gebouwen) in CRAB gekoppeld zijn. Ook voor de CRAB-subadressen ‘onder’ deze huisnummers wordt een gebouweenheid gecreëerd. Waar van toepassing wordt een gebouweenheid met functie ‘gemeenschappelijk deel’ toegevoegd. De gebouweenheden in het gebouwen- en adressenregister worden gekoppeld aan het geïnstantieerde adres (voorbeelden: zie vraag 'Graag enkele voorbeelden van de aanmaak van gebouweenheden en adressen o.b.h. CRAB?').
 
 **Adreskoppelingen met een perceel** worden aangemaakt voor CRAB-huisnummers en -subadressen die (bijkomend) aan een perceel gekoppeld zijn.
@@ -72,7 +80,12 @@ Heeft een CRAB-huisnummer of -subadres geen enkele gebouw- of perceelkoppeling, 
 
 Tot slot kan een CRAB-huisnummer of -subadres ook **ongekoppeld** voorkomen. Het verwijst daarbij bijvoorbeeld naar een ‘lot’ of kreeg een afgeleide, laagkwalitatieve positie (bv. geïnterpoleerd o.b.v. nevenliggende gebouwen, in het centrum van de straat of gemeente). Ook deze adressen worden in het gebouwen- en adressenregister overgenomen met hun positie en worden idealiter alsnog aan een adresseerbaar object gekoppeld.
 
-## Is de puntgeometrie van een gebouweenheid dezelfde als deze van het adres?
+</details>
+
+
+<details>
+
+<summary>Is de puntgeometrie van een gebouweenheid dezelfde als deze van het adres?</summary>
 
 Het attribuut ‘geometrie’ van een gebouweenheid is de positie van de gebouweenheid binnen de gebouwcontour.
 
@@ -82,7 +95,12 @@ Het attribuut ‘geometrie’ van een gebouweenheid is de positie van de gebouwe
 
 Dit betekent dat de gebouweenheid een andere positie kán hebben dan het adres in CRAB waarop het gebaseerd werd.
 
-## Graag enkele voorbeelden van de aanmaak van gebouweenheden en adressen o.b.h. CRAB?
+</details>
+
+
+<details>
+
+<summary>Graag enkele voorbeelden van de aanmaak van gebouweenheden en adressen o.b.h. CRAB?</summary>
 
 Hieronder geven we enkele frequent voorkomende situaties in CRAB en de wijze waarop deze doorvertaald werden (tekstueel en grafisch). Merk op dat er andere en complexere uitgangssituaties in CRAB bestaan; het zou ons te ver leiden deze allemaal te beschrijven. De doorvertaling volgt echter telkens hetzelfde patroon.
 
@@ -94,10 +112,21 @@ Hieronder geven we enkele frequent voorkomende situaties in CRAB en de wijze waa
 | Flatgebouw (Aan een gebouw werd het huisnummer ‘12’ gekoppeld met daaronder vijf subadressen) | Gebouw met vijf gebouweenheden, die respectievelijk de adressen ’12 bus 1’ t/m ’12 bus 5’ dragen. Daarnaast werd een zesde gebouweenheid gecreëerd, het gemeenschappelijk deel, dat het adres met huisnummer ‘12’ draagt.| 
 | Woonblok met meerdere ingangen (Binnen een woonblok werd ervoor gekozen om de flats achter elke ingang met een apart huisnummer aan te duiden (14/16/18). Er zijn dus drie huisnummers met daaronder telkens vier subadressen. De adresbeheerder gaf deze huisnummers in CRAB een manuele positie met aanduiding ‘ingang’.) | Gebouw met 12 gebouweenheden, die elk een adres met huis- en busnummer dragen. De adressen zonder busnummer, zijnde de huisnummers 14/16/18, werden aan de 13de gebouweenheid, het gemeenschappelijk deel, gekoppeld. De adresposities van de huisnummers, die de gebouw­ingangen aanduiden, werden overgenomen bij de adressen.|
 
-## Heeft ieder gebouw één gebouweenheid? Hoe gebeurt de afbakening? 
-Nee, dit is niet het geval. Het gebouw kan nul, één of meerdere gebouweenheden hebben. Momenteel worden gebouweenheden vandaag aangemaakt waar in CRAB een adres aan een gebouw gekoppeld werd. Dit is echter een tijdelijke situatie tot het moment waarop de navelstreng met CRAB doorgeknipt wordt. Daarna zullen gebouweenheden rechtstreeks aangemaakt worden door decentrale beheerders in het gebouwen- en adressenregister.
+</details>
 
-## Wat is de betekenis van gebouweenheden met functie 'gemeenschappelijk deel'?
+
+<details>
+
+<summary>Heeft ieder gebouw één gebouweenheid? Hoe gebeurt de afbakening?  </summary>
+
+Nee, dit is niet het geval. Het gebouw kan nul, één of meerdere gebouweenheden hebben. Momenteel worden gebouweenheden vandaag aangemaakt waar in CRAB een adres aan een gebouw gekoppeld werd. Dit is echter een tijdelijke situatie tot het moment waarop de navelstreng met CRAB doorgeknipt wordt. Daarna zullen gebouweenheden rechtstreeks aangemaakt worden door decentrale beheerders in het gebouwen- en adressenregister.  
+
+</details>
+
+
+<details>
+
+<summary>Wat is de betekenis van gebouweenheden met functie 'gemeenschappelijk deel'? </summary>
 
 In gebouwen waarin minstens twee functioneel zelfstandige gebouweenheden voorkomen (bv. gebouw met winkel op gelijkvloers en wooneenheid op eerste verdieping) worden de ruimten en structuren die door de eenheden in kwestie gedeeld worden voorgesteld door een extra gebouweenheid met functie ‘gemeenschappelijk deel’.
 
@@ -109,14 +138,25 @@ Merk op dat slechts één gemeenschappelijk deel per gebouw wordt aangemaakt. Ee
 
 Het gemeenschappelijk deel is tevens de drager van het huisnummeradres daar waar dit huisnummer uitsluitend naar (de gemeenschappelijke ruimten en structuren van) het gebouw verwijst. Er kan ook een gemeenschappelijk deel zijn zonder bijhorend adres (voorbeelden: zie vraag 7).
 
-## Waarom zie ik vakantieparken, begijnhoven e.a. een groter aantal gebouweenheden dan ik - volgens de definitie van een gebouweenheid - zou verwachten? 
+</details>
+
+
+<details>
+
+<summary>Waarom zie ik vakantieparken, begijnhoven e.a. een groter aantal gebouweenheden dan ik - volgens de definitie van een gebouweenheid - zou verwachten?  </summary>
+
 In een eerste fase worden gebouweenheden automatisch aangemaakt o.b.v. CRAB-adressen die een gebouwkoppeling hebben (zie vraag 5). In vakantieparken en begijnhoven koppelt de CRAB-beheerder het huisnummer (bv. Begijnhofstraat 1) van het hoofdgebouw vaak aan alle gebouwen binnen dat vakantiepark of begijnhof, om aan te geven dat de onderliggende subadressen (bv. Begijnhofstraat 1 bus 1) elk afzonderlijk naar één van deze gebouwen verwijzen (in CRAB kan ‘Begijnhofstraat 1 bus 1’ nl. niet rechtstreeks aan het juiste gebouw gekoppeld worden).
 
 Bij de doorvertaling naar het Gebouwenregister wordt per huisnummer-gebouwkoppeling, en voor alle onderliggende subadressen, een gebouweenheid in dat gebouw aangemaakt. Er is dus sprake van een **vermenigvuldigingseffect**. Dit kan vermeden worden door het huisnummer in kwestie slechts aan één gebouw te koppelen in CRAB.
 
 In de toekomst zal de CRAB-beheerder in staat zijn de gebouweenheden direct met het juiste adres in het juiste gebouw te plaatsen.
 
-## Hoe wordt de status (levensloop) voor de verschillende objecten ingevuld? 
+</details>
+
+<details>
+
+<summary>Hoe wordt de status (levensloop) voor de verschillende objecten ingevuld?  </summary>
+
 De beoogde levensloop van de kernobjecten werd eerst uitgetekend i.s.m. de werkgroep-Gebouwenregister. In deze projectfase worden de data in het Gebouwenregister uitsluitend uit het CRAB gehaald (dat op zijn beurt ook gebouwgeometrieën uit het [GRB](https://www.vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/basiskaart-vlaanderen-grb) betrekt).
 
 Daarbij worden de CRAB-statussen als volgt omgezet naar het nieuwe statusverloop (de statussen worden toegelicht in de objectcataloog Gebouwenregister):
@@ -178,27 +218,47 @@ Merk op: de levensloop wordt beschreven vanuit het resultaat, niet vanuit de ver
 
 In een latere projectfase zal de status rechtstreeks op het Gebouwenregister kunnen aangepast worden door decentrale beheerders. Daarbij wordt gestreefd naar een zo volledig mogelijk levensloop, waarbij het object in een zo vroeg mogelijk stadium in het register opgenomen wordt zodat het beschikbaar is voor thematische koppelingen.
 
-## Wanneer krijgt een gebouweenheid status 'gehistoreerd'?
+
+</details>
+
+<details>
+
+<summary>Wanneer krijgt een gebouweenheid status 'gehistoreerd'?</summary>
+
 - Zolang het Gebouwenregister gevoed wordt vanuit CRAB (situatie vandaag): samen met de historering (= invullen van einddatum) van het adres waarop de eenheid gebaseerd werd.
 - Van zodra er beheer is rechtstreeks op het Gebouwenregister (later) zal de beheerder kunnen oordelen dat een gebouweenheid **niet meer actueel is of niet meer in die afbakening bestaat** en dus gehistoreerd moet worden.
-Worden bv. twee appartementen samengevoegd, dan zal de decentrale beheerder de twee corresponderende gebouweenheden op ‘gehistoreerd’ zetten en een nieuwe gebouweenheid met status ‘gerealiseerd’ aanmaken.
+Worden bv. twee appartementen samengevoegd, dan zal de decentrale beheerder de twee corresponderende gebouweenheden op ‘gehistoreerd’ zetten en een nieuwe gebouweenheid met status ‘gerealiseerd’ aanmaken. 
 
-## Wanneer krijgt een gebouw status 'gehistoreerd'?
+</details>
+
+<details>
+
+<summary>Wanneer krijgt een gebouw status 'gehistoreerd'? </summary>
+
 Een gebouw krijgt status ‘gehistoreerd’ wanneer het **gesloopt/samengevoegd/gesplitst werd of afgebrand is.** De levensloop van het gebouw wordt dan beëindigd.
 
 Een ander gebouw dat in de plaats komt krijgt een andere objectidentificator en dus aparte levensloop.
 
 **Een object dat gehistoreerd werd, wordt niet meer ‘tot leven gewekt’** met dezelfde objectidentificator. Dit geldt dus ook voor een gebouw.
 
-## Welke objecten kunnen een adres dragen?
+</details>
+
+<details>
+
+<summary>Welke objecten kunnen een adres dragen? </summary>
+
 Er worden vier adresseerbare objecten onderscheiden:
 - gebouweenheid
 - perceel
 - standplaats
 - ligplaats
 Stand- en ligplaatsen zullen later als object (‘resource’) worden toegevoegd. Gebouwen dragen enkel adressen via de daarbinnen gelegen gebouweenheden (fijnmazigere adressering).
+</details>
 
-## Hoe kan ik gebouwen terugvinden o.b.h. hun adres?
+<details>
+
+<summary>Hoe kan ik gebouwen terugvinden o.b.h. hun adres? </summary>
+
 **Adressen worden in het gebouwen- en adressenregister niet meer rechtstreeks aan het gebouw gekoppeld, maar aan gebouweenheden binnen dat gebouw.**
 
 De te volgend aanpak - met de services die vandaag beschikbaar zijn- is daarom:
@@ -212,8 +272,14 @@ http://beta.basisregisters.vlaanderen.be/api/v1/adressen?gemeentenaam=Denderleeu
 http://beta.basisregisters.vlaanderen.be/api/v1/gebouweenheden?adresobjectid=1859449
 
 3. Bepaal in welk gebouw(en) de teruggegeven gebouweenheden liggen
+ 
 
-## Ik heb een CRAB-adres resp. kadastraal/rijksregisteradres. Hoe kan ik dit in verband brengen met een authentiek adres in het adressenregister?
+</details>
+
+<details>
+
+<summary>Ik heb een CRAB-adres resp. kadastraal/rijksregisteradres. Hoe kan ik dit in verband brengen met een authentiek adres in het adressenregister?</summary>
+
 Er werden **migratieservices** voorzien om o.b.v. een CRAB-huisnummerId of -subadresId het corresponderende adres (met adresId) in het Adressenregister terug te vinden (opgelet: de bètaversie van deze service zal een AdresId teruggeven die verschilt van de AdresId in de productieomgeving; gebruik voor operationele processen steeds de service uit de productieomgeving!).
 
 Voor kadastrale adressen en rijksregisteradressen kan gebruik gemaakt worden van de **adresmatchservice**. Op basis van adrescomponenten, straatcodes of indices kan de corresponderende straatnaam en/of het adres (met adresId) uit het Adressenregister teruggevonden worden.
@@ -222,11 +288,36 @@ Voor toelichting bij het gebruik van deze services, raadpleeg de documentatie:
 
 [https://basisregisters.vlaanderen.be/Help/](https://basisregisters.vlaanderen.be/Help/) (productie)
 
-## Waar vind ik de adresposities met herkomst 'brievenbus', 'nutsaansluiting' en 'toegang tot de weg' uit het CRAB terug?
+</details>
+
+<details>
+
+<summary>Waar vind ik de adresposities met herkomst 'brievenbus', 'nutsaansluiting' en 'toegang tot de weg' uit het CRAB terug? </summary>
+
 Door de werkgroep-Gebouwenregister werd besloten dit soort ‘toepassingsgerichte’ adresposities niet langer in het Adressenregister op te nemen. De motivatie daarvoor is tweeledig:
 - Deze zijn **teveel gericht op één gebruikersgroep, horen niet thuis in een basisregister.** Andere partijen kunnen deze informatie kwalitatiever bijhouden. Het heeft geen zin de gemeenten met de kartering ervan te belasten.
 - In het CRAB werd deze informatie niet uniform door alle gemeenten beheerd. Het aandeel van de toepassingsgerichte posities bedroeg slechts 0.73% (ca. 24000 posities).
-Waar de toepassingsgerichte positie de enige of meest kwalitatieve positie voor een adres vormde in CRAB, zal enkel de positie overgenomen worden in het Adressenregister (de positiespecificatie zal echter ‘gebouweenheid’ of ‘perceel’ zijn).
+Waar de toepassingsgerichte positie de enige of meest kwalitatieve positie voor een adres vormde in CRAB, zal enkel de positie overgenomen worden in het Adressenregister (de positiespecificatie zal echter ‘gebouweenheid’ of ‘perceel’ zijn). 
+
+</details>
+
+<details>
+
+<summary>Zal het downloadbestand later als dataproduct bestendigd worden? </summary>
+
+Het is de bedoeling dat het downloadbestand een dataproduct gaat worden.  
+
+</details>
+
+<details>
+
+<summary>Zal het downloadbestand later als dataproduct bestendigd worden? </summary>
+
+Het is de bedoeling dat het downloadbestand een dataproduct gaat worden.  
+
+</details>
+
+
 
 ## Hoe kan ik adressuggesties (autocomplete) in mijn toepassing implementeren? 
 Maak gebruik van de **geolocation-API** (documentatie: https://loc.geopunt.be/) om suggesties te verkrijgen voor vrije tekstinvoer:
