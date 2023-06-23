@@ -45,7 +45,7 @@ Verder zijn er ook **API's** beschikbaar die aangesproken kunnen worden
 
 Deze API's zullen o.a. geïmplementeerd worden in het vernieuwde **LARA**, zodat lokale besturen deze bijwerkingen op een gebruiksvriendelijke manier kunnen doorvoeren in het Wegenregister.
 
-## Hoe kan ik als lokaal bestuur het Wegenregister bijwerken?
+## Kan ik als lokaal bestuur het Wegenregister bijwerken?
 
 * Vanaf december 2023 zullen een aantal beheersacties mogelijk worden in het vernieuwde LARA, zoals het inschetsen van een nieuwe weg en het aanpassen van attribuutinformatie van wegsegmenten uit het Wegenregister. Bijwerkers kunnen ook rechtstreeks de API's van het Wegenregister aanspreken om deze beheersacties te implementeren in hun eigen toepassingen. 
 * Met een beperkt aantal steden en gemeenten wordt er in een piloottraject onderzocht of het haalbaar is voor deze partijen om het Wegenregister bij te werken in een GIS-omgeving. Indien u interesse heeft hierin, dan graag een seintje via digitaal.vlaanderen@vlaanderen.be.
