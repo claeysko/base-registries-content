@@ -1,6 +1,5 @@
 Het  Wegenregister verzamelt alle basisinformatie over wegen op het Vlaamse grondgebied in één register. Het is hét basisregister voor wegeninformatie in Vlaanderen en vormt de centrale koppelstandaard in het netwerk van wegengerelateerde gegevensbronnen. Hieronder geven we aan op welke manieren je het Wegenregister kan raadplegen, en hoe het Wegenregister bijgewerkt wordt.
 
-
 # Het Wegenregister raadplegen {#raadplegen}
 
 Het Wegenregister kan op verschillende manieren geraadpleegd worden:
@@ -11,14 +10,14 @@ Het Wegenregister kan op verschillende manieren geraadpleegd worden:
 ## WMS, WFS & OGC API features {#wmswfsogcwr}
 
 Het Wegenregister wordt als WMS, WFS & OGC API features ontsloten:
-* De WMS maakt het mogelijk om wegen van het wegenregister te visualiseren op een kaart. Meer informatie over wat een WMS is, kan [hier][4] gevonden worden. 
+* De WMS maakt het mogelijk om wegen van het Wegenregister te visualiseren op een kaart. Meer informatie over wat een WMS is, kan [hier][4] gevonden worden. 
 * De WFS maakt het mogelijk om ruimtelijke bevragingen te doen op wegsegmenten en wegknopen van het Wegenregister. Meer informatie over wat een WFS is, kan [hier][5] gevonden worden.
 * De standaard [OGC API Features][6], ontwikkeld door het Open Geospatial Consortium (OGC), specificeert de vereisten en aanbevelingen voor API’s met betrekking tot ruimtelijke gegevens. Het laat toe de wegen ruimtelijk te bevragen. 
 
 Alle URL's van de WMS'en, WFS'en en OGC API features van het wegenregister kunnen gevonden worden in de catalogus van de [Datavindplaats][9]: 
-* [WMS wegenregister][1]
-* [WFS wegenregister][2]
-* [OGC API features wegenregister][3]
+* [WMS Wegenregister][1]
+* [WFS Wegenregister][2]
+* [OGC API features Wegenregister][3]
 
 ## Download in shapefile formaat {#download}
 Het Wegenregister wordt driemaandelijks aangeboden als download. De download bestaat uit een zip-archief met shapefile bestanden voor wegsegmenten en wegknopen, en met database (dbf) bestanden voor de andere data-objecten in het Wegenregister. De meest recente download vind je door te zoeken naar "Wegenregister" in de catalogus van de [Datavindplaats][9].
@@ -26,7 +25,6 @@ Het Wegenregister wordt driemaandelijks aangeboden als download. De download bes
 ## Kaartlaag op Geopunt {#geopunt}
 
 Om het Wegenregister te raadplegen op [Geopunt][8] voeg je de kaartlaag "Wegennet" toe. Klik hiervoor op de knop "Lagen" en vervolgens op "Lagen toevoegen". Je vindt het wegennet onder Mobiliteit > Transport over land > Wegen. 
-
 
 # Bijhouding van het Wegenregister {#bijhouding}
 
