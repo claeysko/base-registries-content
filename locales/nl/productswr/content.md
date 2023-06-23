@@ -28,5 +28,3 @@ Alle URL's van de WMS'en, WFS'en en OGC API features van het wegenregister kunne
 [4]:https://vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/geografische-webdiensten/ons-gis-aanbod/raadpleegdiensten
 [5]:https://www.vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/geografische-webdiensten/ons-gis-aanbod/overdrachtdiensten
 [6]:https://ogcapi.ogc.org/features/
-
-x
