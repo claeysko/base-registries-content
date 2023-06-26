@@ -159,9 +159,13 @@
         "url": "/foutmeldingen",
         "hide": false
       },
-             {
+      {
         "title": "Gebruik van de edit API's van het wegenregister",
         "url": "/documentatie/editendpointswr"
+      },
+      {
+        "title": "Validaties edit API's van het wegenregister",
+        "url": "/documentatie/editendpointswr/validaties"
       }
     ]
   },
