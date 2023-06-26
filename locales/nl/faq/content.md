@@ -1,33 +1,12 @@
 Hieronder vindt u een overzicht van de meest voorkomende vragen met hun antwoorden die onze gebruikers hebben over de basisregisters.
 Als u een vraag heeft die hieronder niet beantwoord wordt, mail dan naar digitaal.vlaanderen@vlaanderen.be.
 
-## Algemene vragen
+* [Algemene vragen](#algemenevragen)
+* [Vragen gebouwen- en adressenregister](#vragengebouwenenadressenregister)
 
-## Gebouwen- en adressenregister vragen
-<details>
-
-<summary>Ik heb een CRAB huisnummer- of CRAB subadresId, wat is het gebouwen- en adressenregister objectId?</summary>
-
-U kan op 2 manieren achterhalen wat het adressen objectId is van een CRAB huisnummer of een CRAB subadres.
-- Via de read endpoints
-  -   Voor CRAB huisnummers gebruikt u volgende readAPI: https://docs.basisregisters.vlaanderen.be/docs/api-documentation.html#operation/ListCrabHouseNumbers.
-  -   Voor CRAB subadressen gebruikt u volgende readAPI: https://docs.basisregisters.vlaanderen.be/docs/api-documentation.html#operation/ListCrabSubaddresses.
-- Via het downloadbestand
-  - In het downloadbestand van het gebouwen- en adressenregister zitten er 2 dbf's files met daarin een overzicht van het CRAB huisnummer- en CRAB subadresId met hun overeenkomstige gebouwen- en adressenregister objectId.
-
-</details>
-
-
-<details>
-
-<summary>Ik heb een terreinObjectId of identificatorTerreinObject, hoe weet ik welke gebouwen- en adressenregister objectId dit is?</summary>
-
-Via het read endpoint van CRAB gebouwen kan u achterhalen wat het gebouwen- en adressenregister objectId is. U geeft in de URL het terreinObjectId of identificatorTerreinObject mee en u krijgt een overzicht 
-Zie https://docs.basisregisters.vlaanderen.be/docs/api-documentation.html#operation/ListCrabBuildings.
-
-</details>
-
-
+  
+## Algemene vragen {#algemenevragen}
+ 
 <details>
 
 <summary>Hoe kan ik de WMS gebruiken?</summary>
@@ -48,6 +27,43 @@ Via de ‘identify’-functie kunt u de details van een object op de kaart met e
 Een eenvoudige test van de REST-services kan door een URL samen te stellen in de adresbalk van uw browser. In uw browser krijgt u dan ook het resultaat van de aangeroepen service. 
 - Algemene uitleg over de endpoints kan [hier](https://basisregisters.vlaanderen.be/producten/grar#readendpointsgrar) gevonden worden.
 - Documentatie over de URL's en bijhorende parmameters kan [hier](https://docs.basisregisters.vlaanderen.be/docs/api-documentation.html#tag/api-documentation.html) gevonden worden.
+
+</details>
+
+
+<details>
+
+<summary>Elk object heeft een identificator (attribuut 'id') in de vorm van webadres. Wat is dit?</summary>
+
+De **Vlaamse URI-standaard** schrijft voor dat naar Vlaamse ‘resources’ (zoals een object in het Gebouwenregister) kan verwezen worden met een [Uniform Resource Identifier](https://www.vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/gebouwen-en-adressenregister/verklarende-woordenlijst-adressen-en-gebouwenregister) (URI). Deze data-URI is door zijn opbouw uniek binnen het World Wide Web en kan dus als stabiele identificator in eender welk systeem of databank gebruikt worden om ondubbelzinnig naar dat ene object te verwijzen. Daarnaast laten data-URI’s toe de resources als ‘linked data’ aan te bieden (cfr. CRAB-LOD).
+
+Op dit moment zijn enkel de data-URI’s voor adressen resolvable, dit wil zeggen, linken enkel deze URI’s door naar een webdocument (voorstelling van het adres op het web).
+
+</details>
+
+
+## Vragen gebouwen- en adressenregister {#vragengebouwenenadressenregister}
+
+<details>
+
+<summary>Ik heb een CRAB huisnummer- of CRAB subadresId, wat is het gebouwen- en adressenregister objectId?</summary>
+
+U kan op 2 manieren achterhalen wat het adressen objectId is van een CRAB huisnummer of een CRAB subadres.
+- Via de read endpoints
+  -   Voor CRAB huisnummers gebruikt u volgende readAPI: https://docs.basisregisters.vlaanderen.be/docs/api-documentation.html#operation/ListCrabHouseNumbers.
+  -   Voor CRAB subadressen gebruikt u volgende readAPI: https://docs.basisregisters.vlaanderen.be/docs/api-documentation.html#operation/ListCrabSubaddresses.
+- Via het downloadbestand
+  - In het downloadbestand van het gebouwen- en adressenregister zitten er 2 dbf's files met daarin een overzicht van het CRAB huisnummer- en CRAB subadresId met hun overeenkomstige gebouwen- en adressenregister objectId.
+
+</details>
+
+
+<details>
+
+<summary>Ik heb een terreinObjectId of identificatorTerreinObject, hoe weet ik welke gebouwen- en adressenregister objectId dit is?</summary>
+
+Via het read endpoint van CRAB gebouwen kan u achterhalen wat het gebouwen- en adressenregister objectId is. U geeft in de URL het terreinObjectId of identificatorTerreinObject mee en u krijgt een overzicht 
+Zie https://docs.basisregisters.vlaanderen.be/docs/api-documentation.html#operation/ListCrabBuildings.
 
 </details>
 
@@ -361,17 +377,6 @@ Vervolgens leest u het <id>-veld uit:
 
 <details>
 
-<summary>Elk object heeft een identificator (attribuut 'id') in de vorm van webadres. Wat is dit?</summary>
-
-De **Vlaamse URI-standaard** schrijft voor dat naar Vlaamse ‘resources’ (zoals een object in het Gebouwenregister) kan verwezen worden met een [Uniform Resource Identifier](https://www.vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/gebouwen-en-adressenregister/verklarende-woordenlijst-adressen-en-gebouwenregister) (URI). Deze data-URI is door zijn opbouw uniek binnen het World Wide Web en kan dus als stabiele identificator in eender welk systeem of databank gebruikt worden om ondubbelzinnig naar dat ene object te verwijzen. Daarnaast laten data-URI’s toe de resources als ‘linked data’ aan te bieden (cfr. CRAB-LOD).
-
-Op dit moment zijn enkel de data-URI’s voor adressen resolvable, dit wil zeggen, linken enkel deze URI’s door naar een webdocument (voorstelling van het adres op het web).
-
-</details>
-
-
-<details>
-
 <summary>Waar vind ik de 'begin- en einddatum' uit het CRAB terug?</summary>
 
 De begin- en einddatum in het CRAB definiëren een administratieve geldigheidsperiode bij de status van een object (de zogenaamde ‘objecthistoriek’). Zo kan bij de ingebruikname van een officiële straatnaam de datum van het gemeenteraadsbesluit meegegeven worden (begindatum) of bij het slopen van een gebouw de datum waarop de sloop voltooid werd (einddatum).
@@ -437,9 +442,9 @@ Later zal de navelstreng met CRAB doorgeknipt worden en zal de gebouwgeometrie r
 
 <details>
 
-<summary>Hoe kan ik adressen aan gebouweenheden of percelen koppelen in het testbestand?</summary>
+<summary>Hoe kan ik adressen aan gebouweenheden of percelen koppelen in het downloadbestand?</summary>
 
-Zowel gebouweenheden als percelen kunnen adressen dragen. In het testbestand zitten gebouweenheden, percelen en adressen in drie afzonderlijke .dbf-bestanden. Om ze aan elkaar te koppelen heeft u ook het bestand ‘Adreskoppelingen.dbf’ nodig. Via software als MS Access, QGIS e.a. kunt u een ‘inner join’ uitvoeren tussen adreskoppelingen-gebouweenheid enerzijds, en adreskoppelingen-adres anderzijds. In onderstaande figuur staat aangegeven tussen welke velden u de koppeling moet leggen (zie zwarte pijlen). Dezelfde werkwijze is ook toepasbaar met ‘Perceel.dbf’ in de plaats van ‘Gebouweenheid.dbf’.
+Zowel gebouweenheden als percelen kunnen adressen dragen. In het donwloadbestand zitten gebouweenheden, percelen en adressen in drie afzonderlijke .dbf-bestanden. Om ze aan elkaar te koppelen heeft u ook het bestand ‘Adreskoppelingen.dbf’ nodig. Via software als MS Access, QGIS e.a. kunt u een ‘inner join’ uitvoeren tussen adreskoppelingen-gebouweenheid enerzijds, en adreskoppelingen-adres anderzijds. In onderstaande figuur staat aangegeven tussen welke velden u de koppeling moet leggen (zie zwarte pijlen). Dezelfde werkwijze is ook toepasbaar met ‘Perceel.dbf’ in de plaats van ‘Gebouweenheid.dbf’.
 
 
 Merk op: vanwege de grootte wordt ‘Adreskoppelingen.dbf’ opgesplitst in afzonderlijke bestanden. Deze kunt u best eerst terug samenvoegen vooraleer de ‘join’ met de andere tabellen uit te voeren.
@@ -463,5 +468,3 @@ Indien men beschikt over bouwplannen, dan kunnen deze meer inzicht verschaffen o
 Een gedetailleerde toelichting hierover vind je [hier](https://assets.vlaanderen.be/image/upload/v1678268047/Basiskaart_-_Procedure_afbakening_gebouw_bjocy0.pdf)).
 
 </details>
-
-## Wegenregister vragen
