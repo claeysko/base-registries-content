@@ -1,6 +1,10 @@
 Hieronder vindt u een overzicht van de meest voorkomende vragen met hun antwoorden die onze gebruikers hebben over de basisregisters.
 Als u een vraag heeft die hieronder niet beantwoord wordt, mail dan naar digitaal.vlaanderen@vlaanderen.be.
 
+Algemene vragen
+
+Gebouwen- en adressenregister
+
 <details>
 
 <summary>Ik heb een CRAB huisnummer- of CRAB subadresId, wat is het gebouwen- en adressenregister objectId?</summary>
@@ -460,3 +464,5 @@ Indien men beschikt over bouwplannen, dan kunnen deze meer inzicht verschaffen o
 Een gedetailleerde toelichting hierover vind je [hier](https://assets.vlaanderen.be/image/upload/v1678268047/Basiskaart_-_Procedure_afbakening_gebouw_bjocy0.pdf)).
 
 </details>
+
+Wegenregister
