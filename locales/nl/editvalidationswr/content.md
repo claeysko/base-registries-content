@@ -1,4 +1,4 @@
-Op deze pagina vindt u een overzicht van alle geldende validaties per edit API van het wegenregister.
+Op deze pagina vindt u een overzicht van alle geldende validaties per edit API van het wegenregister. 
 
 ## Wegsegmenten
 
