@@ -1,9 +1,48 @@
 Hieronder vindt u een overzicht van de meest voorkomende vragen met hun antwoorden die onze gebruikers hebben over de basisregisters.
 Als u een vraag heeft die hieronder niet beantwoord wordt, mail dan naar digitaal.vlaanderen@vlaanderen.be.
 
-## Algemene vragen
+* [Algemene vragen](#algemenevragen)
+* [Vragen gebouwen- en adressenregister](#vragengebouwenenadressenregister)
 
-## Gebouwen- en adressenregister vragen
+  
+## Algemene vragen {#algemenevragen}
+ 
+<details>
+
+<summary>Hoe kan ik de WMS gebruiken?</summary>
+
+De WMS laat toe adressen, gebouwen en gebouweenheden per status en wegsegmenten per soort **op kaart te visualiseren** en objecten aan te klikken voor meer informatie. Deze kaartlagen kunnen ingeladen worden in GIS- of andere software. Een lijst van GIS-software vindt u [hier](https://en.wikipedia.org/wiki/Comparison_of_geographic_information_systems_software). We kunnen zelf QGIS (open source, gratis) aanbevelen.
+
+Het is belangrijk in de GIS-software als coördinatensysteem voor het project **EPSG:31370** (Belgian Lambert 72) te kiezen en **PNG** als beeldformaat vooraleer lagen toe te voegen. De adressen worden zichtbaar vanaf schaal 1:2000 en hoger, gebouwen en gebouweenheden worden zichtbaar vanaf schaal 1:8000 of hoger en wegen worden zichtbaar afhankelijk van soort weg. De maximumschaal is 1:28000. 
+
+Via de ‘identify’-functie kunt u de details van een object op de kaart met een muisklik opvragen.
+
+</details>
+
+
+<details>
+
+<summary>Hoe kan ik de endpoints van de basisregisters uitproberen? </summary>
+
+Een eenvoudige test van de REST-services kan door een URL samen te stellen in de adresbalk van uw browser. In uw browser krijgt u dan ook het resultaat van de aangeroepen service. 
+- Algemene uitleg over de endpoints kan [hier](https://basisregisters.vlaanderen.be/producten/grar#readendpointsgrar) gevonden worden.
+- Documentatie over de URL's en bijhorende parmameters kan [hier](https://docs.basisregisters.vlaanderen.be/docs/api-documentation.html#tag/api-documentation.html) gevonden worden.
+
+</details>
+
+
+<details>
+
+<summary>Elk object heeft een identificator (attribuut 'id') in de vorm van webadres. Wat is dit?</summary>
+
+De **Vlaamse URI-standaard** schrijft voor dat naar Vlaamse ‘resources’ (zoals een object in het Gebouwenregister) kan verwezen worden met een [Uniform Resource Identifier](https://www.vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/gebouwen-en-adressenregister/verklarende-woordenlijst-adressen-en-gebouwenregister) (URI). Deze data-URI is door zijn opbouw uniek binnen het World Wide Web en kan dus als stabiele identificator in eender welk systeem of databank gebruikt worden om ondubbelzinnig naar dat ene object te verwijzen. Daarnaast laten data-URI’s toe de resources als ‘linked data’ aan te bieden (cfr. CRAB-LOD).
+
+Op dit moment zijn enkel de data-URI’s voor adressen resolvable, dit wil zeggen, linken enkel deze URI’s door naar een webdocument (voorstelling van het adres op het web).
+
+</details>
+
+
+## Vragen gebouwen- en adressenregister {#vragengebouwenenadressenregister}
 
 <details>
 
@@ -25,30 +64,6 @@ U kan op 2 manieren achterhalen wat het adressen objectId is van een CRAB huisnu
 
 Via het read endpoint van CRAB gebouwen kan u achterhalen wat het gebouwen- en adressenregister objectId is. U geeft in de URL het terreinObjectId of identificatorTerreinObject mee en u krijgt een overzicht 
 Zie https://docs.basisregisters.vlaanderen.be/docs/api-documentation.html#operation/ListCrabBuildings.
-
-</details>
-
-
-<details>
-
-<summary>Hoe kan ik de WMS gebruiken?</summary>
-
-De WMS laat toe adressen, gebouwen en gebouweenheden per status en wegsegmenten per soort **op kaart te visualiseren** en objecten aan te klikken voor meer informatie. Deze kaartlagen kunnen ingeladen worden in GIS- of andere software. Een lijst van GIS-software vindt u [hier](https://en.wikipedia.org/wiki/Comparison_of_geographic_information_systems_software). We kunnen zelf QGIS (open source, gratis) aanbevelen.
-
-Het is belangrijk in de GIS-software als coördinatensysteem voor het project **EPSG:31370** (Belgian Lambert 72) te kiezen en **PNG** als beeldformaat vooraleer lagen toe te voegen. De adressen worden zichtbaar vanaf schaal 1:2000 en hoger, gebouwen en gebouweenheden worden zichtbaar vanaf schaal 1:8000 of hoger en wegen worden zichtbaar afhankelijk van soort weg. De maximumschaal is 1:28000. 
-
-Via de ‘identify’-functie kunt u de details van een object op de kaart met een muisklik opvragen.
-
-</details>
-
-
-<details>
-
-<summary>Hoe kan ik de endpoints van de basisregisters uitproberen? </summary>
-
-Een eenvoudige test van de REST-services kan door een URL samen te stellen in de adresbalk van uw browser. In uw browser krijgt u dan ook het resultaat van de aangeroepen service. 
-- Algemene uitleg over de endpoints kan [hier](https://basisregisters.vlaanderen.be/producten/grar#readendpointsgrar) gevonden worden.
-- Documentatie over de URL's en bijhorende parmameters kan [hier](https://docs.basisregisters.vlaanderen.be/docs/api-documentation.html#tag/api-documentation.html) gevonden worden.
 
 </details>
 
@@ -362,17 +377,6 @@ Vervolgens leest u het <id>-veld uit:
 
 <details>
 
-<summary>Elk object heeft een identificator (attribuut 'id') in de vorm van webadres. Wat is dit?</summary>
-
-De **Vlaamse URI-standaard** schrijft voor dat naar Vlaamse ‘resources’ (zoals een object in het Gebouwenregister) kan verwezen worden met een [Uniform Resource Identifier](https://www.vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/gebouwen-en-adressenregister/verklarende-woordenlijst-adressen-en-gebouwenregister) (URI). Deze data-URI is door zijn opbouw uniek binnen het World Wide Web en kan dus als stabiele identificator in eender welk systeem of databank gebruikt worden om ondubbelzinnig naar dat ene object te verwijzen. Daarnaast laten data-URI’s toe de resources als ‘linked data’ aan te bieden (cfr. CRAB-LOD).
-
-Op dit moment zijn enkel de data-URI’s voor adressen resolvable, dit wil zeggen, linken enkel deze URI’s door naar een webdocument (voorstelling van het adres op het web).
-
-</details>
-
-
-<details>
-
 <summary>Waar vind ik de 'begin- en einddatum' uit het CRAB terug?</summary>
 
 De begin- en einddatum in het CRAB definiëren een administratieve geldigheidsperiode bij de status van een object (de zogenaamde ‘objecthistoriek’). Zo kan bij de ingebruikname van een officiële straatnaam de datum van het gemeenteraadsbesluit meegegeven worden (begindatum) of bij het slopen van een gebouw de datum waarop de sloop voltooid werd (einddatum).
@@ -438,9 +442,9 @@ Later zal de navelstreng met CRAB doorgeknipt worden en zal de gebouwgeometrie r
 
 <details>
 
-<summary>Hoe kan ik adressen aan gebouweenheden of percelen koppelen in het testbestand?</summary>
+<summary>Hoe kan ik adressen aan gebouweenheden of percelen koppelen in het downloadbestand?</summary>
 
-Zowel gebouweenheden als percelen kunnen adressen dragen. In het testbestand zitten gebouweenheden, percelen en adressen in drie afzonderlijke .dbf-bestanden. Om ze aan elkaar te koppelen heeft u ook het bestand ‘Adreskoppelingen.dbf’ nodig. Via software als MS Access, QGIS e.a. kunt u een ‘inner join’ uitvoeren tussen adreskoppelingen-gebouweenheid enerzijds, en adreskoppelingen-adres anderzijds. In onderstaande figuur staat aangegeven tussen welke velden u de koppeling moet leggen (zie zwarte pijlen). Dezelfde werkwijze is ook toepasbaar met ‘Perceel.dbf’ in de plaats van ‘Gebouweenheid.dbf’.
+Zowel gebouweenheden als percelen kunnen adressen dragen. In het donwloadbestand zitten gebouweenheden, percelen en adressen in drie afzonderlijke .dbf-bestanden. Om ze aan elkaar te koppelen heeft u ook het bestand ‘Adreskoppelingen.dbf’ nodig. Via software als MS Access, QGIS e.a. kunt u een ‘inner join’ uitvoeren tussen adreskoppelingen-gebouweenheid enerzijds, en adreskoppelingen-adres anderzijds. In onderstaande figuur staat aangegeven tussen welke velden u de koppeling moet leggen (zie zwarte pijlen). Dezelfde werkwijze is ook toepasbaar met ‘Perceel.dbf’ in de plaats van ‘Gebouweenheid.dbf’.
 
 
 Merk op: vanwege de grootte wordt ‘Adreskoppelingen.dbf’ opgesplitst in afzonderlijke bestanden. Deze kunt u best eerst terug samenvoegen vooraleer de ‘join’ met de andere tabellen uit te voeren.
@@ -461,8 +465,4 @@ Als 3 van deze 4 criteria positief zijn, dan wordt een gebouw meestal gesplitst.
 
 Indien men beschikt over bouwplannen, dan kunnen deze meer inzicht verschaffen over de opdeling.
 
-Een gedetailleerde toelichting hierover vind je [hier](https://assets.vlaanderen.be/image/upload/v1678268047/Basiskaart_-_Procedure_afbakening_gebouw_bjocy0.pdf)).
-
-</details>
-
-## Wegenregister vragen
+Een gedetailleerde toelichting hierover vind je [hier](https://assets.vlaanderen.be/image/upload/v1678268047/Basiskaart_-_Procedure_afbakening_gebouw_bjocy0.pdf
