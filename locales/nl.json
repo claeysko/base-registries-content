@@ -10,13 +10,13 @@
       "text": "Werking basisregisters endpoints",
       "url": "/documentatie"
     },
-    "editendpointsgrar": {
-      "text": "Edit Endpoints GRAR",
-      "url": "/documentatie/editendpointsgrar"
-    },
     "editendpointswr": {
-      "text": "Edit Endpoints WR",
+      "text": "Gebruik van de edit endpoints van het wegenregister",
       "url": "/documentatie/editendpointswr"
+    },
+    "editendpointsgrar": {
+      "text": "Gebruik van de edit endpoints van het gebouwen- en adressenregister",
+      "url": "/documentatie/editendpointsgrar"
     },
     "apikey": {
       "text": "API keys",
