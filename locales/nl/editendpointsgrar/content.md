@@ -54,7 +54,7 @@ Hieronder kan per register een lijst gevonden worden van welke beheeracties er a
 
 ### Gebouweenheid
 * Plan een gebouweenheid in. (Decentrale bijwerker)
-* Realiseer een gebouweenheid (Decentrale bijwerker)
+* Realiseer een gebouweenheid. (Decentrale bijwerker)
 * Realiseer een gebouweenheid niet. (Decentrale bijwerker)
 * Hef een gebouweenheid op. (Decentrale bijwerker)
 * Verwijder een gebouweenheid. (Interne bijwerker)
