@@ -1,9 +1,9 @@
 Hieronder vindt u een overzicht van de meest voorkomende vragen met hun antwoorden die onze gebruikers hebben over de basisregisters.
 Als u een vraag heeft die hieronder niet beantwoord wordt, mail dan naar digitaal.vlaanderen@vlaanderen.be.
 
-Algemene vragen
+## Algemene vragen
 
-Gebouwen- en adressenregister
+## Gebouwen- en adressenregister vragen
 
 <details>
 
@@ -465,4 +465,4 @@ Een gedetailleerde toelichting hierover vind je [hier](https://assets.vlaanderen
 
 </details>
 
-Wegenregister
+## Wegenregister vragen
