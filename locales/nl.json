@@ -158,6 +158,10 @@
         "title": "Mogelijke foutmeldingen van de endpoints van de basisregisters",
         "url": "/foutmeldingen",
         "hide": false
+      },
+             {
+        "title": "Gebruik van de edit API's van het wegenregister",
+        "url": "/documentatie/editendpointswr"
       }
     ]
   },
