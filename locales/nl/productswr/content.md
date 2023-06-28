@@ -1,4 +1,4 @@
-# Het Wegenregister raadplegen {#raadplegen}
+## Het Wegenregister raadplegen {#raadplegen}
 
 Het Wegenregister kan op verschillende manieren geraadpleegd worden:
 * [Via de WMS, WFS & OGC API features](#wmswfsogcwr)
