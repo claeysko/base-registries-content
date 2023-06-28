@@ -156,23 +156,28 @@
     "doormatItems": [
       {
         "title": "Gebruik van de edit API's van het gebouwen- en adressenregister",
-        "url": "/documentatie/editendpointsgrar"
+        "url": "/documentatie/editendpointsgrar",
+        "hide": false
       },
       {
         "title": "Flow statussen gebouwen- en adressenregister",
-        "url": "/documentatie/statusflowgrar"
+        "url": "/documentatie/statusflowgrar",
+        "hide": false
       },
       {
         "title": "Validaties edit API's van het gebouwen- en adressenregister",
-        "url": "/documentatie/editendpointsgrar/validaties"
+        "url": "/documentatie/editendpointsgrar/validaties",
+        "hide": false
       },
        {
         "title": "Gebruik van de edit API's van het wegenregister",
-        "url": "/documentatie/editendpointswr"
+        "url": "/documentatie/editendpointswr",
+        "hide": false
       },
       {
         "title": "Validaties edit API's van het wegenregister",
-        "url": "/documentatie/editendpointswr/validaties"
+        "url": "/documentatie/editendpointswr/validaties",
+        "hide": false
       },
       {
         "title": "Mogelijke foutmeldingen van de endpoints van de basisregisters",
