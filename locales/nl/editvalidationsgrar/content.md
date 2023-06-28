@@ -1,4 +1,11 @@
-## Straatnamen
+## Overzicht pagina
+* [Validaties van de edit API's van straatnamen](#straatnamen)
+* [Validaties van de edit API's van adressen](#adrerssen)
+* [Validaties van de edit API's van gebouwen](#gebouwen)
+* [Validaties van de edit API's van gebouweenheden](#gebouweenheden)
+* [Validaties van de edit API's van percelen](#percelen)
+
+## Straatnamen {#straatnamen}
 
 #### Stel een straatnaam voor 
 
@@ -105,7 +112,7 @@
 |Verwijderd straatnaamId meegegeven |Ticketing error |VerwijderdeStraatnaam  |Verwijderde straatnaam.  |
 
 
-## Adressen
+## Adressen {#adressen}
   
 #### Stel een adres voor
 
@@ -326,7 +333,7 @@
 |Adres in straatnaam met status afgekeurd/gehistoreerd|Ticketing error|AdresStraatnaamVoorgesteldOfInGebruik| Deze actie is enkel toegestaan binnen straatnamen met  status 'voorgesteld' of 'inGebruik'. |
 |Verwijderd adresId meegegeven |Ticketing error |VerwijderdAdres  |Verwijderd adres.  | 
 
-## Gebouwen
+## Gebouwen {#gebouwen}
 
 #### Plan een gebouw in 
 
@@ -412,7 +419,7 @@
 |Verwijderd gebouwId meegegeven |Ticketing error |VerwijderdGebouw  |Verwijderd gebouw.  |
 
 
-## Gebouweenheden
+## Gebouweenheden {#gebouweenheden}
   
 #### Plan een gebouweenheid in
 
@@ -577,7 +584,7 @@
 |Onbestaand gebouweenheidId meegegeven  |Error 404|/  |/  |
 |Verwijderd gebouweenheidId meegegeven |Ticketing error|VerwijderdeGebouweenheid|Verwijderde gebouweenheid.|
   
-## Percelen
+## Percelen {#percelen}
 
 #### Koppel een adres van een perceel
 
