@@ -1,5 +1,3 @@
-Op deze pagina vindt u een overzicht van alle geldende validaties per edit API van het wegenregister.
-
 ## Wegsegmenten
 
 ### Koppel een straatnaam aan een wegsegment
