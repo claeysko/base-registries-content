@@ -1,4 +1,16 @@
-## Decentraal beheer
+## Overzicht pagina
+* [Decentraal beheer](#decentraalbeheer)
+* [Betekenis van de edit events en velden in de feed](#editeventsfeed)
+* [Welke huisnummers & busnummers worden aanvaard voor een nieuw adres?](#regex)
+* [Unieke straatnaam, homoniemtoevoeging, huisnummer of busnummer, hoe uniek is dit? ](#uniek)
+* [Welke combinaties zijn mogelijk bij adrespositie?](#adrespositie)
+* [Functie van een gebouweenheid: nietGekend of gemeenschappelijkDeel](#functiegebouweenheid)
+* [Wat is het verschil tussen een correctie en een wijziging?](#verschilcorrectiewijziging)
+* [Validaties edit endpoint](#validatieseditendpoints)
+* [Flow statussen](#flowstatussen)
+* [Ticketing service](#ticketingservice)
+
+## Decentraal beheer {#decentraalbeheer}
 
 De edit endpoints maken decentraal beheer mogelijk in het gebouwen- en adressenregister. Deze endpoints worden door de dienstenleveranciers geïmplementeerd in hun software. Zo kunnen vb. straatnamen, adressen, gebouwen, gebouweenheden en percelen toegevoegd, verwijderd of aangepast worden. 
 
@@ -74,11 +86,11 @@ De edit endpoints van gebouwen kunnen alleen toegepast worden op gebouwen met ge
 * Koppel een adres aan een perceel. (Decentrale bijwerker)
 * Ontkoppel een adres van een perceel. (Decentrale bijwerker)
 
-## Betekenis van de edit events en velden in de feed 
+## Betekenis van de edit events en velden in de feed {#editeventsfeed}
 
 Een overzicht van alle mogelijke edit events en de betekenis van de attributen onder het blokje <event> vindt u op deze pagina: https://api.basisregisters.staging-vlaanderen.be/v1/info/events?tags=edit.
 
-## Welke huisnummers & busnummers worden aanvaard voor een nieuw adres?
+## Welke huisnummers & busnummers worden aanvaard voor een nieuw adres? {#regex}
 
 Als er een nieuw voorgesteld adres wordt ingevoerd dan moet het huisnummer en eventueel het busnummer aan bepaalde voorwaarden voldoen.
 
@@ -86,11 +98,11 @@ De regex die van toepassing is op het huisnummer is ^[1-9] ([0-9]{0,8}([A-H]|[K-
 
 De regex die van toepassing is op het busnummer is ^[a-zA-Z0-9]{1,10}$. Bovenop deze regex wordt het woord bus, Bus of BUS ook niet aanvaard. Dit wilt zeggen dat busnummers 1, 001 of 5C aanvaard zullen worden, maar busnummers 0, Bus 1 of 1-A niet aanvaard zullen worden.
  
-## Unieke straatnaam, homoniemtoevoeging, huisnummer of busnummer, hoe uniek is dit?
+## Unieke straatnaam, homoniemtoevoeging, huisnummer of busnummer, hoe uniek is dit? {#uniek}
  
 Als er een straatnaam, homoniemtoevoeging, huisnummer of busnummer wordt ingevoerd dan wordt er achterliggend gekeken of deze al bestaan in een bepaalde gemeente of straatnaam. Dit wordt gedaan zodat er geen 2 dezelfde straatnamen, homoniemtoevoegingen, huisnummers of busnummers met status 'voorgesteld' of 'inGebruik' aanwezig zijn binnen deze gemeente of straatnaam. Ook werd ervoor gezorgd dat deze vergelijking niet hoofdlettergevoelig is. Het is namelijk niet mogelijk om een straatnaam met hoofdletters mee te geven en wat later diezelfde straatnaam zonder hoofdletters. vb. 'Straatnaam' en 'straatnaam' zal niet mogelijk zijn.
 
-## Welke combinaties zijn mogelijk bij adrespositie?
+## Welke combinaties zijn mogelijk bij adrespositie? {#adrespositie}
 
 In de edit endpoints ‘Stel een adres voor’ en ‘Corrigeer de adrespositie van een adres’ zijn de parameters positieGeometrieMethode, positieSpecificatie en positie verplicht. 
 
@@ -106,13 +118,13 @@ Wanneer positieGeometrieMethode afgeleidVanObject wordt gekozen dan zijn volgend
 * Perceel
 * Gebouweenheid
 
-## Functie van een gebouweenheid: nietGekend of gemeenschappelijkDeel
+## Functie van een gebouweenheid: nietGekend of gemeenschappelijkDeel {#functiegebouweenheid}
 
 Een gebouweenheid kan 2 functies hebben: nietGekend of gemeenschappelijkDeel. In de toekomst zal deze lijst met mogelijke waarden uitgebreid worden.
 
 Wanneer er een gebouweenheid wordt ingepland, is het enkel mogelijk om een ‘nietGekend’ als functie mee te geven. De functie ‘gemeenschappelijkDeel’ wordt automatisch toegekend van zodra er 2 ‘nietGekend’ ‘gepland/gerealiseerde’ gebouweenheden gekoppeld zijn aan het gebouw.
 
-## Wat is het verschil tussen een correctie en een wijziging?
+## Wat is het verschil tussen een correctie en een wijziging? {#verschilcorrectiewijziging}
 
 Er wordt een onderscheid gemaakt tussen correcties en wijzigingen. In het eerste geval gaat het om een rechtzetting van een fout (vb. ‘Van Eikstraat’ moet zijn ‘Van Eyckstraat’), in het tweede geval gaat het om een verandering in administratieve toestand (vb. gebouw veranderd van status ‘inAanbouw’ naar ‘inGebruik’).
 
@@ -120,16 +132,16 @@ vb. Het wijzigen of corrigeren van de postcode van een adres.
 
 Hiervoor zijn 2 aparte API’s gemaakt. De API ‘Corrigeer de postcode van een adres’ mag door elke decentrale beheerder uitgevoerd worden. Dit wordt uitgevoerd als de verkeerde postinfoID van een gemeente aan het adres is gekoppeld. Deze correctie kan alleen maar naar postinfoId’s worden gezet gekoppeld aan deze gemeente. De API ‘Wijzig de postcode van een adres’ is voor interne bijwerkers en wordt bijvooorbeeld op vraag van Bpost uitgevoerd. Bpost wilt dat postbodes een zo optimaal mogelijke route afleggen om deze reden kan het zijn dat adressen van bepaalde gemeenten een andere postinfoId krijgen dan deze die in de gemeente liggen. Deze API laat dit toe, vandaar dat dit niet door iedereen mogelijk is om uit te voeren. 
 
- ## Validaties edit endpoint
+## Validaties edit endpoint {#validatieseditendpoints}
  
 Zie https://basisregisters.staging-vlaanderen.be/documentatie/editendpointsgrar/validaties.
  
-## Flow statussen  
+## Flow statussen   {#flowstatussen}
  
 Zie https://basisregisters.staging-vlaanderen.be/documentatie/statusflowgrar.
  
  
- ## Ticketing service
+ ## Ticketing service {#ticketingservice}
  
  ### Flow status ticketing service 
  
