@@ -1,6 +1,4 @@
-Het  Wegenregister verzamelt alle basisinformatie over wegen op het Vlaamse grondgebied in één register. Het is hét basisregister voor wegeninformatie in Vlaanderen en vormt de centrale koppelstandaard in het netwerk van wegengerelateerde gegevensbronnen. Hieronder geven we aan op welke manieren je het Wegenregister kan raadplegen, en hoe het Wegenregister bijgewerkt wordt.
-
-# Het Wegenregister raadplegen {#raadplegen}
+## Het Wegenregister raadplegen {#raadplegen}
 
 Het Wegenregister kan op verschillende manieren geraadpleegd worden:
 * [Via de WMS, WFS & OGC API features](#wmswfsogcwr)
@@ -66,4 +64,3 @@ Deze API's zullen o.a. geïmplementeerd worden in het vernieuwde **LARA**, zodat
 [7]:https://overheid.vlaanderen.be/help/grb/terugmelding
 [8]:https://www.geopunt.be
 [9]:https://www.vlaanderen.be/datavindplaats
-
