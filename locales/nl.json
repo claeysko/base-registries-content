@@ -182,7 +182,7 @@
   "documentation": {
     "title": "Werking basisregisters endpoints",
     "Prefix": "Basisregisters Vlaanderen",
-    "doormatItems": [
+      "doormatItems": [
       {
         "title": "Gebruik van de edit API's van het gebouwen- en adressenregister",
         "url": "/documentatie/editendpointsgrar",
@@ -191,10 +191,25 @@
       {
         "title": "Flow statussen gebouwen- en adressenregister",
         "url": "/documentatie/statusflowgrar",
+        "hide": true
+      },
+      {
+        "title": "Validaties edit API's van het gebouwen- en adressenregister",
+        "url": "/documentatie/editendpointsgrar/validaties",
+        "hide": true
+      },
+       {
+        "title": "Gebruik van de edit API's van het wegenregister",
+        "url": "/documentatie/editendpointswr",
         "hide": false
       },
       {
-        "title": "Mogelijke foutmeldingen in de endpoints van de basisregisters",
+        "title": "Validaties edit API's van het wegenregister",
+        "url": "/documentatie/editendpointswr/validaties",
+        "hide": false
+      },
+      {
+        "title": "Mogelijke foutmeldingen van de endpoints van de basisregisters",
         "url": "/foutmeldingen",
         "hide": false
       }
