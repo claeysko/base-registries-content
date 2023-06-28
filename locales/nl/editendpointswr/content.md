@@ -1,4 +1,8 @@
-## Decentraal beheer
+## Overzicht pagina
+* [Decentraal beheer](#decentraalbeheer)
+* [Validaties edit endpoints](#validatieseditendpoints)
+
+## Decentraal beheer {#decentraalbeheer}
 
 De edit endpoints maken decentraal beheer mogelijk in het wegenregister. Deze endpoints worden door de dienstenleveranciers geïmplementeerd in hun software. Zo kunnen wegsegmenten toegevoegd, verwijderd of aangepast worden. 
 
@@ -11,6 +15,6 @@ Hieronder kan per register een lijst gevonden worden van welke beheeracties er a
 * Wijzig de geometrie van een ingeschets wegsegment. (Decentrale bijwerker)
 * Verwijder een ingeschetst wegsegment. (Decentrale bijwerker)
 
- ## Validaties edit endpoint
+ ## Validaties edit endpoint {#validatieseditendpoints}
  
 Zie https://basisregisters.vlaanderen.be/documentatie/editendpointswr/validaties.
