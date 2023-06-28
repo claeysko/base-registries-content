@@ -1,4 +1,6 @@
-Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
+Op deze pagina vindt u een overzicht van alle geldende validaties per type object en per edit API.
+
+## Overzicht pagina
 * [Validaties van de edit API's van straatnamen](#straatnamen)
 * [Validaties van de edit API's van adressen](#adrerssen)
 * [Validaties van de edit API's van gebouwen](#gebouwen)
