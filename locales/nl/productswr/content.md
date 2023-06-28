@@ -1,6 +1,3 @@
-Dit register verzamelt alle basisinformatie over wegen op het Vlaamse grondgebied in één register. Het is hét basisregister voor wegeninformatie in Vlaanderen en vormt de centrale koppelstandaard in het netwerk van wegengerelateerde gegevensbronnen. 
-
-
 Deze informatie kan op verschillende manieren geraadpleegd worden:
 * [Via de WMS, WFS & OGC API features](#wmswfsogcwr)
 
