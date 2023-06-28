@@ -1,5 +1,3 @@
-Op deze pagina vindt u een overzicht van alle geldende validaties per edit API.
-
 ## Straatnamen
 
 #### Stel een straatnaam voor 
