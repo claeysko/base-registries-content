@@ -42,6 +42,7 @@ Hieronder kan per register een lijst gevonden worden van welke beheeracties er a
 * Wijzig de postcode van een adres. (Interne bijwerker)
 
 ### Gebouwen
+De edit endpoints van gebouwen kunnen alleen toegepast worden op gebouwen met geometrieMethode- = ingeschetst. 
 * Plan een gebouw in. (Decentrale bijwerker)
 * Plaats een gebouw in aanbouw. (Decentrale bijwerker)
 * Realiseer een gebouw. (Decentrale bijwerker)
