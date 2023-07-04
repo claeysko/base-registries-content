@@ -121,8 +121,8 @@ Het downloadbestand is een momentopname van alle data die het gebouwen- en adres
 
 | Bestandnaam |  Formaat .dbf | Formaat .prj | Formaat .shp | Formaat .shx | Extra informatie |
 |:-:|:-:|:-:|:-:|:-:|:-:|
-| Adres | x | x | x | x | x |
-| Adres_metadata | x | \ | \ | \ | x |
+| Adres | x | x | x | x | Alle Vlaamse adressen |
+| Adres_metadata | x | \ | \ | \ | Laatste eventid waarvan kan gesynchroniseerd worden na uitlezen downloadbestand |
 | AdresGebouweenheidKoppelingen | x | \ | \ | \ | x |
 | AdresPerceelKoppelingen | x | \ | \ | \ | x |
 | CrabHuisnummer | x | \ | \ | \ | x |
