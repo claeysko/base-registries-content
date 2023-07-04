@@ -119,26 +119,26 @@ Het downloadbestand is een momentopname van alle data die het gebouwen- en adres
 
 ### Inhoud downloadbestand
 
-| Bestandnaam |  Formaat .dbf | Formaat .prj | Formaat .shp | Formaat .shx |
-|:-:|:-:|:-:|:-:|:-:|
-| Adres | x | x | x | x |
-| Adres_metadata | x | \ | \ | \ |
-| AdresGebouweenheidKoppelingen | x | \ | \ | \ |
-| AdresPerceelKoppelingen | x | \ | \ | \ |
-| CrabHuisnummer | x | \ | \ | \ |
-| CrabSubadres | x | \ | \ | \ |
-| Gebouw | x | x | x | x |
-| Gebouw_metadata | x | \ | \ | \ |
-| Gebouweenheid | x | x | x | x |
-| Gebouweeneheid_metadata | x | \ | \ | \ |
-| Gemeente | x | \ | \ | \ |
-| Gemeente_metadata | x | \ | \ | \ |
-| Perceel | x | \ | \ | \ |
-| Perceel_metadata | x | \ | \ | \ |
-| Postinfo | x | \ | \ | \ |
-| Postinfo_metadata | x | \ | \ | \ |
-| Straatnaam | x | \ | \ | \ |
-| Straatnaam_metadata | x | \ | \ | \ |
+| Bestandnaam |  Formaat .dbf | Formaat .prj | Formaat .shp | Formaat .shx | Extra informatie |
+|:-:|:-:|:-:|:-:|:-:|:-:|
+| Adres | x | x | x | x | x |
+| Adres_metadata | x | \ | \ | \ | x |
+| AdresGebouweenheidKoppelingen | x | \ | \ | \ | x |
+| AdresPerceelKoppelingen | x | \ | \ | \ | x |
+| CrabHuisnummer | x | \ | \ | \ | x |
+| CrabSubadres | x | \ | \ | \ | x |
+| Gebouw | x | x | x | x | x |
+| Gebouw_metadata | x | \ | \ | \ | x |
+| Gebouweenheid | x | x | x | x | x |
+| Gebouweeneheid_metadata | x | \ | \ | \ | x |
+| Gemeente | x | \ | \ | \ | x |
+| Gemeente_metadata | x | \ | \ | \ | x |
+| Perceel | x | \ | \ | \ | x |
+| Perceel_metadata | x | \ | \ | \ | x |
+| Postinfo | x | \ | \ | \ | x |
+| Postinfo_metadata | x | \ | \ | \ | x |
+| Straatnaam | x | \ | \ | \ | x |
+| Straatnaam_metadata | x | \ | \ | \ | x |
 
 ### Handleiding
 Om meer te weten te komen over hoe het downloadbestand te gebruiken, kan deze handleiding gedownload worden: [Handleiding opsplitsen donwloadbestand gebouwen- en adressenregister](https://github.com/Informatievlaanderen/base-registries-content/files/11381530/CookBook_opsplitsen_downloadbestand_gebouwen-_en_adressenregister.docx).
