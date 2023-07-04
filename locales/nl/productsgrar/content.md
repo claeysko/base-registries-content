@@ -121,24 +121,24 @@ Het downloadbestand is een momentopname van alle data die het gebouwen- en adres
 
 | Bestandnaam |  Formaat .dbf | Formaat .prj | Formaat .shp | Formaat .shx | Extra informatie |
 |:-:|:-:|:-:|:-:|:-:|:-:|
-| Adres | x | x | x | x | Alle Vlaamse adressen |
-| Adres_metadata | x | \ | \ | \ | Laatste eventid waarvan kan gesynchroniseerd worden na uitlezen downloadbestand |
-| AdresGebouweenheidKoppelingen | x | \ | \ | \ | x |
+| Adres | x | x | x | x | Alle Vlaamse adressen met de bijhorende attributen|
+| Adres_metadata | x | \ | \ | \ | Laatste feed adres eventid waarvan kan gesynchroniseerd worden na uitlezen downloadbestand |
+| AdresGebouweenheidKoppelingen | x | \ | \ | \ | Alle |
 | AdresPerceelKoppelingen | x | \ | \ | \ | x |
-| CrabHuisnummer | x | \ | \ | \ | x |
-| CrabSubadres | x | \ | \ | \ | x |
-| Gebouw | x | x | x | x | x |
-| Gebouw_metadata | x | \ | \ | \ | x |
-| Gebouweenheid | x | x | x | x | x |
+| CrabHuisnummer | x | \ | \ | \ | Alle Vlaamse crabHuisnummers met hun bijhorende GRAR objectId |
+| CrabSubadres | x | \ | \ | \ | Alle Vlaamse crabSubadressen met hun bijhorende GRAR objectId  |
+| Gebouw | x | x | x | x | Alle Vlaamse gebouwen met de bijhorende attributen |
+| Gebouw_metadata | x | \ | \ | \ | Laatste feed gebouw eventid waarvan kan gesynchroniseerd worden na uitlezen downloadbestand |
+| Gebouweenheid | x | x | x | x | Alle Vlaamse gebouweenheden met de bijhorende attributen |
 | Gebouweeneheid_metadata | x | \ | \ | \ | x |
-| Gemeente | x | \ | \ | \ | x |
+| Gemeente | x | \ | \ | \ | Alle Belgische gemeenten met de bijhorende attributen|
 | Gemeente_metadata | x | \ | \ | \ | x |
-| Perceel | x | \ | \ | \ | x |
+| Perceel | x | \ | \ | \ | Alle Vlaamse percelen met de bijhorende attributen |
 | Perceel_metadata | x | \ | \ | \ | x |
-| Postinfo | x | \ | \ | \ | x |
-| Postinfo_metadata | x | \ | \ | \ | x |
-| Straatnaam | x | \ | \ | \ | x |
-| Straatnaam_metadata | x | \ | \ | \ | x |
+| Postinfo | x | \ | \ | \ | Alle postcodes aangelever door bPost |
+| Postinfo_metadata | x | \ | \ | \ | Laatste feed postinfo eventid waarvan kan gesynchroniseerd worden na uitlezen downloadbestand |
+| Straatnaam | x | \ | \ | \ | Alle Belgische straatnamen met de bijhorende attributen|
+| Straatnaam_metadata | x | \ | \ | \ | Laatste feed straatnaam eventid waarvan kan gesynchroniseerd worden na uitlezen downloadbestand |
 
 ### Handleiding
 Om meer te weten te komen over hoe het downloadbestand te gebruiken, kan deze handleiding gedownload worden: [Handleiding opsplitsen donwloadbestand gebouwen- en adressenregister](https://github.com/Informatievlaanderen/base-registries-content/files/11381530/CookBook_opsplitsen_downloadbestand_gebouwen-_en_adressenregister.docx).
