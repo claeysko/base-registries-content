@@ -89,6 +89,15 @@ Het is de bedoeling dat het downloadbestand een dataproduct gaat worden.
 
 <details>
 
+<summary> Moet ik nu al overschakelen naar de v2 endpoints van het gebouwen- en adressenregister? </summary>
+
+Dit wordt sterk aangeraden. Vanaf ten vroegste 1 november 2023 zullen de v1 endpoints niet meer up-to-date zijn als gevolg van de migratie van CRAB naar het Gebouwen- en Adressenregister. Om ervoor te zorgen dat u de meest recente gegevens blijft ontvangen, is het dus belangrijk om vóór deze datum over te stappen naar de nieuwe v2 endpoints. We begrijpen dat het migratieproces enige tijd kan vergen. Daarom hebben we besloten om de v1 endpoints **tot 1 maart 2024** beschikbaar te houden, zodat u voldoende tijd heeft om over te stappen naar de nieuwe v2 endpoints.
+</details>
+
+
+<details>
+
+  
 <summary>Hoe worden gebouweenheden en hun adreskoppeling(en) momenteel aangemaakt?  </summary>
 
 In deze projectfase worden **gebouweenheden** aangemaakt daar waar CRAB-huisnummers aan een gebouw (of meerdere gebouwen) in CRAB gekoppeld zijn. Ook voor de CRAB-subadressen ‘onder’ deze huisnummers wordt een gebouweenheid gecreëerd. Waar van toepassing wordt een gebouweenheid met functie ‘gemeenschappelijk deel’ toegevoegd. De gebouweenheden in het gebouwen- en adressenregister worden gekoppeld aan het geïnstantieerde adres (voorbeelden: zie vraag 'Graag enkele voorbeelden van de aanmaak van gebouweenheden en adressen o.b.h. CRAB?').
