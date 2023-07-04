@@ -123,8 +123,8 @@ Het downloadbestand is een momentopname van alle data die het gebouwen- en adres
 |:-:|:-:|:-:|:-:|:-:|:-:|
 | Adres | x | x | x | x | Alle Vlaamse adressen met de bijhorende attributen|
 | Adres_metadata | x | \ | \ | \ | Bevat de parameter 'Latest_event_id' voor feed adressen (1) |
-| AdresGebouweenheidKoppelingen | x | \ | \ | \ | Alle adressen die een koppeling hebben met een gebouweenheid |
-| AdresPerceelKoppelingen | x | \ | \ | \ | Alle adressen die een koppeling hebben met een perceel |
+| AdresGebouweenheidKoppelingen | x | \ | \ | \ | Alle Vlaamse adressen met hun bijhorende gekoppelde gebouweenhe(i)d(en) objectId(s)|
+| AdresPerceelKoppelingen | x | \ | \ | \ | Alle Vlaamse adressen met hun bijhorende gekoppelde perce(e)l(en) objectId(s) |
 | CrabHuisnummer | x | \ | \ | \ | Alle Vlaamse crabHuisnummers met hun bijhorende GRAR adres objectId |
 | CrabSubadres | x | \ | \ | \ | Alle Vlaamse crabSubadressen met hun bijhorende GRAR adres objectId  |
 | Gebouw | x | x | x | x | Alle Vlaamse gebouwen met de bijhorende attributen |
