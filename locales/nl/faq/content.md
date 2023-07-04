@@ -338,7 +338,7 @@ Waar de toepassingsgerichte positie de enige of meest kwalitatieve positie voor 
 - Stap 2: Teruggegeven straatnamen volgen het patroon: **<straatnaam>, <gemeentenaam>** vb: https://loc.geopunt.be/v4/suggestion?q=Graaf van Hoornestraat 5.
 - Stap 3: Teruggegeven adressen volgen het patroon: **<straatnaam> <huisnummer>, <postcode> <gemeentenaam>** (merk op: er worden geen adressen met busnummer gesuggereerd).
 - Stap 4: Indien u de unieke adresidentificator van de gesuggereerde adressen wil kennen, ‘parst’ u de adrescomponenten uit bovenstaand antwoord en plakt u deze in volgende request: vb: https://basisregisters.vlaanderen.be/api/v2/adressen?gemeentenaam=Nevele&straatnaam=Graaf van Hoornestraat&huisnummer=5
-- Stap 5: Vervolgens leest u het <id>-veld uit.
+- Stap 5: Vervolgens leest u het id-veld uit.
 </details>
 
 
