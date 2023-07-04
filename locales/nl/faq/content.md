@@ -135,7 +135,7 @@ De update frequentie van de WMS'en bij wijzigingen in het gebouwen- en adressenr
 
 <summary>Hoe worden gebouweenheden en hun adreskoppeling(en) momenteel aangemaakt?  </summary>
 
-In deze projectfase worden **gebouweenheden** aangemaakt daar waar CRAB-huisnummers aan een gebouw (of meerdere gebouwen) in CRAB gekoppeld zijn. Ook voor de CRAB-subadressen ‘onder’ deze huisnummers wordt een gebouweenheid gecreëerd. Waar van toepassing wordt een gebouweenheid met functie ‘gemeenschappelijk deel’ toegevoegd. De gebouweenheden in het gebouwen- en adressenregister worden gekoppeld aan het geïnstantieerde adres (voorbeelden: zie vraag 'Graag enkele voorbeelden van de aanmaak van gebouweenheden en adressen o.b.h. CRAB?').
+Nu worden **gebouweenheden** aangemaakt daar waar CRAB-huisnummers aan een gebouw (of meerdere gebouwen) in CRAB gekoppeld zijn. Ook voor de CRAB-subadressen ‘onder’ deze huisnummers wordt een gebouweenheid gecreëerd. Waar van toepassing wordt een gebouweenheid met functie ‘gemeenschappelijk deel’ toegevoegd. De gebouweenheden in het gebouwen- en adressenregister worden gekoppeld aan het geïnstantieerde adres (voorbeelden: zie vraag 'Graag enkele voorbeelden van de aanmaak van gebouweenheden en adressen o.b.h. CRAB?').
 
 **Adreskoppelingen met een perceel** worden aangemaakt voor CRAB-huisnummers en -subadressen die (bijkomend) aan een perceel gekoppeld zijn.
 
@@ -149,7 +149,6 @@ Tot slot kan een CRAB-huisnummer of -subadres ook **ongekoppeld** voorkomen. Het
 <details>
 
 <summary>Is de puntgeometrie van een gebouweenheid dezelfde als deze van het adres?</summary>
-
 Het attribuut ‘geometrie’ van een gebouweenheid is de positie van de gebouweenheid binnen de gebouwcontour.
 - Staat de ‘positieGeometrieMethode’ op ‘afgeleidVanObject’ dan werd deze positie afgeleid van het gebouw waarbinnen de gebouweenheid ligt en betreft het de centroïde van het gebouw.
 - Staat de ‘positieGeometrieMethode’ op ‘aangeduidDoorBeheerder’ dan werd de positie manueel geplaatst door een decentraal beheerder (in concreto: aangezien gebouweenheden momenteel automatisch aangemaakt worden o.b.v. CRAB-adressen betekent dit dat van het corresponderende adres in CRAB de meest kwalitatieve, manuele positie gebruikt werd).
@@ -165,7 +164,7 @@ Dit betekent dat de gebouweenheid een andere positie kán hebben dan het adres i
 
 Hieronder geven we enkele frequent voorkomende situaties in CRAB en de wijze waarop deze doorvertaald werden (tekstueel en grafisch). Merk op dat er andere en complexere uitgangssituaties in CRAB bestaan; het zou ons te ver leiden deze allemaal te beschrijven. De doorvertaling volgt echter telkens hetzelfde patroon.
 
-| **Situatie in CRAB**  | **Vertaald naar Gebouwenregister als … ** | 
+| **Situatie in CRAB**  | **Vertaald naar gebouwen- en adressenregister als … ** | 
 |:-:|:-:|
 | Eengezinswoning (Aan een gebouw werd het huisnummer ‘8’ gekoppeld)  |Gebouw met één gebouweenheid, waarbij de gebouweenheid een adres met huisnummer ‘8’ draagt. | 
 | Meergezinswoning (Aan een gebouw werd het huisnummer ‘10’ gekoppeld met daaronder twee subadressen ’bus 1’ en ‘bus 2’) | Gebouw met twee gebouweenheden, die respectievelijk de adressen ’10 bus 1’ en ’10 bus 2’ dragen. Daarnaast werd een derde gebouweenheid gecreëerd, het gemeenschappelijk deel, dat het adres met huisnummer ‘10’ draagt. | 
@@ -224,7 +223,7 @@ De beoogde levensloop van de kernobjecten werd eerst uitgetekend i.s.m. de werkg
 | Gebouw waarvoor einddatum ingevuld werd toen gebouw status ‘in gebruik’ of ‘buiten gebruik’ had| gehistoreerd | 
 | Gebouw waarvoor einddatum ingevuld werd toen gebouw status ‘vergunning verleend/aangevraagd’ of ‘in aanbouw’ had| niet gerealiseerd | 
 
-Merk op: de levensloop wordt beschreven vanuit het resultaat, niet vanuit de vergunningsprocedure (deze informatie hoort thuis in het Vergunningenregister) dan wel het gebruik (we spreken ons niet uit over het al dan niet in gebruik zijn van een gebouw: dit is thematische informatie). In het gebouwen- en adressenregister worden ook niet-vergunningsplichtige gebouwen opgenomen.
+Merk op: de levensloop wordt beschreven vanuit het resultaat, niet vanuit de vergunningsprocedure (deze informatie hoort thuis in het vergunningenregister) dan wel het gebruik (we spreken ons niet uit over het al dan niet in gebruik zijn van een gebouw: dit is thematische informatie). In het gebouwen- en adressenregister worden ook niet-vergunningsplichtige gebouwen opgenomen.
 
 ### Gebouweenheid
 | **Informatie in CRAB** | **Status** | 
@@ -335,22 +334,11 @@ Waar de toepassingsgerichte positie de enige of meest kwalitatieve positie voor 
 
 <summary>Hoe kan ik adressuggesties (autocomplete) in mijn toepassing implementeren?  </summary>
 
-Maak gebruik van de **geolocation-API** (documentatie: https://loc.geopunt.be/) om suggesties te verkrijgen voor vrije tekstinvoer:
-bv: https://loc.geopunt.be/v4/suggestion?q=Koningin Mar
-
-Teruggegeven straatnamen volgen het patroon:
-**<straatnaam>, <gemeentenaam>**
-
-bv: https://loc.geopunt.be/v4/suggestion?q=Graaf van Hoornestraat 5
-
-Teruggegeven adressen volgen het patroon:
-**<straatnaam> <huisnummer>, <postcode> <gemeentenaam>**
-(merk op: er worden geen adressen met busnummer gesuggereerd)
-
-Indien u de unieke adresidentificator van de gesuggereerde adressen wil kennen, ‘parst’ u de adrescomponenten uit bovenstaand antwoord en plakt u deze in volgende request:
-bv: https://basisregisters.vlaanderen.be/api/v1/adressen?gemeentenaam=Nevele&straatnaam=Graaf van Hoornestraat&huisnummer=5
-
-Vervolgens leest u het <id>-veld uit:
+- Stap 1: Maak gebruik van de **geolocation-API** (documentatie: https://loc.geopunt.be/) om suggesties te verkrijgen voor vrije tekstinvoer: vb: https://loc.geopunt.be/v4/suggestion?q=Koningin Mar.
+- Stap 2: Teruggegeven straatnamen volgen het patroon: **<straatnaam>, <gemeentenaam>** vb: https://loc.geopunt.be/v4/suggestion?q=Graaf van Hoornestraat 5.
+- Stap 3: Teruggegeven adressen volgen het patroon: **<straatnaam> <huisnummer>, <postcode> <gemeentenaam>** (merk op: er worden geen adressen met busnummer gesuggereerd).
+- Stap 4: Indien u de unieke adresidentificator van de gesuggereerde adressen wil kennen, ‘parst’ u de adrescomponenten uit bovenstaand antwoord en plakt u deze in volgende request: vb: https://basisregisters.vlaanderen.be/api/v2/adressen?gemeentenaam=Nevele&straatnaam=Graaf van Hoornestraat&huisnummer=5
+- Stap 5: Vervolgens leest u het <id>-veld uit.
 </details>
 
 
@@ -384,21 +372,18 @@ De begin- en einddatum in het CRAB definiëren een administratieve geldigheidspe
 
 In de praktijk is het voor decentrale beheerders niet altijd even evident om deze administratieve data te kennen. Zo wordt het ‘einde der werken’ (het moment waarop de status van een gebouw in het Gebouwenregister op ‘gerealiseerd’ dient te komen) vandaag maar zelden door de bouwheer aan de gemeente meegedeeld. Bijgevolg kan de begin- en einddatum niet voldoende kwalitatief ingevuld worden.
 
-Daarnaast kan geargumenteerd worden dat deze administratieve informatie al in andere bronnen beschikbaar is (cfr. [lokale besluiten als gelinkte open data](https://lokaalbestuur.vlaanderen.be/gelinkt-publiceren-en-melden)  en Vergunningenregister).
+Daarnaast kan geargumenteerd worden dat deze administratieve informatie al in andere bronnen beschikbaar is (cfr. [lokale besluiten als gelinkte open data](https://lokaalbestuur.vlaanderen.be/gelinkt-publiceren-en-melden)  en vergunningenregister).
 
-Door de werkgroep-Gebouwenregister werd daarom beslist **geen administratieve geldigheidsperiode** bij objecten in het Gebouwenregister te voorzien. Wel zullen datum en tijdstip alsook bijkomende herkomstinformatie (beschikbaar vanaf een volgende release) geregistreerd worden op het moment dat objecten worden opgevoerd, aangepast of verwijderd (de zogenaamde ‘recordhistoriek’).
+Door de werkgroep werd daarom beslist **geen administratieve geldigheidsperiode** bij objecten in het gebouwen- en adressenregister te voorzien. Wel zullen datum en tijdstip alsook bijkomende herkomstinformatie (beschikbaar vanaf een volgende release) geregistreerd worden op het moment dat objecten worden opgevoerd, aangepast of verwijderd (de zogenaamde ‘recordhistoriek’).
 </details>
 
 
 <details>
 
-<summary>Hoe wordt het onderliggend perceel bij een gebouw bepaald?</summary>
+<summary>Hoe weet ik welk perceel aan het gebouw gekoppeld is?</summary>
 
-Via de REST-API kunnen de [details van een gebouw](https://docs.basisregisters.staging-vlaanderen.be/docs/api-documentation.html#tag/api-documentation.html) opgevraagd worden. Daarbij wordt het eventuele onderliggende perceel getoond.
-
-Een perceel wordt als onderliggend aan een gebouw beschouwd indien het voldoet aan volgende voorwaarde (formule voor de berekening van de ‘verbeterde topologische relatie’):
-
-oppervlak overlap gebouw - perceel / oppervlak gebouw > 0.8 / # percelen waarmee het gebouw overlapt
+Via het read endpoint detail gebouw v2 ([Documentatie](https://docs.basisregisters.vlaanderen.be/docs/api-documentation.html#operation/GetBuildingV2)) kunnen de eventuele gekoppelde percelen opgevraagd worden.
+Een perceel wordt als onderliggend aan een gebouw beschouwd indien het voldoet aan volgende voorwaarde (formule voor de berekening van de ‘verbeterde topologische relatie’): oppervlak overlap gebouw - perceel / oppervlak gebouw > 0.8 / # percelen waarmee het gebouw overlapt.
 </details>
 
 
@@ -406,32 +391,22 @@ oppervlak overlap gebouw - perceel / oppervlak gebouw > 0.8 / # percelen waarmee
 
 <summary>Waar vind ik het onderscheid en de relatie tussen hoofd- en bijgebouwen?</summary>
 
-Een hoofdgebouw is een gebouw mét gebouweenheden, een bijgebouw een gebouw zonder gebouweenheden. Of een gebouw gebouweenheden mag bevatten, zie je in het antwoord op vraag 8. Aangezien een gebouw enkel geadresseerd kan worden via zijn gebouweenheden, kan een bijgebouw dus per definitie geen adressen dragen.
-
-Het informatiemodel (zie productpagina) beschrijft geen relatie tussen hoofd- en bijgebouwen (bijvoorbeeld tussen een woning en het tuinhuis dat daarbij staat). Hoewel dit nuttig zou zijn, is het in de praktijk niet evident om deze relatie te bepalen. Bijgebouwen bij een hoofdgebouw bevinden zich bijvoorbeeld niet noodzakelijk op hetzelfde perceel (denk aan stallen bij een boerderij). Ook kunnen verschillende partijen andere interpretaties hebben van welke bijgebouwen bij een hoofdgebouw horen; deze koppeling kan toepassingsafhankelijk zijn, terwijl het register beoogt zo toepassingsonafhankelijk mogelijk te zijn. Als de relatie al in het Gebouwenregister beheerd zou worden, moeten beheerders gevonden worden die deze relatie actualiseren. Om deze redenen werd besloten de relatie vooralsnog niet in het register op te nemen.
+Een hoofdgebouw is een gebouw mét gebouweenheden, een bijgebouw een gebouw zonder gebouweenheden. Aangezien een gebouw enkel geadresseerd kan worden via zijn gebouweenheden, kan een bijgebouw dus per definitie geen adressen dragen. Het informatiemodel beschrijft geen relatie tussen hoofd- en bijgebouwen (bijvoorbeeld tussen een woning en het tuinhuis dat daarbij staat). Hoewel dit nuttig zou zijn, is het in de praktijk niet evident om deze relatie te bepalen. Bijgebouwen bij een hoofdgebouw bevinden zich bijvoorbeeld niet noodzakelijk op hetzelfde perceel (denk aan stallen bij een boerderij). Ook kunnen verschillende partijen andere interpretaties hebben van welke bijgebouwen bij een hoofdgebouw horen; deze koppeling kan toepassingsafhankelijk zijn, terwijl het register beoogt zo toepassingsonafhankelijk mogelijk te zijn. Als de relatie al in het gebouwen- en adressenregister beheerd zou worden, moeten beheerders gevonden worden die deze relatie actualiseren. Om deze redenen werd besloten de relatie vooralsnog niet in het register op te nemen.
 </details>
 
 
 <details>
 
-<summary>Wat is het verschil tussen de gebouwen in het GRB en deze in het Gebouwenregister?</summary>
+<summary>Op het terrein zie ik één gebouw, in het gebouwen- en adressenregister is het gebouw in kwestie echter opgesplitst in meerdere gebouwen. Hoe komt dit?</summary>
 
-Zie antwoord bij vraag 26.
-</details>
+We ambiëren gebouwen, die op het terrein één geheel vormen, ook als één gebouw met één geometrie in het gebouwen- en adressenregister op te nemen. Vandaag is dit nog niet altijd het geval, om deze redenen:
 
+Vandaag neemt het gebouwen- en adressenregister gebouwen over uit het CRAB (dat op zijn beurt ingemeten gebouwen ontvangt vanuit het GRB). Zo stromen gebouwen, die in het CRAB samen met hun adressen beheerd worden, netjes door naar het gebouwen- en adressenregister. Dit is een tijdelijke situatie die ervoor moet zorgen dat gebouwen beheerd worden in afwachting van het aanbieden van beheerprocessen rechtstreeks op het gebouwen- en adressenregister, en de daaropvolgende uitfasering van het beheer op CRAB.
+Bijgevolg is de geometrie van een gebouw in het gebouwen- en adressenregister dezelfde als deze van het corresponderende gebouw in het CRAB. Er is vandaag nog geen methode beschikbaar om een onterecht gesplitst gebouw uit CRAB in het gebouwen- en adressenregister samen te voegen tot één. **Wanneer de beheerders van CRAB (= gemeenten) of GRB (= dienstenleveranciers Informatie Vlaanderen) verkeerdelijk oordeelden dat een gebouw gesplitst moest worden, dan moet die fout dus eerst in het CRAB of GRB rechtgezet worden (melding mogelijk via de CRAB- resp. GRB-meldingssystemen).**
 
-<details>
+Later zal de navelstreng met CRAB doorgeknipt worden en zal de gebouwgeometrie rechtstreeks in het gebouwen- en adressenregister kunnen aangepast worden (of zal een melding van een onterechte splitsing daar kunnen gemaakt worden).
 
-<summary>Op het terrein zie ik één gebouw, in het Gebouwenregister is het gebouw in kwestie echter opgesplitst in meerdere gebouwen. Hoe komt dit?</summary>
-
-We ambiëren gebouwen, die op het terrein één geheel vormen, ook als één gebouw met één geometrie in het Gebouwenregister op te nemen. Vandaag is dit nog niet altijd het geval, om deze redenen:
-
-Vandaag neemt het Gebouwenregister gebouwen over uit het CRAB (dat op zijn beurt ingemeten gebouwen ontvangt vanuit het GRB). Zo stromen gebouwen, die in het CRAB samen met hun adressen beheerd worden, netjes door naar het Gebouwenregister. Dit is een tijdelijke situatie die ervoor moet zorgen dat gebouwen beheerd worden in afwachting van het aanbieden van beheerprocessen rechtstreeks op het Gebouwenregister, en de daaropvolgende uitfasering van het beheer op CRAB.
-Bijgevolg is de geometrie van een gebouw in het Gebouwenregister dezelfde als deze van het corresponderende gebouw in het CRAB. Er is vandaag nog geen methode beschikbaar om een onterecht gesplitst gebouw uit CRAB in het Gebouwenregister samen te voegen tot één. **Wanneer de beheerders van CRAB (= gemeenten) of GRB (= dienstenleveranciers Informatie Vlaanderen) verkeerdelijk oordeelden dat een gebouw gesplitst moest worden, dan moet die fout dus eerst in het CRAB of GRB rechtgezet worden (melding mogelijk via de CRAB- resp. GRB-meldingssystemen).**
-
-Later zal de navelstreng met CRAB doorgeknipt worden en zal de gebouwgeometrie rechtstreeks in het Gebouwenregister kunnen aangepast worden (of zal een melding van een onterechte splitsing daar kunnen gemaakt worden).
-
-1% van de gebouwen beschikt vandaag nog niet over een correcte geometrie in het Gebouwenregister. De geometrie voor deze gebouwen zal immers samengesteld moeten worden uit meerdere geometrieën die in het GRB beschikbaar zijn. Het GRB zal altijd de situatie op maaiveldhoogte karteren, het Gebouwenregister zal waar nodig de GRB-entiteiten samenvoegen tot een ‘bovenaanzicht’-weergave van het gebouw.
+1% van de gebouwen beschikt vandaag nog niet over een correcte geometrie in het gebouwen- en adressenregister. De geometrie voor deze gebouwen zal immers samengesteld moeten worden uit meerdere geometrieën die in het GRB beschikbaar zijn. Het GRB zal altijd de situatie op maaiveldhoogte karteren, het gebouwen- en adressenregister zal waar nodig de GRB-entiteiten samenvoegen tot een ‘bovenaanzicht’-weergave van het gebouw.
 **Het opnemen van deze samengestelde gebouwgeometrieën is voor een latere fase gepland.**
 </details>
 
