@@ -97,7 +97,42 @@ Dit wordt sterk aangeraden. Vanaf ten vroegste 1 november 2023 zullen de v1 endp
 
 <details>
 
-  
+<summary> Wat is het verschil tussen adresmatch endpoint v1 en adresmatch endpoint v2? </summary>
+
+#### Wat is hetzelfde gebleven tov adresmatch v1?
+- De logica achter de fuzzy matching.
+- De responses die als resultaat worden teruggestuurd.
+
+#### Wat is er uit adresmatch v2 verwijderd dat in adresmatch v1 zat?
+- De query parameter ‘kadStraatcode’.
+- De query parameter ‘rrStraatcode’.
+- De query parameter ‘index’.
+- Het response veld ‘adresseerbareObjecten’. Er werd hiervoor een alternatief voorzien. Dit kan u vinden onder toevoegingen. 
+
+#### Wat is het verschil tussen adresmatch v2 en adresmatch v1?
+- Het content-type van v2 is ‘application/ld+json’. Van v1 was dit default ‘application+json’, maar ‘application/xml’ was ook mogelijk.
+- De geometrievelden zijn gewijzigd. De coördinaten van het object staan vanaf nu in het gml-formaat en alle velden die met geometrie te maken hebben zijn samengevoegd onder 1 veld.
+
+#### Wat is er in adresmatch v2 toegevoegd dat niet in adresmatch v1 zit?
+- Het veld ‘links’. In dit veld zit een lijst van gerelateerde resources om te achterhalen wat de gelinkte objecten zijn aan het adres. Momenteel worden er 2 URL’s getoond. 
+  - URL 1: URL die alle gebouweenheden gaat tonen die gekoppeld zijn aan dit adres objectId.
+  - URL 2: URL die alle percelen gaat tonen die gekoppeld zijn aan dit adres obejctId.
+  - Op termijn zal er een nieuwe API zijn waarin de adreskoppelingen per adres zullen getoond worden.
+- Het veld @context. Dit veld bevat de linked-data context van het endpoint. Dit is een URI naar de JSON-LD file.
+- Het veld @type. Dit veld bevat het linked-data type van het endpoint. 
+</details>
+
+
+<details>
+
+<summary>Wat is de update frequentie van de WMS'en van het gebouwen- en adressenregister?  </summary>
+De update frequentie van de WMS'en bij wijzigingen in het gebouwen- en adressenregister zijn near real time. Wat houdt dit in? Dit wit zeggen dat als bijvoorbeeld een adres wordt aangepast, de aanpassing van het adres zo goed als direct erna ook in de WMS van het gebouwen- en adressenregister zichtbaar zal zijn. 
+
+</details>
+
+
+<details>
+
 <summary>Hoe worden gebouweenheden en hun adreskoppeling(en) momenteel aangemaakt?  </summary>
 
 In deze projectfase worden **gebouweenheden** aangemaakt daar waar CRAB-huisnummers aan een gebouw (of meerdere gebouwen) in CRAB gekoppeld zijn. Ook voor de CRAB-subadressen ‘onder’ deze huisnummers wordt een gebouweenheid gecreëerd. Waar van toepassing wordt een gebouweenheid met functie ‘gemeenschappelijk deel’ toegevoegd. De gebouweenheden in het gebouwen- en adressenregister worden gekoppeld aan het geïnstantieerde adres (voorbeelden: zie vraag 'Graag enkele voorbeelden van de aanmaak van gebouweenheden en adressen o.b.h. CRAB?').
