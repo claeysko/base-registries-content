@@ -151,11 +151,9 @@ Tot slot kan een CRAB-huisnummer of -subadres ook **ongekoppeld** voorkomen. Het
 <summary>Is de puntgeometrie van een gebouweenheid dezelfde als deze van het adres?</summary>
 
 Het attribuut ‘geometrie’ van een gebouweenheid is de positie van de gebouweenheid binnen de gebouwcontour.
-
 - Staat de ‘positieGeometrieMethode’ op ‘afgeleidVanObject’ dan werd deze positie afgeleid van het gebouw waarbinnen de gebouweenheid ligt en betreft het de centroïde van het gebouw.
 - Staat de ‘positieGeometrieMethode’ op ‘aangeduidDoorBeheerder’ dan werd de positie manueel geplaatst door een decentraal beheerder (in concreto: aangezien gebouweenheden momenteel automatisch aangemaakt worden o.b.v. CRAB-adressen betekent dit dat van het corresponderende adres in CRAB de meest kwalitatieve, manuele positie gebruikt werd).
 - Echter, ligt de positie van het CRAB-adres buiten de gebouwcontour, dan zal de daarop gebaseerde gebouweenheid automatisch op de centroïde van het gebouw geplaatst worden. Gebouweenheden dienen namelijk steeds binnen een gebouw te liggen.
-
 Dit betekent dat de gebouweenheid een andere positie kán hebben dan het adres in CRAB waarop het gebaseerd werd.
 
 </details>
@@ -182,24 +180,16 @@ Hieronder geven we enkele frequent voorkomende situaties in CRAB en de wijze waa
 
 <summary>Heeft ieder gebouw één gebouweenheid? Hoe gebeurt de afbakening?  </summary>
 
-Nee, dit is niet het geval. Het gebouw kan nul, één of meerdere gebouweenheden hebben. Momenteel worden gebouweenheden vandaag aangemaakt waar in CRAB een adres aan een gebouw gekoppeld werd. Dit is echter een tijdelijke situatie tot het moment waarop de navelstreng met CRAB doorgeknipt wordt. Daarna zullen gebouweenheden rechtstreeks aangemaakt worden door decentrale beheerders in het gebouwen- en adressenregister.  
+Nee, dit is niet het geval. Het gebouw kan 0, 1 of meerdere gebouweenheden hebben. Momenteel worden gebouweenheden vandaag aangemaakt waar in CRAB een adres aan een gebouw gekoppeld werd. Dit is echter een tijdelijke situatie tot december 2023 wanneer CRAB is uitgeschakeld. Daarna zullen gebouweenheden rechtstreeks aangemaakt worden door decentrale beheerders in het gebouwen- en adressenregister.  
 
 </details>
 
 
 <details>
 
-<summary>Wat is de betekenis van gebouweenheden met functie 'gemeenschappelijk deel'? </summary>
+<summary>Wat is de betekenis van gebouweenheden met de functie 'gemeenschappelijk deel'? </summary>
 
-In gebouwen waarin minstens twee functioneel zelfstandige gebouweenheden voorkomen (bv. gebouw met winkel op gelijkvloers en wooneenheid op eerste verdieping) worden de ruimten en structuren die door de eenheden in kwestie gedeeld worden voorgesteld door een extra gebouweenheid met functie ‘gemeenschappelijk deel’.
-
-Aldus kan men bij het koppelen van de eigen, thematische informatie (bv. rond energie, eigendom, veiligheid …) aan het gebouwen- en adressenregister in bovenstaand voorbeeld de identificator van een
-- gebouweenheid met functie ‘wonen’ gebruiken om naar de wooneenheid te verwijzen;
-- gebouweenheid met functie ‘detailhandel’ gebruiken om naar de winkel te verwijzen;
-- gebouweenheid met functie ‘gemeenschappelijk deel’ gebruiken om naar de hal te verwijzen die toegang geeft tot de wooneenheid resp. winkel.
-Merk op dat slechts één gemeenschappelijk deel per gebouw wordt aangemaakt. Een flatgebouw met meerdere trappenhallen, liftkokers en een gedeelde ondergrondse garage krijgt dus één gemeenschappelijk deel (niet één per trappenhal/liftkoker/garage).
-
-Het gemeenschappelijk deel is tevens de drager van het huisnummeradres daar waar dit huisnummer uitsluitend naar (de gemeenschappelijke ruimten en structuren van) het gebouw verwijst. Er kan ook een gemeenschappelijk deel zijn zonder bijhorend adres (voorbeelden: zie vraag 7).
+In gebouwen waarin minstens twee functioneel zelfstandige gebouweenheden voorkomen (bv. gebouw met winkel op gelijkvloers en wooneenheid op eerste verdieping) worden de ruimten en structuren die door de eenheden in kwestie gedeeld worden voorgesteld door een extra gebouweenheid met functie ‘gemeenschappelijk deel’. Merk op dat slechts één gemeenschappelijk deel per gebouw wordt aangemaakt. Een flatgebouw met meerdere trappenhallen, liftkokers en een gedeelde ondergrondse garage krijgt dus één gemeenschappelijk deel (niet één per trappenhal/liftkoker/garage). Het gemeenschappelijk deel is tevens de drager van het huisnummeradres daar waar dit huisnummer uitsluitend naar (de gemeenschappelijke ruimten en structuren van) het gebouw verwijst. Er kan ook een gemeenschappelijk deel zijn zonder bijhorend adres.
 
 </details>
 
@@ -208,11 +198,11 @@ Het gemeenschappelijk deel is tevens de drager van het huisnummeradres daar waar
 
 <summary>Waarom zie ik vakantieparken, begijnhoven e.a. een groter aantal gebouweenheden dan ik - volgens de definitie van een gebouweenheid - zou verwachten?  </summary>
 
-In een eerste fase worden gebouweenheden automatisch aangemaakt o.b.v. CRAB-adressen die een gebouwkoppeling hebben (zie vraag 5). In vakantieparken en begijnhoven koppelt de CRAB-beheerder het huisnummer (bv. Begijnhofstraat 1) van het hoofdgebouw vaak aan alle gebouwen binnen dat vakantiepark of begijnhof, om aan te geven dat de onderliggende subadressen (bv. Begijnhofstraat 1 bus 1) elk afzonderlijk naar één van deze gebouwen verwijzen (in CRAB kan ‘Begijnhofstraat 1 bus 1’ nl. niet rechtstreeks aan het juiste gebouw gekoppeld worden).
+Nu worden gebouweenheden automatisch aangemaakt o.b.v. CRAB-adressen die een gebouwkoppeling hebben. In vakantieparken en begijnhoven koppelt de CRAB-beheerder het huisnummer (bv. Begijnhofstraat 1) van het hoofdgebouw vaak aan alle gebouwen binnen dat vakantiepark of begijnhof, om aan te geven dat de onderliggende subadressen (bv. Begijnhofstraat 1 bus 1) elk afzonderlijk naar één van deze gebouwen verwijzen (in CRAB kan ‘Begijnhofstraat 1 bus 1’ nl. niet rechtstreeks aan het juiste gebouw gekoppeld worden).
 
-Bij de doorvertaling naar het Gebouwenregister wordt per huisnummer-gebouwkoppeling, en voor alle onderliggende subadressen, een gebouweenheid in dat gebouw aangemaakt. Er is dus sprake van een **vermenigvuldigingseffect**. Dit kan vermeden worden door het huisnummer in kwestie slechts aan één gebouw te koppelen in CRAB.
+Bij de doorvertaling naar het gebouwen- en adressenregister wordt per huisnummer-gebouwkoppeling, en voor alle onderliggende subadressen, een gebouweenheid in dat gebouw aangemaakt. Er is dus sprake van een **vermenigvuldigingseffect**. Dit kan vermeden worden door het huisnummer in kwestie slechts aan één gebouw te koppelen in CRAB. 
 
-In de toekomst zal de CRAB-beheerder in staat zijn de gebouweenheden direct met het juiste adres in het juiste gebouw te plaatsen.
+Vanaf december 2023 zal de CRAB-beheerder in staat zijn de gebouweenheden direct met het juiste adres in het juiste gebouw te plaatsen.
 
 </details>
 
@@ -221,9 +211,7 @@ In de toekomst zal de CRAB-beheerder in staat zijn de gebouweenheden direct met 
 
 <summary>Hoe wordt de status (levensloop) voor de verschillende objecten ingevuld?  </summary>
 
-De beoogde levensloop van de kernobjecten werd eerst uitgetekend i.s.m. de werkgroep-Gebouwenregister. In deze projectfase worden de data in het Gebouwenregister uitsluitend uit het CRAB gehaald (dat op zijn beurt ook gebouwgeometrieën uit het [GRB](https://www.vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/basiskaart-vlaanderen-grb) betrekt).
-
-Daarbij worden de CRAB-statussen als volgt omgezet naar het nieuwe statusverloop (de statussen worden toegelicht in de objectcataloog Gebouwenregister):
+De beoogde levensloop van de kernobjecten werd eerst uitgetekend i.s.m. de werkgroep. In deze projectfase worden de data in het gebouwen- en adressenregister uitsluitend uit het CRAB gehaald (dat op zijn beurt ook gebouwgeometrieën uit het [GRB](https://www.vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/basiskaart-vlaanderen-grb) betrekt). Daarbij worden de CRAB-statussen als volgt omgezet naar het nieuwe statusverloop (de statussen worden toegelicht in de objectcataloog gebouwen- en adressenregister):
 
 ### Gebouw
 | Informatie in CRAB | Status | 
@@ -236,7 +224,7 @@ Daarbij worden de CRAB-statussen als volgt omgezet naar het nieuwe statusverloop
 | Gebouw waarvoor einddatum ingevuld werd toen gebouw status ‘in gebruik’ of ‘buiten gebruik’ had| gehistoreerd | 
 | Gebouw waarvoor einddatum ingevuld werd toen gebouw status ‘vergunning verleend/aangevraagd’ of ‘in aanbouw’ had| niet gerealiseerd | 
 
-Merk op: de levensloop wordt beschreven vanuit het resultaat, niet vanuit de vergunningsprocedure (deze informatie hoort thuis in het Vergunningenregister) dan wel het gebruik (we spreken ons niet uit over het al dan niet in gebruik zijn van een gebouw: dit is thematische informatie). In het Gebouwenregister worden ook niet-vergunningsplichtige gebouwen opgenomen.
+Merk op: de levensloop wordt beschreven vanuit het resultaat, niet vanuit de vergunningsprocedure (deze informatie hoort thuis in het Vergunningenregister) dan wel het gebruik (we spreken ons niet uit over het al dan niet in gebruik zijn van een gebouw: dit is thematische informatie). In het gebouwen- en adressenregister worden ook niet-vergunningsplichtige gebouwen opgenomen.
 
 ### Gebouweenheid
 | **Informatie in CRAB** | **Status** | 
@@ -280,7 +268,7 @@ Merk op: de levensloop wordt beschreven vanuit het resultaat, niet vanuit de ver
 | Actueel object | gerealiseerd | 
 | Object waarvoor einddatum ingevuld werd | gehistoreerd | 
 
-In een latere projectfase zal de status rechtstreeks op het Gebouwenregister kunnen aangepast worden door decentrale beheerders. Daarbij wordt gestreefd naar een zo volledig mogelijk levensloop, waarbij het object in een zo vroeg mogelijk stadium in het register opgenomen wordt zodat het beschikbaar is voor thematische koppelingen.
+Vanaf december 2023 zal de status rechtstreeks op het gebouwen- en adressenregister kunnen aangepast worden door decentrale beheerders. Daarbij wordt gestreefd naar een zo volledig mogelijk levensloop, waarbij het object in een zo vroeg mogelijk stadium in het register opgenomen wordt zodat het beschikbaar is voor thematische koppelingen.
 
 
 </details>
