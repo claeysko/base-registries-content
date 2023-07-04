@@ -122,24 +122,26 @@ Het downloadbestand is een momentopname van alle data die het gebouwen- en adres
 | Bestandnaam |  Formaat .dbf | Formaat .prj | Formaat .shp | Formaat .shx | Extra informatie |
 |:-:|:-:|:-:|:-:|:-:|:-:|
 | Adres | x | x | x | x | Alle Vlaamse adressen met de bijhorende attributen|
-| Adres_metadata | x | \ | \ | \ | Laatste feed adres eventid waarvan kan gesynchroniseerd worden na uitlezen downloadbestand |
-| AdresGebouweenheidKoppelingen | x | \ | \ | \ | Alle |
-| AdresPerceelKoppelingen | x | \ | \ | \ | x |
+| Adres_metadata | x | \ | \ | \ | Bevat de parameter 'Latest_event_id'* |
+| AdresGebouweenheidKoppelingen | x | \ | \ | \ | Alle adressen die een koppeling hebben met een gebouweenheid|
+| AdresPerceelKoppelingen | x | \ | \ | \ | Alle adressen die een koppeling hebben met een perceel |
 | CrabHuisnummer | x | \ | \ | \ | Alle Vlaamse crabHuisnummers met hun bijhorende GRAR objectId |
 | CrabSubadres | x | \ | \ | \ | Alle Vlaamse crabSubadressen met hun bijhorende GRAR objectId  |
 | Gebouw | x | x | x | x | Alle Vlaamse gebouwen met de bijhorende attributen |
-| Gebouw_metadata | x | \ | \ | \ | Laatste feed gebouw eventid waarvan kan gesynchroniseerd worden na uitlezen downloadbestand |
+| Gebouw_metadata | x | \ | \ | \ |  Bevat de parameter 'Latest_event_id'* |
 | Gebouweenheid | x | x | x | x | Alle Vlaamse gebouweenheden met de bijhorende attributen |
-| Gebouweeneheid_metadata | x | \ | \ | \ | x |
+| Gebouweeneheid_metadata | x | \ | \ | \ |  Bevat de parameter 'Latest_event_id'* |
 | Gemeente | x | \ | \ | \ | Alle Belgische gemeenten met de bijhorende attributen|
-| Gemeente_metadata | x | \ | \ | \ | x |
+| Gemeente_metadata | x | \ | \ | \ |  Bevat de parameter 'Latest_event_id'* |
 | Perceel | x | \ | \ | \ | Alle Vlaamse percelen met de bijhorende attributen |
-| Perceel_metadata | x | \ | \ | \ | x |
+| Perceel_metadata | x | \ | \ | \ |  Bevat de parameter 'Latest_event_id'* |
 | Postinfo | x | \ | \ | \ | Alle postcodes aangelever door bPost |
-| Postinfo_metadata | x | \ | \ | \ | Laatste feed postinfo eventid waarvan kan gesynchroniseerd worden na uitlezen downloadbestand |
+| Postinfo_metadata | x | \ | \ | \ |  Bevat de parameter 'Latest_event_id'* |
 | Straatnaam | x | \ | \ | \ | Alle Belgische straatnamen met de bijhorende attributen|
-| Straatnaam_metadata | x | \ | \ | \ | Laatste feed straatnaam eventid waarvan kan gesynchroniseerd worden na uitlezen downloadbestand |
+| Straatnaam_metadata | x | \ | \ | \ |  Bevat de parameter 'Latest_event_id'* |
+* Om aan de slag te gaan met de feed endpoints moet dit momenteel van het eerste eventid tot het laatste eventid uitgelezen worden. Om dit te vermijden kan er vanaf nu vertrokken worden van het downloadbestand. Hiervoor zitten er bij het downoadbestand nieuwe files, namelijk ‘_metadata.dbf’ files. In deze files staat het ‘Latest_event_id’. Dit id wordt in de overeenkomstige feed endpoint meegegeven bij de parameter ‘from’ & dat is het startpunt vanaf waar de feed endpoints worden ingelezen op basis van het downloadbestand. 
 
+vb. In de file Adres_metadata.dbf staat er dat het Latest_event_id = 100 dan wordt er in de feed endpoint adressen het volgende meegegeven: https://api.basisregisters.vlaanderen.be/v1/feeds/adressen?embed=object,event&from=100.
 ### Handleiding
 Om meer te weten te komen over hoe het downloadbestand te gebruiken, kan deze handleiding gedownload worden: [Handleiding opsplitsen donwloadbestand gebouwen- en adressenregister](https://github.com/Informatievlaanderen/base-registries-content/files/11381530/CookBook_opsplitsen_downloadbestand_gebouwen-_en_adressenregister.docx).
 
