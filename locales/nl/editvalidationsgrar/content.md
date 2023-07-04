@@ -1,6 +1,6 @@
 ## Overzicht pagina
 * [Validaties van de edit API's van straatnamen](#straatnamen)
-* [Validaties van de edit API's van adressen](#adrerssen)
+* [Validaties van de edit API's van adressen](#adressen)
 * [Validaties van de edit API's van gebouwen](#gebouwen)
 * [Validaties van de edit API's van gebouweenheden](#gebouweenheden)
 * [Validaties van de edit API's van percelen](#percelen)
