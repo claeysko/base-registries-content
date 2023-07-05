@@ -49,8 +49,6 @@ Hieronder kan per register een lijst gevonden worden van welke beheeracties er a
 * Corrigeer de goedkeuring van een adres. (Decentrale bijwerker)
 * Corrigeer de afkeuring van een adres. (Decentrale bijwerker)
 * Corrigeer de opheffing van een adres. (Decentrale bijwerker)
-* Corrigeer de regularisatie van een adres. (Decentrale bijwerker)
-* Corrigeer de deregularisatie van een adres. (Decentrale bijwerker)
 * Wijzig de postcode van een adres. (Interne bijwerker)
 
 ### Gebouwen
