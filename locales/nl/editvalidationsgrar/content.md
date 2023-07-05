@@ -245,25 +245,6 @@
 |Adres in straatnaam met status afgekeurd/gehistoreerd|Ticketing error|AdresStraatnaamVoorgesteldOfInGebruik| Deze actie is enkel toegestaan binnen straatnamen met  status 'voorgesteld' of 'inGebruik'. |
 |Verwijderd adresId meegegeven |Ticketing error |VerwijderdAdres  |Verwijderd adres.  | 
   
-#### Corrigeer de regularisering van een adres
-  
-|Validatie|Soort error|ErrorCode|ErrorMessage|
-|:---:|:---:|:---:|:---:|
-|Ongeldig adresId meegegeven   |Error 400  |/ |De waarde 'adresId' is ongeldig.  |
-|Onbestaand adresId meegegeven  |Error 404 |/  |/  |
-|Status adresId afgekeurd/gehistoreerd|Ticketing error|AdresGehistoreerdOfAfgekeurd| Deze actie is enkel toegestaan op adressen met status 'voorgesteld' of 'inGebruik'. |
-|Verwijderd adresId meegegeven |Ticketing error |VerwijderdAdres  |Verwijderd adres.  |
-|Adres is een busnummer & mag niet voorlopen op status adres dat huisnummer is|Ticketing error |AdresHuisnummerVoorgesteldGehistoreerdOfAfgekeurd | Deze actie is enkel toegestaan op adressen waarbij het huisnummer de status ‘inGebruik’ heeft. |
-  
-#### Corrigeer de deregularisering van een adres
-
-|Validatie|Soort error|ErrorCode|ErrorMessage|
-|:---:|:---:|:---:|:---:|
-|Ongeldig adresId meegegeven   |Error 400  |/ |De waarde 'adresId' is ongeldig.  |
-|Onbestaand adresId meegegeven  |Error 404 |/  |/  |
-|Status adresId afgekeurd/gehistoreerd|Ticketing error|AdresGehistoreerdOfAfgekeurd| Deze actie is enkel toegestaan op adressen met status 'voorgesteld' of 'inGebruik'. |
-|Verwijderd adresId meegegeven |Ticketing error |VerwijderdAdres  |Verwijderd adres.  |  
-  
 #### Corrigeer de adrespositie van een adres
  
 |Validatie|Soort error|ErrorCode|ErrorMessage|
