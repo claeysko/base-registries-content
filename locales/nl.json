@@ -158,7 +158,7 @@
       {
         "title": "Flow statussen gebouwen- en adressenregister",
         "url": "/documentatie/statusflowgrar",
-        "hide": true
+        "hide": false
       },
       {
         "title": "Validaties edit API's van het gebouwen- en adressenregister",
