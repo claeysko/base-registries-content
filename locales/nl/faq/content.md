@@ -275,26 +275,6 @@ Vanaf december 2023 zal de status rechtstreeks op het gebouwen- en adressenregis
 
 <details>
 
-<summary>Wanneer krijgt een gebouweenheid status 'gehistoreerd'?</summary>
-
-- Zolang het gebouwen- en adressenregister gevoed wordt vanuit CRAB (situatie vandaag): samen met de historering (= invullen van einddatum) van het adres waarop de eenheid gebaseerd werd.
-- Van zodra er beheer is rechtstreeks op het gebouwen- en adressenregister (vanaf december 2023) zal de beheerder kunnen oordelen dat een gebouweenheid **niet meer actueel is of niet meer in die afbakening bestaat** en dus gehistoreerd moet worden.
-Worden bv. twee appartementen samengevoegd, dan zal de decentrale beheerder de twee corresponderende gebouweenheden op ‘gehistoreerd’ zetten en een nieuwe gebouweenheid met status ‘gerealiseerd’ aanmaken. 
-
-</details>
-
-
-<details>
-
-<summary>Wanneer krijgt een gebouw status 'gehistoreerd'? </summary>
-
-Een gebouw krijgt status ‘gehistoreerd’ wanneer het **gesloopt/samengevoegd/gesplitst werd of afgebrand is.** De levensloop van het gebouw wordt dan beëindigd. Een ander gebouw dat in de plaats komt krijgt een andere objectidentificator en dus aparte levensloop.
-**Een object dat gehistoreerd werd, wordt niet meer ‘tot leven gewekt’** met dezelfde objectidentificator. Dit geldt dus ook voor een gebouw.
-</details>
-
-
-<details>
-
 <summary>Welke objecten kunnen een adres dragen? </summary>
 
 Er worden vier adresseerbare objecten onderscheiden:
