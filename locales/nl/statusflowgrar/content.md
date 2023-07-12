@@ -18,7 +18,7 @@ Hieronder staat een overzicht per objecttype wat de flow is dat een object kan/m
 
 #### Betekenis adresstatussen
 -	**Voorgesteld**: Wanneer er een adres wordt ingevoerd nog vóór er een vergunning met voorstel tot adressering werd verleend door de gemeenteraad of vooraleer het op het terrein in gebruik is, dan wordt het adres door de beheerder voorgesteld. 
--	**InGebruik**: Wanneer het adres voorkomt op een goedgekeurd officieel document van de gemeenteraad of in gebruik is op het terrein, dan wordt het adres door de beheerder goedgekeurd.
+-	**InGebruik**: Wanneer het adres formeel werd goedgekeurd door de gemeenteraad of voorkomt op een goedgekeurd officieel document en in gebruik is op het terrein, dan wordt het adres door de beheerder goedgekeurd.
 -	**Afgekeurd**: Wanneer het adres werd ingevoerd nog vóór er een vergunning met voorstel tot adressering werd verleend door de gemeenteraad en uiteindelijk besluit de gemeenteraad dit adres niet goed te keuren, dan wordt dit adres door de beheerder afgekeurd.
 -	**Gehistoreerd**: Wanneer de gemeenteraad beslist om het adres op te heffen omdat het adres niet langer in gebruik is, dan gaat de beheerder het adres opheffen
 -	**Verwijderd**: Wanneer de beheerder het adres foutief heeft ingevoerd, dan moet dit adres verwijderd worden. 
