@@ -117,6 +117,10 @@ De feed bevat een aantal velden waarin een timestamp staat. Hieronder staat de b
 * `<Entry> <Updated>` : Tijdstip waarop het event zich voordeed.
 * `<Entry> <Published>` : Tijdstip waarop de eerste versie van het object aangeboden werd.
 
+### Hoeveel events worden er getoond? 
+
+Default als de parameter `limit` niet meegegeven is, zitten er maximum 100 events in de lijst. Wanneer de parameter `limit` is meegegeven, kan er gekozen worden wat het maximum aantal events is dat kan worden teruggegeven. Dit kan van waarde 0 tot en met 500 gaan. Geeft u een getal mee hoger dan 500 dan zullen er slechts maximum 500 events getoond worden. 
+
 ## Downloadbestand {#downloadbestandgrar}
 
 Het downloadbestand is een momentopname van alle data die het gebouwen- en adressenregister bevat op die moment. Dit bestand kan dagelijks gedownload worden via deze link: https://api.basisregisters.vlaanderen.be/v2/extract. Wanneer de generatie die dag niet gelukt is dan zal er een downloadbestand gedownload worden van de laatste datum waarop de generatie gelukt is. Het downloadbestand is een zip file met daarin een aantal bestanden van verschillende formaten. De formaten die hierin kunnen teruggevonden worden zijn: .dbf, .shp, .prj & .shx. 
