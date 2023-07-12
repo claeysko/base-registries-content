@@ -50,6 +50,10 @@ Meer informatie over OSLO kan u hier vinden: https://overheid.vlaanderen.be/prod
 
 In de browser moet een accept header meegegeven worden bij de request. In Chrome is dit door middel van een extensie. Een voorbeeld hiervan is ‘NoRefer’. In het witte scherm dat verschijnt na het klikken op het extensie icoon moet het volgende meegegeven worden: 'accept: application/ld+json'. Daarna wordt de pagina best opnieuw geladen.
 
+### Hoeveel objecten worden er getoond in de lijst endpoints? 
+
+Default als de parameter `limit` niet meegegeven is, zitten er maximum 100 objecten in de lijst. Wanneer de parameter `limit` is meegegeven, kan er gekozen worden wat het maximum aantal objecten is dat kan worden teruggegeven. Dit kan van waarde 0 tot en met 500 gaan. Geeft u een getal mee hoger dan 500 dan zullen er slechts maximum 500 objecten getoond worden. 
+
 ## Feed endpoints {#feedendpointsgrar}
 
 De feed endpoints van het gebouwen- en adressenregister laten toe om alle wijzigingen per objecttype of ‘resource’ op te vragen. Deze maken gebruik van Atom als standaard. 
