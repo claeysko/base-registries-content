@@ -134,6 +134,21 @@ Hiervoor zijn 2 aparte API’s gemaakt. De API ‘Corrigeer de postcode van een 
 
 Wanneer er een (de)regularisatie is gebeurd van een adres, maar dit moet gewijzigd worden of was verkeerd ingevoerd dan kan u gebruik maken van de edit endpoints ‘(De)Regulariseer een adres’.  
 
+## Werking edit functie ‘Heradresseren van adressen binnen éénzelfde straatnaam of naar een andere straatnaam’
+
+Heradresseren van adressen binnen éénzelfde straatnaam of naar een andere straatnaam is een complexe beheersactie, dit wilt zeggen dat het verschillende acties gaat combineren. Deze edit API wordt het best aangeroepen wanneer er een hernummering van adressen moet gebeuren binnen éénzelfde of een andere straatnaam. Dit houdt in dat aan een adrespositie een ander adres toegekend wordt. 
+
+### Wat wordt er van het oude adres overgenomen? 
+De geometrie, positieGeometrieMethode, positieSpecificatie, adresStatus en de gekoppelde gebouweenheden en percelen. 
+
+### Tip
+•	Als de heradressering van adressen naar een andere straatnaam wordt gedaan dan moet de nieuwe straatnaam al bestaan. 
+•	Deze actie wordt best niet gecombineerd binnen de reguliere wijzigingsacties van een adres. Aangezien we spreken over een complexe beheersactie zien we dit voor een gebruiker ook als een aparte actie.
+
+### Voorbeeld
+
+![image](https://github.com/Informatievlaanderen/base-registries-content/assets/49196256/fb699032-b7ff-45be-8bb7-7ecf718d0974)
+
 ## Validaties edit endpoint {#validatieseditendpoints}
  
 Zie https://basisregisters.staging-vlaanderen.be/documentatie/editendpointsgrar/validaties.
