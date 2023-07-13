@@ -142,8 +142,8 @@ Heradresseren van adressen binnen éénzelfde straatnaam of naar een andere stra
 De geometrie, positieGeometrieMethode, positieSpecificatie, adresStatus en de gekoppelde gebouweenheden en percelen. 
 
 ### Tip
-•	Als de heradressering van adressen naar een andere straatnaam wordt gedaan dan moet de nieuwe straatnaam al bestaan. 
-•	Deze actie wordt best niet gecombineerd binnen de reguliere wijzigingsacties van een adres. Aangezien we spreken over een complexe beheersactie zien we dit voor een gebruiker ook als een aparte actie.
+*	Als de heradressering van adressen naar een andere straatnaam wordt gedaan dan moet de nieuwe straatnaam al bestaan. 
+*	Deze actie wordt best niet gecombineerd binnen de reguliere wijzigingsacties van een adres. Aangezien we spreken over een complexe beheersactie zien we dit voor een gebruiker ook als een aparte actie.
 
 ### Voorbeeld
 
