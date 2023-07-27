@@ -91,7 +91,7 @@ Het is de bedoeling dat het downloadbestand een dataproduct gaat worden.
 
 <summary> Moet ik nu al overschakelen naar de v2 endpoints van het gebouwen- en adressenregister? </summary>
 
-Dit wordt sterk aangeraden. Vanaf ten vroegste 1 november 2023 zullen de v1 endpoints niet meer up-to-date zijn als gevolg van de migratie van CRAB naar het Gebouwen- en Adressenregister. Om ervoor te zorgen dat u de meest recente gegevens blijft ontvangen, is het dus belangrijk om vóór deze datum over te stappen naar de nieuwe v2 endpoints. We begrijpen dat het migratieproces enige tijd kan vergen. Daarom hebben we besloten om de v1 endpoints **tot 1 maart 2024** beschikbaar te houden, zodat u voldoende tijd heeft om over te stappen naar de nieuwe v2 endpoints.
+Dit wordt sterk aangeraden. Vanaf ten laatste 1 november 2023 zullen de v1 endpoints niet meer up-to-date zijn als gevolg van de migratie van CRAB naar het Gebouwen- en Adressenregister. Om ervoor te zorgen dat u de meest recente gegevens blijft ontvangen, is het dus belangrijk om vóór deze datum over te stappen naar de nieuwe v2 endpoints. We begrijpen dat het migratieproces enige tijd kan vergen. Daarom hebben we besloten om de v1 endpoints **tot 1 maart 2024** beschikbaar te houden, zodat u voldoende tijd heeft om over te stappen naar de nieuwe v2 endpoints.
 </details>
 
 
