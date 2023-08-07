@@ -143,6 +143,12 @@
         "subtitle": "Documentatie van de basisregisters endpoints.",
         "url": "https://docs.basisregisters.dev-vlaanderen.be/docs/api-documentation.html#tag/api-documentation.html",
         "hide": false
+      },
+     {
+        "title": "Geo- en Open Data Diensten - kennisbank",
+        "subtitle": "Confluencepagina met informatie over geo- en open data diensten",
+        "url": "https://vlaamseoverheid.atlassian.net/wiki/spaces/AGB/overview?homepageId=1198687351",
+        "hide": false
       }
     ]
   },
