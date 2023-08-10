@@ -586,7 +586,8 @@
         "import": false,
         "syndication": false,
         "producer": true,
-        "consumer": false
+        "consumer": false,
+        "importerGrb": false
       },
       "postal": {
         "title": "Postinfo",
@@ -596,7 +597,8 @@
         "import": false,
         "syndication": true,
         "producer": true,
-        "consumer": false
+        "consumer": false,
+        "importerGrb": false
       },
       "streetname": {
         "title": "Straatnamen",
@@ -606,7 +608,8 @@
         "import": false,
         "syndication": true,
         "producer": true,
-        "consumer": true
+        "consumer": true,
+        "importerGrb": false
       },
       "address": {
         "title": "Adressen",
@@ -616,7 +619,8 @@
         "import": false,
         "syndication": true,
         "producer": true,
-        "consumer": true
+        "consumer": true,
+        "importerGrb": false
       },
       "building": {
         "title": "Gebouwen & gebouweenheden",
@@ -626,7 +630,8 @@
         "import": false,
         "syndication": true,
         "producer": true,
-        "consumer": true
+        "consumer": true,
+        "importerGrb": false
       },
       "parcel": {
         "title": "Percelen",
@@ -636,7 +641,8 @@
         "import": false,
         "syndication": true,
         "producer": true,
-        "consumer": true
+        "consumer": true,
+        "importerGrb": false
       },
       "road": {
         "title": "Wegen",
@@ -646,7 +652,8 @@
         "import": false,
         "syndication": true,
         "producer": false,
-        "consumer": false
+        "consumer": false,
+        "importerGrb": false
       }
     }
   },
