@@ -642,7 +642,7 @@
         "syndication": true,
         "producer": true,
         "consumer": true,
-        "importerGrb": false
+        "importerGrb": true
       },
       "road": {
         "title": "Wegen",
