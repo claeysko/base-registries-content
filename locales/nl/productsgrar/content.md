@@ -28,7 +28,7 @@ De read endpoints zijn anoniem raadpleegbaar echter is er een beperking aanwezig
 
 Om dus optimaal gebruik te maken van de endpoints vraagt u best een API key aan. Dit kan door uw gegevens in volgende link achter te laten: [Vraag hier uw API key aan][10]. U kan deze API key op 2 manieren meegeven:
 * Via de header x-api-key.
-* In de URL. Bijvoorbeeld: https://api.basisregisters.dev-vlaanderen.be/v2/adressen?apikey={apikey} waarbij {apikey} vervangen wordt door de unieke code van uw API key.
+* In de URL. Bijvoorbeeld: https://api.basisregisters.staging-vlaanderen.be/v2/adressen?apikey={apikey} waarbij {apikey} vervangen wordt door de unieke code van uw API key.
 
 ### V1 vs v2
 Voor de read endpoints zijn er zowel v1 als v2 endpoints beschikbaar. De v2 read endpoints zijn een vernieuwde versie van de v1 read endpoints en zijn conform aan het OSLO-model. Om duidelijk aan te geven of het een v1 of een v2 endpoint is, hebben we achteraan de titels gewerkt met (v1) voor versie 1 en (v2) voor versie 2. De v1 endpoints zullen ten laatste vanaf 1 november 2023 niet meer up-to-date zijn en vanaf 1 maart 2024 niet meer beschikbaar zijn. Direct de v2 endpoints implementeren wordt sterk aangeraden. 
