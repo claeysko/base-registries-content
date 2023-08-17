@@ -102,7 +102,7 @@ In de feed endpoints kan u alle eventids terugvinden van alle aangeboden objectt
 ### API key verplicht
 Om de Feeds te gebruiken is het verplicht om een API key mee te geven. Als u dit namelijk niet doet dan krijgt u een errormelding 401 als response terug. Er zijn 2 mogelijkheden om de API key mee te geven:
 * Via de header x-api-key.
-* In de URL. Bijvoorbeeld: https://api.basisregisters.dev-vlaanderen.be/v2/feeds/adressen?apikey={apikey} waarbij {apikey} vervangen wordt door de unieke code van uw API key.
+* In de URL. Bijvoorbeeld: https://api.basisregisters.vlaanderen.be/v2/feeds/adressen?apikey={apikey} waarbij {apikey} vervangen wordt door de unieke code van uw API key.
 [Hier][10] kan u een API key aanvragen.
 
 ### Provenance
