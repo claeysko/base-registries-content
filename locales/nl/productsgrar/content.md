@@ -60,8 +60,8 @@ De feed endpoints van het gebouwen- en adressenregister laten toe om alle wijzig
 
 ### Documentatie
 
-Elk feed endpoint is ook gedocumenteerd. Deze documentatie kan [hier](https://docs.basisregisters.dev-vlaanderen.be/docs/api-documentation.html#tag/Feeds) geraadpleegd worden.
-Een overzicht van alle mogelijke business events en de betekenis van de attributen onder het blokje `<event>` kan [hier](https://api.basisregisters.dev-vlaanderen.be/v2/info/events?tags=sync) gevonden worden.
+Elk feed endpoint is ook gedocumenteerd. Deze documentatie kan [hier](https://docs.basisregisters.staging-vlaanderen.be/docs/api-documentation.html#tag/Feeds) geraadpleegd worden.
+Een overzicht van alle mogelijke business events en de betekenis van de attributen onder het blokje `<event>` kan [hier](https://api.basisregisters.staging-vlaanderen.be/v2/info/events?tags=sync) gevonden worden.
 
 ### Beoogde toepassing
 
@@ -102,7 +102,7 @@ In de feed endpoints kan u alle eventids terugvinden van alle aangeboden objectt
 ### API key verplicht
 Om de Feeds te gebruiken is het verplicht om een API key mee te geven. Als u dit namelijk niet doet dan krijgt u een errormelding 401 als response terug. Er zijn 2 mogelijkheden om de API key mee te geven:
 * Via de header x-api-key.
-* In de URL. Bijvoorbeeld: https://api.basisregisters.dev-vlaanderen.be/v2/feeds/adressen?apikey={apikey} waarbij {apikey} vervangen wordt door de unieke code van uw API key.
+* In de URL. Bijvoorbeeld: https://api.basisregisters.staging-vlaanderen.be/v2/feeds/adressen?apikey={apikey} waarbij {apikey} vervangen wordt door de unieke code van uw API key.
 [Hier][10] kan u een API key aanvragen.
 
 ### Provenance
