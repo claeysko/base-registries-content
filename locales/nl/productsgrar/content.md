@@ -60,8 +60,8 @@ De feed endpoints van het gebouwen- en adressenregister laten toe om alle wijzig
 
 ### Documentatie
 
-Elk feed endpoint is ook gedocumenteerd. Deze documentatie kan [hier](https://docs.basisregisters.dev-vlaanderen.be/docs/api-documentation.html#tag/Feeds) geraadpleegd worden.
-Een overzicht van alle mogelijke business events en de betekenis van de attributen onder het blokje `<event>` kan [hier](https://api.basisregisters.dev-vlaanderen.be/v2/info/events?tags=sync) gevonden worden.
+Elk feed endpoint is ook gedocumenteerd. Deze documentatie kan [hier](https://docs.basisregisters.vlaanderen.be/docs/api-documentation.html#tag/Feeds) geraadpleegd worden.
+Een overzicht van alle mogelijke business events en de betekenis van de attributen onder het blokje `<event>` kan [hier](https://api.basisregisters.vlaanderen.be/v2/info/events?tags=sync) gevonden worden.
 
 ### Beoogde toepassing
 
