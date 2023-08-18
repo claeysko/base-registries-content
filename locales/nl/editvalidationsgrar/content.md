@@ -96,6 +96,7 @@
 |Status straatnaamId gehistoreerd/afgekeurd|Ticketing error|StraatnaamGehistoreerdOfAfgekeurd| Deze actie is enkel toegestaan op straatnamen met status 'voorgesteld' of 'inGebruik'. |
 |Straatnaam bestaat in gemeente met status voorgesteld/inGebruik |Ticketing error |StraatnaamBestaatReedsInGemeente   | Straatnaam 'straatnaam' bestaat reeds in de gemeente. |
 |De meegegeven taal is geen officiële of faciliteitentaal van de gemeente|Ticketing error | StraatnaamTaalNietInOfficieleOfFaciliteitenTaal| 'Straatnamen' kunnen enkel voorkomen in de officiële of faciliteitentaal van de gemeente.|
+|Nieuwe straatnaam te verschillend van bestaande straatnaam |Ticketing error |StraatnaamCorrectieOngeldig   | Deze straatnaamcorrectie is niet toegelaten. |
 |Verwijderd straatnaamId meegegeven |Ticketing error |VerwijderdeStraatnaam  |Verwijderde straatnaam.  |
   
 #### Corrigeer de homoniemtoevoeging van een straatnaam 
