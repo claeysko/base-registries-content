@@ -13,6 +13,7 @@ Deze informatie kan op verschillende manieren geraadpleegd worden:
 * [Via de feed endpoints](#feedendpointsgrar)
 * [Via het downloadbestand](#downloadbestandgrar)
 * [Via de WMS, WFS & OGC API features](#wmswfsogcgrar)
+* [Via de geolocation service](#geolocationservice)
 * [Overige producten](#andereintegratiesgrar)
 
 ## Read endpoints {#readendpointsgrar}
@@ -182,6 +183,9 @@ Alle URL's van de WMS'en, WFS'en en OGC API features van het gebouwen- en adress
 * [OGC API features gebouwenregister][7]
 * [OGC API features adressenregister][8]
 
+## Geolocation service {#geolocationservice}
+
+Meer informatie kan u op deze pagina terugvinden: [Geolocation][11].
 
 ## Overige producten {#andereintegratiesgrar}
 
@@ -197,3 +201,4 @@ Er zijn nog een aantal andere technische implementaties mogelijk met data van he
 [8]:https://www.vlaanderen.be/datavindplaats/catalogus/ogc-api-features-adressenregister
 [9]:https://ogcapi.ogc.org/features/
 [10]:https://dynamicforms.crmiv.vlaanderen.be/DynamicForms/Page/Show/CfDJ8M4Eu9v84l9JmW3p7WGylS-u2ToCLC5KvqQZmZ4G99X5TBULO4n0LCDpm7870eDUOk90hogqVcE7BCVQf2u_4WlsZ7B8friBrkyuAqmXYpIX_BzvQVVo8eUZyNd-njc33Y-Z-B87y03Y2Jgukp2AN5U93jT1Xv2l0afgvenLD9k0fasSMJkt4uNzKmlr_gILGrOy%2FJSqnRom_MLu0h7sALJ8uNvPywCMsZ1zy5Lal4h63?path=APIKey-aanvraag
+[11]:https://www.vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/geografische-webdiensten/ons-api-aanbod/geolocation-service
