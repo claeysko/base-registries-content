@@ -54,3 +54,15 @@
 |:---:|:---:|:---:|:---:|
 |Geometriemethode <> ingeschetst |Error 400 |GeometriemethodeNietIngeschetst |De geometriemethode van dit wegsegment komt niet overeen met 'ingeschetst'. |
 |Wegsegment bestaat niet of werd verwijderd|Error 404 |/ |/ |
+
+### Wijzig een attribuutwaarde voor één of meerdere wegsegmenten
+
+|Validatie|Soort error|ErrorCode|ErrorMessage|
+|:---:|:---:|:---:|:---:|
+|Wegsegment bestaat niet of werd verwijderd |Error 400 |NotFound |Onbestaande of verwijderde wegsegmenten gevonden 'waarde'.|
+|Ongeldige wegbeheerder |Error 400 |WegbeheerderNietCorrect |Wegbeheerder is foutief. 'waarde' is geen geldige waarde. |
+|Ongeldige wegsegmentstatus |Error 400 |WegsegmentStatusNietCorrect |Wegsegment status is foutief. 'waarde' is geen geldige waarde. |
+|Ongeldige wegcategorie |Error 400 |WegcategorieNietCorrect |Wegcategorie is foutief. 'waarde' is geen geldige waarde. |
+|Ongeldige toegangsbeperking |Error 400 |ToegangsbeperkingNietCorrect |Toegangsbeperking is foutief. 'waarde' is geen geldige waarde. |
+|Ongeldige morfologische wegklasse |Error 400 |MorfologischeWegklasseNietCorrect |Morfologische wegklasse is foutief. 'waarde' is geen geldige waarde. |
+
