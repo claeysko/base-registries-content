@@ -328,7 +328,7 @@ Waar de toepassingsgerichte positie de enige of meest kwalitatieve positie voor 
 
 ![image](https://github.com/Informatievlaanderen/base-registries-content/assets/49196256/88364e4e-fcae-4a90-9d1a-ca711ea75174)
 
-U kan op basis van de verschillende read endpoints (https://basisregisters.dev-vlaanderen.be/producten/grar#readendpointsgrar) een lijst tonen met gegevens in.
+U kan op basis van de verschillende read endpoints (https://basisregisters.vlaanderen.be/producten/grar#readendpointsgrar) een lijst tonen met gegevens in.
 - Stap 1: Vraag een lijst met gemeenten op​.
 - Stap 2: Vraag een lijst met postinfo over postcodes op binnen de gekozen gemeente.​
 - Stap 3: Vraag een lijst met straatnamen op binnen de gekozen gemeente​.
