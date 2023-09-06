@@ -326,7 +326,14 @@ Waar de toepassingsgerichte positie de enige of meest kwalitatieve positie voor 
 
 <summary>Hoe kan ik keuzelijsten voor adresformulieren creëren?</summary>
 
-  Bekijk [hier](https://assets.vlaanderen.be/image/upload/w_600,c_fill/v1678267926/Basisregisters_-_Flow_keuzelijsten_adresformulieren_qtpbks.jpg) het te volgen stappenplan.
+![image](https://github.com/Informatievlaanderen/base-registries-content/assets/49196256/88364e4e-fcae-4a90-9d1a-ca711ea75174)
+
+U kan op basis van de verschillende read endpoints (https://basisregisters.dev-vlaanderen.be/producten/grar#readendpointsgrar) een lijst tonen met gegevens in.
+- Stap 1: Vraag een lijst met gemeenten op​.
+- Stap 2: Vraag een lijst met postinfo over postcodes op binnen de gekozen gemeente.​
+- Stap 3: Vraag een lijst met straatnamen op binnen de gekozen gemeente​.
+- Stap 4: Vraag een lijst met adressen op binnen de gekozen gemeente & straatnaam.​
+- Stap 5: Vraag een adres op.
 
 </details>
 
