@@ -626,9 +626,9 @@
         "title": "Gebouwen & gebouweenheden",
         "projections": true,
         "feed": true,
-        "cache": false,
+        "cache": true,
         "import": false,
-        "syndication": true,
+        "syndication": false,
         "producer": true,
         "consumer": true,
         "importerGrb": false
@@ -639,7 +639,7 @@
         "feed": true,
         "cache": true,
         "import": false,
-        "syndication": true,
+        "syndication": false,
         "producer": true,
         "consumer": true,
         "importerGrb": true
