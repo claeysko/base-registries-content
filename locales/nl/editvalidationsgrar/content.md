@@ -129,7 +129,7 @@
 |Ongeldig waarde bij positie meegegeven   |Error 400  |AdresPositieformaatValidatie |De positie is geen geldige gml-puntgeometrie.   |
 |Postcode ligt niet in de gemeente van het adres |Ticketing error |AdresPostinfoNietInGemeente  |De ingevoerde postcode wordt niet gebruikt binnen deze gemeente.  | 
 |Wanneer het huisnummer/busnummer al bestaat|Ticketing error |AdresBestaandeHuisnummerBusnummerCombinatie  | Deze combinatie huisnummer-busnummer bestaat reeds voor de opgegeven straatnaam.   |  
-|Adres met busnummer meegeven, maar geen adres met huisnummer aanwezig |Ticketing error |AdresActiefHuisNummerNietGekendValidatie | Er bestaat geen actief adres zonder busnummer voor straatnaam 'straatnaamId' en huisnummer 'huisnummer'.   | 
+|Adres met busnummer meegeven, maar geen adres met huisnummer aanwezig |Ticketing error |AdresActiefHuisNummerNietGekendValidatie | Er bestaat geen actief adres zonder busnummer (status voorgesteld of inGebruik) voor straatnaam 'straatnaamId' en huisnummer 'huisnummer'.   | 
 |Meegegeven straatnaam heeft status afgekeurd/gehistoreerd |Ticketing error |AdresStraatnaamGehistoreerdOfAfgekeurd  |De straatnaam is gehistoreerd of afgekeurd.   | 
 |Meegegeven postinfoId is verschillend tov postinfoId van het adres met huisnummer |Ticketing error |AdresPostinfoNietHetzelfdeAlsHuisnummer  | De ingevoerde postcode komt niet overeen met de postcode van het huisnummer.   | 
  
