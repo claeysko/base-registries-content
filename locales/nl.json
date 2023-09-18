@@ -603,7 +603,7 @@
         "import": true,
         "syndication": true,
         "producer": true,
-        "consumer": true,
+        "consumer": false,
         "importerGrb": false
       },
       "address": {
@@ -614,7 +614,7 @@
         "import": true,
         "syndication": true,
         "producer": true,
-        "consumer": true,
+        "consumer": false,
         "importerGrb": false
       },
       "building": {
@@ -625,7 +625,7 @@
         "import": true,
         "syndication": true,
         "producer": true,
-        "consumer": true,
+        "consumer": false,
         "importerGrb": false
       },
       "parcel": {
@@ -636,7 +636,7 @@
         "import": true,
         "syndication": true,
         "producer": true,
-        "consumer": true,
+        "consumer": false,
         "importerGrb": false
       },
       "road": {
