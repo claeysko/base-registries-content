@@ -132,7 +132,7 @@ Er zijn in totaal 4 downloadbestanden van het gebouwen- en adressenregister:
 
 Deze bestanden bevatten data over heel Vlaanderen, daarom is het niet mogelijk om enkel de data van een bepaalde gemeente op te vragen. Ook is het niet mogelijk om het downloadproduct van het gebouwen- en adressenregister als verschilbestand op te vragen. 
 
-In de toekomst zullen deze bestanden dagelijks gedownload kunnen worden, maar om al kennis te maken met deze nieuwe downloadproducten zal het momenteel al 1 keer per maand beschikbaar worden gesteld via de downloadproducten. Via deze URL https://api.basisregisters.vlaanderen.be/v2/extract kan u al elke dag het volledige gebouwen- en adressenregister downloaden. 
+In de toekomst zullen deze bestanden dagelijks gedownload kunnen worden, maar om al kennis te maken met deze nieuwe downloadproducten zal het momenteel al 1 keer per maand beschikbaar worden gesteld via de downloadproducten. Via deze URL https://api.basisregisters.dev-vlaanderen.be/v2/extract kan u al elke dag het volledige gebouwen- en adressenregister downloaden. 
 
 Wanneer de generatie die dag niet gelukt is dan zal er een downloadbestand gedownload worden van de laatste datum waarop de generatie gelukt is. De downloadbestanden zijn een zip file met daarin een aantal bestanden van verschillende formaten. De formaten die hierin kunnen teruggevonden worden zijn: .dbf, .shp, .prj & .shx. 
 
