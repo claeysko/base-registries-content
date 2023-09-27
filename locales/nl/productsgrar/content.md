@@ -11,7 +11,7 @@ Voor straatnamen, adressen, gebouwen & gebouweneheden is het gebouwen- en adress
 Deze informatie kan op verschillende manieren geraadpleegd worden:
 * [Via de read endpoints](#readendpointsgrar)
 * [Via de feed endpoints](#feedendpointsgrar)
-* [Via het downloadbestand](#downloadbestandgrar)
+* [Via de downloadbestanden](#downloadbestandgrar)
 * [Via de WMS, WFS & OGC API features](#wmswfsogcgrar)
 * [Via de Geolocation service](#geolocationservice)
 * [Overige producten](#andereintegratiesgrar)
@@ -122,11 +122,21 @@ De feed bevat een aantal velden waarin een timestamp staat. Hieronder staat de b
 
 Default als de parameter `limit` niet meegegeven is, zitten er maximum 100 events in de lijst. Wanneer de parameter `limit` is meegegeven, kan er gekozen worden wat het maximum aantal events is dat kan worden teruggegeven. Dit kan van waarde 0 tot en met 500 gaan. Geeft u een getal mee hoger dan 500 dan zullen er slechts maximum 500 events getoond worden. 
 
-## Downloadbestand {#downloadbestandgrar}
+## Downloadbestanden {#downloadbestandgrar}
 
-Het downloadbestand is een momentopname van alle data die het gebouwen- en adressenregister bevat op die moment. Dit bestand kan dagelijks gedownload worden via deze link: https://api.basisregisters.vlaanderen.be/v2/extract. Wanneer de generatie die dag niet gelukt is dan zal er een downloadbestand gedownload worden van de laatste datum waarop de generatie gelukt is. Het downloadbestand is een zip file met daarin een aantal bestanden van verschillende formaten. De formaten die hierin kunnen teruggevonden worden zijn: .dbf, .shp, .prj & .shx. 
+Er zijn in totaal 4 downloadbestanden van het gebouwen- en adressenregister:
+- 1 met alle data van het gebouwen- en adressenregister: https://download.vlaanderen.be/product/10142-gebouwen-en-adressenregister.
+- 1 met alle straatnamen van het gebouwen- en adressenregister: https://download.vlaanderen.be/product/10143-gebouwen-en-adressenregister-straatnamen.
+- 1 met alle adressen van het gebouwen- en adressenregister: https://download.vlaanderen.be/product/10145-gebouwen-en-adressenregister-adressen.
+- 1 met alle adressen en adreskoppelingen van het gebouwen- en adressenregister: https://download.vlaanderen.be/product/10144-gebouwen-en-adressenregister-adreskoppelingen.
 
-### Inhoud downloadbestand
+Deze bestanden bevatten data over heel Vlaanderen, daarom is het niet mogelijk om enkel de data van een bepaalde gemeente op te vragen. Ook is het niet mogelijk om het downloadproduct van het gebouwen- en adressenregister als verschilbestand op te vragen. 
+
+In de toekomst zullen deze bestanden dagelijks gedownload kunnen worden, maar om al kennis te maken met deze nieuwe downloadproducten zal het momenteel al 1 keer per maand beschikbaar worden gesteld via de downloadproducten. Via deze URL https://api.basisregisters.vlaanderen.be/v2/extract kan u al elke dag het volledige gebouwen- en adressenregister downloaden. 
+
+Wanneer de generatie die dag niet gelukt is dan zal er een downloadbestand gedownload worden van de laatste datum waarop de generatie gelukt is. De downloadbestanden zijn een zip file met daarin een aantal bestanden van verschillende formaten. De formaten die hierin kunnen teruggevonden worden zijn: .dbf, .shp, .prj & .shx. 
+
+### Inhoud volledig downloadbestand gebouwen- en adressenregister
 
 | Bestandnaam |  Formaat .dbf | Formaat .prj | Formaat .shp | Formaat .shx | Inhoud bestand |
 |:-:|:-:|:-:|:-:|:-:|:-:|
@@ -149,7 +159,9 @@ Het downloadbestand is een momentopname van alle data die het gebouwen- en adres
 | Straatnaam | x | \ | \ | \ | Alle Belgische straatnamen met de bijhorende attributen|
 | Straatnaam_metadata | x | \ | \ | \ |  Bevat de parameter 'Latest_event_id' voor feed straatnamen (1) |
 
-(1) Om aan de slag te gaan met de feed endpoints moet dit momenteel van het eerste eventid tot het laatste eventid uitgelezen worden. Om dit te vermijden kan er vanaf nu vertrokken worden van het downloadbestand. Hiervoor zitten er bij het downoadbestand nieuwe files, namelijk ‘_metadata.dbf’ files. In deze files staat het ‘Latest_event_id’. Dit id wordt in de overeenkomstige feed endpoint meegegeven bij de parameter ‘from’ & dat is het startpunt vanaf waar de feed endpoints worden ingelezen op basis van het downloadbestand.
+(1) Om aan de slag te gaan met de feed endpoints moet dit momenteel van het eerste eventid tot het laatste eventid uitgelezen worden. Om dit te vermijden kan er vanaf nu vertrokken worden van het downloadbestand gebouwen- en adressenregister. Hiervoor zitten er bij het downoadbestand ‘_metadata.dbf’ files. In deze files staat het ‘Latest_event_id’. Dit id wordt in de overeenkomstige feed endpoint meegegeven bij de parameter ‘from’ & dat is het startpunt vanaf waar de feed endpoints worden ingelezen op basis van het downloadbestand.
+
+vb. In de file Adres_metadata.dbf staat er dat het Latest_event_id = 100 dan wordt er in de feed endpoint adressen het volgende meegegeven: https://api.basisregisters.vlaanderen.be/v2/feeds/adressen?embed=object,event&from=100.
 
 ### Handleiding
 Om meer te weten te komen over hoe het downloadbestand te gebruiken, kan deze handleiding gedownload worden: [Handleiding opsplitsen donwloadbestand gebouwen- en adressenregister](https://github.com/Informatievlaanderen/base-registries-content/files/11381530/CookBook_opsplitsen_downloadbestand_gebouwen-_en_adressenregister.docx).
@@ -160,6 +172,7 @@ Om aan de slag te gaan met de feed endpoints van het gebouwen- en adressenregist
 
 ### Bestanden crabHuisnummer & crabSubadres
 In het downloadbestand zijn er ook 2 bestanden te vinden die de mapping maken tussen CRAB & het gebouwen- en adressenregister, namelijk crabHuisnummer.dbf & crabSubadres.dbf. De adres objectid's die in het gebouwen- en adressenregister gebruikt worden zijn andere objectId's dan in het CRAB. Omdat er moet worden overgeschakeld van CRAB naar het gebouwen- en adressenregister, werden deze bestanden voorzien zodat er vlot kan overgeschakeld worden. De laatste versie van deze CRAB objectId's zal nog worden bijwerkt tot en met 1 november 2023. Deze bestanden zullen nog bijgehouden worden na 1 november 2022, maar zullen geen updates meer kennen. Vanaf 1 maart 2024 worden deze bestanden uit het downloadbestand gehaald. 
+
 
 ## WMS, WFS & OGC API features {#wmswfsogcgrar}
 
