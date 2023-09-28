@@ -189,6 +189,11 @@
         "title": "Mogelijke foutmeldingen van de endpoints van de basisregisters",
         "url": "/foutmeldingen",
         "hide": false
+      },
+      {
+        "title": "Meldingen basisregisters",
+        "url": "/documentatie/meldingenbasisregisters",
+        "hide": false
       }
     ]
   },
