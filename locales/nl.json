@@ -234,6 +234,10 @@
     "title": "Status flow API's van het gebouwen- en adressenregister",
     "Prefix": "Basisregisters Vlaanderen"
   },
+    "notificationsbasisregisters": {
+    "title": "Technische documentatie voor de meldingen van het gebouwen- en adressenregister",
+    "Prefix": "Basisregisters Vlaanderen"
+  },
     "glossary": {
     "title": "Verklarende woordenlijst",
     "Prefix": "Basisregisters Vlaanderen"
