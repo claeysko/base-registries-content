@@ -222,6 +222,10 @@
    "release-notes/technisch-grar": {
       "title": "Technische release notes van het gebouwen- en adressenregister"
     },
+      "notificationsbasisregisters": {
+    "title": "Technische documentatie voor de meldingen van het gebouwen- en adressenregister",
+    "Prefix": "Basisregisters Vlaanderen"
+  },
   "editendpointsgrar": {
     "title": "Gebruik van de edit API's van het gebouwen- en adressenregister",
     "Prefix": "Basisregisters Vlaanderen"
