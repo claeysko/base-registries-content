@@ -189,7 +189,7 @@
      {
         "title": "Technische documentatie voor de meldingen van het gebouwen- en adressenregister",
         "url": "/documentatie/meldingenbasisregisters",
-        "hide": false
+        "hide": true
       }
     ]
   },
