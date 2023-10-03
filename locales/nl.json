@@ -179,6 +179,10 @@
    "release-notes/business-grar": {
       "title": "Functionele release notes van het gebouwen- en adressenregister"
     },
+      "notificationsbasisregisters": {
+    "title": "Technische documentatie voor de meldingen van het gebouwen- en adressenregister",
+    "Prefix": "Basisregisters Vlaanderen"
+  },
    "release-notes/business-wr": {
      "title": "Functionele release notes van het wegenregister"
     },
