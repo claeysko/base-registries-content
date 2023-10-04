@@ -17,8 +17,7 @@
 | Perceel | Deel van het grondgebied officieel vastgesteld met een kadastraal of administratief doel.  | 
 | Straatnaam | Naam die officieel werd toegekend ofwel aan een straat (baan, doorgang, plein), ofwel aan een gehucht en waaraan 'huisnummers' kunnen zijn gekoppeld.  | 
 
-
-## Begrippen gebouwen- en adressenregister
+## Begrippen wegenregister
 
 | Begrip  | Omschrijving | 
 |:-:|:-:|
