@@ -10,6 +10,8 @@
 
 ## Meldingsmodel {#meldingsmodel}
 
+Iedere melding wordt aangemaakt voor een dataset. De dataset beschrijft het model waarbinnen de terugmelding voor een bepaalde databron moet passen. Deze beschrijving is in de vorm van dataseteigenschappen. De dataset beschrijft dus welke informatie kan en moet aanwezig zijn bij het aanmaken van een melding en in welke vorm (datatype). Verder bepaalt de dataset de levensloop van een melding en welke acties mogelijk zijn.
+
 ## Meldingsobjectmodel {#meldingsobjectmodel}
 
 ## Dataseteigenschappen van het gebouwen- en adressenregister {#dataseteigenschappen}
