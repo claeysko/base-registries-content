@@ -69,6 +69,34 @@ De dataseteigenschappen beschreven in de gebouwen- en adressenregister dataset v
 
 ## Levensloop van een melding {#levensloop}
 
+- Bij het indienen van een terugmelding (status Ingediend) wordt de melding automatisch toegewezen aan een behandelaar (status Toegewezen). De toewijzing is steeds aan een stad of gemeente en verloopt via de waarde meegegeven in het OVO-code veld.
+- Bij het behandelen plaatst de behandelaar de terugmelding in status In onderzoek. 
+- Na het onderzoek, zal de behandelaar:
+ - de melding sluiten (status Gesloten)
+ - aanduiden als opgelost (status Opgelost) 
+ - of afwijzen (status Afgewezen).
+
+### Meldingen indienen {#meldingenindienen}
+ 
+### Meldingen opvragen {#meldingenopvragen}
+
+### Meldingen behandelen {#meldingenbehandelen}
+
+Meldingsobjecten worden toegekend aan behandelende steden en gemeente. Indien een melding is toegekend aan uw organisatie en u beschikt over de rol behandelaar (zie sectie Authorisatie), dan kan u de terugmelding behandelen door deze van status te veranderen. Bij het wijzigen van de status kan u twee toelichtingen meegeven: één voor de indiener en één voor intern gebruik.
+
+Om de status te wijzigen, kan u een POST request uitvoeren tegen endpoint `</api/v1/meldingen/{meldingId}/meldingsobjecten/{meldingsobjectId}/status/{statusCode}>`. De mogelijke waarden voor het onderdeel `<statusCode>` vindt u hieronder. Het is de numerieke waarde die u dient te gebruiken.
+- In onderzoek: 2
+- Afgewezen: 3
+- Opgelost: 4
+- Gesloten: 5
+
+De toelichten dient u mee te geven in de request body, zie een voorbeeld hieronder.
+
+`<{
+  "toelichtingStatusWijzigingMelder": "Toelichting statuswijziging voor de melder."
+  "toelichtingIntern": "Toelichting statuswijziging voor intern gebruik." 
+}>`
+
 ## Authenticatie {#authenticatie}
 De GTMF endpoints zijn beveiligd via ACM/IDM:
 - Indien u zich als gebruiker wenst te authenticeren, kan u de [Namens een gebruiker](#namensgebruiker) flow volgen. 
