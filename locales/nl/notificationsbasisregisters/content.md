@@ -18,7 +18,7 @@ Een melding bestaat uit één of meerdere meldingsobjecten. Het zijn de meldings
 
 GTMF biedt een endpoint aan waarlangs de dataset kan worden opgevraagd. De dataset voor het gebouwen- en adressenregister vindt u [hier](https://prod.api.melding.vlaanderen.be/api/v1/datasets/GRAR) terug. 
 
-** Belangrijk: Het gebouwen- en adressenregister houdt de granulariteit tussen een melding en een meldingsobject op één meldingsobject per melding. ** 
+**Belangrijk: Het gebouwen- en adressenregister houdt de granulariteit tussen een melding en een meldingsobject op één meldingsobject per melding.** 
 
 Belangrijke velden per dataseteigenschap zijn:
 |Velden|Betekenis|
