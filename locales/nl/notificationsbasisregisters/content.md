@@ -5,7 +5,7 @@
 * [Levensloop van een melding](#levensloop)
 * [Authenticatie](#authenticatie)
 * [Authorisatie](#authorisatie)
-* [Meer documentatie](#technischedoc)
+* [Meer technische documentatie](#technischedoc)
 * [Uw applicatie aansluiten](#aansluiten)
 
 ## Meldingsmodel {#meldingsmodel}
@@ -20,7 +20,7 @@
 
 ## Authorisatie {#authorisatie}
 
-## Meer documentatie {#technischedoc}
+## Meer technische documentatie {#technischedoc}
 
 Meer technische details kan u vinden op de swagger documentatie van de GTMF API:
 - **Bèta omgeving:** https://beta.api.melding.dev-vlaanderen.be/swagger/index.html.
