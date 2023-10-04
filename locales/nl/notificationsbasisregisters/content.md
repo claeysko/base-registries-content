@@ -5,7 +5,7 @@
 * [Levensloop van een melding](#levensloop)
 * [Authenticatie](#authenticatie)
 * [Authorisatie](#authorisatie)
-* [Technische documentatie](#technischedoc)
+* [Meer documentatie](#technischedoc)
 * [Uw applicatie aansluiten](#aansluiten)
 
 ## Meldingsmodel {#meldingsmodel}
@@ -20,7 +20,13 @@
 
 ## Authorisatie {#authorisatie}
 
-## Technische documentatie {#technischedoc}
+## Meer documentatie {#technischedoc}
+
+Meer technische details kan u vinden op de swagger documentatie van de GTMF API:
+- **Bèta omgeving:** https://beta.api.melding.dev-vlaanderen.be/swagger/index.html.
+- **Productie omgeving:** https://prod.api.melding.vlaanderen.be/swagger/index.html.
+
+Een lijst van foutcodes die kunnen voorkomen in de API is [hier](https://prod.api.melding.vlaanderen.be/Documentatie/ErrorCodesPagina) te vinden.
 
 ## Uw applicatie aansluiten {#aansluiten}
 
