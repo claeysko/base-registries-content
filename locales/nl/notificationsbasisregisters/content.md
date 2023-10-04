@@ -17,24 +17,18 @@
 ## Levensloop van een melding {#levensloop}
 
 ## Authenticatie {#authenticatie}
-
 De GTMF endpoints zijn beveiligd via ACM/IDM:
+- Indien u zich als gebruiker wenst te authenticeren, kan u de Namens een gebruiker flow volgen. 
+- Wenst u meldingen aan te maken en/of op te volgen via een achtergrond proces, dan kan u terugvallen op de Server-naar-server flow.
 
-Indien u zich als gebruiker wenst te authenticeren, kan u de Namens een gebruiker flow volgen. 
-
-Wenst u meldingen aan te maken en/of op te volgen via een achtergrond proces, dan kan u terugvallen op de Server-naar-server flow.
-
-Namens een gebruiker
+### Namens een gebruiker
 In het geval dat u zich als gebruiker wenst te authenticeren, dan zal u terugvallen op token exchange. Meer informatie over token exchange kan u terugvinden in de documentatie van ACM/IDM. Hieronder vindt u alvast twee interessante links.
+- https://authenticatie.vlaanderen.be/docs/beveiligen-van-api/oauth-rest/rest-namens-gebruiker/. 
+- https://authenticatie.vlaanderen.be/docs/beveiligen-van-toepassingen/integratie-methoden/oidc/technische-info/client-authenticatie/. 
 
-https://authenticatie.vlaanderen.be/docs/beveiligen-van-api/oauth-rest/rest-namens-gebruiker/. 
-
-https://authenticatie.vlaanderen.be/docs/beveiligen-van-toepassingen/integratie-methoden/oidc/technische-info/client-authenticatie/. 
-
-Server-naar-server
+###  Server-naar-server
 In het geval dat u zich als achtergrond proces wenst te authenticeren, dan zal u terugvallen op de Client Credentials Grant of CCG. Meer informatie over CCG kan u terugvinden in de documentatie van ACM/IDM. Hieronder vindt u alvast een link:
-
-https://authenticatie.vlaanderen.be/docs/beveiligen-van-api/oauth-rest/rest-server2server/.
+- https://authenticatie.vlaanderen.be/docs/beveiligen-van-api/oauth-rest/rest-server2server/.
 
 ## Authorisatie {#authorisatie}
 
