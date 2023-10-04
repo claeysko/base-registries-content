@@ -14,6 +14,32 @@
 
 ## Dataseteigenschappen van het gebouwen- en adressenregister {#dataseteigenschappen}
 
+Bij het aanmaken van een gebouwen- en adressenregister terugmelding, dient de melder exact één meldingsobject toe te voegen. Via het meldingstype duidt de melder aan of gaat om een fout of een onvolledigheid. De lijst van meldingstypes kan u [hier](https://prod.api.melding.vlaanderen.be/api/v1/meldingstypes) terugvinden. Voor terugmelding voor het gebouwen- en adressenregister dient u steeds meldingstype Fout te gebruiken.
+
+De dataseteigenschappen beschreven in de gebouwen- en adressenregister dataset vindt u hieronder terug. De volledige datasetbeschrijving voor het gebouwen- en adressenregister vindt u [hier](https://prod.api.melding.vlaanderen.be/api/v1/datasets/GRAR) terug.
+
+### Oorzaak
+- Dit is verplicht.
+- De reden waarom u een meldingsobject aanmaakt:
+|Reden|Betekenis|
+|:---:|:---:|
+| Nieuw / Ontbrekend |Er is een nieuw gebouwen- en adressenregisterobject ontstaan.   |
+| Attribuut gewijzigd / foutief | Er is iets gewijzigd aan de codering of attributen dat impact heeft op de opname in het gebouwen- en adressenregister. |
+|Geometrie gewijzigd / foutief  | Er is iets gewijzigd aan de geometrie dat impact heeft op de opname in het gebouwen- en adressenregister. |
+|Attribuut & geometrie gewijzigd / foutief  | Er is iets gewijzigd aan de codering, attributen of geometrie dat impact heeft op de opname in het gebouwen- en adressenregister. |
+|Verwijderd / Overbodig  | Er is iets verdwenen.|
+
+### Thema
+- Dit is verplicht.
+- De entiteit waar de ‘Oorzaak’ impact op heeft. De thema’s zijn:
+ - Adressen
+ - Straatnamen
+ - Gebouweenheden
+
+### OVO-code
+- Dit is verplicht.
+- De OVO-code van de stad of gemeente waarvoor de terugmelding is bestemd. Een codelijst wordt voorzien met daarin de OVO-codes van de steden en gemeenten in Vlaanderen.
+
 ## Levensloop van een melding {#levensloop}
 
 ## Authenticatie {#authenticatie}
