@@ -80,6 +80,33 @@ De dataseteigenschappen beschreven in de gebouwen- en adressenregister dataset v
  
 ### Meldingen opvragen {#meldingenopvragen}
 
+Wie wenst kan de status van zijn terugmelding en zijn meldingsobject(en) opvolgen in de eigen meldingsfront. GTMF biedt hier verschillende endpoints voor aan. Ook deze endpoints zijn beveiligd via ACM/IDM.
+
+De meldingen die een gebruiker te zien krijgt zijn de volgende:
+- U bent indiener van de melding.
+- De melding werd ingediend door een medewerker van jouw organisatie.
+- U bent behandelaar van de melding.
+- U bent bronhouder van de dataset waartoe de melding behoort.
+
+De mogelijke statussen van een meldingsobject zijn:
+|Status|Betekenis|
+|:---:|:---:|
+| Toegewezen |Het meldingsobject is opgenomen en wordt door de behandelende stad of gemeente nagekeken en indien mogelijk opgelost..   |
+| In onderzoek | Het meldingsobject is nog in behandeling door de stad of gemeente. |
+|Afgewezen  |Het meldingsobject werd niet aanvaard OF niet opgelost. Indien opportuun, geven we de reden van afwijzing mee. |
+|Opgelost | De meldingsopbject is opgelost door de stad of gemeente. |
+|Gesloten  | Het meldingsobject kon niet behandeld worden en is gesloten. Het is mogelijk dat de situatie reeds werd opgelost of in de toekomst zal opgelost worden, omdat deze ook door een andere gebruiker/organisatie gemeld werd.|
+
+De status van de melding wordt afgeleid van de statussen van de meldingsobjecten. De laagste meldingsobjectstatus is hier leidend.
+
+Ophalen van een lijst van terugmeldingen kan via onderstaande URL's:
+- Bèta omgeving: https://beta.api.melding.dev-vlaanderen.be/api/v2/meldingen
+- Productie omgeving: https://prod.api.melding.vlaanderen.be/api/v2/meldingen
+
+Ophalen detail van een terugmelding:
+- Bèta omgeving: https://beta.api.melding.dev-vlaanderen.be/api/v2/meldingen/{id}
+- Productie omgeving: https://prod.api.melding.vlaanderen.be/api/v2/meldingen/{id}
+
 ### Meldingen behandelen {#meldingenbehandelen}
 
 Meldingsobjecten worden toegekend aan behandelende steden en gemeente. Indien een melding is toegekend aan uw organisatie en u beschikt over de rol behandelaar (zie sectie Authorisatie), dan kan u de terugmelding behandelen door deze van status te veranderen. Bij het wijzigen van de status kan u twee toelichtingen meegeven: één voor de indiener en één voor intern gebruik.
