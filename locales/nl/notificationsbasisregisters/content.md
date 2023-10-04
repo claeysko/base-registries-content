@@ -14,6 +14,31 @@ Iedere melding wordt aangemaakt voor een dataset. De dataset beschrijft het mode
 
 ## Meldingsobjectmodel {#meldingsobjectmodel}
 
+Een melding bestaat uit één of meerdere meldingsobjecten. Het zijn de meldingsobjecten die concrete informatie  omtrent de gemelde fout of onvolledigheid bevatten. Welke informatie een meldingsobject kan bevatten wordt beschreven in de dataset.
+
+GTMF biedt een endpoint aan waarlangs de dataset kan worden opgevraagd. De dataset voor het gebouwen- en adressenregister vindt u [hier](https://prod.api.melding.vlaanderen.be/api/v1/datasets/GRAR) terug. 
+
+** Belangrijk: Het gebouwen- en adressenregister houdt de granulariteit tussen een melding en een meldingsobject op één meldingsobject per melding. ** 
+
+Belangrijke velden per dataseteigenschap zijn:
+|Velden|Betekenis|
+|:---:|:---:|
+| Id | Id van de dataseteigenschap door te geven bij het registreren van een terugmelding.  |
+| Label | Leesbaar label van de dataseteigenschap voor weergave in meldingsfront. |
+|Verplicht | Geeft aan of een dataseteigenschap verplicht moet meegegeven worden om een terugmelding voor de bron te kunnen registreren. |
+|Meldbaar | Geeft aan of de melder een nieuwe waarde voor de dataseteigenschap kan voorstellen of de huidige waarde achterliggend aangevuld moet worden door de meldingsapplicatie. Meldingen voor de bron gebouwen- en adressenregister zal steeds een nieuwe waarde moeten worden meegegeven. Het is dan aan de behandelaar om het correcte object te selecteren (o.b.v. de meegegeven geometrie) en de melding te analyseren. |
+|Datatype  | Datatype waaraan de waarde voor de dataseteigenschap moet voldoen. Hier kunnen ook codelijsten voorkomen.|
+
+Naast specifieke dataseteigenschappen hebben een terugmelding en onderliggende meldingsobjecten generieke eigenschappen. Eigenschappen die ongeacht de databron waarvoor een terugmelding wordt gemaakt kunnen voorkomen. Voor de bron gebouwen- en adressenregister kan een meldingsobject volgende generieke eigenschappen hebben:
+- **Geometrie:** geometrie horende bij het meldingsobject. De geometrie dient steeds een polygoon te zijn.
+- **Url:** link naar een bijlage.
+
+Op het niveau van de terugmelding kan een melder volgende meegeven:
+|Velden|Betekenis|
+|:---:|:---:|
+| Referentie melder | 	Een eigen referentie waarmee de melder de terugmelding later makkelijker kan opzoeken of identificeren. |
+| Samenvatting | 	Kan gebruikt worden om de terugmelding en de informatie die eraan gekoppeld is samen te vatten en de behandeling ervan te vergemakkelijken. |
+
 ## Dataseteigenschappen van het gebouwen- en adressenregister {#dataseteigenschappen}
 
 Bij het aanmaken van een gebouwen- en adressenregister terugmelding, dient de melder exact één meldingsobject toe te voegen. Via het meldingstype duidt de melder aan of gaat om een fout of een onvolledigheid. De lijst van meldingstypes kan u [hier](https://prod.api.melding.vlaanderen.be/api/v1/meldingstypes) terugvinden. Voor terugmelding voor het gebouwen- en adressenregister dient u steeds meldingstype Fout te gebruiken.
