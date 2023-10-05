@@ -14,7 +14,7 @@ Iedere melding wordt aangemaakt voor een dataset. De **dataset** beschrijft het 
 
 ## Meldingsobjectmodel {#meldingsobjectmodel}
 
-Een melding bestaat uit één of meerdere meldingsobjecten. Het zijn de meldingsobjecten die concrete informatie  omtrent de gemelde fout of onvolledigheid bevatten. Welke informatie een meldingsobject kan bevatten wordt beschreven in de **dataset**.
+Een melding bestaat uit één of meerdere meldingsobjecten. Het zijn de meldingsobjecten die concrete informatie omtrent de gemelde fout of onvolledigheid bevatten. Welke informatie een meldingsobject kan bevatten wordt beschreven in de **dataset**.
 
 GTMF biedt een endpoint aan waarlangs de dataset kan worden opgevraagd. De dataset voor het gebouwen- en adressenregister vindt u [hier](https://prod.api.melding.vlaanderen.be/api/v1/datasets/GRAR) terug. 
 
@@ -60,10 +60,7 @@ De dataseteigenschappen beschreven in de gebouwen- en adressenregister dataset v
 
 ### Thema
 - Dit is **verplicht**.
-- De entiteit waar de ‘Oorzaak’ impact op heeft. De thema’s zijn:
-    - Adressen
-    -  Straatnamen
-    -  Gebouweenheden
+- De entiteit waar de ‘Oorzaak’ impact op heeft. Er kan uit volgende thema's gekozen worden: Adressen, Straatnamen en gebouweenheden. 
 
 ### OVO-code
 - Dit is **verplicht**.
