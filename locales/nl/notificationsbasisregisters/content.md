@@ -201,7 +201,7 @@ Eens geauthenticeerd, zal het GTMF endpoint bepalen welke informatie u mag zien 
 | GTMF_Beh_GRAR_OVOCODE | Deze scope zal worden toegekend aan behandelende stad- en gemeentemedewerkers. Dit recht staat een medewerker toe om op te treden als behandelaar van een melding. Ook hier zal de API de OVO-code en/of KBO-nummer scopes uitlezen zodat u enkel de meldingen te zien krijgt die bestemd zijn voor uw organisatie. |
 |GTMF_Bro_GRAR_Alle  | Dit recht zal worden toegekend aan de bronhouder. In dit geval medewerkers van de Basisregisters binnen Digitaal Vlaanderen. |
 
-><font size="5">Indien u gebruik maakt van token exchange, zal u ook steeds onderstaande scopes dienen te bevragen.
+><font size="10">Indien u gebruik maakt van token exchange, zal u ook steeds onderstaande scopes dienen te bevragen.
 >- vo_ovocode
 >- vo_kbonummer  </font>
 
