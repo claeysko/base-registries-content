@@ -147,11 +147,13 @@ Wie wenst kan de status van zijn terugmelding en zijn meldingsobject(en) opvolge
 
 De status van de melding wordt afgeleid van de statussen van de meldingsobjecten. De **laagste** meldingsobjectstatus is hier leidend.
 
-#### Ophalen van een lijst van terugmeldingen kan via onderstaande URL's:
-- **Bèta omgeving:** https://beta.api.melding.dev-vlaanderen.be/api/v2/meldingen
-- **Productie omgeving:** https://prod.api.melding.vlaanderen.be/api/v2/meldingen
+#### Ophalen van de lijst van terugmeldingen:
+|Omgeving|URL|
+|:---:|:---:|
+|Bèta | https://beta.api.melding.dev-vlaanderen.be/api/v2/meldingen/ |
+|Productie |https://prod.api.melding.vlaanderen.be/api/v2/meldingen/  |
 
-#### Ophalen detail van een terugmelding:
+#### Ophalen van het detail van een terugmelding:
 |Omgeving|URL|
 |:---:|:---:|
 |Bèta | https://beta.api.melding.dev-vlaanderen.be/api/v2/meldingen/{id} |
@@ -162,13 +164,14 @@ De status van de melding wordt afgeleid van de statussen van de meldingsobjecten
 Meldingsobjecten worden toegekend aan behandelende steden en gemeente. Indien een melding is toegekend aan uw organisatie en u beschikt over de rol behandelaar (zie sectie Authorisatie), dan kan u de terugmelding behandelen door deze van status te veranderen. Bij het wijzigen van de status kan u twee toelichtingen meegeven: één voor de indiener en één voor intern gebruik.
 
 Om de status te wijzigen, kan u een POST request uitvoeren tegen endpoint `</api/v1/meldingen/{meldingId}/meldingsobjecten/{meldingsobjectId}/status/{statusCode}>`. De mogelijke waarden voor het onderdeel `<statusCode>` vindt u hieronder. Het is de numerieke waarde die u dient te gebruiken.
-- In onderzoek: 2
-- Afgewezen: 3
-- Opgelost: 4
-- Gesloten: 5
+|Status|Statuscode|
+|:---:|:---:|
+|In onderzoek |2 |
+|Afgewezen | 3  |
+|Opgelost | 4 |
+|Gesloten | 5  |
 
 De toelichten dient u mee te geven in de request body, zie een voorbeeld hieronder.
-
 `<{
   "toelichtingStatusWijzigingMelder": "Toelichting statuswijziging voor de melder."
   "toelichtingIntern": "Toelichting statuswijziging voor intern gebruik." 
@@ -180,12 +183,12 @@ De GTMF endpoints zijn beveiligd via ACM/IDM:
 - Wenst u meldingen aan te maken en/of op te volgen via een achtergrond proces, dan kan u terugvallen op de [Server-naar-server](#servernaarserver) flow.
  
 ### Flow 'Namens een gebruiker' {#namensgebruiker}
-In het geval dat u zich als gebruiker wenst te authenticeren, dan zal u terugvallen op token exchange. Meer informatie over token exchange kan u terugvinden in de documentatie van ACM/IDM. Hieronder vindt u alvast twee interessante links.
+In het geval dat u zich als gebruiker wenst te authenticeren, dan zal u terugvallen op **token exchange**. Meer informatie over token exchange kan u terugvinden in de documentatie van ACM/IDM. Hieronder vindt u alvast twee interessante links.
 - https://authenticatie.vlaanderen.be/docs/beveiligen-van-api/oauth-rest/rest-namens-gebruiker/. 
 - https://authenticatie.vlaanderen.be/docs/beveiligen-van-toepassingen/integratie-methoden/oidc/technische-info/client-authenticatie/. 
 
 ### Flow 'Server-naar-server' {#servernaarserver}
-In het geval dat u zich als achtergrond proces wenst te authenticeren, dan zal u terugvallen op de Client Credentials Grant of CCG. Meer informatie over CCG kan u terugvinden in de documentatie van ACM/IDM. Hieronder vindt u alvast een link:
+In het geval dat u zich als achtergrond proces wenst te authenticeren, dan zal u terugvallen op de **Client Credentials Grant (CCG)**. Meer informatie over CCG kan u terugvinden in de documentatie van ACM/IDM. Hieronder vindt u alvast een link:
 - https://authenticatie.vlaanderen.be/docs/beveiligen-van-api/oauth-rest/rest-server2server/.
 
 ## Authorisatie {#authorisatie}
@@ -206,8 +209,10 @@ Eens geauthenticeerd, zal het GTMF endpoint bepalen welke informatie u mag zien 
 ## Meer technische documentatie {#technischedoc}
 
 Meer technische details kan u vinden op de swagger documentatie van de GTMF API:
-- **Bèta omgeving:** https://beta.api.melding.dev-vlaanderen.be/swagger/index.html.
-- **Productie omgeving:** https://prod.api.melding.vlaanderen.be/swagger/index.html.
+|Omgeving|URL|
+|:---:|:---:|
+|Bèta |  https://beta.api.melding.dev-vlaanderen.be/swagger/index.html |
+|Productie |https://prod.api.melding.vlaanderen.be/swagger/index.html |
 
 Een lijst van foutcodes die kunnen voorkomen in de API is [hier](https://prod.api.melding.vlaanderen.be/Documentatie/ErrorCodesPagina) te vinden.
 
