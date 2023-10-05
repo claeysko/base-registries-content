@@ -77,46 +77,7 @@ Voor de betekenis van elke status, kan u '[Meldingen opvragen](#meldingenopvrage
 ### Meldingen indienen {#meldingenindienen}
 
 Hieronder vindt u een voorbeeld van een request om een melding in te dienen.
-
-`<{
-  "meldingsapplicatie": {
-    "id": "LARA"
-  },
-  "meldingsorganisatie": {
-    "id": "OVO002949"
-  },
-  "samenvatting": "test grar",
-  "heeftDoelwitten": [
-    {
-      "heeftOnderwerp": "Onderwerp",
-      "attributen": [
-        {
-          "eigenschap": "https://test.api.melding.dev-vlaanderen.be/api/v1/datasets/GRAR/eigenschappen/GRAR_Oorzaak",
-          "voorgesteldeWaarde": "1"
-        },
-        {
-          "eigenschap": "https://test.api.melding.dev-vlaanderen.be/api/v1/datasets/GRAR/eigenschappen/GRAR_Thema",
-          "voorgesteldeWaarde": "1"
-        },
-        {
-          "eigenschap": "https://test.api.melding.dev-vlaanderen.be/api/v1/datasets/GRAR/eigenschappen/GRAR_OvoCode",
-          "voorgesteldeWaarde": "OVO002067",
-          "huidigeWaarde": "OVO002067"
-        }
-      ],
-      "meldingstype": "https://test.api.melding.dev-vlaanderen.be/api/v1/meldingstypes/1",
-      "datumVaststelling": "2023-07-10T10:02:19.441Z",
-      "gerelateerdeBody": [
-        {
-            "geometrie": "POLYGON((87109.71916161124 169895.7096379754,87126.46916161124 169905.7721379754,87130.03166161124 169899.8346379754,87113.09416161124 169889.8971379754,87109.71916161124 169895.7096379754))",
-            "beschrijving": "Opmerking"
-            // ,"url": "https://test.api.melding.dev-vlaanderen.be/api/v1/uploads/29dfde06-f6c8-4756-8052-34cfe04f5d20"
-        }
-      ]
-    }
-  ],
-  "meldingmodel": "https://test.api.melding.dev-vlaanderen.be/api/v1/meldingmodellen/GRAR"
-}>`
+![image](https://github.com/Informatievlaanderen/base-registries-content/assets/49196256/35e8b591-adab-4035-83ca-247e42217586)
 
 Iedere melding wordt ingediend via een meldingsapplicatie en meldingsorganisatie. Deze waarden zijn afkomstig van de toepassing via waar de melding wordt ingediend en de organisatie die de toepassing beheerd. Daarnaast dient het meldingsmodel te worden aangeduid. Alle meldingsobjecten (afgeleid uit het veld `<heeftDoelwitten>`) dienen te voldoen aan het aangeduide meldingsmodel.
 
