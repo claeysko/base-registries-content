@@ -61,9 +61,9 @@ De dataseteigenschappen beschreven in de gebouwen- en adressenregister dataset v
 ### Thema
 - Dit is **verplicht**.
 - De entiteit waar de ‘Oorzaak’ impact op heeft. De thema’s zijn:
- - Adressen
- - Straatnamen
- - Gebouweenheden
+  - Adressen
+  -  Straatnamen
+  -  Gebouweenheden
 
 ### OVO-code
 - Dit is **verplicht**.
