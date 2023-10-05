@@ -172,6 +172,12 @@ Om de status te wijzigen, kan u een POST request uitvoeren tegen endpoint `</api
 |Gesloten | 5  |
 
 De toelichten dient u mee te geven in de request body, zie een voorbeeld hieronder.
+|Test|
+|:---:|
+| {
+  "toelichtingStatusWijzigingMelder": "Toelichting statuswijziging voor de melder."
+  "toelichtingIntern": "Toelichting statuswijziging voor intern gebruik." 
+}|
 ***
 {
   "toelichtingStatusWijzigingMelder": "Toelichting statuswijziging voor de melder."
