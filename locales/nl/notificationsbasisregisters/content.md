@@ -78,7 +78,7 @@ Voor de betekenis van elke status, kan u '[Meldingen opvragen](#meldingenopvrage
 
 Hieronder vindt u een voorbeeld van een request om een melding in te dienen.
 
-{
+`<{
   "meldingsapplicatie": {
     "id": "LARA"
   },
