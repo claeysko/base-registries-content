@@ -154,8 +154,8 @@ De status van de melding wordt afgeleid van de statussen van de meldingsobjecten
 #### Ophalen detail van een terugmelding:
 |Omgeving|URL|
 |:---:|:---:|
-|Bèta | [Het meldingsobject wordt door een melder ingediend.](https://beta.api.melding.dev-vlaanderen.be/api/v2/meldingen/{id})  |
-|Productie |[Het meldingsobject wordt nadat het is ingediend automatisch toegewezen. De toewijzing is steeds aan een stad of gemeente en verloopt via de waarde meegegeven in het OVO-code veld.](https://prod.api.melding.vlaanderen.be/api/v2/meldingen/{id})   |
+|Bèta | https://beta.api.melding.dev-vlaanderen.be/api/v2/meldingen/{id} |
+|Productie |https://prod.api.melding.vlaanderen.be/api/v2/meldingen/{id}  |
 
 ### Meldingen behandelen {#meldingenbehandelen}
 
