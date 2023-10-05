@@ -10,11 +10,11 @@
 
 ## Meldingsmodel {#meldingsmodel}
 
-Iedere melding wordt aangemaakt voor een dataset. De dataset beschrijft het model waarbinnen de terugmelding voor een bepaalde databron moet passen. Deze beschrijving is in de vorm van dataseteigenschappen. De dataset beschrijft dus welke informatie kan en moet aanwezig zijn bij het aanmaken van een melding en in welke vorm (datatype). Verder bepaalt de dataset de levensloop van een melding en welke acties mogelijk zijn.
+Iedere melding wordt aangemaakt voor een dataset. De **dataset** beschrijft het **model** waarbinnen de terugmelding voor een bepaalde **databron** moet passen. Deze beschrijving is in de vorm van dataseteigenschappen. De dataset beschrijft dus welke informatie kan en moet aanwezig zijn bij het aanmaken van een melding en in welke vorm (datatype). Verder bepaalt de dataset de levensloop van een melding en welke acties mogelijk zijn.
 
 ## Meldingsobjectmodel {#meldingsobjectmodel}
 
-Een melding bestaat uit één of meerdere meldingsobjecten. Het zijn de meldingsobjecten die concrete informatie  omtrent de gemelde fout of onvolledigheid bevatten. Welke informatie een meldingsobject kan bevatten wordt beschreven in de dataset.
+Een melding bestaat uit één of meerdere meldingsobjecten. Het zijn de meldingsobjecten die concrete informatie  omtrent de gemelde fout of onvolledigheid bevatten. Welke informatie een meldingsobject kan bevatten wordt beschreven in de **dataset**.
 
 GTMF biedt een endpoint aan waarlangs de dataset kan worden opgevraagd. De dataset voor het gebouwen- en adressenregister vindt u [hier](https://prod.api.melding.vlaanderen.be/api/v1/datasets/GRAR) terug. 
 
@@ -23,21 +23,23 @@ GTMF biedt een endpoint aan waarlangs de dataset kan worden opgevraagd. De datas
 Belangrijke velden per dataseteigenschap zijn:
 |Velden|Betekenis|
 |:---:|:---:|
-| Id | Id van de dataseteigenschap door te geven bij het registreren van een terugmelding.  |
-| Label | Leesbaar label van de dataseteigenschap voor weergave in meldingsfront. |
+|Id | Id van de dataseteigenschap door te geven bij het registreren van een terugmelding.  |
+|Label | Leesbaar label van de dataseteigenschap voor weergave in meldingsfront. |
 |Verplicht | Geeft aan of een dataseteigenschap verplicht moet meegegeven worden om een terugmelding voor de bron te kunnen registreren. |
 |Meldbaar | Geeft aan of de melder een nieuwe waarde voor de dataseteigenschap kan voorstellen of de huidige waarde achterliggend aangevuld moet worden door de meldingsapplicatie. Meldingen voor de bron gebouwen- en adressenregister zal steeds een nieuwe waarde moeten worden meegegeven. Het is dan aan de behandelaar om het correcte object te selecteren (o.b.v. de meegegeven geometrie) en de melding te analyseren. |
 |Datatype  | Datatype waaraan de waarde voor de dataseteigenschap moet voldoen. Hier kunnen ook codelijsten voorkomen.|
 
 Naast specifieke dataseteigenschappen hebben een terugmelding en onderliggende meldingsobjecten generieke eigenschappen. Eigenschappen die ongeacht de databron waarvoor een terugmelding wordt gemaakt kunnen voorkomen. Voor de bron gebouwen- en adressenregister kan een meldingsobject volgende generieke eigenschappen hebben:
-- **Geometrie:** geometrie horende bij het meldingsobject. De geometrie dient steeds een polygoon te zijn.
-- **Url:** link naar een bijlage.
+|Velden|Betekenis|
+|:---:|:---:|
+|Geometrie | De geometrie horende bij het meldingsobject. De geometrie dient steeds een polygoon te zijn. |
+|URL | De URL is de link naar een bijlage. |
 
 Op het niveau van de terugmelding kan een melder volgende meegeven:
 |Velden|Betekenis|
 |:---:|:---:|
-| Referentie melder | 	Een eigen referentie waarmee de melder de terugmelding later makkelijker kan opzoeken of identificeren. |
-| Samenvatting | 	Kan gebruikt worden om de terugmelding en de informatie die eraan gekoppeld is samen te vatten en de behandeling ervan te vergemakkelijken. |
+|Referentie melder | 	Een eigen referentie waarmee de melder de terugmelding later makkelijker kan opzoeken of identificeren. |
+|Samenvatting | 	Kan gebruikt worden om de terugmelding en de informatie die eraan gekoppeld is samen te vatten en de behandeling ervan te vergemakkelijken. |
 
 ## Dataseteigenschappen van het gebouwen- en adressenregister {#dataseteigenschappen}
 
@@ -46,35 +48,30 @@ Bij het aanmaken van een gebouwen- en adressenregister terugmelding, dient de me
 De dataseteigenschappen beschreven in de gebouwen- en adressenregister dataset vindt u hieronder terug. De volledige datasetbeschrijving voor het gebouwen- en adressenregister vindt u [hier](https://prod.api.melding.vlaanderen.be/api/v1/datasets/GRAR) terug.
 
 ### Oorzaak
-- Dit is verplicht.
+- Dit is **verplicht**.
 - De reden waarom u een meldingsobject aanmaakt:
 |Reden|Betekenis|
 |:---:|:---:|
-| Nieuw / Ontbrekend |Er is een nieuw gebouwen- en adressenregisterobject ontstaan.   |
-| Attribuut gewijzigd / foutief | Er is iets gewijzigd aan de codering of attributen dat impact heeft op de opname in het gebouwen- en adressenregister. |
+|Nieuw / Ontbrekend |Er is een nieuw gebouwen- en adressenregisterobject ontstaan.   |
+|Attribuut gewijzigd / foutief | Er is iets gewijzigd aan de codering of attributen dat impact heeft op de opname in het gebouwen- en adressenregister. |
 |Geometrie gewijzigd / foutief  | Er is iets gewijzigd aan de geometrie dat impact heeft op de opname in het gebouwen- en adressenregister. |
 |Attribuut & geometrie gewijzigd / foutief  | Er is iets gewijzigd aan de codering, attributen of geometrie dat impact heeft op de opname in het gebouwen- en adressenregister. |
 |Verwijderd / Overbodig  | Er is iets verdwenen.|
 
 ### Thema
-- Dit is verplicht.
+- Dit is **verplicht**.
 - De entiteit waar de ‘Oorzaak’ impact op heeft. De thema’s zijn:
  - Adressen
  - Straatnamen
  - Gebouweenheden
 
 ### OVO-code
-- Dit is verplicht.
+- Dit is **verplicht**.
 - De OVO-code van de stad of gemeente waarvoor de terugmelding is bestemd. Een codelijst wordt voorzien met daarin de OVO-codes van de steden en gemeenten in Vlaanderen.
 
 ## Levensloop van een melding {#levensloop}
-
-- Bij het indienen van een terugmelding (status Ingediend) wordt de melding automatisch toegewezen aan een behandelaar (status Toegewezen). De toewijzing is steeds aan een stad of gemeente en verloopt via de waarde meegegeven in het OVO-code veld.
-- Bij het behandelen plaatst de behandelaar de terugmelding in status In onderzoek. 
-- Na het onderzoek, zal de behandelaar:
- - de melding sluiten (status Gesloten)
- - aanduiden als opgelost (status Opgelost) 
- - of afwijzen (status Afgewezen).
+![image](https://github.com/Informatievlaanderen/base-registries-content/assets/49196256/3f6e58b4-2a37-4d4e-8d68-21826c4a691d)
+Voor de betekenis van elke status, kan u '[Meldingen opvragen](#meldingenopvragen)' raadplegen.  
 
 ### Meldingen indienen {#meldingenindienen}
 
@@ -140,9 +137,10 @@ De meldingen die een gebruiker te zien krijgt zijn de volgende:
 De mogelijke statussen van een meldingsobject zijn:
 |Status|Betekenis|
 |:---:|:---:|
-| Toegewezen |Het meldingsobject is opgenomen en wordt door de behandelende stad of gemeente nagekeken en indien mogelijk opgelost..   |
-| In onderzoek | Het meldingsobject is nog in behandeling door de stad of gemeente. |
-|Afgewezen  |Het meldingsobject werd niet aanvaard OF niet opgelost. Indien opportuun, geven we de reden van afwijzing mee. |
+|Ingediend | Het meldingsobject wordt door een melder ingediend.  |
+|Toegewezen |Het meldingsobject wordt nadat het is ingediend automatisch toegewezen. De toewijzing is steeds aan een stad of gemeente en verloopt via de waarde meegegeven in het OVO-code veld.   |
+|In onderzoek | Het meldingsobject is nog in behandeling door de stad of gemeente. |
+|Afgewezen  |Het meldingsobject werd niet aanvaard of niet opgelost. Indien opportuun, geven we de reden van afwijzing mee. |
 |Opgelost | De meldingsopbject is opgelost door de stad of gemeente. |
 |Gesloten  | Het meldingsobject kon niet behandeld worden en is gesloten. Het is mogelijk dat de situatie reeds werd opgelost of in de toekomst zal opgelost worden, omdat deze ook door een andere gebruiker/organisatie gemeld werd.|
 
@@ -212,6 +210,6 @@ Een lijst van foutcodes die kunnen voorkomen in de API is [hier](https://prod.ap
 
 ## Uw applicatie aansluiten {#aansluiten}
 
-De endpoints voor het registreren van een terugmelding zijn beveiligd via ACM/IDM, zie ook meer informatie bij de secties ‘[Authenticatie](#authenticatie)’ en ‘[Authorisatie](#authorisatie)’.
+De endpoints voor het registreren van een terugmelding zijn beveiligd via ACM/IDM, zie ook meer informatie bij ‘[Authenticatie](#authenticatie)’ en ‘[Authorisatie](#authorisatie)’.
 
 Het GTMF team kent per aansluitende applicatie een uniek Id toe voor de meldingsapplicatie en meldingsorganisatie. Wenst u via uw eigen applicatie meldingen aan te maken voor het gebouwen- en adressenregister, gelieve dan contact op te nemen via digitaal.vlaanderen@vlaanderen.be met als onderwerp ‘Meldingen aanmaken voor het gebouwen- en adressenregister via mijn eigen applicatie'. 
