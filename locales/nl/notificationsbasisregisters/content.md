@@ -71,13 +71,14 @@ De dataseteigenschappen beschreven in de gebouwen- en adressenregister dataset v
 
 ## Levensloop van een melding {#levensloop}
 ![image](https://github.com/Informatievlaanderen/base-registries-content/assets/49196256/3f6e58b4-2a37-4d4e-8d68-21826c4a691d)
+
 Voor de betekenis van elke status, kan u '[Meldingen opvragen](#meldingenopvragen)' raadplegen.  
 
 ### Meldingen indienen {#meldingenindienen}
 
 Hieronder vindt u een voorbeeld van een request om een melding in te dienen.
 
-`<{
+{
   "meldingsapplicatie": {
     "id": "LARA"
   },
@@ -117,24 +118,24 @@ Hieronder vindt u een voorbeeld van een request om een melding in te dienen.
   "meldingmodel": "https://test.api.melding.dev-vlaanderen.be/api/v1/meldingmodellen/GRAR"
 }>`
 
-Iedere melding wordt ingediend via een meldingsapplicatie en meldingsorganisatie. Deze waarden zijn afkomstig van de toepassing via waar de melding wordt ingediend en de organisatie die de toepassing beheerd. Daarnaast dient het meldingsmodel te worden aangeduid. Alle meldingsobjecten (afgeleid uit het veld heeftDoelwitten) dienen te voldoen aan het aangeduide meldingsmodel.
+Iedere melding wordt ingediend via een meldingsapplicatie en meldingsorganisatie. Deze waarden zijn afkomstig van de toepassing via waar de melding wordt ingediend en de organisatie die de toepassing beheerd. Daarnaast dient het meldingsmodel te worden aangeduid. Alle meldingsobjecten (afgeleid uit het veld `<heeftDoelwitten>`) dienen te voldoen aan het aangeduide meldingsmodel.
 
-Een melding indienen met bijlage
+#### Een melding indienen met bijlage
 Voorafgaand aan het aanmaken van uw melding, kan u een bestand uploaden. Dit bestand kan u dan toevoegen als bijlage aan de melding. De ondersteunde bestandstypes zijn: .jpg, .png, .jpeg en .pdf. De maximum bestandsgrootte is 30 MB. Er kan slechts 1 bestand tegelijkertijd geüpload worden.
 
-Een bestand uploaden kan via het endpoint [POST] /api/v1/upload. Na het uploaden ontvangt u een URL. Deze URL kan u dan meegeven bij het indienen van uw terugmelding.
+Een bestand uploaden kan via het endpoint `<[POST] /api/v1/upload>`. Na het uploaden ontvangt u een URL. Deze URL kan u dan meegeven bij het indienen van uw terugmelding.
 
 ### Meldingen opvragen {#meldingenopvragen}
 
 Wie wenst kan de status van zijn terugmelding en zijn meldingsobject(en) opvolgen in de eigen meldingsfront. GTMF biedt hier verschillende endpoints voor aan. Ook deze endpoints zijn beveiligd via ACM/IDM.
 
-De meldingen die een gebruiker te zien krijgt zijn de volgende:
+#### De meldingen die een gebruiker te zien krijgt zijn de volgende:
 - U bent indiener van de melding.
 - De melding werd ingediend door een medewerker van jouw organisatie.
 - U bent behandelaar van de melding.
 - U bent bronhouder van de dataset waartoe de melding behoort.
 
-De mogelijke statussen van een meldingsobject zijn:
+#### De mogelijke statussen van een meldingsobject zijn:
 |Status|Betekenis|
 |:---:|:---:|
 |Ingediend | Het meldingsobject wordt door een melder ingediend.  |
@@ -144,15 +145,17 @@ De mogelijke statussen van een meldingsobject zijn:
 |Opgelost | De meldingsopbject is opgelost door de stad of gemeente. |
 |Gesloten  | Het meldingsobject kon niet behandeld worden en is gesloten. Het is mogelijk dat de situatie reeds werd opgelost of in de toekomst zal opgelost worden, omdat deze ook door een andere gebruiker/organisatie gemeld werd.|
 
-De status van de melding wordt afgeleid van de statussen van de meldingsobjecten. De laagste meldingsobjectstatus is hier leidend.
+De status van de melding wordt afgeleid van de statussen van de meldingsobjecten. De **laagste** meldingsobjectstatus is hier leidend.
 
-Ophalen van een lijst van terugmeldingen kan via onderstaande URL's:
-- Bèta omgeving: https://beta.api.melding.dev-vlaanderen.be/api/v2/meldingen
-- Productie omgeving: https://prod.api.melding.vlaanderen.be/api/v2/meldingen
+#### Ophalen van een lijst van terugmeldingen kan via onderstaande URL's:
+- **Bèta omgeving:** https://beta.api.melding.dev-vlaanderen.be/api/v2/meldingen
+- **Productie omgeving:** https://prod.api.melding.vlaanderen.be/api/v2/meldingen
 
-Ophalen detail van een terugmelding:
-- Bèta omgeving: https://beta.api.melding.dev-vlaanderen.be/api/v2/meldingen/{id}
-- Productie omgeving: https://prod.api.melding.vlaanderen.be/api/v2/meldingen/{id}
+#### Ophalen detail van een terugmelding:
+|Omgeving|URL|
+|:---:|:---:|
+|Bèta | [Het meldingsobject wordt door een melder ingediend.](https://beta.api.melding.dev-vlaanderen.be/api/v2/meldingen/{id})  |
+|Productie |[Het meldingsobject wordt nadat het is ingediend automatisch toegewezen. De toewijzing is steeds aan een stad of gemeente en verloopt via de waarde meegegeven in het OVO-code veld.](https://prod.api.melding.vlaanderen.be/api/v2/meldingen/{id})   |
 
 ### Meldingen behandelen {#meldingenbehandelen}
 
