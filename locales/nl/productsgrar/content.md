@@ -150,13 +150,13 @@ Wanneer de generatie die dag niet gelukt is dan zal er een downloadbestand gedow
 | Gebouw_metadata | x | \ | \ | \ |  Bevat de parameter 'Latest_event_id' voor feed gebouwen (1) |
 | Gebouweenheid | x | x | x | x | Alle Vlaamse gebouweenheden met de bijhorende attributen |
 | Gebouweeneheid_metadata | x | \ | \ | \ |  Bevat de parameter 'Latest_event_id' voor feed gebouwen (1) |
-| Gemeente | x | \ | \ | \ | Alle Belgische gemeenten met de bijhorende attributen|
+| Gemeente | x | \ | \ | \ | Alle Belgische gemeenten met de bijhorende attributen in de eerste officiële taal van de gemeente|
 | Gemeente_metadata | x | \ | \ | \ |  Bevat de parameter 'Latest_event_id' voor feed gemeenten (1) |
 | Perceel | x | \ | \ | \ | Alle Vlaamse percelen met de bijhorende attributen |
 | Perceel_metadata | x | \ | \ | \ |  Bevat de parameter 'Latest_event_id' voor feed percelen (1) |
 | Postinfo | x | \ | \ | \ | Alle postcodes aangelever door bPost |
 | Postinfo_metadata | x | \ | \ | \ |  Bevat de parameter 'Latest_event_id' voor feed postinfo (1) |
-| Straatnaam | x | \ | \ | \ | Alle Belgische straatnamen met de bijhorende attributen|
+| Straatnaam | x | \ | \ | \ | Alle Belgische straatnamen met de bijhorende attributen in de eerste officiële taal van de gemeente|
 | Straatnaam_metadata | x | \ | \ | \ |  Bevat de parameter 'Latest_event_id' voor feed straatnamen (1) |
 
 (1) Om aan de slag te gaan met de feed endpoints moet dit momenteel van het eerste eventid tot het laatste eventid uitgelezen worden. Om dit te vermijden kan er vanaf nu vertrokken worden van het downloadbestand gebouwen- en adressenregister. Hiervoor zitten er bij het downoadbestand ‘_metadata.dbf’ files. In deze files staat het ‘Latest_event_id’. Dit id wordt in de overeenkomstige feed endpoint meegegeven bij de parameter ‘from’ & dat is het startpunt vanaf waar de feed endpoints worden ingelezen op basis van het downloadbestand.
