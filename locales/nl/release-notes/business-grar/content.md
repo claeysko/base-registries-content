@@ -2,9 +2,10 @@ Wenst u zich in te schrijven voor de releasemailing van het gebouwen- en adresse
 
 
 ### Huidige release
-- [Release notes 29 september 2023.pdf](https://github.com/Informatievlaanderen/base-registries-content/files/12891509/Release.notes.29.september.2023.pdf)
+- [Release notes 16 oktober 2023.pdf](https://github.com/Informatievlaanderen/base-registries-content/files/12892977/Release.notes.16.oktober.2023.pdf)
 
 ### Archief 
+- [Release notes 29 september 2023.pdf](https://github.com/Informatievlaanderen/base-registries-content/files/12891509/Release.notes.29.september.2023.pdf)
 - [Release notes 12 juni 2023](https://github.com/Informatievlaanderen/base-registries-content/files/11689464/Release.notes.12.juni.2023.pdf)
 -  [Release notes 5 april 2023](https://assets.vlaanderen.be/image/upload/v1680596526/Release_notes_5_april_2023_dxijue.pdf)
 - [Release notes WFS WMS OGC API features Adressenregister](https://assets.vlaanderen.be/image/upload/v1671180245/Release_notes_WFS_WMS_OGC_API_features_Adressenregister_gx5w0b.pdf)
