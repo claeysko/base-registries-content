@@ -128,7 +128,7 @@
         "title": "Technische integraties",
         "subtitle": "Een overzicht van de technische integraties.",
         "url": "/integratie-documentatie",
-        "hide": false
+        "hide": true
       },
        {
         "title": "Veelgestelde vragen",
