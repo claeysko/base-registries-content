@@ -130,6 +130,17 @@ Voorbeeld: Het wijzigen of corrigeren van de postcode van een adres.
 
 Hiervoor zijn 2 aparte API’s gemaakt. De API ‘Corrigeer de postcode van een adres’ mag door elke decentrale beheerder uitgevoerd worden. Dit wordt uitgevoerd als de verkeerde postinfoID van een gemeente aan het adres is gekoppeld. Deze correctie kan alleen maar naar postinfoId’s worden gezet gekoppeld aan deze gemeente. De API ‘Wijzig de postcode van een adres’ is voor interne bijwerkers en wordt bijvooorbeeld op vraag van Bpost uitgevoerd. Bpost wilt dat postbodes een zo optimaal mogelijke route afleggen om deze reden kan het zijn dat adressen van bepaalde gemeenten een andere postinfoId krijgen dan deze die in de gemeente liggen. Deze API laat dit toe, vandaar dat dit niet door iedereen mogelijk is om uit te voeren. 
 
+## Hoeveel mag een straatnaam worden gecorrigeerd?
+
+In het edit endpoint 'Corrigeer de straatnaam van een straatnaam' worden enkel kleine correcties toegestaan. Een volledige hernoeming is niet mogelijk.
+Dit zijn kleine correcties gebaseerd op het Levenshtein distance algoritme. 
+
+Hieronder kunnen voorbeelden gevonden worden van dit algoritme.
+- Niewstraat → Nieuwstraat: Deze correctie wordt toegelaten. 
+- Sint-Niklaasstraat → St-Niklaasstraat: Deze correctie wordt toegelaten. 
+- Jean-Philppestraat → JeanPhilippestraat: Deze correctie wordt toegelaten. 
+- Molenstraat → Kerkstraat: Deze correctie wordt niet toegelaten. 
+
 ## Hoe adres (de)regularisatie wijzigen of corrigeren? 
 
 Wanneer er een (de)regularisatie is gebeurd van een adres, maar dit moet gewijzigd worden of was verkeerd ingevoerd dan kan u gebruik maken van de edit endpoints ‘(De)Regulariseer een adres’.  
