@@ -6,6 +6,9 @@
 * [Welke combinaties zijn mogelijk bij adrespositie?](#adrespositie)
 * [Functie van een gebouweenheid: nietGekend of gemeenschappelijkDeel](#functiegebouweenheid)
 * [Wat is het verschil tussen een correctie en een wijziging?](#verschilcorrectiewijziging)
+* [Kan een straatnaam worden gecorrigeerd naar een compleet andere straatnaam?](#correctiestraatnaam)
+* [Hoe adres (de)regularisatie wijzigen of corrigeren?](#deregularisatie)
+* [Werking edit functie ‘Heradresseren van adressen binnen éénzelfde straatnaam of naar een andere straatnaam’](#heradresseren)
 * [Validaties edit endpoint](#validatieseditendpoints)
 * [Flow statussen](#flowstatussen)
 * [Ticketing service](#ticketingservice)
@@ -130,7 +133,7 @@ Voorbeeld: Het wijzigen of corrigeren van de postcode van een adres.
 
 Hiervoor zijn 2 aparte API’s gemaakt. De API ‘Corrigeer de postcode van een adres’ mag door elke decentrale beheerder uitgevoerd worden. Dit wordt uitgevoerd als de verkeerde postinfoID van een gemeente aan het adres is gekoppeld. Deze correctie kan alleen maar naar postinfoId’s worden gezet gekoppeld aan deze gemeente. De API ‘Wijzig de postcode van een adres’ is voor interne bijwerkers en wordt bijvooorbeeld op vraag van Bpost uitgevoerd. Bpost wilt dat postbodes een zo optimaal mogelijke route afleggen om deze reden kan het zijn dat adressen van bepaalde gemeenten een andere postinfoId krijgen dan deze die in de gemeente liggen. Deze API laat dit toe, vandaar dat dit niet door iedereen mogelijk is om uit te voeren. 
 
-## Kan een straatnaam worden gecorrigeerd naar een compleet andere straatnaam? 
+## Kan een straatnaam worden gecorrigeerd naar een compleet andere straatnaam? {#correctiestraatnaam}
 
 In het edit endpoint 'Corrigeer de straatnaam van een straatnaam' worden enkel kleine correcties toegestaan. Een volledige hernoeming is niet mogelijk.
 Dit zijn kleine correcties gebaseerd op het Levenshtein distance algoritme. 
@@ -141,11 +144,11 @@ Hieronder kunnen voorbeelden gevonden worden van dit algoritme.
 - Jean-Philppestraat → JeanPhilippestraat: Deze correctie wordt toegelaten. 
 - Molenstraat → Kerkstraat: Deze correctie wordt niet toegelaten. 
 
-## Hoe adres (de)regularisatie wijzigen of corrigeren? 
+## Hoe adres (de)regularisatie wijzigen of corrigeren? {#deregularisatie}
 
 Wanneer er een (de)regularisatie is gebeurd van een adres, maar dit moet gewijzigd worden of was verkeerd ingevoerd dan kan u gebruik maken van de edit endpoints ‘(De)Regulariseer een adres’.  
 
-## Werking edit functie ‘Heradresseren van adressen binnen éénzelfde straatnaam of naar een andere straatnaam’
+## Werking edit functie ‘Heradresseren van adressen binnen éénzelfde straatnaam of naar een andere straatnaam’ {#heradresseren}
 
 Heradresseren van adressen binnen éénzelfde straatnaam of naar een andere straatnaam is een complexe beheersactie, dit wilt zeggen dat het verschillende acties gaat combineren. Deze edit API wordt het best aangeroepen wanneer er een hernummering van adressen moet gebeuren binnen éénzelfde of een andere straatnaam. Dit houdt in dat aan een adrespositie een ander adres toegekend wordt. 
 
