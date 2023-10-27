@@ -6,7 +6,7 @@
 * [Welke combinaties zijn mogelijk bij adrespositie?](#adrespositie)
 * [Functie van een gebouweenheid: nietGekend of gemeenschappelijkDeel](#functiegebouweenheid)
 * [Wat is het verschil tussen een correctie en een wijziging?](#verschilcorrectiewijziging)
-* [Kan een straatnaam worden gecorrigeerd naar een compleet andere straatnaam?](#correctiestraatnaam)
+* [Kan een straatnaam worden gecorrigeerd naar een andere straatnaam?](#correctiestraatnaam)
 * [Hoe adres (de)regularisatie wijzigen of corrigeren?](#deregularisatie)
 * [Werking edit functie ‘Heradresseren van adressen binnen éénzelfde straatnaam of naar een andere straatnaam’](#heradresseren)
 * [Validaties edit endpoint](#validatieseditendpoints)
