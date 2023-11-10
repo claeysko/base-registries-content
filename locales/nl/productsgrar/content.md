@@ -89,6 +89,25 @@ In het veld `<content>` kan u het event en/of de objectversiedetails terugvinden
 ### PersistentObjectId
 De persistentLocalId is het objectId dat gebruikt wordt in de read endpoints en de andere producten van het gebouwen- en adressenregister. Vanaf het eerste event van een object is dit persistenLocalId beschikbaar. 
 
+### Welk eventid als start nemen om de feed endpoints te beginnen lezen
+
+Het is mogelijk om bij al de feed endpoints te starten van eventid 0. Echter zijn de eerste events, events gebaseerd op het CRAB. Doordat CRAB is uitgeschakeld en de nieuwe events anders zijn raden we aan om te vertrekken vanaf het eerste migratie event of vanaf het laatste migratie event.
+Dit migratie event is tevens ook een snapshot van dat object op die moment. 
+
+Hieronder staan de migratie eventid's per register. Voor de feed endpoints gemeenten en postinfo kan er wel vertrokken worden vanaf 0 aangezien hier geen veranderingen voor zijn gebeurd.
+
+Eerste migratie eventid:
+- Feed straatnamen: 1910883 
+- Feed adressen: 132217751
+- Feed gebouwen- en gebouweenheden: 254204946
+- Feed percelen: 121611733
+
+Laatste migratie eventid:
+- Feed straatnamen: 2232254
+- Feed adressen: 140572240
+- Feed gebouwen- en gebouweenheden: 265905563
+- Feed percelen: 133515551
+
 ### Interne events
 In de feed endpoints kan u alle eventids terugvinden van alle aangeboden objecttypes. Echter zal u merken dat er soms eventids niet aanwezig zijn. De eventids die niet getoond worden, zijn interne events en niet beschikbaar voor de externe gebruikers. Wanneer u een eventid van een intern event meegeeft in de URL dan zal automatisch het eerstvolgende extern eventid na het meegegeven eventid in de response getoond worden.
 
