@@ -226,8 +226,8 @@
 |Onbestaand adresId meegegeven  |Error 404 |/  |/  |
 |Adres is een busnummer & mag niet voorlopen op status adres dat huisnummer is|Ticketing error |AdresHuisnummerAfgekeurdOfGehistoreerd | Deze actie is enkel toegestaan op adressen waarbij het huisnummer de status ‘voorgesteld' of ‘inGebruik’ heeft. |
 |Wanneer het huisnummer of busnummer al bestaat|Ticketing error |AdresBestaandeHuisnummerBusnummerCombinatie | Deze combinatie huisnummer-busnummer bestaat reeds voor de opgegeven straatnaam. |
-|Adres met huisnummer werd gecorrigeerd na afkeuring van adres met busnummer|Ticketing error |AdresBusnummerHuisnummerInconsistent | Deze actie is niet toegestaan op een busnummer wegens een inconsistent huisnummer.|
-|Postcode van adres met huisnummer werd gecorrigeerd na afkeuring adres met busnummer|Ticketing error |AdresBusnummerPostcodeInconsistent | Deze actie is niet toegestaan op een busnummer wegens een inconsistente postcode. |  
+|Adres met huisnummer werd gecorrigeerd na opheffing van adres met busnummer|Ticketing error |AdresBusnummerHuisnummerInconsistent | Deze actie is niet toegestaan op een busnummer wegens een inconsistent huisnummer.|
+|Postcode van adres met huisnummer werd gecorrigeerd na opheffing adres met busnummer|Ticketing error |AdresBusnummerPostcodeInconsistent | Deze actie is niet toegestaan op een busnummer wegens een inconsistente postcode. |  
 |Status adresId afgekeurd/gehistoreerd|Ticketing error|AdresInGebruikOfGehistoreerd| Deze actie is enkel toegestaan op adressen met status 'afgekeurd'.|
 |Adres in straatnaam met status afgekeurd/gehistoreerd|Ticketing error|AdresStraatnaamVoorgesteldOfInGebruik| Deze actie is enkel toegestaan binnen straatnamen met  status 'voorgesteld' of 'inGebruik'. |
 |Verwijderd adresId meegegeven |Ticketing error |VerwijderdAdres  |Verwijderd adres.  | 
