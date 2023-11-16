@@ -255,15 +255,15 @@
     "Prefix": "Basisregisters Vlaanderen",
     "doormatItems": [
       {
-        "title": "Adressenregister",
+        "title": "Implementatiemodel adressenregister",
         "url": "/implementatiemodel/adressenregister"
       },
       {
-        "title": "Gebouwenregister",
+        "title": "Implementatiemodel gebouwenregister",
         "url": "/implementatiemodel/gebouwenregister"
       },
       {
-        "title": "Wegenregister",
+        "title": "Implementatiemodel wegenregister",
         "url": "/implementatiemodel/wegenregister"
       }
     ],
