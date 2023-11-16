@@ -209,7 +209,7 @@
       }
     ]
     },
-     "release-notes/business-grar": {
+      "release-notes/business-grar": {
       "title": "Functionele release notes van het gebouwen- en adressenregister"
     },
    "release-notes/business-wr": {
@@ -218,27 +218,27 @@
    "release-notes/technisch-grar": {
       "title": "Technische release notes van het gebouwen- en adressenregister"
     },
-      "notificationsbasisregisters": {
-    "title": "Technische documentatie voor de meldingen van het gebouwen- en adressenregister",
-    "Prefix": "Basisregisters Vlaanderen"
-  },
   "editendpointsgrar": {
     "title": "Gebruik van de edit API's van het gebouwen- en adressenregister",
     "Prefix": "Basisregisters Vlaanderen"
   },
   "editvalidationsgrar": {
-    "title": "Validaties edit API's van het gebouwen- en adressenregister",
+    "title": "Validaties",
     "Prefix": "Basisregisters Vlaanderen"
   },
-   "editendpointswr": {
-    "title": "Gebruik van de edit API's van het wegenregister",
+  "editvalidations": {
+    "title": "Validaties",
     "Prefix": "Basisregisters Vlaanderen"
   },
-  "editvalidationswr": {
-    "title": "Validaties edit API's van het wegenregister",
+  "statusflowgrar": {
+    "title": "Status flow API's van het gebouwen- en adressenregister",
     "Prefix": "Basisregisters Vlaanderen"
   },
-      "glossary": {
+    "notificationsbasisregisters": {
+    "title": "Technische documentatie voor de meldingen van het gebouwen- en adressenregister",
+    "Prefix": "Basisregisters Vlaanderen"
+  },
+    "glossary": {
     "title": "Verklarende woordenlijst",
     "Prefix": "Basisregisters Vlaanderen"
   },
@@ -246,20 +246,8 @@
     "title": "Veelgestelde vragen",
     "Prefix": "Basisregisters Vlaanderen"
   },
-  "statusflowgrar": {
-    "title": "Flow statussen gebouwen- en adressenregister",
-    "Prefix": "Basisregisters Vlaanderen"
-  },
-  "productsgrar": {
-    "title": "Producten van het gebouwen- en adressenregister",
-    "Prefix": "Basisregisters Vlaanderen"
-    },
-  "productswr": {
-    "title": "Producten van het wegenregister",
-    "Prefix": "Basisregisters Vlaanderen"
-    },
-  "apikey": {
-    "title": "API keys",
+  "Apikey": {
+    "title": "API key",
     "Prefix": "Basisregisters Vlaanderen"
   },
   "implementationmodel": {
