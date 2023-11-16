@@ -18,10 +18,6 @@
       "text": "Gebruik van de edit endpoints van het gebouwen- en adressenregister",
       "url": "/documentatie/editendpointsgrar"
     },
-    "apikey": {
-      "text": "API keys",
-      "url": "/apikey"
-    },
     "implementationmodel": {
       "text": "Implementatiemodel",
       "url": "/implementatiemodel"
