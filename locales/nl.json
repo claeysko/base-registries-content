@@ -272,131 +272,7 @@
       "urls": []
     }
   },
-  "error-detail": {
-    "title": "Mogelijke foutmeldingen in de endpoints van de basisregisters",
-    "Prefix": "Basisregisters Vlaanderen",
-    "doormatItems": [
-      {
-        "title": "Error 304",
-        "url": "/foutmeldingen/304",
-        "hide": false
-      },
-      {
-        "title": "Error 401",
-        "url": "/foutmeldingen/401",
-        "hide": false
-      },
-      {
-        "title": "Error 403: Onbevoegd",
-        "url": "/foutmeldingen/unauthorized",
-        "hide": false
-      },
-        {
-        "title": "Error 403: Ongeldige API key",
-        "url": "/foutmeldingen/invalid_api_key",
-        "hide": false
-      },
-      {
-        "title": "Error 404",
-        "url": "/foutmeldingen/404",
-        "hide": false
-      },
-      {
-        "title": "Error 406",
-        "url": "/foutmeldingen/406",
-        "hide": false
-      },
-      {
-        "title": "Error 410",
-        "url": "/foutmeldingen/410",
-        "hide": false
-      },
-      {
-        "title": "Error 412",
-        "url": "/foutmeldingen/412",
-        "hide": false
-      },
-      {
-        "title": "Error 429",
-        "url": "/foutmeldingen/429",
-        "hide": false
-      },
-       {
-        "title": "Error 500",
-        "url": "/foutmeldingen/500",
-        "hide": false
-      },
-      {
-        "title": "Error 504",
-        "url": "/foutmeldingen/504",
-        "hide": false
-      }
-    ], 
-    "sidebar": {
-      "title": "Op deze pagina",
-      "urls": []
-    }
-  },
-   "integrationDocumentation": {
-    "title": "Integratiedocumentatie",
-    "Prefix": "Basisregisters Vlaanderen",
-    "doormatItems": [
-      {
-        "title": "Technische integraties met het gebouwen- en adressenregister",
-        "text": "Een overzicht van de verschillende technische integratiemogelijkheden met het gebouwen- en adressenregister",
-        "url": "/integratie-documentatie/grar",
-        "hide": false
-      },
-      {
-        "title": "Technische integraties met het wegenregister",
-        "text": "Een overzicht van de verschillende technische integratiemogelijkheden met het wegenregister",
-        "url": "/integratie-documentatie/wr",
-        "hide": true
-      }
-    ],
-      "sidebar": {
-      "title": "Op deze pagina",
-      "urls": [
-      ]
-    }
-  },
-  "integrationDocumentationGrar": {
-    "title": "Technische integraties met het gebouwen- en adressenregister",
-    "Prefix": "Basisregisters Vlaanderen",
-      "sidebar": {
-      "title": "Op deze pagina",
-      "urls": [
-      ]
-    }
-  },
-  "integrationDocumentationWr": {
-    "title": "Technische integraties met het wegenregister",
-    "Prefix": "Basisregisters Vlaanderen",
-       "sidebar": {
-      "title": "Op deze pagina",
-      "urls": [
-      ]
-    }
-  },
-    "products": {
-    "title": "Producten basisregisters",
-    "Prefix": "Basisregisters Vlaanderen",
-    "doormatItems": [
-      {
-        "title": "Producten van het gebouwen- en adressenregister",
-        "text": "Een overzicht van de verschillende producten van het gebouwen- en adressenregister",
-        "url": "/producten/grar",
-        "hide": false
-      },
-      {
-        "title": "Producten van het wegenregister",
-        "text": "Een overzicht van de verschillende producten van het wegenregister",
-        "url": "/producten/wr",
-        "hide": false
-      }
-    ]
-  },
-  "implementationmodelRoadRegistry": {
+   "implementationmodelRoadRegistry": {
     "title": "Wegenregister",
     "Prefix": "Basisregisters Vlaanderen",
     "version": "2022-08-30",
@@ -521,6 +397,130 @@
         }
       ]
     }
+  },
+  "error-detail": {
+    "title": "Mogelijke foutmeldingen in de endpoints van de basisregisters",
+    "Prefix": "Basisregisters Vlaanderen",
+    "doormatItems": [
+      {
+        "title": "Error 304",
+        "url": "/foutmeldingen/304",
+        "hide": false
+      },
+      {
+        "title": "Error 401",
+        "url": "/foutmeldingen/401",
+        "hide": false
+      },
+      {
+        "title": "Error 403: Onbevoegd",
+        "url": "/foutmeldingen/unauthorized",
+        "hide": false
+      },
+        {
+        "title": "Error 403: Ongeldige API key",
+        "url": "/foutmeldingen/invalid_api_key",
+        "hide": false
+      },
+      {
+        "title": "Error 404",
+        "url": "/foutmeldingen/404",
+        "hide": false
+      },
+      {
+        "title": "Error 406",
+        "url": "/foutmeldingen/406",
+        "hide": false
+      },
+      {
+        "title": "Error 410",
+        "url": "/foutmeldingen/410",
+        "hide": false
+      },
+      {
+        "title": "Error 412",
+        "url": "/foutmeldingen/412",
+        "hide": false
+      },
+      {
+        "title": "Error 429",
+        "url": "/foutmeldingen/429",
+        "hide": false
+      },
+       {
+        "title": "Error 500",
+        "url": "/foutmeldingen/500",
+        "hide": false
+      },
+      {
+        "title": "Error 504",
+        "url": "/foutmeldingen/504",
+        "hide": false
+      }
+    ], 
+    "sidebar": {
+      "title": "Op deze pagina",
+      "urls": []
+    }
+  },
+   "integrationDocumentation": {
+    "title": "Integratiedocumentatie",
+    "Prefix": "Basisregisters Vlaanderen",
+    "doormatItems": [
+      {
+        "title": "Technische integraties met het gebouwen- en adressenregister",
+        "text": "Een overzicht van de verschillende technische integratiemogelijkheden met het gebouwen- en adressenregister",
+        "url": "/integratie-documentatie/grar",
+        "hide": false
+      },
+      {
+        "title": "Technische integraties met het wegenregister",
+        "text": "Een overzicht van de verschillende technische integratiemogelijkheden met het wegenregister",
+        "url": "/integratie-documentatie/wr",
+        "hide": true
+      }
+    ],
+      "sidebar": {
+      "title": "Op deze pagina",
+      "urls": [
+      ]
+    }
+  },
+  "integrationDocumentationGrar": {
+    "title": "Technische integraties met het gebouwen- en adressenregister",
+    "Prefix": "Basisregisters Vlaanderen",
+      "sidebar": {
+      "title": "Op deze pagina",
+      "urls": [
+      ]
+    }
+  },
+  "integrationDocumentationWr": {
+    "title": "Technische integraties met het wegenregister",
+    "Prefix": "Basisregisters Vlaanderen",
+       "sidebar": {
+      "title": "Op deze pagina",
+      "urls": [
+      ]
+    }
+  },
+    "products": {
+    "title": "Producten basisregisters",
+    "Prefix": "Basisregisters Vlaanderen",
+    "doormatItems": [
+      {
+        "title": "Producten van het gebouwen- en adressenregister",
+        "text": "Een overzicht van de verschillende producten van het gebouwen- en adressenregister",
+        "url": "/producten/grar",
+        "hide": false
+      },
+      {
+        "title": "Producten van het wegenregister",
+        "text": "Een overzicht van de verschillende producten van het wegenregister",
+        "url": "/producten/wr",
+        "hide": false
+      }
+    ]
   },
   "registries": {
     "address": {
