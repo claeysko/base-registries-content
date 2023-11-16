@@ -26,13 +26,13 @@
       "text": "Technische integraties met de basisregisters",
       "url": "/integratie-documentatie"
     },
-    "products": {
-      "text": "Producten basisregisters",
-      "url": "/producten"
-    },
      "error-detail": {
       "text": "Mogelijke foutmeldingen in de endpoints van de basisregisters",
       "url": "/foutmeldingen"
+    },
+      "products": {
+      "text": "Producten basisregisters",
+      "url": "/producten"
     },
    "releaseNotes": {
     "text": "Release notes",
