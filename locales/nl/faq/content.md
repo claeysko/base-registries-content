@@ -208,67 +208,9 @@ Vanaf december 2023 zal de CRAB-beheerder in staat zijn de gebouweenheden direct
 
 <details>
 
-<summary>Hoe wordt de status (levensloop) voor de verschillende objecten ingevuld?  </summary>
+<summary>Wat is de flow van de statussen van de verschillende objecten van het gebouwen- en adressenregister?  </summary>
 
-De beoogde levensloop van de kernobjecten werd eerst uitgetekend i.s.m. de werkgroep. In deze projectfase worden de data in het gebouwen- en adressenregister uitsluitend uit het CRAB gehaald (dat op zijn beurt ook gebouwgeometrieën uit het [GRB](https://www.vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/basiskaart-vlaanderen-grb) betrekt). Daarbij worden de CRAB-statussen als volgt omgezet naar het nieuwe statusverloop (de statussen worden toegelicht in de objectcataloog gebouwen- en adressenregister):
-
-### Gebouw
-| Informatie in CRAB | Status | 
-|:-:|:-:|
-| Gebouw met status ‘vergunning aangevraagd’ | gepland | 
-| Gebouw met status ‘bouwvergunning verleend’ | gepland | 
-| Gebouw met status ‘in aanbouw’ | in aanbouw | 
-| Gebouw met status ‘in gebruik’| gerealiseerd | 
-| Gebouw met status ‘buiten gebruik’| gerealiseerd | 
-| Gebouw waarvoor einddatum ingevuld werd toen gebouw status ‘in gebruik’ of ‘buiten gebruik’ had| gehistoreerd | 
-| Gebouw waarvoor einddatum ingevuld werd toen gebouw status ‘vergunning verleend/aangevraagd’ of ‘in aanbouw’ had| niet gerealiseerd | 
-
-Merk op: de levensloop wordt beschreven vanuit het resultaat, niet vanuit de vergunningsprocedure (deze informatie hoort thuis in het vergunningenregister) dan wel het gebruik (we spreken ons niet uit over het al dan niet in gebruik zijn van een gebouw: dit is thematische informatie). In het gebouwen- en adressenregister worden ook niet-vergunningsplichtige gebouwen opgenomen.
-
-### Gebouweenheid
-| **Informatie in CRAB** | **Status** | 
-|:-:|:-:|
-| Gebouweenheid gebaseerd op huisnummer/subadres met status ‘voorgesteld’ | gepland | 
-| Gebouweenheid gebaseerd op huisnummer/subadres met status ‘gereserveerd’ | gepland | 
-| Gebouweenheid gebaseerd op huisnummer/subadres met status ‘inGebruik’ | gerealiseerd | 
-| Gebouweenheid gebaseerd op huisnummer/subadres met status ‘buitenGebruik’ | gerealiseerd | 
-| Gebouweenheid gebaseerd op huisnummer/subadres met status ‘nietOfficieel’ | gerealiseerd | 
-| Gebouweenheid gebaseerd op huisnummer/subadres waarvan einddatum ingevuld werd toen adres status ‘inGebruik’ , ‘buitenGebruik’ of ‘nietOfficieel’ had| gehistoreerd | 
-| Gebouweenheid gebaseerd op huisnummer/subadres waarvan einddatum ingevuld werd toen adres status ‘voorgesteld’ of ‘gereserveerd’ had| niet gerealiseerd | 
-
-### Adres
-| **Informatie in CRAB** | **Status** | **OfficieelToegekend** |
-|:-:|:-:|
-| Huisnummer/subadres met status ‘voorgesteld’ | voorgesteld | ja |
-| Huisnummer/subadres met status ‘gereserveerd’ | voorgesteld | ja |
-| Huisnummer/subadres met status ‘in gebruik’ | in gebruik | ja |
-| Huisnummer/subadres met status ‘buiten gebruik’ | in gebruik | ja| 
-| Huisnummer/subadres met status ‘niet officieel’| in gebruik | nee| 
-| Huisnummer/subadres waarvoor einddatum ingevuld werd| gehistoreerd | (afhankelijk van adresstatus)| 
-
-### Straatnaam
-| **Informatie in CRAB** | **Status** | 
-|:-:|:-:|
-| Straatnaam met status ‘voorgesteld’ | voorgesteld | 
-| Straatnaam met status ‘gereserveerd’ | voorgesteld | 
-| Straatnaam met status ‘in gebruik’ | in gebruik | 
-| Straatnaam met status ‘buiten gebruik’ | in gebruik | 
-| Straatnaam waarvoor einddatum ingevuld werd| gehistoreerd | 
-
-### Gemeente
-| **Informatie in CRAB** | **Status** | 
-|:-:|:-:|
-| Actuele gemeente | in gebruik | 
-| Gemeente waarvoor einddatum ingevuld werd | gehistoreerd | 
-
-### Postinfo en Perceel
-| **Informatie in CRAB** | **Status** | 
-|:-:|:-:|
-| Actueel object | gerealiseerd | 
-| Object waarvoor einddatum ingevuld werd | gehistoreerd | 
-
-Vanaf december 2023 zal de status rechtstreeks op het gebouwen- en adressenregister kunnen aangepast worden door decentrale beheerders. Daarbij wordt gestreefd naar een zo volledig mogelijk levensloop, waarbij het object in een zo vroeg mogelijk stadium in het register opgenomen wordt zodat het beschikbaar is voor thematische koppelingen.
-
+Zie https://basisregisters.vlaanderen.be/documentatie/statusflowgrar voor een volledig overzicht per object per status. 
 
 </details>
 
