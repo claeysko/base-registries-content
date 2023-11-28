@@ -258,7 +258,7 @@ Voorbeeld:
 <details>
 
 <summary>Hoe weet ik welk perceel aan het gebouw gekoppeld is?</summary>
-Via het read endpoint detail gebouw v2 ( [Documentatie](https://docs.basisregisters.vlaanderen.be/docs/api-documentation.html#operation/GetBuildingV2) ) kunnen de eventuele gekoppelde percelen opgevraagd worden of via het read endpoint lijst gebouw v2 waarbij de filter CaPaKey wordt meegegeven ( [Documentatie](https://docs.basisregisters.vlaanderen.be/docs/api-documentation.html#operation/ListBuildingsV2) ). 
+Via het read endpoint detail gebouw v2 ([Documentatie](https://docs.basisregisters.vlaanderen.be/docs/api-documentation.html#operation/GetBuildingV2 )) kunnen de eventuele gekoppelde percelen opgevraagd worden of via het read endpoint lijst gebouw v2 waarbij de filter CaPaKey wordt meegegeven ([Documentatie](https://docs.basisregisters.vlaanderen.be/docs/api-documentation.html#operation/ListBuildingsV2) ). 
 Een perceel wordt als onderliggend aan een gebouw beschouwd indien het voldoet aan volgende voorwaarde (formule voor de berekening van de ‘verbeterde topologische relatie’): oppervlak overlap gebouw - perceel / oppervlak gebouw > 0.8 / # percelen waarmee het gebouw overlapt.
 </details>
 
