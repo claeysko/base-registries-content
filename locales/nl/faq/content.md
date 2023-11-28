@@ -80,10 +80,9 @@ Meer informatie over dit downloadbestand kan u [hier](https://basisregisters.vla
 
 <details>
 
-<summary>Zal het downloadbestand later als dataproduct bestendigd worden? </summary>
-
-Het is de bedoeling dat het downloadbestand een dataproduct gaat worden.  
-
+<summary>Is het downloadbestand als dataproduct beschikbaar? </summary>
+Het downloadbestand is bechikbaar als dataproduct. Meer informatie over dit downloadbestand kan u [hier](https://basisregisters.vlaanderen.be/producten/grar#downloadbestandgrar) vinden.
+ 
 </details>
 
 
@@ -126,6 +125,13 @@ Dit wordt sterk aangeraden. Vanaf ten laatste 1 november 2023 zullen de v1 endpo
 <details>
 
 <summary>Wat is de update frequentie van de WMS'en van het gebouwen- en adressenregister?  </summary>
+De update frequentie van de geolocation service bij wijzigingen in het gebouwen- en adressenregister zullen pas de dag nadien zichtbaar zijn in de geolocation service. 
+
+</details>
+
+<details>
+
+<summary>Wat is de update frequentie van de geolocation service?  </summary>
 De update frequentie van de WMS'en bij wijzigingen in het gebouwen- en adressenregister zijn near real time. Wat houdt dit in? Dit wit zeggen dat als bijvoorbeeld een adres wordt aangepast, de aanpassing van het adres zo goed als direct erna ook in de WMS van het gebouwen- en adressenregister zichtbaar zal zijn. 
 
 </details>
@@ -142,20 +148,16 @@ In gebouwen met exact één gebouweenheid krijgt de gebouweenheid een huisnummer
 <details>
 
 <summary>Is de puntgeometrie van een gebouweenheid dezelfde als deze van het adres?</summary>
-Het attribuut ‘geometrie’ van een gebouweenheid is de positie van de gebouweenheid binnen de gebouwcontour.
-- Staat de ‘positieGeometrieMethode’ op ‘afgeleidVanObject’ dan werd deze positie afgeleid van het gebouw waarbinnen de gebouweenheid ligt en betreft het de centroïde van het gebouw.
-- Staat de ‘positieGeometrieMethode’ op ‘aangeduidDoorBeheerder’ dan werd de positie manueel geplaatst door een decentraal beheerder (in concreto: aangezien gebouweenheden momenteel automatisch aangemaakt worden o.b.v. CRAB-adressen betekent dit dat van het corresponderende adres in CRAB de meest kwalitatieve, manuele positie gebruikt werd).
-- Echter, ligt de positie van het CRAB-adres buiten de gebouwcontour, dan zal de daarop gebaseerde gebouweenheid automatisch op de centroïde van het gebouw geplaatst worden. Gebouweenheden dienen namelijk steeds binnen een gebouw te liggen.
-Dit betekent dat de gebouweenheid een andere positie kán hebben dan het adres in CRAB waarop het gebaseerd werd.
+Het attribuut ‘geometrie’ van een gebouweenheid is de positie van de gebouweenheid binnen de gebouwcontour. Deze geometrie kan niet buiten het gebouw liggen.  Staat de ‘positieGeometrieMethode’ op ‘afgeleidVanObject’ dan werd deze positie afgeleid van het gebouw waarbinnen de gebouweenheid ligt en betreft het de centroïde van het gebouw. - Staat de ‘positieGeometrieMethode’ op ‘aangeduidDoorBeheerder’ dan werd de positie manueel geplaatst door een decentraal beheerder. Het is dus mogelijk dat de gebouweenheid op een andere positie ligt dan het adres. 
 
 </details>
 
 
 <details>
 
-<summary>Heeft ieder gebouw één gebouweenheid? Hoe gebeurt de afbakening?  </summary>
+<summary>Heeft ieder gebouw één gebouweenheid?  </summary>
 
-Nee, dit is niet het geval. Het gebouw kan 0, 1 of meerdere gebouweenheden hebben. Momenteel worden gebouweenheden vandaag aangemaakt waar in CRAB een adres aan een gebouw gekoppeld werd. Dit is echter een tijdelijke situatie tot december 2023 wanneer CRAB is uitgeschakeld. Daarna zullen gebouweenheden rechtstreeks aangemaakt worden door decentrale beheerders in het gebouwen- en adressenregister.  
+Nee, dit is niet het geval. Het gebouw kan 0, 1 of meerdere gebouweenheden hebben. De decentrale beheerder zal gebouweenheden aanmaken in het gebouwen- en adressenregister. Deze hebben automatisch de functie ‘nietGekend’. Een gemeenschappelijk deel zal niet door een decentrale beheerder kunnen aangemaakt worden, want deze gebouweenheid wordt automatisch aangemaakt van zodra er 2 gebouweenheden aan het gebouw zijn gekoppeld. 
 
 </details>
 
@@ -206,12 +208,8 @@ De te volgend aanpak - met de services die vandaag beschikbaar zijn- is daarom:
 
 <details>
 
-<summary>Waar vind ik de adresposities met herkomst 'brievenbus', 'nutsaansluiting' en 'toegang tot de weg' uit het CRAB terug? </summary>
-
-Door de werkgroep werd besloten dit soort ‘toepassingsgerichte’ adresposities niet langer in het gebouwen- en addressenregister op te nemen. De motivatie daarvoor is tweeledig:
-- Deze zijn **teveel gericht op één gebruikersgroep, horen niet thuis in een basisregister.** Andere partijen kunnen deze informatie kwalitatiever bijhouden. Het heeft geen zin de gemeenten met de kartering ervan te belasten.
-- In het CRAB werd deze informatie niet uniform door alle gemeenten beheerd. Het aandeel van de toepassingsgerichte posities bedroeg slechts 0.73% (ca. 24000 posities).
-Waar de toepassingsgerichte positie de enige of meest kwalitatieve positie voor een adres vormde in CRAB, zal enkel de positie overgenomen worden in het gebouwen-en adressenregister (de positiespecificatie zal echter ‘gebouweenheid’ of ‘perceel’ zijn). 
+<summary>Welke adresposities zijn mogelijk binnen het gebouwen- en adressenregister? </summary>
+De adresposities die mogelijk zijn binnen het gebouwen- en adressenregister zijn: gemeente, straat, perceel, lot, standplaats, ligplaats, gebouw, gebouweenheid, ingang en wegsegment. 
 </details>
 
 
@@ -247,34 +245,19 @@ U kan op basis van de verschillende read endpoints (https://basisregisters.vlaan
 
 <summary>Wat is de betekenis van het veld 'homoniemtoevoeging'?</summary>
 
-- In CRAB dragen sommige straatnamen een suffix, bv. ‘Krijgsbaan_HO, Antwerpen’, waarbij ‘HO’ staat voor het district ‘Hoboken’.
-- Aangezien elke straatnaam uniek moet zijn binnen de gemeente, en districten in geen enkel adresmodel (CRAB, Adressenregister, OSLO², BeSt-Add) worden voorzien, heeft men deze suffix nodig om het onderscheid te maken met bv. ‘Krijgsbaan_DE, Antwerpen’ (gelijknamige straatnaam in district Deurne). Ook in andere gemeenten worden zeer sporadisch suffices gebruikt om homoniemen te onderscheiden.
-- Daarom wordt in het Adressenregister naast het veld ‘straatnaam’ ook een ‘homoniemtoevoeging’ voorzien waarin deze suffix kan worden opgenomen, daar waar deze suffix in CRAB integraal deel uitmaakt van het veld ‘straatnaam’:
-  -  CRAB: straatnaam=Krijgsbaan_HO
-  - Adressenregister: straatnaam=Krijgsbaan, homoniemtoevoeging=HO
-- **Nieuwe homoniemtoevoegingen zijn niet toegestaan.** Bij gemeentelijke fusies bijvoorbeeld moeten de homoniemen opgelost zijn op de datum dat de fusie ingaat.
+Een straatnaam moet uniek zijn binnen een gemeente. Districten zijn in geen enkel adresmodel (Adressenregister, OSLO², BeSt-Add) voorzien. Echter in bepaalde gemeenten zijn er nog dezelfde straatnamen in verschillende districten. De homoniemtoevoeging wordt gebruikt om aan te duiden in welk district de straatnaam ligt. Een straatnaam is met de bijhorende homoniemtoevoeging uniek binnen een gemeente. 
+
+Voorbeeld: 
+- Straatnaam = Krijgsbaan, homoniemtoevoeging = HO, waarbij ‘HO’ staat voor het district ‘Hoboken’.
+- Straatnaam = Krijgsbaan, homoniemtoevoeging = DE, waarbij ‘DE’ staat voor het district ‘Deurne’. 
+
+**Nieuwe homoniemtoevoegingen zijn niet toegestaan.** Het is wel mogelijk om bestaande homoniemtoevoegingen te wijzigen of te verwijderen. Bij gemeentelijke fusies moeten de homoniemen opgelost zijn op de datum dat de fusie ingaat.
 </details>
-
-
-<details>
-
-<summary>Waar vind ik de 'begin- en einddatum' uit het CRAB terug?</summary>
-
-De begin- en einddatum in het CRAB definiëren een administratieve geldigheidsperiode bij de status van een object (de zogenaamde ‘objecthistoriek’). Zo kan bij de ingebruikname van een officiële straatnaam de datum van het gemeenteraadsbesluit meegegeven worden (begindatum) of bij het slopen van een gebouw de datum waarop de sloop voltooid werd (einddatum).
-
-In de praktijk is het voor decentrale beheerders niet altijd even evident om deze administratieve data te kennen. Zo wordt het ‘einde der werken’ (het moment waarop de status van een gebouw in het Gebouwenregister op ‘gerealiseerd’ dient te komen) vandaag maar zelden door de bouwheer aan de gemeente meegedeeld. Bijgevolg kan de begin- en einddatum niet voldoende kwalitatief ingevuld worden.
-
-Daarnaast kan geargumenteerd worden dat deze administratieve informatie al in andere bronnen beschikbaar is (cfr. [lokale besluiten als gelinkte open data](https://lokaalbestuur.vlaanderen.be/gelinkt-publiceren-en-melden)  en vergunningenregister).
-
-Door de werkgroep werd daarom beslist **geen administratieve geldigheidsperiode** bij objecten in het gebouwen- en adressenregister te voorzien. Wel zullen datum en tijdstip alsook bijkomende herkomstinformatie (beschikbaar vanaf een volgende release) geregistreerd worden op het moment dat objecten worden opgevoerd, aangepast of verwijderd (de zogenaamde ‘recordhistoriek’).
-</details>
-
 
 <details>
 
 <summary>Hoe weet ik welk perceel aan het gebouw gekoppeld is?</summary>
-
-Via het read endpoint detail gebouw v2 ([Documentatie](https://docs.basisregisters.vlaanderen.be/docs/api-documentation.html#operation/GetBuildingV2)) kunnen de eventuele gekoppelde percelen opgevraagd worden.
+Via het read endpoint detail gebouw v2 ([Documentatie](https://docs.basisregisters.vlaanderen.be/docs/api-documentation.html#operation/GetBuildingV2)) kunnen de eventuele gekoppelde percelen opgevraagd worden of via het read endpoint lijst gebouw v2 waarbij de filter CaPaKey wordt meegegeven ([Documentatie](https://docs.basisregisters.vlaanderen.be/docs/api-documentation.html#operation/ListBuildingsV2)). 
 Een perceel wordt als onderliggend aan een gebouw beschouwd indien het voldoet aan volgende voorwaarde (formule voor de berekening van de ‘verbeterde topologische relatie’): oppervlak overlap gebouw - perceel / oppervlak gebouw > 0.8 / # percelen waarmee het gebouw overlapt.
 </details>
 
