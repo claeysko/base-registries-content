@@ -189,6 +189,7 @@ Er worden vier adresseerbare objecten onderscheiden:
 - perceel
 - standplaats
 - ligplaats
+
 Stand- en ligplaatsen zullen later als object (‘resource’) worden toegevoegd. Gebouwen dragen enkel adressen via de daarbinnen gelegen gebouweenheden (fijnmazigere adressering).
 </details>
 
