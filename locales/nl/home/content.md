@@ -1,4 +1,4 @@
-><font size="5">**Belangrijke update:** Het CRAB wordt ten laatste vanaf 1 november 2023 niet meer bijgewerkt vanwege de migratie naar het Gebouwen- en Adressenregister. Bekijk alle informatie op [Gebouwen- en Adressenregister][6] en schrijf je in voor infosessies [Gebouwen- en Adressenregister | Vlaanderen.be][5]. Contacteer ons via digitaal.vlaanderen@vlaanderen.be voor hulp of vragen.</font>
+><font size="5">**Belangrijke update: De v1 endpoints van het gebouwen- en adressenregister worden uitgezet:** De v2 endpoints voor de read en feed endpoints van het gebouwen- en adressenregister zijn in productie. Vanaf eind maart 2024 worden de v1 endpoints van het gebouwen- en adressenregister uitgefaseerd en is het de bedoeling dat u de v2 endpoints aanroept. Documentatie v2 endpoints: https://docs.basisregisters.vlaanderen.be/docs/api-documentation.html. Contacteer ons via digitaal.vlaanderen@vlaanderen.be voor hulp of vragen.</font>
 
 ## Basisregisters Vlaanderen
 
@@ -23,12 +23,4 @@ Het **Wegenregister** is het middenschalig referentiebestand van de wegen in Vla
 [2]:https://www.vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/wegenregister
 [3]:https://www.vlaanderen.be/digitaal-vlaanderen/status/status-overzicht?product=Gebouwen-%20en%20Adressenregister
 [4]:https://www.vlaanderen.be/digitaal-vlaanderen/status/status-overzicht?product=Wegenregister
-[5]:https://www.vlaanderen.be/digitaal-vlaanderen/agenda/evenementen/gebouwen-en-adressenregister
-[6]:https://vlaamseoverheid.atlassian.net/wiki/spaces/AGB/pages/6094099791/Gebouwen-+en+Adressenregister
-    
-      
-        
-          
-            
-  
-  
+[5]:https://www.vlaanderen.be/digitaal-vlaanderen/agenda/evenementen/gebouwen-en-adressenregister    
