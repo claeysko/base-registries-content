@@ -1,4 +1,4 @@
-><font size="5">**Belangrijke update: De v1 endpoints van het gebouwen- en adressenregister worden uitgezet:** De v2 endpoints voor de read en feed endpoints van het gebouwen- en adressenregister zijn in productie. Vanaf eind maart 2024 worden de v1 endpoints van het gebouwen- en adressenregister uitgefaseerd en is het de bedoeling dat u de v2 endpoints aanroept. Documentatie v2 endpoints: https://docs.basisregisters.vlaanderen.be/docs/api-documentation.html. Contacteer ons via digitaal.vlaanderen@vlaanderen.be voor hulp of vragen.</font>
+><font size="5">**Belangrijke update: De v1 endpoints van het gebouwen- en adressenregister worden uitgezet.** De v2 endpoints voor de read en feed endpoints van het gebouwen- en adressenregister zijn in productie. Vanaf eind maart 2024 worden de v1 endpoints van het gebouwen- en adressenregister uitgefaseerd en is het de bedoeling dat u de v2 endpoints aanroept. Documentatie v2 endpoints: https://docs.basisregisters.vlaanderen.be/docs/api-documentation.html. Contacteer ons via digitaal.vlaanderen@vlaanderen.be voor hulp of vragen.</font>
 
 ## Basisregisters Vlaanderen
 
