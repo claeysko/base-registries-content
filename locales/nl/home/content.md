@@ -1,4 +1,4 @@
-><font size="5">**Belangrijke update:** De v1 endpoints van het gebouwen- en adressenregister en WMS & WFS adressen (CRAB) worden stopgezet tegen **eind maart 2024**. Meer informatie kan u op deze pagina vinden: https://vlaamseoverheid.atlassian.net/wiki/spaces/AGB/pages/6544655660/Stopzetting+producten+CRAB+gebouwen-+en+adressenregister.</font>
+><font size="5">**Belangrijke update:** De v1 endpoints van het gebouwen- en adressenregister en WMS & WFS adressen (CRAB) worden **stopgezet** tegen **eind maart 2024**. Meer informatie kan u [hier](https://vlaamseoverheid.atlassian.net/wiki/spaces/AGB/pages/6544655660/Stopzetting+producten+CRAB+gebouwen-+en+adressenregister) vinden.</font>
 
 ## Basisregisters Vlaanderen
 
