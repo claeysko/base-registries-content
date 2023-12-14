@@ -1,13 +1,4 @@
-><font size="5">**Belangrijke update:** Het CRAB wordt vanaf 1 november 2023 niet meer bijgewerkt vanwege de migratie naar het Gebouwen- en Adressenregister. Bekijk alle informatie op [Gebouwen- en Adressenregister][6] en schrijf je in voor infosessies [Gebouwen- en Adressenregister | Vlaanderen.be][5]. Contacteer ons via digitaal.vlaanderen@vlaanderen.be voor hulp of vragen.</font>
- <vl-alert
-            icon="warning"
-            title="Opgelet!"
-            mod-error
-            role="alertdialog">
-            <p>
-                **Belangrijke update:** Het CRAB wordt vanaf 1 november 2023 niet meer bijgewerkt vanwege de migratie naar het Gebouwen- en Adressenregister. Bekijk alle informatie op [Gebouwen- en Adressenregister][6] en schrijf je in voor infosessies [Gebouwen- en Adressenregister | Vlaanderen.be][5]. Contacteer ons via digitaal.vlaanderen@vlaanderen.be voor hulp of vragen.
-            </p>
-        </vl-alert>
+><font size="5">**Belangrijke update:** De v1 endpoints van het gebouwen- en adressenregister en WMS & WFS adressen (CRAB) worden **stopgezet** tegen **eind maart 2024**. Meer informatie kan u [hier](https://vlaamseoverheid.atlassian.net/wiki/spaces/AGB/pages/6544655660/Stopzetting+producten+CRAB+gebouwen-+en+adressenregister) vinden.</font>
 
 ## Basisregisters Vlaanderen
 
