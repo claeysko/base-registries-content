@@ -656,7 +656,7 @@
         "import": false,
         "syndication": true,
         "producer": false,
-        "consumer": false,
+        "consumer": true,
         "importerGrb": false
       }
     }
