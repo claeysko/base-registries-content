@@ -35,6 +35,7 @@ Hieronder kan per register een lijst gevonden worden van welke beheeracties er a
 * Corrigeer de goedkeuring van een straatnaam. (Interne bijwerker)
 * Corrigeer de afkeuring van een straatnaam. (Interne bijwerker)
 * Corrigeer de opheffing van een straatnaam. (Interne bijwerker)
+* Hernoem de straatnaam van een straatnaam. (Decentrale bijwerker)
 
 ### Adressen
 * Stel een adres voor. (Decentrale bijwerker)
