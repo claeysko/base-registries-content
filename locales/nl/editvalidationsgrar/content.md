@@ -119,11 +119,12 @@
 |Ongeldig straatnaamId meegegeven   |Error 400  |/ |De waarde 'straatnaamId' is ongeldig.  |
 |Ongeldig doelStraatnaamId meegegeven   |Error 400  |OnbestaandeStraatnaam |Onbestaande straatnaam.  |
 |Onbestaand doelStraatnaamId meegegeven  |Error 400 |OnbestaandeStraatnaam  |Onbestaande straatnaam. |
+|Verwijderd doelStraatnaamId in andere gemeente als straatnaamObjectId |Error 400 |StraatnamenAndereGemeenten  |De meegegeven straatnamen liggen in verschillende gemeenten.  |
 |Onbestaand straatnaamId meegegeven  |Error 404 |/  |/  |
 |Status straatnaamId gehistoreerd/afgekeurd/voorgesteld|Ticketing error|StraatnaamVoorgesteldAfgekeurdOfGehistoreerd| Deze actie is enkel toegestaan op straatnamen met status 'inGebruik'. |
 |Status doelStraatnaamId gehistoreerd/afgekeurd|Ticketing error|StraatnaamGehistoreerdOfAfgekeurd| Deze actie is enkel toegestaan op straatnamen met status 'voorgesteld' of 'inGebruik'. |
 |Verwijderd straatnaamId meegegeven |Ticketing error |VerwijderdeStraatnaam  |Verwijderde straatnaam.  |
-|Verwijderd doelStraatnaamId meegegeven |Ticketing error |VerwijderdeStraatnaam  |Verwijderde straatnaam.  |
+|Verwijderd doelStraatnaamId in dezelfde gemeente als straatnaamObjectId |Ticketing error |VerwijderdeStraatnaam  |Verwijderde straatnaam.  |
 
 ## Adressen {#adressen}
   
