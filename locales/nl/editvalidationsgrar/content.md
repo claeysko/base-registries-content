@@ -121,8 +121,8 @@
 |Onbestaand doelStraatnaamId meegegeven  |Error 400 |OnbestaandeStraatnaam  |Onbestaande straatnaam. |
 |Onbestaand straatnaamId meegegeven  |Error 404 |/  |/  |
 |Status straatnaamId gehistoreerd/afgekeurd/voorgesteld|Ticketing error|StraatnaamVoorgesteldAfgekeurdOfGehistoreerd| Deze actie is enkel toegestaan op straatnamen met status 'inGebruik'. |
-|Verwijderd straatnaamId meegegeven |Ticketing error |VerwijderdeStraatnaam  |Verwijderde straatnaam.  |
 |Status doelStraatnaamId gehistoreerd/afgekeurd|Ticketing error|StraatnaamGehistoreerdOfAfgekeurd| Deze actie is enkel toegestaan op straatnamen met status 'voorgesteld' of 'inGebruik'. |
+|Verwijderd straatnaamId meegegeven |Ticketing error |VerwijderdeStraatnaam  |Verwijderde straatnaam.  |
 |Verwijderd doelStraatnaamId meegegeven |Ticketing error |VerwijderdeStraatnaam  |Verwijderde straatnaam.  |
 
 ## Adressen {#adressen}
