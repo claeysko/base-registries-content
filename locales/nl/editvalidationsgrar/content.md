@@ -112,6 +112,18 @@
 |Geen homoniemtoevoeging voor bepaalde taal aanwezig |Ticketing error |StraatnaamHomoniemToevoeging  | Er kan geen homoniemToevoeging worden toegevoegd voor taalcode 'taal'. |
 |Verwijderd straatnaamId meegegeven |Ticketing error |VerwijderdeStraatnaam  |Verwijderde straatnaam.  |
 
+#### Hernoem de straatnaam van een straatnaam 
+
+|Validatie|Soort error|ErrorCode|ErrorMessage|
+|:---:|:---:|:---:|:---:|
+|Ongeldig straatnaamId meegegeven   |Error 400  |/ |De waarde 'straatnaamId' is ongeldig.  |
+|Ongeldig doelStraatnaamId meegegeven   |Error 400  |OnbestaandeStraatnaam |Onbestaande straatnaam.  |
+|Onbestaand doelStraatnaamId meegegeven  |Error 400 |OnbestaandeStraatnaam  |Onbestaande straatnaam. |
+|Onbestaand straatnaamId meegegeven  |Error 404 |/  |/  |
+|Status straatnaamId gehistoreerd/afgekeurd/voorgesteld|Ticketing error|StraatnaamVoorgesteldAfgekeurdOfGehistoreerd| Deze actie is enkel toegestaan op straatnamen met status 'inGebruik'. |
+|Verwijderd straatnaamId meegegeven |Ticketing error |VerwijderdeStraatnaam  |Verwijderde straatnaam.  |
+|Status doelStraatnaamId gehistoreerd/afgekeurd|Ticketing error|StraatnaamGehistoreerdOfAfgekeurd| Deze actie is enkel toegestaan op straatnamen met status 'voorgesteld' of 'inGebruik'. |
+|Verwijderd doelStraatnaamId meegegeven |Ticketing error |VerwijderdeStraatnaam  |Verwijderde straatnaam.  |
 
 ## Adressen {#adressen}
   
