@@ -98,7 +98,7 @@ Als er een nieuw voorgesteld adres wordt ingevoerd dan moet het huisnummer en ev
 
 De regex die van toepassing is op het huisnummer is ^[1-9] ([0-9]{0,8}([A-H]|[K-N]|[P]|[R-T]|[V-Z]){0,1}|[0-9]{0,9})$. Dit wilt zeggen dat huisnummers 45, 2C of 7563M zullen aanvaard worden, maar huisnummers 045, 2I, 5BIS of 4a niet aanvaard zullen worden.
 
-De regex die van toepassing is op het busnummer is ^(?!^[./]|.*[./]$)(?!.*[./]{2,})[a-zA-Z0-9./]{1,10}$. Bovenop deze regex worden de woorden bus, Bus of BUS niet aanvaard en is het ook niet mogelijk om busnummer 0 mee te geven. Dit wilt zeggen dat busnummers 1, 001, 5C,1.1 aanvaard zullen worden, maar busnummers 0, Bus 1, 1-A, 12..1 niet aanvaard zullen worden.
+De regex die van toepassing is op het busnummer is ^(?!^[./]|.* [./]$)(?!.* [./]{2,})[a-zA-Z0-9./]{1,10}$. Bovenop deze regex worden de woorden bus, Bus of BUS niet aanvaard en is het ook niet mogelijk om busnummer 0 mee te geven. Dit wilt zeggen dat busnummers 1, 001, 5C,1.1 aanvaard zullen worden, maar busnummers 0, Bus 1, 1-A, 12..1 niet aanvaard zullen worden.
  
 ## Unieke straatnaam, homoniemtoevoeging, huisnummer of busnummer, hoe uniek is dit? {#uniek}
  
