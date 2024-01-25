@@ -136,14 +136,18 @@ Hiervoor zijn 2 aparte API’s gemaakt. De API ‘Corrigeer de postcode van een 
 
 ## Kan een straatnaam worden gecorrigeerd naar een andere straatnaam? {#correctiestraatnaam}
 
-In het edit endpoint 'Corrigeer de straatnaam van een straatnaam' worden enkel kleine correcties toegestaan. Een volledige hernoeming is niet mogelijk.
-Dit zijn kleine correcties gebaseerd op het Levenshtein distance algoritme. 
+Er zijn 2 mogelijkheden. In het edit endpoint 'Corrigeer de straatnaam van een straatnaam' worden enkel kleine correcties toegestaan. Dit zijn kleine correcties gebaseerd op het Levenshtein distance algoritme.
+Hieronder kunnen voorbeelden gevonden worden van dit algoritme.
 
 Hieronder kunnen voorbeelden gevonden worden van dit algoritme.
 - Niewstraat → Nieuwstraat: Deze correctie wordt toegelaten. 
 - Sint-Niklaasstraat → St-Niklaasstraat: Deze correctie wordt toegelaten. 
 - Jean-Philppestraat → JeanPhilippestraat: Deze correctie wordt toegelaten. 
-- Molenstraat → Kerkstraat: Deze correctie wordt niet toegelaten. 
+- Molenstraat → Kerkstraat: Deze correctie wordt niet toegelaten.
+ 
+In het edit endpoint ‘Hernoem de straatnaam van een straatnaam’ is het mogelijk om de straatnaam volledig te hernoemen. Deze actie is een complexe beheersactie, omdat we verschillende acties gaan combineren. Wanneer deze actie wordt toegepast dan gaan alle ‘actieve’ adressen met hun bijhorende eigenschappen mee worden overgezet naar deze nieuwe straatnaam (status, adrespositie, koppeling gebouweenheid, koppeling perceel).
+ 
+Let op: Bij het hernoemen van een straatnaam worden nieuwe adres objectId’s aangemaakt & de oude worden gehistoreerd. Ook moet de straatnaam waarnaar de oude straatnaam moet hernoemd worden, al bestaan in het gebouwen- en adressenregister.
 
 ## Hoe adres (de)regularisatie wijzigen of corrigeren? {#deregularisatie}
 
