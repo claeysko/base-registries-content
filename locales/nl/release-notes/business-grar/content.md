@@ -2,9 +2,11 @@ Wenst u zich in te schrijven voor de releasemailing van het gebouwen- en adresse
 
 
 ### Huidige release
-- [Release notes 11 december 2023.pdf](https://github.com/Informatievlaanderen/base-registries-content/files/13632453/Release.notes.11.december.2023.pdf)
+- [Release notes 5 feburari 2024.pdf](https://github.com/Informatievlaanderen/base-registries-content/files/14138275/Release.notes.5.feburari.2024.pdf)
 
 ### Archief 
+- [Release notes 18 januari 2024.pdf](https://github.com/Informatievlaanderen/base-registries-content/files/13976110/Release.notes.18.januari.2024.pdf)
+- [Release notes 11 december 2023.pdf](https://github.com/Informatievlaanderen/base-registries-content/files/13632453/Release.notes.11.december.2023.pdf)
 - [Release notes 16 oktober 2023.pdf](https://github.com/Informatievlaanderen/base-registries-content/files/12892977/Release.notes.16.oktober.2023.pdf)
 - [Release notes 29 september 2023.pdf](https://github.com/Informatievlaanderen/base-registries-content/files/12891509/Release.notes.29.september.2023.pdf)
 - [Release notes 12 juni 2023](https://github.com/Informatievlaanderen/base-registries-content/files/11689464/Release.notes.12.juni.2023.pdf)
