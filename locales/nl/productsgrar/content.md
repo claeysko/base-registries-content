@@ -14,7 +14,6 @@ Deze informatie kan op verschillende manieren geraadpleegd worden:
 * [Via de downloadbestanden](#downloadbestandgrar)
 * [Via de WMS, WFS & OGC API features](#wmswfsogcgrar)
 * [Via de Geolocation service](#geolocationservice)
-* [Kafka](#kafka)
 
 ## Read endpoints {#readendpointsgrar}
 
@@ -207,10 +206,6 @@ Alle URL's van de WMS'en, WFS'en en OGC API features van het gebouwen- en adress
 ## Geolocation service {#geolocationservice}
 
 Meer informatie kan u op deze pagina terugvinden: [Geolocation][11].
-
-
-[comment]: <> (## Database tabellen {#databasetabellen}
-De gegevens van het gebouwen- en adressenregiseter kunnnen ook in uitzonderlijke gevallen in database tabellen gepubliceerd worden. Om hierover meer informatie te weten, mail naar digitaal.vlaanderen@vlaanderen.be met als onderwerp 'Integreren met database tabellen van het gebouwen- en adressenregister'. )
 
 
 [1]:https://www.vlaanderen.be/datavindplaats/catalogus/wms-gebouwenregister
