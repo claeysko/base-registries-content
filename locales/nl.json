@@ -605,7 +605,7 @@
         "producer": true,
         "consumer": true,
         "importerGrb": false,
-        "backOfficeProjections" : false
+        "backOfficeProjections" : true
       },
       "address": {
         "title": "Adressen",
@@ -617,7 +617,7 @@
         "producer": true,
         "consumer": true,
         "importerGrb": false,
-        "backOfficeProjections" : false
+        "backOfficeProjections" : true
       },
       "building": {
         "title": "Gebouwen & gebouweenheden",
@@ -629,7 +629,7 @@
         "producer": true,
         "consumer": true,
         "importerGrb": false,
-        "backOfficeProjections" : false
+        "backOfficeProjections" : true
       },
       "parcel": {
         "title": "Percelen",
@@ -641,7 +641,7 @@
         "producer": true,
         "consumer": true,
         "importerGrb": true,
-        "backOfficeProjections" : false
+        "backOfficeProjections" : true
       },
       "road": {
         "title": "Wegen",
