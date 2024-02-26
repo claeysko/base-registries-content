@@ -41,7 +41,7 @@
    "releaseNotes": {
     "text": "Release notes",
     "url": "/release-notes"
-  }
+   }
   },
   "header": {
     "company": {
@@ -208,20 +208,16 @@
         "hide": true
       }
     ]
-    },
-     "release-notes/business-grar": {
-      "title": "Functionele release notes van het gebouwen- en adressenregister"
-    },
-   "release-notes/business-wr": {
-     "title": "Functionele release notes van het wegenregister"
-    },
-   "release-notes/technisch-grar": {
-      "title": "Technische release notes van het gebouwen- en adressenregister"
-   },
-      "notificationsbasisregisters": {
-    "title": "Technische documentatie voor de meldingen van het gebouwen- en adressenregister",
-    "Prefix": "Basisregisters Vlaanderen"
   },
+  "release-notes/business-grar": {
+      "title": "Functionele release notes van het gebouwen- en adressenregister"
+  },
+  "release-notes/business-wr": {
+     "title": "Functionele release notes van het wegenregister"
+  },
+  "release-notes/technisch-grar": {
+      "title": "Technische release notes van het gebouwen- en adressenregister"
+  }, 
   "editendpointsgrar": {
     "title": "Gebruik van de edit API's van het gebouwen- en adressenregister",
     "Prefix": "Basisregisters Vlaanderen"
@@ -234,12 +230,24 @@
     "title": "Validaties",
     "Prefix": "Basisregisters Vlaanderen"
   },
-      "glossary": {
+  "statusflowgrar": {
+    "title": "Status flow API's van het gebouwen- en adressenregister",
+    "Prefix": "Basisregisters Vlaanderen"
+  },
+  "notificationsbasisregisters": {
+    "title": "Technische documentatie voor de meldingen van het gebouwen- en adressenregister",
+    "Prefix": "Basisregisters Vlaanderen"
+  },
+  "glossary": {
     "title": "Verklarende woordenlijst",
     "Prefix": "Basisregisters Vlaanderen"
   },
-    "faq": {
+  "faq": {
     "title": "Veelgestelde vragen",
+    "Prefix": "Basisregisters Vlaanderen"
+  },
+  "Apikey": {
+    "title": "API key",
     "Prefix": "Basisregisters Vlaanderen"
   },
   "implementationmodel": {
@@ -390,6 +398,47 @@
       ]
     }
   },
+  "integrationDocumentation": {
+    "title": "Integratiedocumentatie",
+    "Prefix": "Basisregisters Vlaanderen",
+    "doormatItems": [
+      {
+        "title": "Technische integraties met het gebouwen- en adressenregister",
+        "text": "Een overzicht van de verschillende technische integratiemogelijkheden met het gebouwen- en adressenregister",
+        "url": "/integratie-documentatie/grar",
+        "hide": false
+      },
+      {
+        "title": "Technische integraties met het wegenregister",
+        "text": "Een overzicht van de verschillende technische integratiemogelijkheden met het wegenregister",
+        "url": "/integratie-documentatie/wr",
+        "hide": true
+      }
+    ],
+      "sidebar": {
+      "title": "Op deze pagina",
+      "urls": [
+      ]
+    }
+  },
+  "integrationDocumentationGrar": {
+    "title": "Technische integraties met het gebouwen- en adressenregister",
+    "Prefix": "Basisregisters Vlaanderen",
+      "sidebar": {
+      "title": "Op deze pagina",
+      "urls": [
+      ]
+    }
+  },
+  "integrationDocumentationWr": {
+    "title": "Technische integraties met het wegenregister",
+    "Prefix": "Basisregisters Vlaanderen",
+       "sidebar": {
+      "title": "Op deze pagina",
+      "urls": [
+      ]
+    }
+  },
   "products": {
     "title": "Producten basisregisters",
     "Prefix": "Basisregisters Vlaanderen",
@@ -417,23 +466,7 @@
       },
       "sidebar": {
         "title": "Op deze pagina",
-        "urls": [
-          {
-            "title": "Doel",
-            "url": "#goal"
-          },
-          {
-            "title": "Status",
-            "url": "#status"
-          },
-          {
-            "title": "Licentie",
-            "url": "#license"
-          },
-          {
-            "title": "Documentatie",
-            "url": "#docs"
-          }
+        "urls": [          
         ]
       }
     },
@@ -446,22 +479,6 @@
       "sidebar": {
         "title": "Op deze pagina",
         "urls": [
-          {
-            "title": "Doel",
-            "url": "#goal"
-          },
-          {
-            "title": "Status",
-            "url": "#status"
-          },
-          {
-            "title": "Licentie",
-            "url": "#license"
-          },
-          {
-            "title": "Documentatie",
-            "url": "#docs"
-          }
         ]
       }
     },
@@ -474,22 +491,6 @@
       "sidebar": {
         "title": "Op deze pagina",
         "urls": [
-          {
-            "title": "Doel",
-            "url": "#goal"
-          },
-          {
-            "title": "Status",
-            "url": "#status"
-          },
-          {
-            "title": "Licentie",
-            "url": "#license"
-          },
-          {
-            "title": "Documentatie",
-            "url": "#docs"
-          }
         ]
       }
     },
@@ -502,22 +503,6 @@
       "sidebar": {
         "title": "Op deze pagina",
         "urls": [
-          {
-            "title": "Doel",
-            "url": "#goal"
-          },
-          {
-            "title": "Status",
-            "url": "#status"
-          },
-          {
-            "title": "Licentie",
-            "url": "#license"
-          },
-          {
-            "title": "Documentatie",
-            "url": "#docs"
-          }
         ]
       }
     },
@@ -530,22 +515,6 @@
       "sidebar": {
         "title": "Op deze pagina",
         "urls": [
-          {
-            "title": "Doel",
-            "url": "#goal"
-          },
-          {
-            "title": "Status",
-            "url": "#status"
-          },
-          {
-            "title": "Licentie",
-            "url": "#license"
-          },
-          {
-            "title": "Documentatie",
-            "url": "#docs"
-          }
         ]
       }
     },
@@ -558,22 +527,6 @@
       "sidebar": {
         "title": "Op deze pagina",
         "urls": [
-          {
-            "title": "Doel",
-            "url": "#goal"
-          },
-          {
-            "title": "Status",
-            "url": "#status"
-          },
-          {
-            "title": "Licentie",
-            "url": "#license"
-          },
-          {
-            "title": "Documentatie",
-            "url": "#docs"
-          }
         ]
       }
     },
@@ -586,22 +539,6 @@
       "sidebar": {
         "title": "Op deze pagina",
         "urls": [
-          {
-            "title": "Doel",
-            "url": "#goal"
-          },
-          {
-            "title": "Status",
-            "url": "#status"
-          },
-          {
-            "title": "Licentie",
-            "url": "#license"
-          },
-          {
-            "title": "Documentatie",
-            "url": "#docs"
-          }
         ]
       }
     },
@@ -614,22 +551,6 @@
       "sidebar": {
         "title": "Op deze pagina",
         "urls": [
-          {
-            "title": "Doel",
-            "url": "#goal"
-          },
-          {
-            "title": "Status",
-            "url": "#status"
-          },
-          {
-            "title": "Licentie",
-            "url": "#license"
-          },
-          {
-            "title": "Documentatie",
-            "url": "#docs"
-          }
         ]
       }
     },
@@ -642,22 +563,6 @@
       "sidebar": {
         "title": "Op deze pagina",
         "urls": [
-          {
-            "title": "Doel",
-            "url": "#goal"
-          },
-          {
-            "title": "Status",
-            "url": "#status"
-          },
-          {
-            "title": "Licentie",
-            "url": "#license"
-          },
-          {
-            "title": "Documentatie",
-            "url": "#docs"
-          }
         ]
       }
     }
@@ -670,67 +575,73 @@
         "title": "Gemeenten",
         "projections": true,
         "feed": true,
-        "cache": true,
-        "import": true,
+        "cache": false,
+        "import": false,
         "syndication": false,
         "producer": true,
         "consumer": false,
-        "importerGrb": false
+        "importerGrb": false,
+        "backOfficeProjections" : false
       },
       "postal": {
         "title": "Postinfo",
         "projections": true,
         "feed": true,
-        "cache": true,
+        "cache": false,
         "import": false,
         "syndication": true,
         "producer": true,
         "consumer": false,
-        "importerGrb": false
+        "importerGrb": false,
+        "backOfficeProjections": false
       },
       "streetname": {
         "title": "Straatnamen",
         "projections": true,
         "feed": true,
-        "cache": true,
-        "import": true,
+        "cache": false,
+        "import": false,
         "syndication": true,
         "producer": true,
         "consumer": true,
-        "importerGrb": false
+        "importerGrb": false,
+        "backOfficeProjections": true
       },
       "address": {
         "title": "Adressen",
         "projections": true,
         "feed": true,
-        "cache": true,
-        "import": true,
+        "cache": false,
+        "import": false,
         "syndication": true,
         "producer": true,
         "consumer": true,
-        "importerGrb": false
+        "importerGrb": false,
+        "backOfficeProjections": true
       },
       "building": {
         "title": "Gebouwen & gebouweenheden",
         "projections": true,
         "feed": true,
         "cache": false,
-        "import": true,
-        "syndication": true,
+        "import": false,
+        "syndication": false,
         "producer": true,
         "consumer": true,
-        "importerGrb": false
+        "importerGrb": false,
+        "backOfficeProjections": true
       },
       "parcel": {
         "title": "Percelen",
         "projections": true,
         "feed": true,
-        "cache": true,
-        "import": true,
-        "syndication": true,
+        "cache": false,
+        "import": false,
+        "syndication": false,
         "producer": true,
         "consumer": true,
-        "importerGrb": true
+        "importerGrb": true,
+        "backOfficeProjections": true
       },
       "road": {
         "title": "Wegen",
@@ -741,7 +652,8 @@
         "syndication": true,
         "producer": false,
         "consumer": true,
-        "importerGrb": false
+        "importerGrb": false,
+        "backOfficeProjections": false
       }
     }
   },
@@ -843,6 +755,16 @@
       "description": "De Vlaamse gebouwen en gebouweenheden op v2.",
       "enable": true
     },
+    "buildingRegistryBackOffice": {
+      "title": "Gebouwen edit API",
+      "description": "De edit API van de Vlaamse gebouwen op v2.",
+      "enable": false
+    },
+    "buildingRegistryGrb": {
+      "title": "Gebouwen GRB edit API",
+      "description": "De edit API van GRB voor de Vlaamse gebouwen op v2.",
+      "enable": false
+    },
     "municipalityRegistry": {
       "title": "Gemeenten v1",
       "description": "De Belgische gemeenten op v1.",
@@ -867,6 +789,11 @@
       "title": "Percelen v2",
       "description": "De Vlaamse percelen op v2.",
       "enable": true
+    },
+    "parcelRegistryBackOffice": {
+      "title": "Percelen edit API",
+      "description": "De edit API van de Vlaamse percelen op v2.",
+      "enable": false
     },
     "postalRegistry": {
       "title": "Postinfo v1",
@@ -893,15 +820,15 @@
       "description": "De edit API van de Vlaamse straatnamen op v2.",
       "enable": false
     },
-    "buildingRegistryBackOffice": {
-      "title": "Gebouwen edit API",
-      "description": "De edit API van de Vlaamse gebouwen op v2.",
-      "enable": false
-    },
     "streetNameRegistryV2": {
       "title": "Straatnamen v2",
       "description": "De Vlaamse straatnamen op v2.",
       "enable": true
+    },
+    "ticketingService": {
+      "title": "Ticketing",
+      "description": "Ticketingsysteem van gebouwen- en adressenregister",
+      "enable": false
     },
     "publicSite": {
       "title": "Website",
@@ -912,11 +839,6 @@
       "title": "Wegen",
       "description": "De Vlaamse wegen.",
       "enable": true
-    },
-    "ticketingService": {
-      "title": "Ticketing",
-      "description": "Ticketingsysteem van gebouwen- en adressenregister",
-      "enable": false
-    }
+    }    
   }  
 }
