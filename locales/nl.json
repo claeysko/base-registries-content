@@ -196,7 +196,7 @@
       {
         "title": "Gebruik van de edit API's van het gebouwen- en adressenregister",
         "url": "/documentatie/editendpointsgrar",
-        "hide": true
+        "hide": false
       },
       {
         "title": "Flow statussen gebouwen- en adressenregister",
@@ -206,7 +206,7 @@
       {
         "title": "Validaties edit API's van het gebouwen- en adressenregister",
         "url": "/documentatie/editendpointsgrar/validaties",
-        "hide": true
+        "hide": false
       },
        {
         "title": "Gebruik van de edit API's van het wegenregister",
@@ -226,7 +226,7 @@
       {
         "title": "Technische documentatie voor de meldingen van het gebouwen- en adressenregister",
         "url": "/documentatie/meldingenbasisregisters",
-        "hide": true
+        "hide": false
       }
     ]
   },
