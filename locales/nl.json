@@ -18,6 +18,10 @@
       "text": "Gebruik van de edit endpoints van het gebouwen- en adressenregister",
       "url": "/documentatie/editendpointsgrar"
     },
+    "apikey": {
+      "text": "API keys",
+      "url": "/apikey"
+    },
     "implementationmodel": {
       "text": "Implementatiemodel",
       "url": "/implementatiemodel"
@@ -41,7 +45,7 @@
    "releaseNotes": {
     "text": "Release notes",
     "url": "/release-notes"
-   }
+   },
   },
   "header": {
     "company": {
@@ -664,6 +668,11 @@
       {
         "title": "Error 304",
         "url": "/foutmeldingen/304",
+        "hide": false
+      },
+      {
+        "title": "Error 400",
+        "url": "/foutmeldingen/400",
         "hide": false
       },
       {
