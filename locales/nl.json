@@ -179,7 +179,7 @@
    "release-notes/business-grar": {
       "title": "Functionele release notes van het gebouwen- en adressenregister"
     },
-      "notificationsbasisregisters": {
+  "notificationsbasisregisters": {
     "title": "Technische documentatie voor de meldingen van het gebouwen- en adressenregister",
     "Prefix": "Basisregisters Vlaanderen"
   },
@@ -586,67 +586,73 @@
         "title": "Gemeenten",
         "projections": true,
         "feed": true,
-        "cache": true,
-        "import": true,
+        "cache": false,
+        "import": false,
         "syndication": false,
-        "producer": true,
+        "producer": false,
         "consumer": false,
-        "importerGrb": false
+        "importerGrb": false,
+        "backOfficeProjections": false
       },
       "postal": {
         "title": "Postinfo",
         "projections": true,
         "feed": true,
-        "cache": true,
+        "cache": false,
         "import": false,
         "syndication": true,
-        "producer": true,
+        "producer": false,
         "consumer": false,
-        "importerGrb": false
+        "importerGrb": false,
+        "backOfficeProjections": false
       },
       "streetname": {
         "title": "Straatnamen",
         "projections": true,
         "feed": true,
-        "cache": true,
-        "import": true,
+        "cache": false,
+        "import": false,
         "syndication": true,
-        "producer": true,
-        "consumer": false,
-        "importerGrb": false
+        "producer": false,
+        "consumer": true,
+        "importerGrb": false,
+        "backOfficeProjections": true
       },
       "address": {
         "title": "Adressen",
         "projections": true,
         "feed": true,
-        "cache": true,
-        "import": true,
+        "cache": false,
+        "import": false,
         "syndication": true,
-        "producer": true,
-        "consumer": false,
-        "importerGrb": false
+        "producer": false,
+        "consumer": true,
+        "importerGrb": false,
+        "backOfficeProjections": true
       },
       "building": {
         "title": "Gebouwen & gebouweenheden",
         "projections": true,
         "feed": true,
         "cache": false,
-        "import": true,
-        "syndication": true,
-        "producer": true,
-        "consumer": false,
-        "importerGrb": false
+        "import": false,
+        "syndication": false,
+        "producer": false,
+        "consumer": true,
+        "importerGrb": false,
+        "backOfficeProjections": true
       },
       "parcel": {
         "title": "Percelen",
         "projections": true,
         "feed": true,
-        "cache": true,
-        "import": true,
-        "syndication": true,
-        "producer": true,
-        "consumer": false,
-        "importerGrb": false
+        "cache": false,
+        "import": false,
+        "syndication": false,
+        "producer": false,
+        "consumer": true,
+        "importerGrb": true,
+        "backOfficeProjections": true
       },
       "road": {
         "title": "Wegen",
@@ -657,7 +663,8 @@
         "syndication": true,
         "producer": false,
         "consumer": true,
-        "importerGrb": false
+        "importerGrb": false,
+        "backOfficeProjections": false
       }
     }
   },
