@@ -17,4 +17,4 @@ Hieronder kan per register een lijst gevonden worden van welke beheeracties er a
 
  ## Validaties edit endpoint {#validatieseditendpoints}
  
-Zie https://basisregisters.dev-vlaanderen.be/documentatie/editendpointswr/validaties.
+Zie https://basisregisters.test-vlaanderen.be/documentatie/editendpointswr/validaties.
