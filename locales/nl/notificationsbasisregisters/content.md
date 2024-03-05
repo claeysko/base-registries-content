@@ -83,6 +83,14 @@ Voorafgaand aan het aanmaken van uw melding, kan u een bestand uploaden. Dit bes
 
 Een bestand uploaden kan via het endpoint `<[POST] /api/v1/upload>`. Na het uploaden ontvangt u een URL. Deze URL kan u dan meegeven bij het indienen van uw terugmelding.
 
+### Wie kan meldingen indienen? {#wiekanmeldingenindienen}
+|Handeling|Raadpleger|Decentrale beheerder|Centrale beheerder|Melder|
+|---------|----------|--------------------|------------------|------|
+|Melding indienen|    Neen  |  Ja | Ja | Ja
+|Overzicht raadplegen|Neen|   Enkel van meldingen binnen eigen gemeente  |Alles|Enkel van meldingen binnen eigen organisatie|
+|Detail raadplegen|Neen|      Enkel van meldingen binnen eigen gemeente  |Alles|Enkel van meldingen binnen eigen organisatie|
+|Status wijzigen|Neen|Ja      |Ja|Neen|
+
 ### Meldingen opvragen {#meldingenopvragen}
 
 Wie wenst kan de status van zijn terugmelding en zijn meldingsobject(en) opvolgen in de eigen meldingsfront. GTMF biedt hier verschillende endpoints voor aan. Ook deze endpoints zijn beveiligd via ACM/IDM.
