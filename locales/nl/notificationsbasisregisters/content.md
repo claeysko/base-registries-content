@@ -69,7 +69,7 @@ De dataseteigenschappen beschreven in de gebouwen- en adressenregister dataset v
 ## Levensloop van een melding {#levensloop}
 ![image](https://github.com/Informatievlaanderen/base-registries-content/assets/49196256/3f6e58b4-2a37-4d4e-8d68-21826c4a691d)
 
-Voor de betekenis van elke status, kan u '[Meldingen opvragen](#meldingenopvragen)' raadplegen.  
+Voor de betekenis van elke status, kan u '[Meldingen opvragen](#meldingenopvragen)' raadplegen.
 
 ### Meldingen indienen {#meldingenindienen}
 
@@ -82,6 +82,14 @@ Iedere melding wordt ingediend via een meldingsapplicatie en meldingsorganisatie
 Voorafgaand aan het aanmaken van uw melding, kan u een bestand uploaden. Dit bestand kan u dan toevoegen als bijlage aan de melding. De ondersteunde bestandstypes zijn: .jpg, .png, .jpeg en .pdf. De maximum bestandsgrootte is 30 MB. Er kan slechts 1 bestand tegelijkertijd geüpload worden.
 
 Een bestand uploaden kan via het endpoint `<[POST] /api/v1/upload>`. Na het uploaden ontvangt u een URL. Deze URL kan u dan meegeven bij het indienen van uw terugmelding.
+
+### Wie kan meldingen indienen? {#wiekanmeldingenindienen}
+|Handeling|Raadpleger|Decentrale beheerder|Centrale beheerder|Melder|
+|---------|----------|--------------------|------------------|------|
+|Melding indienen|    Neen  |  ja|
+|Overzicht raadplegen||   Enkel van meldingen binnen eigen gemeente  |Alles|Enkel van meldingen binnen eigen organisatie|
+|Detail raadplegen||      |||
+|Status wijzigen||ja      |ja|neen|
 
 ### Meldingen opvragen {#meldingenopvragen}
 
