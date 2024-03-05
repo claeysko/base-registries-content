@@ -89,7 +89,7 @@ Een bestand uploaden kan via het endpoint `<[POST] /api/v1/upload>`. Na het uplo
 |Melding indienen|    Neen  |  Ja | Ja | Ja
 |Overzicht raadplegen|Neen|   Enkel van meldingen binnen eigen gemeente  |Alles|Enkel van meldingen binnen eigen organisatie|
 |Detail raadplegen|Neen|      Enkel van meldingen binnen eigen gemeente  |Alles|Enkel van meldingen binnen eigen organisatie|
-|Status wijzigen|Neen|Aa      |Ja|Neen|
+|Status wijzigen|Neen|Ja      |Ja|Neen|
 
 ### Meldingen opvragen {#meldingenopvragen}
 
