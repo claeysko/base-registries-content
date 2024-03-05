@@ -86,10 +86,10 @@ Een bestand uploaden kan via het endpoint `<[POST] /api/v1/upload>`. Na het uplo
 ### Wie kan meldingen indienen? {#wiekanmeldingenindienen}
 |Handeling|Raadpleger|Decentrale beheerder|Centrale beheerder|Melder|
 |---------|----------|--------------------|------------------|------|
-|Melding indienen|    Neen  |  ja|
-|Overzicht raadplegen||   Enkel van meldingen binnen eigen gemeente  |Alles|Enkel van meldingen binnen eigen organisatie|
-|Detail raadplegen||      |||
-|Status wijzigen||ja      |ja|neen|
+|Melding indienen|    Neen  |  Ja | Ja | Ja
+|Overzicht raadplegen|Neen|   Enkel van meldingen binnen eigen gemeente  |Alles|Enkel van meldingen binnen eigen organisatie|
+|Detail raadplegen|Neen|      Enkel van meldingen binnen eigen gemeente  |Alles|Enkel van meldingen binnen eigen organisatie|
+|Status wijzigen|Neen|Aa      |Ja|Neen|
 
 ### Meldingen opvragen {#meldingenopvragen}
 
