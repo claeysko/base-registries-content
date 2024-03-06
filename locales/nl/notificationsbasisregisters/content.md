@@ -185,7 +185,7 @@ Het GTMF team kent per aansluitende applicatie een uniek Id toe voor de meldings
 
 ## Best Address Anomaly Service {#bestanoservice}
 Via de BeSt anomalie service kunnen gebruikers van BeSt fouten in de BeSt-gegevens melden. BOSA stelt hiervoor een API ter beschikking waarbij hun afnemers een ANO rond adressen, straatnamen, postcode en gemeenten kunnen doorsturen
-naar de gewesten: https://dtservices.bosa.be/nl/s559-bestanomalyapi#S559-BeStAnomalyAPI%20v1.0. Meer informatie over BeSt kan je hier vinden [hier](https://bosa.belgium.be/nl/services/best-address-services). 
+naar de gewesten: [API]https://dtservices.bosa.be/nl/s559-bestanomalyapi#S559-BeStAnomalyAPI%20v1.0. Meer informatie over BeSt kan je hier vinden [hier](https://bosa.belgium.be/nl/services/best-address-services). 
 
 De BeSt anomalie service stuurt de fout per email door naar Digitaal Vlaanderen. Digitaal Vlaanderen zal hiervoor een melding aanmaken en aan de juiste behandelaar (stad of gemeente) koppelen. De behandelaar kan makkelijk de afkomst herkennen in de referentie: BOSA – Anomalie nr.
 
