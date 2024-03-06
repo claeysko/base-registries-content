@@ -181,3 +181,13 @@ Een lijst van foutcodes die kunnen voorkomen in de API is [hier](https://prod.ap
 De endpoints voor het registreren van een terugmelding zijn beveiligd via ACM/IDM, zie ook meer informatie bij ‘[Authenticatie](#authenticatie)’ en ‘[Authorisatie](#authorisatie)’.
 
 Het GTMF team kent per aansluitende applicatie een uniek Id toe voor de meldingsapplicatie en meldingsorganisatie. Wenst u via uw eigen applicatie meldingen aan te maken voor het gebouwen- en adressenregister, gelieve dan contact op te nemen via digitaal.vlaanderen@vlaanderen.be met als onderwerp ‘Meldingen aanmaken voor het gebouwen- en adressenregister via mijn eigen applicatie'. 
+
+## Uw applicatie aansluiten {#aansluiten}
+
+## Best Address Anomaly Service {#aansluiten}
+Via de BeSt anomalie service kunnen gebruikers van BeSt fouten in de BeSt-gegevens melden. Meer informatie over BeSt kan je hier vinden [hier](https://bosa.belgium.be/nl/services/best-address-services). 
+
+De BeSt anomalie service stuurt de fout per email door naar Digitaal Vlaanderen. Digitaal Vlaanderen zal hiervoor een melding aanmaken en aan de juiste behandelaar (stad of gemeente) koppelen. De behandelaar kan makkelijk de afkomst herkennen in de referentie: BOSA – Anomalie nr
+
+In de melding vindt de gemeente een omschrijving van de fout en eventueel de correcties die de indiener van de melding/anomalie voorstelt. De melding bevat ook een bijlage van de mail. Hierin zijn de contactgegevens van de indiener mee opgenomen zodat de stad of gemeente de indiener kan contacteren voor eventueel verdere inlichtingen en om te laten weten wanneer de fout werd opgelost.
+
