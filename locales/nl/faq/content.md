@@ -288,3 +288,11 @@ Via het read endpoint detail gebouw v2 ([Documentatie](https://docs.basisregiste
 Een perceel wordt als onderliggend aan een gebouw beschouwd indien het voldoet aan volgende voorwaarde (formule voor de berekening van de ‘verbeterde topologische relatie’): oppervlak overlap gebouw - perceel / oppervlak gebouw > 0.8 / # percelen waarmee het gebouw overlapt.
 
 </details>
+
+<details>
+
+<summary>Waar vind ik informatie over GRB-meldingen?</summary>
+
+Op de pagina [Bijhouding & (fout)melding van het GRB](https://www.vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/basiskaart-vlaanderen-grb/veelgestelde-vragen/bijhouding-foutmelding-van-het-grb) wordt meer uitleg gegeven over de meldingen specifiek voor het GRB. 
+
+</details>
