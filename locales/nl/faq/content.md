@@ -9,16 +9,11 @@ Als u een vraag heeft die hieronder niet beantwoord wordt, mail dan naar digitaa
  
 <details>
 
-<summary>Hoe kan ik de WMS gebruiken?</summary>
+<summary>Wat is de flow van de statussen van de verschillende objecten van het gebouwen- en adressenregister?  </summary>
 
-De WMS laat toe adressen, gebouwen en gebouweenheden per status en wegsegmenten per soort **op kaart te visualiseren** en objecten aan te klikken voor meer informatie. Deze kaartlagen kunnen ingeladen worden in GIS- of andere software. Een lijst van GIS-software vindt u [hier](https://en.wikipedia.org/wiki/Comparison_of_geographic_information_systems_software). We kunnen zelf QGIS (open source, gratis) aanbevelen.
-
-Het is belangrijk in de GIS-software als coördinatensysteem voor het project **EPSG:31370** (Belgian Lambert 72) te kiezen en **PNG** als beeldformaat vooraleer lagen toe te voegen. De adressen worden zichtbaar vanaf schaal 1:2000 en hoger, gebouwen en gebouweenheden worden zichtbaar vanaf schaal 1:8000 of hoger en wegen worden zichtbaar afhankelijk van soort weg. De maximumschaal is 1:28000. 
-
-Via de ‘identify’-functie kunt u de details van een object op de kaart met een muisklik opvragen.
+Zie https://basisregisters.vlaanderen.be/documentatie/statusflowgrar voor een volledig overzicht per object per status. 
 
 </details>
-
 
 <details>
 
@@ -41,8 +36,51 @@ Op dit moment zijn enkel een aantal data-URI’s voor adressen resolvable, dit w
 
 </details>
 
+<details>
 
-## Vragen gebouwen- en adressenregister {#vragengebouwenenadressenregister}
+<summary>Hoe kan ik de WMS gebruiken?</summary>
+
+De WMS laat toe adressen, gebouwen en gebouweenheden per status en wegsegmenten per soort **op kaart te visualiseren** en objecten aan te klikken voor meer informatie. Deze kaartlagen kunnen ingeladen worden in GIS- of andere software. Een lijst van GIS-software vindt u [hier](https://en.wikipedia.org/wiki/Comparison_of_geographic_information_systems_software). We kunnen zelf QGIS (open source, gratis) aanbevelen.
+
+Het is belangrijk in de GIS-software als coördinatensysteem voor het project **EPSG:31370** (Belgian Lambert 72) te kiezen en **PNG** als beeldformaat vooraleer lagen toe te voegen. De adressen worden zichtbaar vanaf schaal 1:2000 en hoger, gebouwen en gebouweenheden worden zichtbaar vanaf schaal 1:8000 of hoger en wegen worden zichtbaar afhankelijk van soort weg. De maximumschaal is 1:28000. 
+
+Via de ‘identify’-functie kunt u de details van een object op de kaart met een muisklik opvragen.
+
+</details>
+
+<details>
+
+<summary>Is het downloadbestand als dataproduct beschikbaar? </summary>
+Het downloadbestand is bechikbaar als dataproduct. Meer informatie over dit downloadbestand kan u [hier](https://basisregisters.vlaanderen.be/producten/grar#downloadbestandgrar) vinden.
+ 
+</details>
+
+<details>
+
+<summary>Hoe kan ik het downloadbestand gebruiken?</summary>
+
+Het downloadbestand kan ingeladen en gevisualiseerd worden met GIS-software. Een lijst van GIS-software vindt u [hier](https://en.wikipedia.org/wiki/Comparison_of_geographic_information_systems_software). We kunnen zelf QGIS (open source, gratis) aanbevelen.
+Meer informatie over dit downloadbestand kan u [hier](https://basisregisters.vlaanderen.be/producten/grar#downloadbestandgrar) vinden. 
+
+</details>
+
+<details>
+
+<summary> Moet ik nu al overschakelen naar de v2 endpoints van het gebouwen- en adressenregister? </summary>
+
+Dit wordt sterk aangeraden. Vanaf ten laatste 1 november 2023 zullen de v1 endpoints niet meer up-to-date zijn als gevolg van de migratie van CRAB naar het Gebouwen- en Adressenregister. Om ervoor te zorgen dat u de meest recente gegevens blijft ontvangen, is het dus belangrijk om vóór deze datum over te stappen naar de nieuwe v2 endpoints. We begrijpen dat het migratieproces enige tijd kan vergen. Daarom hebben we besloten om de v1 endpoints **tot 1 maart 2024** beschikbaar te houden, zodat u voldoende tijd heeft om over te stappen naar de nieuwe v2 endpoints.
+</details>
+
+<details>
+
+<summary>Waar vind ik informatie over GRB-meldingen?</summary>
+
+Op de pagina [Bijhouding & (fout)melding van het GRB](https://www.vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/basiskaart-vlaanderen-grb/veelgestelde-vragen/bijhouding-foutmelding-van-het-grb) wordt meer uitleg gegeven over de meldingen specifiek voor het GRB. 
+
+</details>
+
+
+## Vragen adressenregister {#vragenadressenregister}
 
 <details>
 
@@ -57,7 +95,6 @@ U kan op 2 manieren achterhalen wat het adressen objectId is van een CRAB huisnu
 
 </details>
 
-
 <details>
 
 <summary>Ik heb een terreinObjectId of identificatorTerreinObject, hoe weet ik welke gebouwen- en adressenregister objectId dit is?</summary>
@@ -66,33 +103,6 @@ Via het read endpoint van CRAB gebouwen kan u achterhalen wat het gebouwen- en a
 Zie https://docs.basisregisters.vlaanderen.be/docs/api-documentation.html#operation/ListCrabBuildings.
 
 </details>
-
-
-<details>
-
-<summary>Hoe kan ik het downloadbestand gebruiken?</summary>
-
-Het downloadbestand kan ingeladen en gevisualiseerd worden met GIS-software. Een lijst van GIS-software vindt u [hier](https://en.wikipedia.org/wiki/Comparison_of_geographic_information_systems_software). We kunnen zelf QGIS (open source, gratis) aanbevelen.
-Meer informatie over dit downloadbestand kan u [hier](https://basisregisters.vlaanderen.be/producten/grar#downloadbestandgrar) vinden. 
-
-</details>
-
-
-<details>
-
-<summary>Is het downloadbestand als dataproduct beschikbaar? </summary>
-Het downloadbestand is bechikbaar als dataproduct. Meer informatie over dit downloadbestand kan u [hier](https://basisregisters.vlaanderen.be/producten/grar#downloadbestandgrar) vinden.
- 
-</details>
-
-
-<details>
-
-<summary> Moet ik nu al overschakelen naar de v2 endpoints van het gebouwen- en adressenregister? </summary>
-
-Dit wordt sterk aangeraden. Vanaf ten laatste 1 november 2023 zullen de v1 endpoints niet meer up-to-date zijn als gevolg van de migratie van CRAB naar het Gebouwen- en Adressenregister. Om ervoor te zorgen dat u de meest recente gegevens blijft ontvangen, is het dus belangrijk om vóór deze datum over te stappen naar de nieuwe v2 endpoints. We begrijpen dat het migratieproces enige tijd kan vergen. Daarom hebben we besloten om de v1 endpoints **tot 1 maart 2024** beschikbaar te houden, zodat u voldoende tijd heeft om over te stappen naar de nieuwe v2 endpoints.
-</details>
-
 
 <details>
 
@@ -142,15 +152,6 @@ De update frequentie van de WMS'en bij wijzigingen in het gebouwen- en adressenr
 Het attribuut ‘geometrie’ van een gebouweenheid is de positie van de gebouweenheid binnen de gebouwcontour. Deze geometrie kan niet buiten het gebouw liggen.  Staat de ‘positieGeometrieMethode’ op ‘afgeleidVanObject’ dan werd deze positie afgeleid van het gebouw waarbinnen de gebouweenheid ligt en betreft het de centroïde van het gebouw. - Staat de ‘positieGeometrieMethode’ op ‘aangeduidDoorBeheerder’ dan werd de positie manueel geplaatst door een decentraal beheerder. Het is dus mogelijk dat de gebouweenheid op een andere positie ligt dan het adres. 
 
 </details>
-
-<details>
-
-<summary>Wat is de flow van de statussen van de verschillende objecten van het gebouwen- en adressenregister?  </summary>
-
-Zie https://basisregisters.vlaanderen.be/documentatie/statusflowgrar voor een volledig overzicht per object per status. 
-
-</details>
-
 
 <details>
 
@@ -227,6 +228,7 @@ Voorbeeld:
 **Nieuwe homoniemtoevoegingen zijn niet toegestaan.** Het is wel mogelijk om bestaande homoniemtoevoegingen te wijzigen of te verwijderen. Bij gemeentelijke fusies moeten de homoniemen opgelost zijn op de datum dat de fusie ingaat.
 </details>
 
+## Vragen gebouwenregister {#vragengebouwenenregister}
 
 <details>
 
@@ -302,10 +304,4 @@ Een perceel wordt als onderliggend aan een gebouw beschouwd indien het voldoet a
 
 </details>
 
-<details>
 
-<summary>Waar vind ik informatie over GRB-meldingen?</summary>
-
-Op de pagina [Bijhouding & (fout)melding van het GRB](https://www.vlaanderen.be/digitaal-vlaanderen/onze-oplossingen/basiskaart-vlaanderen-grb/veelgestelde-vragen/bijhouding-foutmelding-van-het-grb) wordt meer uitleg gegeven over de meldingen specifiek voor het GRB. 
-
-</details>
