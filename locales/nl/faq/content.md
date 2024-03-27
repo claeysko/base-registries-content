@@ -139,37 +139,10 @@ De update frequentie van de WMS'en bij wijzigingen in het gebouwen- en adressenr
 
 <details>
 
-<summary>Wat is de relatie tussen een gebouweenheid en adres?  </summary>
-In gebouwen met exact één gebouweenheid krijgt de gebouweenheid een huisnummer. Als er voor één gebouw meerdere gebouweenheden bestaan, dan moeten de gemeenten aan elk van deze gebouweenheden een busnummer toekennen terwijl aan de gemeenschappelijke delen geen busnummer mag worden toegekend. Het is niet verplicht om aan een gemeenschappelijk deel een huisnummer toe te kennen. 
-
-</details>
-
-
-<details>
-
 <summary>Is de puntgeometrie van een gebouweenheid dezelfde als deze van het adres?</summary>
 Het attribuut ‘geometrie’ van een gebouweenheid is de positie van de gebouweenheid binnen de gebouwcontour. Deze geometrie kan niet buiten het gebouw liggen.  Staat de ‘positieGeometrieMethode’ op ‘afgeleidVanObject’ dan werd deze positie afgeleid van het gebouw waarbinnen de gebouweenheid ligt en betreft het de centroïde van het gebouw. - Staat de ‘positieGeometrieMethode’ op ‘aangeduidDoorBeheerder’ dan werd de positie manueel geplaatst door een decentraal beheerder. Het is dus mogelijk dat de gebouweenheid op een andere positie ligt dan het adres. 
 
 </details>
-
-
-<details>
-
-<summary>Heeft ieder gebouw één gebouweenheid?  </summary>
-
-Nee, dit is niet het geval. Het gebouw kan 0, 1 of meerdere gebouweenheden hebben. De decentrale beheerder zal gebouweenheden aanmaken in het gebouwen- en adressenregister. Deze hebben automatisch de functie ‘nietGekend’. Een gemeenschappelijk deel zal niet door een decentrale beheerder kunnen aangemaakt worden, want deze gebouweenheid wordt automatisch aangemaakt van zodra er 2 gebouweenheden aan het gebouw zijn gekoppeld. 
-
-</details>
-
-
-<details>
-
-<summary>Wat is de betekenis van gebouweenheden met de functie 'gemeenschappelijk deel'? </summary>
-
-In gebouwen waarin minstens twee functioneel zelfstandige gebouweenheden voorkomen (bv. gebouw met winkel op gelijkvloers en wooneenheid op eerste verdieping) worden de ruimten en structuren die door de eenheden in kwestie gedeeld worden voorgesteld door een extra gebouweenheid met functie ‘gemeenschappelijk deel’. Merk op dat slechts één gemeenschappelijk deel per gebouw wordt aangemaakt. Een flatgebouw met meerdere trappenhallen, liftkokers en een gedeelde ondergrondse garage krijgt dus één gemeenschappelijk deel (niet één per trappenhal/liftkoker/garage). Het gemeenschappelijk deel is tevens de drager van het huisnummeradres daar waar dit huisnummer uitsluitend naar (de gemeenschappelijke ruimten en structuren van) het gebouw verwijst. Er kan ook een gemeenschappelijk deel zijn zonder bijhorend adres.
-
-</details>
-
 
 <details>
 
@@ -278,6 +251,46 @@ Als 3 van deze 4 criteria positief zijn, dan wordt een gebouw meestal gesplitst.
 Indien men beschikt over bouwplannen, dan kunnen deze meer inzicht verschaffen over de opdeling.
 
 Een gedetailleerde toelichting hierover vind je [hier](https://assets.vlaanderen.be/image/upload/v1678268047/Basiskaart_-_Procedure_afbakening_gebouw_bjocy0.pdf)).
+</details>
+
+<details>
+
+<summary>Wat is de definitie van een gebouweenheid?</summary>
+
+Een gebouweenheid is de kleinste eenheid binnen een gebouw die geschikt is voor woon-, bedrijfsmatige, of recreatieve doeleinden en die ontsloten wordt via een eigen afsluitbare toegang vanaf de openbare weg, een erf of een gedeelde circulatieruimte. Een gebouweenheid is in functioneel opzicht zelfstandig.
+
+</details>
+
+<details>
+
+<summary>Hoe wordt een gebouweenheid afgebakend?</summary>
+
+Voor afbakening van een gebouweenheid wordt deze beslissingsboom gehanteerd:
+![image](https://github.com/Informatievlaanderen/base-registries-content/assets/99253145/b3533bce-d545-4db2-8ccb-d877e40ea89c)
+
+</details>
+
+<details>
+
+<summary>Heeft ieder gebouw één gebouweenheid?  </summary>
+
+Nee, dit is niet het geval. Het gebouw kan 0, 1 of meerdere gebouweenheden hebben. De decentrale beheerder zal gebouweenheden aanmaken in het gebouwen- en adressenregister. Deze hebben automatisch de functie ‘nietGekend’. Een gemeenschappelijk deel zal niet door een decentrale beheerder kunnen aangemaakt worden, want deze gebouweenheid wordt automatisch aangemaakt van zodra er 2 gebouweenheden aan het gebouw zijn gekoppeld. 
+
+</details>
+
+<details>
+
+<summary>Wat is de relatie tussen een gebouweenheid en adres?  </summary>
+In gebouwen met exact één gebouweenheid krijgt de gebouweenheid een huisnummer. Als er voor één gebouw meerdere gebouweenheden bestaan, dan moeten de gemeenten aan elk van deze gebouweenheden een busnummer toekennen terwijl aan de gemeenschappelijke delen geen busnummer mag worden toegekend. Het is niet verplicht om aan een gemeenschappelijk deel een huisnummer toe te kennen. 
+
+</details>
+
+<details>
+
+<summary>Wat is de betekenis van gebouweenheden met de functie 'gemeenschappelijk deel'? </summary>
+
+In gebouwen waarin minstens twee functioneel zelfstandige gebouweenheden voorkomen (bv. gebouw met winkel op gelijkvloers en wooneenheid op eerste verdieping) worden de ruimten en structuren die door de eenheden in kwestie gedeeld worden voorgesteld door een extra gebouweenheid met functie ‘gemeenschappelijk deel’. Merk op dat slechts één gemeenschappelijk deel per gebouw wordt aangemaakt. Een flatgebouw met meerdere trappenhallen, liftkokers en een gedeelde ondergrondse garage krijgt dus één gemeenschappelijk deel (niet één per trappenhal/liftkoker/garage). Het gemeenschappelijk deel is tevens de drager van het huisnummeradres daar waar dit huisnummer uitsluitend naar (de gemeenschappelijke ruimten en structuren van) het gebouw verwijst. Er kan ook een gemeenschappelijk deel zijn zonder bijhorend adres.
+
 </details>
 
 <details>
