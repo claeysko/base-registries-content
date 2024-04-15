@@ -1,9 +1,11 @@
 Wenst u zich in te schrijven voor de releasemailing van het gebouwen- en adressenregister? Schrijf u dan [hier](https://analytics-eu.clickdimensions.com/cn/aqwrf/InReleaseGRAR) in. U kan er ook voor kiezen enkel de algemene communicatie van het gebouwen- en adressenregister te ontvangen. Als u dit wilt, schrijf u dan [hier](https://analytics-eu.clickdimensions.com/cn/aqwrf/InMailingsGRAR) in.
 
 ### Huidige release
-- [Release notes 5 feburari 2024.pdf](https://github.com/Informatievlaanderen/base-registries-content/files/14138275/Release.notes.5.feburari.2024.pdf)
+- [Release.notes.3.april.2024.pdf](https://github.com/Informatievlaanderen/base-registries-content/files/14978939/Release.notes.3.april.2024.pdf)
 
-### Archief 
+
+### Archief
+- [Release notes 5 feburari 2024.pdf](https://github.com/Informatievlaanderen/base-registries-content/files/14138275/Release.notes.5.feburari.2024.pdf)
 - [Release notes 18 januari 2024.pdf](https://github.com/Informatievlaanderen/base-registries-content/files/13976110/Release.notes.18.januari.2024.pdf)
 - [Release notes 11 december 2023.pdf](https://github.com/Informatievlaanderen/base-registries-content/files/13632453/Release.notes.11.december.2023.pdf)
 - [Release notes 16 oktober 2023.pdf](https://github.com/Informatievlaanderen/base-registries-content/files/12892977/Release.notes.16.oktober.2023.pdf)
