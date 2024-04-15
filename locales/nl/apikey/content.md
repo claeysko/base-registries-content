@@ -2,7 +2,7 @@ Voor bepaalde onderdelen van de basisregisters is een API key nodig om optimaal 
 
 ## Gebouwen- en adressenregister
 
-De read endpoints zijn anoniem raadpleegbaar. Er is echter een beperking aanwezig op het aantal verzoeken dat u tegelijkertijd kan versturen naar deze endpoints. Wanneer u een API key meegeeft dan zal u meer requests kunnen versturen.
+De read endpoints zijn anoniem raadpleegbaar, maar er is een beperking op het aantal verzoeken dat tegelijkertijd verstuurd kan worden naar deze endpoints. Wanneer u een API key meegeeft dan zal u meer requests kunnen versturen.
 
 Voor de feed endpoints is het verplicht om een API key mee te geven. Als u dit niet doet, krijgt u een errormelding 401 als response terug.
 
