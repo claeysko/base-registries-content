@@ -30,16 +30,8 @@ Om dus optimaal gebruik te maken van de endpoints vraagt u best een API key aan.
 * Via de header x-api-key.
 * In de URL. Bijvoorbeeld: https://api.basisregisters.staging-vlaanderen.be/v2/adressen?apikey={apikey} waarbij {apikey} vervangen wordt door de unieke code van uw API key.
 
-### V1 vs v2
-Voor de read endpoints zijn er zowel v1 als v2 endpoints beschikbaar. De v2 read endpoints zijn een vernieuwde versie van de v1 read endpoints en zijn conform aan het OSLO-model. Om duidelijk aan te geven of het een v1 of een v2 endpoint is, hebben we achteraan de titels gewerkt met (v1) voor versie 1 en (v2) voor versie 2. De v1 endpoints zullen ten laatste vanaf 1 november 2023 niet meer up-to-date zijn en vanaf 1 maart 2024 niet meer beschikbaar zijn. Direct de v2 endpoints implementeren wordt sterk aangeraden. 
-
-**Wat is het verschil tussen de v1 en de v2 endpoints?**
-
-*  Het content-type van v2 is ‘application/ld+json’. Van v1 is dit default ‘application+json’, maar ‘application/xml’ is ook mogelijk.
-* Er zijn 2 velden bijgekomen, namelijk `@context` en `@type`.
-  * Het `@context` veld bevat de linked-data context van het endpoint. Dit is een URI naar de JSON-LD file.
-  * Het `@type` veld bevat het linked-data type van het endpoint.
-* De geometrievelden bij ‘Vraag een adres op (v2)’, ‘Vraag een gebouw op (v2)’ en ‘Vraag een gebouweenheid op (v2)’ zijn gewijzigd. De coördinaten van het object staan vanaf nu in het gml-formaat en alle velden die met geometrie te maken hebben zijn samengevoegd onder 1 veld.
+### De read endpoints zijn comform aan het OSLO-model
+De v2 read endpoints zijn conform aan het OSLO-model.
 
 **Wat betekent 'conform aan het OSLO-model'?**
 
