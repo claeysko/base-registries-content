@@ -728,7 +728,7 @@
     "addressRegistry": {
       "title": "Adressen v1",
       "description": "De Vlaamse adressen op v1.",
-      "enable": true
+      "enable": false
     },
     "addressRegistryBackOffice": {
       "title": "Adressen edit API",
@@ -743,24 +743,24 @@
     "publicServiceRegistry": {
       "title": "Dienstverleningen",
       "description": "De Vlaamse dienstverlening.",
-      "enable": true
+      "enable": false
     },
     "buildingRegistry": {
       "title": "Gebouwen v1",
       "description": "De Vlaamse gebouwen en gebouweenheden op v1.",
-      "enable": true
+      "enable": false
     },
     "buildingRegistryV2": {
       "title": "Gebouwen v2",
       "description": "De Vlaamse gebouwen en gebouweenheden op v2.",
       "enable": true
     },
-      "buildingRegistryBackOffice": {
+    "buildingRegistryBackOffice": {
       "title": "Gebouwen edit API",
       "description": "De edit API van de Vlaamse gebouwen op v2.",
       "enable": false
     },
-      "buildingRegistryGrb": {
+     "buildingRegistryGrb": {
       "title": "Gebouwen GRB edit API",
       "description": "De edit API van GRB voor de Vlaamse gebouwen op v2.",
       "enable": false
@@ -768,7 +768,7 @@
     "municipalityRegistry": {
       "title": "Gemeenten v1",
       "description": "De Belgische gemeenten op v1.",
-      "enable": true
+      "enable": false
     },
     "municipalityRegistryV2": {
       "title": "Gemeenten v2",
@@ -783,14 +783,14 @@
     "parcelRegistry": {
       "title": "Percelen v1",
       "description": "De Vlaamse percelen op v1.",
-      "enable": true
+      "enable": false
     },
     "parcelRegistryV2": {
       "title": "Percelen v2",
       "description": "De Vlaamse percelen op v2.",
       "enable": true
     },
-      "parcelRegistryBackOffice": {
+    "parcelRegistryBackOffice": {
       "title": "Percelen edit API",
       "description": "De edit API van de Vlaamse percelen op v2.",
       "enable": false
@@ -798,7 +798,7 @@
     "postalRegistry": {
       "title": "Postinfo v1",
       "description": "De Belgische postcodes op v1.",
-      "enable": true
+      "enable": false
     },
     "postalRegistryV2": {
       "title": "Postinfo v2",
@@ -813,7 +813,7 @@
     "streetNameRegistry": {
       "title": "Straatnamen v1",
       "description": "De Vlaamse straatnamen op v1.",
-      "enable": true
+      "enable": false
     },
     "streetNameRegistryBackOffice": {
       "title": "Straatnamen edit API",
@@ -825,7 +825,7 @@
       "description": "De Vlaamse straatnamen op v2.",
       "enable": true
     },
-      "ticketingService": {
+    "ticketingService": {
       "title": "Ticketing",
       "description": "Ticketingsysteem van gebouwen- en adressenregister",
       "enable": false
